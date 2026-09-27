@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyBuddy · 会看知识图谱的错题本</title>
+<meta name="description" content="拍照上传高中数学错题，自动对齐 544 个知识点的高中数学知识图谱，找出真正该补的薄弱点，用教材原文讲解。">
+<link rel="stylesheet" href="vendor/katex.inline.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= 顶部导航 ================= -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="logo">∑</span><span class="brand-name">StudyBuddy</span></div>
+    <nav class="nav-links">
+      <a href="#demo">在线演示</a>
+      <a href="#features">功能</a>
+      <a href="#start">本地运行</a>
+      <a class="gh-btn" href="https://github.com/Colinxiao123/studybuddy" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= Hero ================= -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">高中数学 · 知识图谱版错题本</p>
+    <h1>错的不只是一道题，<br>而是图谱上的一个<span class="hl">薄弱点</span>。</h1>
+    <p class="lead">
+      拍照上传错题 → AI 识别题干 → 对齐 <b>544 个知识点、776 条关系</b>的高中数学知识图谱
+      → 找到「错这道题真正暴露的根因」，用教材原文讲解，再复核一遍。
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#demo">🕸 试一试知识图谱</a>
+      <a class="btn" href="https://github.com/Colinxiao123/studybuddy" target="_blank" rel="noopener">GitHub 源码</a>
+    </div>
+    <div class="stats-row">
+      <div><b>544</b><span>知识点</span></div>
+      <div><b>776</b><span>知识关系</span></div>
+      <div><b>12</b><span>必修模块</span></div>
+      <div><b>2 遍</b><span>AI 讲解双保险</span></div>
+      <div><b>100%</b><span>本地运行</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 在线演示 ================= -->
+<section id="demo" class="section">
+  <h2>在线体验 · 知识图谱浏览器</h2>
+  <p class="section-sub">
+    这是项目内置的真实图谱数据（一个前端页面即可运行，不需要后端）。
+    拖动、缩放图上的节点，点击任意知识点查看它的定义、公式与前后依赖关系。
+  </p>
+
+  <div class="demo-toolbar">
+    <div id="moduleChips" class="chip-row"></div>
+    <div class="search-wrap">
+      <input id="searchBox" placeholder="搜索知识点（如：等差数列 / 数量积 / 奇偶性）" autocomplete="off">
+      <div id="searchResults" class="search-results" hidden></div>
+    </div>
+  </div>
+
+  <div class="demo-layout">
+    <div id="graph" class="graph"><div class="graph-loading">图谱加载中…</div></div>
+    <aside id="detail" class="detail">
+      <p class="empty">👈 点击图上的节点<br>查看知识点详情</p>
+    </aside>
+  </div>
+
+  <p class="hint">
+    小提示：节点<b>颜色</b>表示知识点类型，<b>大小</b>表示被多少后续知识点依赖（越大越基础）。
+    边：<span class="edge-dot rel-prereq"></span>前置依赖
+    <span class="edge-dot rel-derived"></span>派生
+    <span class="edge-dot rel-related"></span>横向关联
+  </p>
+</section>
+
+<!-- ================= 功能 ================= -->
+<section id="features" class="section alt">
+  <h2>不止是一个错题本</h2>
+  <p class="section-sub">从「录入一道错题」到「知道下一步补什么」，全流程都在本机完成。</p>
+  <div class="cards">
+    <div class="card">
+      <div class="card-ico">📷</div>
+      <h3>拍照即录入</h3>
+      <p>手机拍整页试卷或上传 PDF，按页识别、多题勾选后入库；题干识别不准还能手动订正。</p>
+    </div>
+    <div class="card">
+      <div class="card-ico">🎯</div>
+      <h3>对齐知识图谱</h3>
+      <p>每道题自动匹配到图谱上的知识点；不确定的候选会请你确认，绝不硬塞一个错误归属。</p>
+    </div>
+    <div class="card">
+      <div class="card-ico">🌱</div>
+      <h3>根因下钻</h3>
+      <p>沿「前置依赖链」向上追溯：这道题错的可能是更底层、更该先补的知识点。</p>
+    </div>
+    <div class="card">
+      <div class="card-ico">🔥</div>
+      <h3>知识点热度</h3>
+      <p>把错题铺在 544 个知识点上形成热力图，冷→热一眼看出最薄弱的模块与章节。</p>
+    </div>
+    <div class="card">
+      <div class="card-ico">🧭</div>
+      <h3>复习优先级</h3>
+      <p>错题数 × 课标要求 × 图中心性综合打分，顺序不是「错得多」而是「先补最值钱的」。</p>
+    </div>
+    <div class="card">
+      <div class="card-ico">💬</div>
+      <h3>AI 双保险讲解</h3>
+      <p>先由「图谱知识点 + 教材原文」作答，再由一位复核老师挑错——超纲、算错、漏答都会被改正。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 本地运行 ================= -->
+<section id="start" class="section">
+  <h2>在自己的电脑上跑起来</h2>
+  <p class="section-sub">
+    只需要 Python 3.10+（Windows / macOS / Linux 通用）。
+    <b>数据完全本地化</b>：错题库、上传的题目图片、API 密钥都只存在你自己的电脑上。
+  </p>
+  <div class="codeblock">
+    <button id="copyBtn" class="copy-btn">复制</button>
+    <pre id="cmd"><code>git clone https://github.com/Colinxiao123/studybuddy.git
+cd studybuddy
+python run.py --install    # 首次：自动建虚拟环境、装依赖
+python run.py              # 之后每次：起服务 + 打开浏览器</code></pre>
+  </div>
+  <div class="steps">
+    <div class="step"><b>1</b><span>克隆代码</span><p>下载源码到本地任一目录</p></div>
+    <div class="step"><b>2</b><span>一行安装</span><p><code>python run.py --install</code> 自动建环境装依赖</p></div>
+    <div class="step"><b>3</b><span>开始刷错题</span><p>浏览器自动打开，拍照或拖入错题图片即可</p></div>
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="brand small"><span class="logo">∑</span><span class="brand-name">StudyBuddy</span></div>
+      <p>会看知识图谱的高中数学错题本</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/Colinxiao123/studybuddy" target="_blank" rel="noopener">GitHub 仓库</a>
+      <a href="https://github.com/Colinxiao123/studybuddy#readme" target="_blank" rel="noopener">使用说明</a>
+      <a href="#demo">在线演示</a>
+    </div>
+  </div>
+  <p class="copyright">本页面的图谱数据为项目内置快照 · 544 知识点 / 776 关系 · 托管于 GitHub Pages</p>
+</footer>
+
+<script src="vendor/katex.min.js"></script>
+<script src="vendor/auto-render.min.js"></script>
+<script src="vendor/echarts.min.js"></script>
+<script src="demo.js"></script>
+</body>
+</html>
