@@ -1,0 +1,1038 @@
+[
+  {
+    "id": "KP-SEQ-0001",
+    "node_type": "KnowledgePoint",
+    "name": "数列的项与通项公式",
+    "aliases": [
+      "数列",
+      "项",
+      "首项",
+      "通项公式",
+      "general term"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "在现实生活中，按一定顺序排列起来的一列数称为数列，数列中的每一个数叫做这个数列的项。排在第一位的数称为第1项（通常叫做首项），排在第n位的数称为第n项；数列可简记为 $\\{a_n\\}$。用序数 $n$ 表示相应项 $a_n$ 的公式称为数列的通项公式。",
+    "latex": "a_1,a_2,\\cdots,a_n,\\cdots,\\quad \\{a_n\\}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "数列概念",
+      "项与首项",
+      "通项公式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材 4.1 开头先行引出数列的项与首项；数列的正式定义在 4.3 一节给出。"
+  },
+  {
+    "id": "KP-SEQ-0002",
+    "node_type": "KnowledgePoint",
+    "name": "等差数列的定义与公差",
+    "aliases": [
+      "等差数列",
+      "公差",
+      "arithmetic sequence",
+      "common difference"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "如果一个数列从第2项起，每一项与其前一项的差都等于同一个常数，那么这个数列叫做等差数列（arithmetic sequence），这个常数叫做等差数列的公差，公差通常用小写字母 $d$ 表示，即 $a_n-a_{n-1}=d\\ (n\\geqslant 2)$。",
+    "latex": "a_n-a_{n-1}=d\\ (n\\geqslant 2)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "等差数列",
+      "公差",
+      "定义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0003",
+    "node_type": "KnowledgePoint",
+    "name": "等差中项",
+    "aliases": [
+      "等差中项",
+      "arithmetic mean"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "如果 $a,A,b$ 成等差数列，那么 $A$ 叫做 $a$ 与 $b$ 的等差中项。由 $A-a=b-A$ 得 $2A=a+b$，即 $A=\\frac{a+b}{2}$；反之亦然。三个数成等差数列时，等差中项必等于其前后两项的算术平均数。",
+    "latex": "A=\\frac{a+b}{2}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "等差中项",
+      "三数成等差"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0004",
+    "node_type": "KnowledgePoint",
+    "name": "等差数列的通项公式",
+    "aliases": [
+      "通项公式",
+      "累加法"
+    ],
+    "kp_type": "formula",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "首项为 $a_1$、公差为 $d$ 的等差数列的通项公式为 $a_n=a_1+(n-1)d$。推导：由 $a_n-a_{n-1}=d\\ (n\\geqslant 2)$ 将 $n-1$ 个等式累加，得 $a_n-a_1=(n-1)d$。利用公式可由 $a_1$、$d$、$n$、$a_n$ 中的三个量求出第四个量。",
+    "latex": "a_n=a_1+(n-1)d",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "通项公式",
+      "累加法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0005",
+    "node_type": "KnowledgePoint",
+    "name": "判断或证明数列是等差数列",
+    "aliases": [
+      "定义法判定",
+      "等差数列的判定"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "判断或证明一个数列是等差数列，可用定义法：任取相邻两项，证明 $a_n-a_{n-1}$（$n\\geqslant 2$）等于与 $n$ 无关的常数。如 $a_n=pn+q$（$p$、$q$ 为常数）时 $a_n-a_{n-1}=p$，故它是等差数列，首项为 $p+q$，公差为 $p$。",
+    "latex": "a_n-a_{n-1}=p",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "等差数列判定",
+      "定义法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 3 归纳：通项为 $n$ 的一次式 $pn+q$ 的数列必为等差数列。"
+  },
+  {
+    "id": "KP-SEQ-0006",
+    "node_type": "KnowledgePoint",
+    "name": "等差数列的性质",
+    "aliases": [
+      "下标和性质",
+      "通项公式的推广"
+    ],
+    "kp_type": "property",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "等差数列的重要性质：(1) $a_n=a_m+(n-m)d$（$m$、$n$ 为正整数）；(2) 若 $m+n=p+q$（$m$、$n$、$p$、$q$ 为正整数），则 $a_m+a_n=a_p+a_q$；特别地，$2a_n=a_{n-1}+a_{n+1}$（$n\\geqslant 2$）。",
+    "latex": "a_n=a_m+(n-m)d,\\quad a_m+a_n=a_p+a_q",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "下标和性质",
+      "等差数列"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "性质(2)由练习 4.1(1) 第 3 题引导证明；中项式见习题 4.1 B 组第 1 题；性质(1)见习题 4.1 A 组第 3 题。"
+  },
+  {
+    "id": "KP-SEQ-0007",
+    "node_type": "KnowledgePoint",
+    "name": "数列的前n项和",
+    "aliases": [
+      "前n项和",
+      "Sn",
+      "求和符号"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "一般地，把数列 $\\{a_n\\}$ 的前 $n$ 项和记作 $S_n$，即 $S_n=a_1+a_2+\\cdots+a_n=\\sum\\limits_{i=1}^{n}a_i$，其中 $\\sum$ 是求和符号。前 $n$ 项和与通项公式是数列的两个基本研究对象。",
+    "latex": "S_n=\\sum_{i=1}^{n}a_i",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "前n项和",
+      "求和符号"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0008",
+    "node_type": "KnowledgePoint",
+    "name": "倒序相加法",
+    "aliases": [
+      "倒序相加",
+      "高斯算法"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "倒序相加法：求数列前 $n$ 项和时，把 $S_n$ 按正序与倒序分别写出再相加，对应项配对后每对的和为常数（如 $a_1+a_n=a_2+a_{n-1}$），从而一次算出 $S_n$。高斯的速算法用的就是倒序相加法；等差数列前 $n$ 项和公式正是用此法推导的。",
+    "latex": "2S_n=n(a_1+a_n)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "倒序相加法",
+      "求和方法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "源于高斯求 $1+2+3+\\cdots+100$ 的算法。"
+  },
+  {
+    "id": "KP-SEQ-0009",
+    "node_type": "KnowledgePoint",
+    "name": "等差数列的前n项和公式",
+    "aliases": [
+      "求和公式",
+      "Sn 公式"
+    ],
+    "kp_type": "formula",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "等差数列 $\\{a_n\\}$ 的前 $n$ 项和公式：$S_n=\\frac{n(a_1+a_n)}{2}$，由通项公式又可写成 $S_n=na_1+\\frac{n(n-1)}{2}d$。特别地，$1+2+3+\\cdots+n=\\frac{n(n+1)}{2}$。",
+    "latex": "S_n=\\frac{n(a_1+a_n)}{2}=na_1+\\frac{n(n-1)}{2}d",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "前n项和公式",
+      "等差数列"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "例 4(3) 表明：求 $S_7$ 可借助 $a_1+a_7=2a_4$ 简化计算。"
+  },
+  {
+    "id": "KP-SEQ-0010",
+    "node_type": "KnowledgePoint",
+    "name": "由前n项和求通项公式",
+    "aliases": [
+      "由和求项",
+      "an 与 Sn 的关系"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "已知数列的前 $n$ 项和 $S_n$，求通项：当 $n\\geqslant 2$ 时 $a_n=S_n-S_{n-1}$，再把 $n=1$ 代入检验 $a_1=S_1$ 是否满足所得式子。如 $S_n=n^2+2n$ 时可求得 $a_n=2n+1$，且 $a_1=3$ 满足该式。",
+    "latex": "a_n=S_n-S_{n-1}\\ (n\\geqslant 2)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.1",
+      "page": null
+    },
+    "tags": [
+      "前n项和",
+      "由和求项"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材思考题进一步提出：若 $S_n=pn^2+qn+r$，当且仅当 $r=0$ 时数列为等差数列（正文未展开）。"
+  },
+  {
+    "id": "KP-SEQ-0011",
+    "node_type": "KnowledgePoint",
+    "name": "等比数列的定义与公比",
+    "aliases": [
+      "等比数列",
+      "公比",
+      "geometric sequence",
+      "common ratio"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "如果一个数列从第2项起，每一项与其前一项的比都等于同一个非零常数，那么这个数列叫做等比数列（geometric sequence），这个常数叫做等比数列的公比，通常用小写字母 $q$（$q\\neq 0$）表示，即 $\\frac{a_n}{a_{n-1}}=q\\ (n\\geqslant 2)$。",
+    "latex": "\\frac{a_n}{a_{n-1}}=q\\ (q\\neq 0,\\ n\\geqslant 2)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "等比数列",
+      "公比",
+      "定义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0012",
+    "node_type": "KnowledgePoint",
+    "name": "等比中项",
+    "aliases": [
+      "等比中项",
+      "geometric mean"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "如果在两个非零实数 $a$ 与 $b$ 中间插入一个数 $G$，使 $a,G,b$ 成等比数列，那么 $G$ 叫做 $a$ 与 $b$ 的等比中项。由 $\\frac{G}{a}=\\frac{b}{G}$ 得 $G^2=ab$，即 $G=\\sqrt{ab}$ 或 $G=-\\sqrt{ab}$。",
+    "latex": "G^2=ab,\\quad G=\\pm\\sqrt{ab}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "等比中项",
+      "三数成等比"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "当 $ab>0$ 时等比中项存在（两个互为相反数的值）；$ab<0$ 时不存在。"
+  },
+  {
+    "id": "KP-SEQ-0013",
+    "node_type": "KnowledgePoint",
+    "name": "等比数列的通项公式",
+    "aliases": [
+      "通项公式",
+      "累乘法"
+    ],
+    "kp_type": "formula",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "首项为 $a_1$、公比为 $q$ 的等比数列的通项公式为 $a_n=a_1q^{n-1}$。推导：由 $\\frac{a_n}{a_{n-1}}=q$ 将 $n-1$ 个等式相乘，得 $\\frac{a_n}{a_1}=q^{n-1}$，即 $a_n=a_1q^{n-1}$（$n$ 为正整数）。",
+    "latex": "a_n=a_1q^{n-1}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "通项公式",
+      "累乘法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0014",
+    "node_type": "KnowledgePoint",
+    "name": "等比数列的性质",
+    "aliases": [
+      "下标积性质",
+      "通项公式的推广"
+    ],
+    "kp_type": "property",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "等比数列的重要性质：若 $m+n=s+t$（$m$、$n$、$s$、$t$ 为正整数），则 $a_m\\cdot a_n=a_s\\cdot a_t$；特别地，$a_n^2=a_{n-1}\\cdot a_{n+1}$（$n\\geqslant 2$）。另有 $a_n=a_mq^{n-m}$。",
+    "latex": "a_ma_n=a_sa_t,\\quad a_n^2=a_{n-1}a_{n+1}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "下标和性质",
+      "等比数列"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "由练习 4.2(1) 第 3 题引导证明。"
+  },
+  {
+    "id": "KP-SEQ-0015",
+    "node_type": "KnowledgePoint",
+    "name": "等比数列的判定与构造",
+    "aliases": [
+      "定义法判定",
+      "等比数列的判定"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "判定或证明等比数列常用定义法：证明 $\\frac{a_n}{a_{n-1}}$ 为非零常数。由 $S_n$ 判定时先求 $a_n=S_n-S_{n-1}$，再检验 $\\frac{a_2}{a_1}$ 是否等于公比。两个等比数列对应项之积仍成等比；正项数列各项取对数后成等差数列。",
+    "latex": "\\frac{a_n}{a_{n-1}}=q\\ (q\\neq 0)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "等比数列判定",
+      "定义法"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "由例 3、例 6 与习题 4.2 A 组第 3、4 题归纳；“取对数”结论由例 3(2) 得到。"
+  },
+  {
+    "id": "KP-SEQ-0016",
+    "node_type": "KnowledgePoint",
+    "name": "错位相减法",
+    "aliases": [
+      "错位相减",
+      "乘公比作差"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "错位相减法：推导等比数列前 $n$ 项和时，把 $S_n=a_1+a_1q+\\cdots+a_1q^{n-1}$ 两边同乘公比 $q$，再与原式相减，消去相同项，得 $(1-q)S_n=a_1(1-q^n)$，从而求得 $S_n$。",
+    "latex": "S_n-qS_n=a_1-a_1q^n",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "错位相减",
+      "求和方法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材中此法用于推导等比数列求和公式；解决差比型数列（等差×等比）求和问题时也常用此法。"
+  },
+  {
+    "id": "KP-SEQ-0017",
+    "node_type": "KnowledgePoint",
+    "name": "等比数列的前n项和公式",
+    "aliases": [
+      "求和公式",
+      "Sn 公式"
+    ],
+    "kp_type": "formula",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "等比数列 $\\{a_n\\}$ 的前 $n$ 项和：$q\\neq 1$ 时 $S_n=\\frac{a_1(1-q^n)}{1-q}=\\frac{a_1-a_nq}{1-q}$；$q=1$ 时 $S_n=na_1$。使用时须先判断 $q$ 是否为 1，含参数问题常需分类讨论。",
+    "latex": "S_n=\\frac{a_1(1-q^n)}{1-q}\\ (q\\neq 1),\\quad S_n=na_1\\ (q=1)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "前n项和公式",
+      "分类讨论"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "例 5 表明含参求通项时要先排除 $q=1$ 的情形。"
+  },
+  {
+    "id": "KP-SEQ-0018",
+    "node_type": "KnowledgePoint",
+    "name": "数列的极限",
+    "aliases": [
+      "极限",
+      "lim"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "一般地，如果当 $n$ 无限增大时，数列 $\\{a_n\\}$ 的项 $a_n$ 越来越趋近于某个确定的数 $a$，那么称这个数列的极限为 $a$，记作 $\\lim\\limits_{n\\to+\\infty}a_n=a$。如数列 $\\left(\\frac{1}{2}\\right)^n$ 随 $n$ 增大趋近于 0，故其极限为 0。",
+    "latex": "\\lim_{n\\to+\\infty}a_n=a",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "数列极限",
+      "极限记号"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材用直观语言（无限趋近）描述极限。"
+  },
+  {
+    "id": "KP-SEQ-0019",
+    "node_type": "KnowledgePoint",
+    "name": "无穷等比数列的和",
+    "aliases": [
+      "无穷等比数列",
+      "无穷级数求和"
+    ],
+    "kp_type": "theorem",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "当 $0<|q|<1$ 时，以 $a$ 为首项、$q$ 为公比的无穷等比数列各项的和为前 $n$ 项和 $S_n$ 的极限，即 $\\sum\\limits_{i=1}^{+\\infty}aq^{i-1}=\\frac{a}{1-q}$。如 $\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\cdots=1$。",
+    "latex": "\\sum_{i=1}^{+\\infty}aq^{i-1}=\\frac{a}{1-q}\\ (0<|q|<1)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "无穷等比数列",
+      "极限求和"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "由 $S_n=\\frac{a}{1-q}(1-q^n)$ 取极限得到；例 8 用此公式求无限个正方形周长、面积之和。"
+  },
+  {
+    "id": "KP-SEQ-0020",
+    "node_type": "KnowledgePoint",
+    "name": "化循环小数为分数",
+    "aliases": [
+      "循环小数",
+      "循环节"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "把循环小数化为分数：将循环小数拆成有限部分与一个无穷等比数列各项的和，利用公式 $S=\\frac{a_1}{1-q}$ 计算。如 $0.\\dot{2}\\dot{9}=0.29+0.29\\times0.01+\\cdots=\\frac{0.29}{1-0.01}=\\frac{29}{99}$。",
+    "latex": "0.\\dot{2}\\dot{9}=\\frac{0.29}{1-0.01}=\\frac{29}{99}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.2",
+      "page": null
+    },
+    "tags": [
+      "循环小数",
+      "无穷等比应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 7 归纳；教材还指出 $0.\\dot{9}=1$ 可类似证明。"
+  },
+  {
+    "id": "KP-SEQ-0021",
+    "node_type": "KnowledgePoint",
+    "name": "数列的概念",
+    "aliases": [
+      "number sequence",
+      "数列与数集的比较"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "按照一定顺序排列的一列数称为数列。与数集相比：集合中的元素是无序的，而数列的项必须按一定顺序排列，即为有序的；集合中的元素要求互异，而数列的项可以是相同的。序数 $n$ 确定时，相应的项 $a_n$ 也随之确定。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "数列定义",
+      "有序性",
+      "数集对比"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "项 $a_n$ 与序数 $n$ 之间的对应关系，体现数列是定义在正整数集上的函数。"
+  },
+  {
+    "id": "KP-SEQ-0022",
+    "node_type": "KnowledgePoint",
+    "name": "有穷数列与无穷数列",
+    "aliases": [
+      "有穷数列",
+      "无穷数列"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "项数有限的数列叫做有穷数列（finite sequence），项数无限的数列叫做无穷数列（infinite sequence）。如 $1,3,6,10,15,21,28$ 是有穷数列，$1,4,9,16,25,\\cdots$ 是无穷数列。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "有穷数列",
+      "无穷数列"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0023",
+    "node_type": "KnowledgePoint",
+    "name": "单调数列",
+    "aliases": [
+      "增数列",
+      "减数列",
+      "严格增数列",
+      "严格减数列",
+      "常数列"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "从第2项起，每一项都不小于其前一项的数列叫做增数列，此时 $a_{n+1}\\geqslant a_n$；每一项都大于其前一项的叫做严格增数列，此时 $a_{n+1}>a_n$。类似地有减数列与严格减数列。增、减数列统称单调数列，各项均相等的数列叫做常数列。",
+    "latex": "a_{n+1}\\geqslant a_n,\\quad a_{n+1}>a_n",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "单调数列",
+      "增数列",
+      "减数列"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材旁注：公差为正、负、零的等差数列分别为严格增数列、严格减数列、常数列。"
+  },
+  {
+    "id": "KP-SEQ-0024",
+    "node_type": "KnowledgePoint",
+    "name": "数列的列表表示法",
+    "aliases": [
+      "列表法",
+      "表格表示"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "know",
+    "statement": "常用列表法表示数列：把序数 $n$ 与其对应项 $a_n$ 列成两行表格，直观呈现各项。如病人体温监测值可以列成表格；由通项公式求前几项时也常借助列表逐项计算。列表法与通项公式、递推公式都是表示数列的常用方法。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "列表法",
+      "数列表示"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材表 4-1 引入；例 1 用列表法写出数列的前 5 项。"
+  },
+  {
+    "id": "KP-SEQ-0025",
+    "node_type": "KnowledgePoint",
+    "name": "判断数列单调性与求最大(小)项",
+    "aliases": [
+      "数列的最值",
+      "做差比较"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "判断数列的单调性或求最大（小）项，可通过比较相邻两项的大小：作差判断 $a_{n+1}-a_n$ 的符号（或作商与 1 比较）。如 $a_n=(n+1)\\left(\\frac{9}{10}\\right)^{n-1}$ 中，前 8 项递增，$n\\geqslant 9$ 后递减，第 8、9 项最大。",
+    "latex": "a_{n+1}-a_n",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "单调性判定",
+      "最大项"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 2、例 3 归纳；比较差式的符号与不等式中的作差法一致。"
+  },
+  {
+    "id": "KP-SEQ-0026",
+    "node_type": "KnowledgePoint",
+    "name": "递推公式",
+    "aliases": [
+      "递推关系",
+      "递推法"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "如果数列 $\\{a_n\\}$ 的任一项 $a_n$ 可由其前一项 $a_{n-1}$（或前几项）通过一个公式来表示，那么这个公式就叫做这个数列的一个递推公式。它也是表示数列的一种方法；有时通项公式不易发现，但可通过递推关系来描述数列。",
+    "latex": "a_n=f(a_{n-1})\\ (n\\geqslant 2)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "递推公式",
+      "数列表示"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0027",
+    "node_type": "KnowledgePoint",
+    "name": "由递推公式求通项公式（累加法）",
+    "aliases": [
+      "累加法",
+      "叠加法"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "由递推公式 $a_n=a_{n-1}+f(n)$ 求通项，可把 $n-1$ 个等式累加，得 $a_n=a_1+\\sum\\limits_{i=2}^{n}f(i)$。如平面分割问题中，由 $a_n=a_{n-1}+n$、$a_1=2$ 累加得 $a_n=\\frac{n^2+n+2}{2}$。",
+    "latex": "a_n=a_1+\\sum_{i=2}^{n}f(i)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "累加法",
+      "递推求通项"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 4（平面内 n 条直线分割平面）归纳。"
+  },
+  {
+    "id": "KP-SEQ-0028",
+    "node_type": "KnowledgePoint",
+    "name": "由递推公式求通项公式（构造等比数列）",
+    "aliases": [
+      "构造法",
+      "化归为等比数列"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "对形如 $a_n=pa_{n-1}+q$（$p\\neq 1$）的递推公式，可在两边加适当的常数，把数列化归为等比数列求解。如 $a_n=2a_{n-1}+1$ 两边加 1 得 $a_n+1=2(a_{n-1}+1)$，故 $\\{a_n+1\\}$ 成等比，解得 $a_n=2^n-1$。",
+    "latex": "a_n+1=2(a_{n-1}+1)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "构造法",
+      "等比数列"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 5 归纳；$a_n=pa_{n-1}+q$ 型常通过配凑常数构造等比数列。"
+  },
+  {
+    "id": "KP-SEQ-0029",
+    "node_type": "KnowledgePoint",
+    "name": "斐波那契数列",
+    "aliases": [
+      "Fibonacci",
+      "兔子数列"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "know",
+    "statement": "斐波那契数列 $1,1,2,3,5,8,13,21,\\cdots$ 的特点是：从第 3 项起，每一项都等于其前两项之和，即 $F_n=F_{n-1}+F_{n-2}$（$n\\geqslant 3$）。其相邻两项之比无限趋近于黄金比例。",
+    "latex": "F_n=F_{n-1}+F_{n-2}\\ (n\\geqslant 3)",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.3",
+      "page": null
+    },
+    "tags": [
+      "斐波那契数列",
+      "递推"
+    ],
+    "status": "draft",
+    "confidence": 0.8,
+    "notes": "来自 4.3 课后阅读“神奇的斐波那契数列”；其通项公式与黄金比例在阅读材料中给出，此处从略。"
+  },
+  {
+    "id": "KP-SEQ-0030",
+    "node_type": "KnowledgePoint",
+    "name": "归纳法",
+    "aliases": [
+      "由特殊到一般",
+      "不完全归纳"
+    ],
+    "kp_type": "concept",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "由特殊到一般的推理方法叫做归纳法，例如根据数列的前几项可以猜想它的通项公式。但仅根据有限的特殊事例归纳得出的结论，不能确定它对后续的项也成立；又不可能逐一验证所有正整数，所以归纳所得的猜想还需要另寻方法加以证明。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.4",
+      "page": null
+    },
+    "tags": [
+      "归纳法",
+      "推理方法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SEQ-0031",
+    "node_type": "KnowledgePoint",
+    "name": "数学归纳法",
+    "aliases": [
+      "mathematical induction",
+      "归纳证明"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "证明与正整数 $n$ 有关的命题，可按两步进行：(1) 证明 $n$ 取第一个值 $n_0$（$n_0$ 为正整数）时命题成立；(2) 假设 $n=k$（$k\\geqslant n_0$）时命题成立，证明 $n=k+1$ 时命题也成立。两个步骤缺一不可，这种证明方法叫做数学归纳法。",
+    "latex": "n=k\\ \\Rightarrow\\ n=k+1",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.4",
+      "page": null
+    },
+    "tags": [
+      "数学归纳法",
+      "证明方法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材以多米诺骨牌类比引入：第(1)步是论证的基础，第(2)步保证命题可以递推下去。"
+  },
+  {
+    "id": "KP-SEQ-0032",
+    "node_type": "KnowledgePoint",
+    "name": "用数学归纳法证明恒等式",
+    "aliases": [
+      "归纳证明等式",
+      "和式恒等式"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "用数学归纳法证明与正整数 $n$ 有关的等式：先验证初始情形等式成立；再假设 $n=k$ 时等式成立，由此推出 $n=k+1$ 时等式也成立——常对和式添上第 $k+1$ 项，代入假设后化简凑出目标形式。两个步骤缺一不可。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.4",
+      "page": null
+    },
+    "tags": [
+      "恒等式证明",
+      "归纳步骤"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 1、例 2 归纳（如 $1+3+\\cdots+(2n-1)=n^2$、$1^3+2^3+\\cdots+n^3=\\left[\\frac{n(n+1)}{2}\\right]^2$）。"
+  },
+  {
+    "id": "KP-SEQ-0033",
+    "node_type": "KnowledgePoint",
+    "name": "先猜想后证明",
+    "aliases": [
+      "猜想与证明",
+      "大胆猜想小心求证"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "“大胆猜想、小心求证”：对与正整数有关的结论，先计算前几项、观察规律，归纳形成猜想，再用数学归纳法加以证明。如由 $a_{n+1}=a_n+\\frac{n}{a_n}$、$a_1=1$ 算得 $a_2=2$、$a_3=3$，可猜想 $a_n=n$。这是数学探索的基本方法。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.4",
+      "page": null
+    },
+    "tags": [
+      "猜想与证明",
+      "数学归纳法应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 3 归纳。"
+  },
+  {
+    "id": "KP-SEQ-0034",
+    "node_type": "KnowledgePoint",
+    "name": "待定系数法探究恒等式猜想",
+    "aliases": [
+      "待定系数",
+      "平方和公式"
+    ],
+    "kp_type": "method",
+    "module": "SEQ",
+    "section_id": "SEC-XB1-04-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "探究 $1^2+2^2+\\cdots+n^2$ 能否用 $an^3+bn^2+cn$ 表示：先取 $n=1,2,3$ 得方程组解出 $a$、$b$、$c$，由此作出猜想，再用数学归纳法证明 $\\sum\\limits_{i=1}^{n}i^2=\\frac{n(n+1)(2n+1)}{6}$。",
+    "latex": "\\sum_{i=1}^{n}i^2=\\frac{n(n+1)(2n+1)}{6}",
+    "source": {
+      "book": "XB1",
+      "chapter": 4,
+      "section": "4.4",
+      "page": null
+    },
+    "tags": [
+      "待定系数法",
+      "平方和公式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 4 归纳；猜测出的公式仍需用数学归纳法证明。"
+  }
+]

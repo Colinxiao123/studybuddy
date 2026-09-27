@@ -1,0 +1,709 @@
+[
+  {
+    "from": "KP-ANAG-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0002",
+    "strength": "required",
+    "reason": "斜率为倾斜角的正切值，理解斜率定义需先掌握倾斜角概念",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0003",
+    "strength": "required",
+    "reason": "两点斜率公式是斜率定义的坐标化表示",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0004",
+    "strength": "required",
+    "reason": "判断三点共线要用两点连线的斜率公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0003",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0002",
+    "method": "由斜率定义结合直角三角形推导",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0005",
+    "strength": "required",
+    "reason": "求点斜式方程需先掌握斜率公式，点斜式由斜率公式变形得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0006",
+    "strength": "required",
+    "reason": "斜截式是点斜式取定点为 y 轴交点的特例",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0006",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0007",
+    "strength": "recommended",
+    "reason": "截距概念由斜截式中 b 的几何意义引出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0008",
+    "strength": "required",
+    "reason": "两点式由点斜式整理成对称形式得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0009",
+    "strength": "recommended",
+    "reason": "各种特殊形式的直线方程都可整理为一般式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0010",
+    "strength": "required",
+    "reason": "法向量由一般式方程的系数 (a,b) 直接给出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0011",
+    "strength": "required",
+    "reason": "含参直线过定点问题研究一般式方程的结构",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0006",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0012",
+    "strength": "required",
+    "reason": "由所过象限求参数范围须先化为斜截式读斜率与截距",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0006",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0005",
+    "method": "在点斜式中取定点为直线与 y 轴的交点 (0,b)",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0008",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0005",
+    "method": "由点斜式整理成关于两个坐标对称的形式",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0013",
+    "strength": "required",
+    "reason": "用方程研究两条直线的位置关系以一般式方程为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0014",
+    "strength": "required",
+    "reason": "方程组解的情况是三种位置关系的代数刻画",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0015",
+    "strength": "required",
+    "reason": "斜率形式的平行判定要用斜率公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0014",
+    "strength": "recommended",
+    "reason": "两直线相交与平行的判定可用法向量刻画",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0016",
+    "strength": "required",
+    "reason": "夹角概念建立在两直线相交的基础上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0017",
+    "strength": "required",
+    "reason": "垂直由两条直线的夹角为直角定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0017",
+    "strength": "recommended",
+    "reason": "垂直条件 a1a2+b1b2=0 由法向量互相垂直推得",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0015",
+    "rel": "RELATED_TO",
+    "to": "KP-ANAG-0017",
+    "kind": "parallel",
+    "note": "平行与垂直的判定条件可对照记忆"
+  },
+  {
+    "from": "KP-ANAG-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0018",
+    "strength": "required",
+    "reason": "点到直线的距离公式针对一般式方程给出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0019",
+    "strength": "required",
+    "reason": "推导利用直线的法向量与向量数量积",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0020",
+    "strength": "required",
+    "reason": "两条平行线间的距离转化为点到直线的距离",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0021",
+    "strength": "required",
+    "reason": "由距离条件列方程求参数需用到距离公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0020",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0021",
+    "strength": "recommended",
+    "reason": "与已知直线平行且距离为定值的问题用平行线距离公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0020",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0018",
+    "method": "在一条直线上取点，转化为点到直线的距离",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0023",
+    "strength": "required",
+    "reason": "圆的标准方程是曲线方程概念的首个完整实例",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0023",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0024",
+    "strength": "required",
+    "reason": "圆的一般方程由标准方程展开整理得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0024",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0025",
+    "strength": "required",
+    "reason": "设一般方程用待定系数法求圆的方程须先掌握一般方程",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0023",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0025",
+    "strength": "recommended",
+    "reason": "已知圆心、半径等条件时设标准方程求解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0023",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0026",
+    "strength": "required",
+    "reason": "判定直线与圆的位置关系须先写出圆的方程",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0026",
+    "strength": "required",
+    "reason": "用圆心到直线的距离与半径比较判定位置关系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0027",
+    "strength": "required",
+    "reason": "过圆上一点的切线在相切情形下研究",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0028",
+    "strength": "required",
+    "reason": "由圆心到切线的距离等于半径列方程求斜率",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0024",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0023",
+    "method": "把标准方程展开并配方得一般形式",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0027",
+    "rel": "RELATED_TO",
+    "to": "KP-ANAG-0028",
+    "kind": "parallel",
+    "note": "点在圆上与点在圆外的两类切线问题可对照学习"
+  },
+  {
+    "from": "KP-ANAG-0029",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0030",
+    "strength": "required",
+    "reason": "椭圆的标准方程由定义推导得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0031",
+    "strength": "required",
+    "reason": "求椭圆方程须先掌握标准方程的形式与 a、b、c 关系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0032",
+    "strength": "required",
+    "reason": "对称性由标准方程讨论得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0033",
+    "strength": "required",
+    "reason": "顶点由椭圆与对称轴的交点求出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0034",
+    "strength": "required",
+    "reason": "范围由标准方程直接分析得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0029",
+    "method": "由定义列出距离方程，两次平方化简",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0029",
+    "rel": "RELATED_TO",
+    "to": "KP-ANAG-0035",
+    "kind": "parallel",
+    "note": "椭圆与双曲线的定义对照（距离之和与距离之差）"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "RELATED_TO",
+    "to": "KP-ANAG-0036",
+    "kind": "parallel",
+    "note": "椭圆与双曲线的标准方程对照"
+  },
+  {
+    "from": "KP-ANAG-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0036",
+    "strength": "required",
+    "reason": "双曲线的标准方程由定义推导得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0037",
+    "strength": "required",
+    "reason": "求双曲线方程须先掌握标准方程与 c²=a²+b² 关系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0038",
+    "strength": "required",
+    "reason": "轨迹的讨论针对定义中两个限制条件的各种情形",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0039",
+    "strength": "required",
+    "reason": "顶点与实轴、虚轴由方程与对称轴研究",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0040",
+    "strength": "required",
+    "reason": "范围由标准方程分析得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0041",
+    "strength": "required",
+    "reason": "渐近线由标准方程中的 a、b 确定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0035",
+    "method": "由定义列出距离方程，两次平方化简",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0042",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0043",
+    "strength": "required",
+    "reason": "抛物线的标准方程由定义推导得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0043",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0044",
+    "strength": "required",
+    "reason": "求抛物线方程须先掌握标准方程的四种形式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0043",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0045",
+    "strength": "required",
+    "reason": "对称性与范围由标准方程讨论得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0042",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0046",
+    "strength": "required",
+    "reason": "焦点弦性质的证明直接使用定义中的距离相等",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0043",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0047",
+    "strength": "recommended",
+    "reason": "把标准方程稍作变形即得二次函数表达式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0043",
+    "rel": "DERIVED_FROM",
+    "to": "KP-ANAG-0042",
+    "method": "由定义列出距离方程，两边平方化简",
+    "note": ""
+  },
+  {
+    "from": "KP-ANAG-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0048",
+    "strength": "required",
+    "reason": "判断方程是否为曲线的方程以曲线方程的概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0048",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0049",
+    "strength": "required",
+    "reason": "步骤③的验证对应曲线方程的两个条件",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0050",
+    "strength": "recommended",
+    "reason": "求轨迹方程时可用参数分别表示 x 与 y",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0050",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0051",
+    "strength": "required",
+    "reason": "利用参数求最值须先掌握参数方程",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0051",
+    "strength": "required",
+    "reason": "由椭圆标准方程设出参数方程 x=a·cosθ、y=b·sinθ",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0052",
+    "strength": "recommended",
+    "reason": "在直角坐标系下求某些轨迹方程困难，引出新的坐标系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0052",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0053",
+    "strength": "required",
+    "reason": "极坐标方程建立在极坐标系概念之上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0054",
+    "strength": "required",
+    "reason": "圆的极坐标方程是极坐标方程的具体实例",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0055",
+    "strength": "required",
+    "reason": "直线的极坐标方程是极坐标方程的具体实例",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0056",
+    "strength": "required",
+    "reason": "螺线的极坐标方程由极径与极角的关系建立",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0052",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0057",
+    "strength": "required",
+    "reason": "坐标互化以极坐标系的概念为前提",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0025",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0048",
+    "strength": "recommended",
+    "reason": "曲线与方程的双向对应关系用充要（等价）语言刻画",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0012",
+    "strength": "recommended",
+    "reason": "参数范围的解集常用区间表示",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0026",
+    "strength": "required",
+    "reason": "联立消元后用判别式判断直线与圆的公共点个数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0050",
+    "strength": "recommended",
+    "reason": "讨论直线与曲线所截线段存在需 Δ>0",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0050",
+    "strength": "required",
+    "reason": "弦中点坐标由根与系数的关系求得",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0012",
+    "strength": "recommended",
+    "reason": "求参数范围时需解分式不等式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-FUNC-0045",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0047",
+    "strength": "recommended",
+    "reason": "二次函数的图像与最值是理解抛物线的已有基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0058",
+    "strength": "required",
+    "reason": "离心率定义用到标准方程中的 a 与 c",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0033",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0058",
+    "strength": "required",
+    "reason": "离心率与长轴、焦距相关联，以长轴短轴概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0059",
+    "strength": "required",
+    "reason": "双曲线离心率定义用到标准方程中的 a 与 c",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0039",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0059",
+    "strength": "required",
+    "reason": "离心率与实轴、焦距相关联，以实轴虚轴概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0041",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0059",
+    "strength": "required",
+    "reason": "b/a=根号(e^2-1) 建立渐近线与离心率的联系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0060",
+    "strength": "required",
+    "reason": "光学性质涉及椭圆焦点与切线，以标准方程为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0061",
+    "strength": "required",
+    "reason": "切线概念建立在椭圆方程与图形之上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0061",
+    "strength": "recommended",
+    "reason": "相切概念由圆推广到椭圆",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0062",
+    "strength": "required",
+    "reason": "联立后用判别式判断公共点个数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0062",
+    "strength": "required",
+    "reason": "以直线与椭圆联立为例归纳通法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0062",
+    "strength": "recommended",
+    "reason": "直线与双曲线公共点讨论是通法的又一应用",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-ANAG-0051",
+    "strength": "recommended",
+    "reason": "消参后化 A sin(θ+φ) 需辅助角公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-ANAG-0058",
+    "rel": "RELATED_TO",
+    "to": "KP-ANAG-0059",
+    "kind": "parallel",
+    "note": "椭圆与双曲线的离心率对照（0<e<1 与 e>1，对形状/开口的影响）"
+  }
+]

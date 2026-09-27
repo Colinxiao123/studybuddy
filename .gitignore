@@ -1,0 +1,23 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+
+# ===== 本地数据与密钥（含个人隐私，不发布）=====
+app/data/*
+!app/data/kg_snapshot.json
+app/.env
+app/data/logs/
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ===== 本地临时备份 =====
+app/static/_bak_20260927/

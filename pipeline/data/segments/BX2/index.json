@@ -1,0 +1,227 @@
+{
+  "book": "BX2",
+  "source": "pipeline/data/extracted/BX2/full.md",
+  "toc_sections": 15,
+  "total_sections": 15,
+  "found": 15,
+  "missing": [],
+  "anchors": {
+    "high": 15,
+    "low": 0,
+    "fallback": 0,
+    "missing": 0
+  },
+  "excluded_sections": [],
+  "excluded_blocks_total": 7,
+  "sections": [
+    {
+      "id": "SEC-BX2-06-01",
+      "chapter": "CH-BX2-06",
+      "no": "6.1",
+      "name": "正弦、余弦、正切、余切",
+      "toc_name": "正弦、余弦、正切、余切",
+      "anchor": "high",
+      "start_line": 111,
+      "end_line": 1017,
+      "chars": 46808,
+      "excluded_blocks": [],
+      "file": "s6.1.md"
+    },
+    {
+      "id": "SEC-BX2-06-02",
+      "chapter": "CH-BX2-06",
+      "no": "6.2",
+      "name": "常用三角公式",
+      "toc_name": "常用三角公式",
+      "anchor": "high",
+      "start_line": 1018,
+      "end_line": 1690,
+      "chars": 31142,
+      "excluded_blocks": [
+        "探究与实践 (L1661-1666)"
+      ],
+      "file": "s6.2.md"
+    },
+    {
+      "id": "SEC-BX2-06-03",
+      "chapter": "CH-BX2-06",
+      "no": "6.3",
+      "name": "解三角形",
+      "toc_name": "解三角形",
+      "anchor": "high",
+      "start_line": 1691,
+      "end_line": 2391,
+      "chars": 28969,
+      "excluded_blocks": [
+        "探究与实践：海伦公式和“三斜求积”公式 (L2189-2200)"
+      ],
+      "file": "s6.3.md"
+    },
+    {
+      "id": "SEC-BX2-07-01",
+      "chapter": "CH-BX2-07",
+      "no": "7.1",
+      "name": "正弦函数的图像与性质",
+      "toc_name": "正弦函数的图像与性质",
+      "anchor": "high",
+      "start_line": 2392,
+      "end_line": 2880,
+      "chars": 25750,
+      "excluded_blocks": [],
+      "file": "s7.1.md"
+    },
+    {
+      "id": "SEC-BX2-07-02",
+      "chapter": "CH-BX2-07",
+      "no": "7.2",
+      "name": "余弦函数的图像与性质",
+      "toc_name": "余弦函数的图像与性质",
+      "anchor": "high",
+      "start_line": 2881,
+      "end_line": 3026,
+      "chars": 6150,
+      "excluded_blocks": [],
+      "file": "s7.2.md"
+    },
+    {
+      "id": "SEC-BX2-07-03",
+      "chapter": "CH-BX2-07",
+      "no": "7.3",
+      "name": "函数 y=Asin(ωx+φ) 的图像",
+      "toc_name": "函数 y =Asin (ωx +φ)的图像",
+      "anchor": "high",
+      "start_line": 3027,
+      "end_line": 3222,
+      "chars": 9762,
+      "excluded_blocks": [
+        "探究与实践：潮汐的函数模拟 (L3130-3145)"
+      ],
+      "file": "s7.3.md"
+    },
+    {
+      "id": "SEC-BX2-07-04",
+      "chapter": "CH-BX2-07",
+      "no": "7.4",
+      "name": "正切函数的图像与性质",
+      "toc_name": "正切函数的图像与性质",
+      "anchor": "high",
+      "start_line": 3223,
+      "end_line": 3462,
+      "chars": 13839,
+      "excluded_blocks": [
+        "探究与实践：球门的张角问题 (L3323-3332)"
+      ],
+      "file": "s7.4.md"
+    },
+    {
+      "id": "SEC-BX2-08-01",
+      "chapter": "CH-BX2-08",
+      "no": "8.1",
+      "name": "向量的概念和线性运算",
+      "toc_name": "向量的概念和线性运算",
+      "anchor": "high",
+      "start_line": 3463,
+      "end_line": 3894,
+      "chars": 23852,
+      "excluded_blocks": [],
+      "file": "s8.1.md"
+    },
+    {
+      "id": "SEC-BX2-08-02",
+      "chapter": "CH-BX2-08",
+      "no": "8.2",
+      "name": "向量的数量积",
+      "toc_name": "向量的数量积",
+      "anchor": "high",
+      "start_line": 3895,
+      "end_line": 4176,
+      "chars": 18190,
+      "excluded_blocks": [],
+      "file": "s8.2.md"
+    },
+    {
+      "id": "SEC-BX2-08-03",
+      "chapter": "CH-BX2-08",
+      "no": "8.3",
+      "name": "向量的坐标表示",
+      "toc_name": "向量的坐标表示",
+      "anchor": "high",
+      "start_line": 4177,
+      "end_line": 4552,
+      "chars": 19455,
+      "excluded_blocks": [
+        "探究与实践 (L4260-4279)"
+      ],
+      "file": "s8.3.md"
+    },
+    {
+      "id": "SEC-BX2-08-04",
+      "chapter": "CH-BX2-08",
+      "no": "8.4",
+      "name": "向量的应用",
+      "toc_name": "向量的应用",
+      "anchor": "high",
+      "start_line": 4553,
+      "end_line": 5017,
+      "chars": 21217,
+      "excluded_blocks": [
+        "探究与实践：宇航员的训练 (L4810-4822)"
+      ],
+      "file": "s8.4.md"
+    },
+    {
+      "id": "SEC-BX2-09-01",
+      "chapter": "CH-BX2-09",
+      "no": "9.1",
+      "name": "复数及其四则运算",
+      "toc_name": "复数及其四则运算",
+      "anchor": "high",
+      "start_line": 5018,
+      "end_line": 5375,
+      "chars": 23788,
+      "excluded_blocks": [],
+      "file": "s9.1.md"
+    },
+    {
+      "id": "SEC-BX2-09-02",
+      "chapter": "CH-BX2-09",
+      "no": "9.2",
+      "name": "复数的几何意义",
+      "toc_name": "复数的几何意义",
+      "anchor": "high",
+      "start_line": 5376,
+      "end_line": 5650,
+      "chars": 15651,
+      "excluded_blocks": [],
+      "file": "s9.2.md"
+    },
+    {
+      "id": "SEC-BX2-09-03",
+      "chapter": "CH-BX2-09",
+      "no": "9.3",
+      "name": "实系数一元二次方程",
+      "toc_name": "实系数一元二次方程",
+      "anchor": "high",
+      "start_line": 5651,
+      "end_line": 5798,
+      "chars": 4818,
+      "excluded_blocks": [
+        "探究与实践 (L5793-5798)"
+      ],
+      "file": "s9.3.md"
+    },
+    {
+      "id": "SEC-BX2-09-04",
+      "chapter": "CH-BX2-09",
+      "no": "9.4",
+      "name": "复数的三角形式",
+      "toc_name": "复数的三角形式",
+      "anchor": "high",
+      "start_line": 5799,
+      "end_line": 6317,
+      "chars": 26348,
+      "excluded_blocks": [],
+      "file": "s9.4.md"
+    }
+  ]
+}

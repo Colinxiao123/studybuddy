@@ -1,0 +1,837 @@
+[
+  {
+    "from": "KP-PROB-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0002",
+    "strength": "required",
+    "reason": "理解样本空间需先认识随机现象与随机试验",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0003",
+    "strength": "required",
+    "reason": "事件定义为样本空间的子集，需要样本空间概念",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0004",
+    "strength": "required",
+    "reason": "必然事件与不可能事件是两类特殊的事件",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0005",
+    "strength": "required",
+    "reason": "古典概率模型要求样本空间有限且等可能",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0006",
+    "strength": "required",
+    "reason": "古典概率公式在等可能模型的条件下成立",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0008",
+    "strength": "required",
+    "reason": "构造等可能样本空间是计算古典概率的关键步骤",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0008",
+    "strength": "required",
+    "reason": "分步构造样本空间依赖样本空间的概念",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0009",
+    "strength": "required",
+    "reason": "事件之间的关系以事件概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0010",
+    "strength": "required",
+    "reason": "事件的并、交与对立运算建立在事件关系之上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0011",
+    "strength": "required",
+    "reason": "德摩根律是事件运算的一条基本性质",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0012",
+    "strength": "required",
+    "reason": "伯努利试验是一类特殊的随机试验",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0013",
+    "strength": "required",
+    "reason": "频率是对独立重复伯努利试验结果的统计",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0014",
+    "strength": "required",
+    "reason": "大数定律刻画的正是频率的稳定性",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0014",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0015",
+    "strength": "required",
+    "reason": "把频率作为概率估计值的依据是伯努利大数定律",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0016",
+    "strength": "required",
+    "reason": "独立性的定义用到事件积的概率 P(A∩B)",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0017",
+    "strength": "required",
+    "reason": "判断两事件是否独立要依据独立性的定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0018",
+    "strength": "required",
+    "reason": "对立事件的独立性由独立性的定义推出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0019",
+    "strength": "required",
+    "reason": "可加性与对立事件概率公式以概率的基本性质为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0019",
+    "strength": "required",
+    "reason": "互斥与对立是事件的关系与运算",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0019",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0020",
+    "strength": "required",
+    "reason": "求“至少”型问题要用对立事件概率公式与可加性",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0020",
+    "strength": "required",
+    "reason": "两事件独立时才能把交的概率拆为概率之积",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0022",
+    "strength": "required",
+    "reason": "样本是从总体中抽取的一部分个体",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0023",
+    "strength": "required",
+    "reason": "统计量由样本数据计算并用于推断总体",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0025",
+    "strength": "required",
+    "reason": "普查的定义是对总体中每个个体进行调查",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0024",
+    "strength": "recommended",
+    "reason": "数据分类针对统计活动收集到的样本数据",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0025",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0026",
+    "strength": "required",
+    "reason": "普查的局限促使人们采用抽样调查获取数据",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0027",
+    "strength": "required",
+    "reason": "抽样调查的合理性要求样本具有代表性",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0028",
+    "strength": "required",
+    "reason": "简单随机抽样的设计目的是保证样本的代表性",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0028",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0029",
+    "strength": "required",
+    "reason": "抽签法是简单随机抽样的一种具体做法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0028",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0030",
+    "strength": "required",
+    "reason": "随机数法同属简单随机抽样",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0031",
+    "strength": "required",
+    "reason": "分层随机抽样同样以样本的代表性为目标",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0028",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0031",
+    "strength": "recommended",
+    "reason": "分层后在每一层通常仍采用简单随机抽样",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0032",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0033",
+    "strength": "required",
+    "reason": "确定分组前必须先求出数据的极差",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0033",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0034",
+    "strength": "required",
+    "reason": "频率分布直方图由频率分布表绘制",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0034",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0035",
+    "strength": "required",
+    "reason": "折线图由直方图各矩形上底边的中点连接而成",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0036",
+    "strength": "recommended",
+    "reason": "茎叶图用于展示样本数据的分布",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0037",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0038",
+    "strength": "recommended",
+    "reason": "散点图是常用统计图之一，选择时应了解其适用场合",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0039",
+    "strength": "required",
+    "reason": "频率折线图趋于光滑曲线，即总体分布密度曲线的形状",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0023",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0039",
+    "strength": "required",
+    "reason": "用样本推断总体的思想是统计估计的基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0040",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0041",
+    "strength": "required",
+    "reason": "样本平均数用求和符号可以简洁地表示",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0041",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0042",
+    "strength": "required",
+    "reason": "平均数是描述数据集中趋势的主要统计量",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0041",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0043",
+    "strength": "required",
+    "reason": "计算方差需要先求出样本平均数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0043",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0044",
+    "strength": "required",
+    "reason": "合并样本的方差公式建立在方差定义之上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0042",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0045",
+    "strength": "required",
+    "reason": "中位数是第 50 百分位数，是百分位数的特例",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0006",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0046",
+    "strength": "required",
+    "reason": "条件概率在古典概率模型中给出比值定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0046",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0047",
+    "strength": "required",
+    "reason": "乘法公式由条件概率公式变形得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0046",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0048",
+    "strength": "required",
+    "reason": "独立性与条件概率的关系由条件概率公式推出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0048",
+    "strength": "required",
+    "reason": "条件概率等于概率是事件独立的等价刻画",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0019",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0049",
+    "strength": "required",
+    "reason": "全概率公式用到概率的可加性",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0047",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0049",
+    "strength": "required",
+    "reason": "全概率公式由乘法公式对互斥分解求和得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0050",
+    "strength": "required",
+    "reason": "抽签与顺序无关可用全概率公式证明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0051",
+    "strength": "required",
+    "reason": "贝叶斯公式的分母正是全概率公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0052",
+    "strength": "required",
+    "reason": "随机变量是以样本空间为定义域的函数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0052",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0053",
+    "strength": "required",
+    "reason": "分布讨论随机变量的取值及其相应的概率",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0055",
+    "strength": "required",
+    "reason": "期望由随机变量的分布确定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0055",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0056",
+    "strength": "required",
+    "reason": "期望的线性性质是对期望运算规律的总结",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0055",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0057",
+    "strength": "required",
+    "reason": "方差用与期望的偏差平方的期望来定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0059",
+    "strength": "required",
+    "reason": "二项分布是伯努利试验独立重复的结果",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0059",
+    "strength": "required",
+    "reason": "n 次试验相互独立是二项分布成立的前提",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0059",
+    "strength": "required",
+    "reason": "二项分布是一种具体的随机变量分布",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0059",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0060",
+    "strength": "required",
+    "reason": "二项分布的期望与方差由分布及性质推出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0061",
+    "strength": "required",
+    "reason": "超几何分布是一种具体的随机变量分布",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0061",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0062",
+    "strength": "required",
+    "reason": "超几何分布的期望计算以其分布为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0050",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0062",
+    "strength": "required",
+    "reason": "计算超几何分布的期望要用抽签与顺序无关",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0059",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0063",
+    "strength": "required",
+    "reason": "比较两种分布需先掌握二项分布",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0061",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0063",
+    "strength": "required",
+    "reason": "比较两种分布需先掌握超几何分布",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0057",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0064",
+    "strength": "required",
+    "reason": "正态分布的两个参数分别是期望与方差",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0064",
+    "strength": "recommended",
+    "reason": "频率折线图趋于的光滑曲线是正态密度曲线的直观背景",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0064",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0065",
+    "strength": "required",
+    "reason": "标准正态分布是 μ=0、σ²=1 时的正态分布",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0065",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0066",
+    "strength": "required",
+    "reason": "3σ 原则用标准正态分布函数计算概率",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0037",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0067",
+    "strength": "required",
+    "reason": "散点图是观察成对数据相关性的基本工具",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0067",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0068",
+    "strength": "required",
+    "reason": "线性相关关系是成对数据间关系的一种",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0068",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0069",
+    "strength": "required",
+    "reason": "相关系数用于度量线性相关的程度",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0069",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0070",
+    "strength": "required",
+    "reason": "相关系数的性质由它的计算公式导出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0068",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0071",
+    "strength": "required",
+    "reason": "回归模型针对具有线性相关关系的成对数据",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0070",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0071",
+    "strength": "required",
+    "reason": "只有两变量具有线性相关性时才作线性回归分析",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0071",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0072",
+    "strength": "required",
+    "reason": "拟合误差基于离差平方和来定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0072",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0073",
+    "strength": "required",
+    "reason": "回归系数是最小二乘估计的结果",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0073",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0074",
+    "strength": "required",
+    "reason": "回归方程是回归分析步骤中的核心结果",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0075",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0076",
+    "strength": "required",
+    "reason": "预期值由列联表的行合计与列合计计算",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0076",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0077",
+    "strength": "required",
+    "reason": "χ² 统计量衡量观察值与预期值的总体偏差",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0077",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0078",
+    "strength": "required",
+    "reason": "检验的统计决断是 χ² 值与 3.841 的比较",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0007",
+    "rel": "DERIVED_FROM",
+    "to": "KP-PROB-0006",
+    "method": "由古典概率公式 P(A)=|A|/|Ω| 直接推出",
+    "note": ""
+  },
+  {
+    "from": "KP-PROB-0018",
+    "rel": "DERIVED_FROM",
+    "to": "KP-PROB-0016",
+    "method": "由 A=(A∩B)∪(A∩B̄)、概率可加性与独立性 P(A∩B)=P(A)P(B) 推出",
+    "note": ""
+  },
+  {
+    "from": "KP-PROB-0051",
+    "rel": "DERIVED_FROM",
+    "to": "KP-PROB-0046",
+    "method": "把 P(A∩Ω_i)=P(A|Ω_i)P(Ω_i) 代入条件概率公式，分母用全概率公式",
+    "note": ""
+  },
+  {
+    "from": "KP-PROB-0058",
+    "rel": "DERIVED_FROM",
+    "to": "KP-PROB-0057",
+    "method": "展开 (X-E[X])² 后利用期望的线性性质与 E[E[X]]=E[X]",
+    "note": ""
+  },
+  {
+    "from": "KP-PROB-0060",
+    "rel": "DERIVED_FROM",
+    "to": "KP-PROB-0059",
+    "method": "把成功次数分解为 n 个独立的 0-1 变量之和，用期望与方差的性质求和",
+    "note": ""
+  },
+  {
+    "from": "KP-PROB-0073",
+    "rel": "DERIVED_FROM",
+    "to": "KP-PROB-0072",
+    "method": "令拟合误差 Q 取最小值，即最小二乘估计（课后阅读给出初等推导）",
+    "note": ""
+  },
+  {
+    "from": "KP-PROB-0006",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0013",
+    "kind": "duality",
+    "note": "古典概率（理论值）与频率（经验值）从两个角度刻画事件的概率，频率稳定于概率"
+  },
+  {
+    "from": "KP-PROB-0036",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0033",
+    "kind": "parallel",
+    "note": "茎叶图与频率分布表（直方图）都是展示数据分布的工具，二者可以互相转化"
+  },
+  {
+    "from": "KP-PROB-0032",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0043",
+    "kind": "parallel",
+    "note": "极差、方差、标准差都刻画数据的离散程度，极差对极端数据更敏感"
+  },
+  {
+    "from": "KP-PROB-0042",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0043",
+    "kind": "parallel",
+    "note": "集中趋势与离散程度是刻画一组数据的两类基本数字特征"
+  },
+  {
+    "from": "KP-PROB-0029",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0030",
+    "kind": "parallel",
+    "note": "抽签法与随机数法是简单随机抽样的两种常用实现，适用场合不同"
+  },
+  {
+    "from": "KP-PROB-0041",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0055",
+    "kind": "analogy",
+    "note": "样本平均数与随机变量的期望都表示平均水平；重复试验的平均结果逼近期望"
+  },
+  {
+    "from": "KP-PROB-0054",
+    "rel": "RELATED_TO",
+    "to": "KP-PROB-0059",
+    "kind": "analogy",
+    "note": "伯努利分布是 n=1 时的二项分布，二项分布是伯努利试验独立重复 n 次成功次数的分布"
+  },
+  {
+    "from": "KP-SET-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0003",
+    "strength": "required",
+    "reason": "事件是样本空间的子集，需用集合语言描述",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0014",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0010",
+    "strength": "required",
+    "reason": "两事件同时发生对应集合的交运算",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0019",
+    "strength": "recommended",
+    "reason": "对立事件的概率公式源于补集的性质 A∪Ā=Ω",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0019",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0011",
+    "strength": "recommended",
+    "reason": "事件的德摩根律与集合的德摩根律形式一致",
+    "status": "draft"
+  },
+  {
+    "from": "KP-COMB-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0059",
+    "strength": "required",
+    "reason": "二项分布的概率计算用到组合数公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-COMB-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0061",
+    "strength": "required",
+    "reason": "超几何分布的概率计算用到组合数公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-COMB-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0055",
+    "strength": "recommended",
+    "reason": "数学期望的分布列计算涉及组合数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0038",
+    "strength": "recommended",
+    "reason": "统计图的选择需比较各类常用统计图",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0037",
+    "strength": "recommended",
+    "reason": "散点图是统计图表的延伸（成对数据）",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0067",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0075",
+    "strength": "recommended",
+    "reason": "成对数据的分析扩展到分类变量（列联表）",
+    "status": "draft"
+  },
+  {
+    "from": "KP-PROB-0015",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-PROB-0076",
+    "strength": "recommended",
+    "reason": "独立性检验基于频率估计概率的思想",
+    "status": "draft"
+  }
+]

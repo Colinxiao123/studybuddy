@@ -1,0 +1,1624 @@
+[
+  {
+    "id": "KP-VEC-0001",
+    "node_type": "KnowledgePoint",
+    "name": "向量的概念",
+    "aliases": [
+      "向量",
+      "矢量",
+      "vector",
+      "自由向量"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "既有大小又有方向的量叫做向量（又称矢量），只有大小没有方向的量称为数量。一个向量由大小与方向两个要素定义，可以用有向线段表示：线段的长度表示向量的大小，线段的方向表示向量的方向。",
+    "latex": "\\vec{a}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "向量概念",
+      "自由向量",
+      "有向线段"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0002",
+    "node_type": "KnowledgePoint",
+    "name": "向量的模、零向量与单位向量",
+    "aliases": [
+      "模",
+      "modulus",
+      "零向量",
+      "单位向量",
+      "unit vector"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "向量 $\\vec{a}$ 的大小叫做它的模，记作 $|\\vec{a}|$；模为 1 的向量叫做单位向量，模为 0 的向量叫做零向量，记作 $\\vec{0}$，规定零向量具有任意方向。",
+    "latex": "|\\vec{a}|,\\quad \\vec{0}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "模",
+      "零向量",
+      "单位向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0003",
+    "node_type": "KnowledgePoint",
+    "name": "平行向量",
+    "aliases": [
+      "共线向量",
+      "向量平行",
+      "parallel vectors"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "如果两个非零向量所在的直线平行或者重合，就称这两个向量平行（也称为共线向量），记作 $\\vec{a}\\parallel\\vec{b}$。由于规定零向量具有任意方向，零向量平行于任意向量。",
+    "latex": "\\vec{a}\\parallel\\vec{b}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "平行向量",
+      "共线向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0004",
+    "node_type": "KnowledgePoint",
+    "name": "相等向量与负向量",
+    "aliases": [
+      "相等向量",
+      "负向量",
+      "相反向量"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "方向相同且模相等的两个向量叫做相等向量，向量平移后与原来的向量相等；与向量 $\\vec{a}$ 方向相反且模相等的向量叫做 $\\vec{a}$ 的负向量，记作 $-\\vec{a}$。对平面上任意两点 $P$、$Q$，有 $\\overrightarrow{PQ}=-\\overrightarrow{QP}$。",
+    "latex": "\\overrightarrow{PQ}=-\\overrightarrow{QP}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "相等向量",
+      "负向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0005",
+    "node_type": "KnowledgePoint",
+    "name": "向量的加法（平行四边形法则与三角形法则）",
+    "aliases": [
+      "向量加法",
+      "平行四边形法则",
+      "三角形法则",
+      "parallelogram law"
+    ],
+    "kp_type": "rule",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "求两个向量和的运算叫做向量的加法：以同一点为起点作 $\\overrightarrow{OA}=\\vec{a}$、$\\overrightarrow{OB}=\\vec{b}$，以 $OA$、$OB$ 为邻边的平行四边形的对角线表示 $\\vec{a}+\\vec{b}$（平行四边形法则）；两向量首尾相接的方法称为三角形法则。",
+    "latex": "\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "向量加法",
+      "平行四边形法则",
+      "三角形法则"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0006",
+    "node_type": "KnowledgePoint",
+    "name": "向量加法的运算律与首尾规则",
+    "aliases": [
+      "交换律",
+      "结合律",
+      "首尾规则"
+    ],
+    "kp_type": "property",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "向量的加法满足交换律 $\\vec{a}+\\vec{b}=\\vec{b}+\\vec{a}$ 与结合律 $(\\vec{a}+\\vec{b})+\\vec{c}=\\vec{a}+(\\vec{b}+\\vec{c})$。据此可得首尾规则：若干首尾相接向量的和，是以第一个向量的起点为起点、以最后一个向量的终点为终点的向量。",
+    "latex": "(\\vec{a}+\\vec{b})+\\vec{c}=\\vec{a}+(\\vec{b}+\\vec{c})",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "运算律",
+      "首尾规则"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "首尾规则由例3的求和方法推广得到（教材原文“略加推广”）。"
+  },
+  {
+    "id": "KP-VEC-0007",
+    "node_type": "KnowledgePoint",
+    "name": "向量的减法",
+    "aliases": [
+      "向量减法",
+      "差向量"
+    ],
+    "kp_type": "rule",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "如果 $\\vec{a}+\\vec{b}=\\vec{c}$，就把 $\\vec{b}$ 叫做 $\\vec{c}$ 与 $\\vec{a}$ 的差，记作 $\\vec{b}=\\vec{c}-\\vec{a}$，求向量差的运算叫做向量的减法。向量的减法可以化为加法：$\\vec{c}-\\vec{a}=\\vec{c}+(-\\vec{a})$，即减去一个向量等于加上它的负向量。",
+    "latex": "\\vec{c}-\\vec{a}=\\vec{c}+(-\\vec{a})",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "向量减法",
+      "负向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0008",
+    "node_type": "KnowledgePoint",
+    "name": "实数与向量的乘法",
+    "aliases": [
+      "数乘",
+      "向量数乘",
+      "scalar multiplication"
+    ],
+    "kp_type": "rule",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "实数 $\\lambda$ 与向量 $\\vec{a}$ 的乘积 $\\lambda\\vec{a}$ 是一个向量：模为 $|\\lambda||\\vec{a}|$；$\\lambda>0$ 时与 $\\vec{a}$ 同向，$\\lambda<0$ 时反向，$\\lambda=0$ 时得零向量。数乘满足结合律，并对向量加法满足分配律。",
+    "latex": "|\\lambda\\vec{a}|=|\\lambda||\\vec{a}|,\\quad \\lambda(\\vec{a}+\\vec{b})=\\lambda\\vec{a}+\\lambda\\vec{b}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "数乘",
+      "运算律"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0009",
+    "node_type": "KnowledgePoint",
+    "name": "向量平行的充要条件",
+    "aliases": [
+      "共线定理",
+      "向量平行条件"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "向量 $\\vec{b}$ 与非零向量 $\\vec{a}$ 平行的充要条件是：存在实数 $\\lambda$，使 $\\vec{b}=\\lambda\\vec{a}$。当两向量同向时 $\\lambda>0$，反向时 $\\lambda<0$；据此可由向量共线证明三点共线。",
+    "latex": "\\vec{b}=\\lambda\\vec{a}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "共线定理",
+      "充要条件",
+      "向量平行"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0010",
+    "node_type": "KnowledgePoint",
+    "name": "向量的线性运算与线性组合",
+    "aliases": [
+      "线性运算",
+      "线性组合",
+      "linear combination"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "向量的加法、减法以及实数与向量的乘法，统称为向量的线性运算；通过线性运算得到的新向量称为原来那些向量的线性组合，如 $\\vec{x}=3\\vec{a}+\\vec{b}-4\\vec{c}$ 是 $\\vec{a}$、$\\vec{b}$、$\\vec{c}$ 的一个线性组合。化简线性运算需综合运用加法与数乘的运算律。",
+    "latex": "\\vec{x}=3\\vec{a}+\\vec{b}-4\\vec{c}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "线性运算",
+      "线性组合"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0011",
+    "node_type": "KnowledgePoint",
+    "name": "向量的投影与数量投影",
+    "aliases": [
+      "投影",
+      "投影向量",
+      "数量投影",
+      "projection"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "平面上一点 $A$ 在直线 $l$ 上的投影是过 $A$ 作 $l$ 的垂线所得的垂足；向量 $AB$ 的起点与终点的投影构成的向量叫 $AB$ 在 $l$ 上的投影。向量 $\\vec{b}$ 在向量 $\\vec{a}$ 方向上的投影系数 $|\\vec{b}|\\cos\\theta$ 称为数量投影。",
+    "latex": "\\frac{|\\vec{b}|\\cos\\langle\\vec{a},\\vec{b}\\rangle}{|\\vec{a}|}\\vec{a}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "投影",
+      "数量投影"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "投影的线性性质（向量和、数乘的投影可分配）由例2与练习8.2(1)给出。"
+  },
+  {
+    "id": "KP-VEC-0012",
+    "node_type": "KnowledgePoint",
+    "name": "向量的夹角与垂直",
+    "aliases": [
+      "夹角",
+      "垂直",
+      "angle",
+      "perpendicular"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "以同一点为起点作两个非零向量，两射线的夹角称为这两个向量的夹角，记作 $\\theta$，取值范围是 $[0,\\pi]$；当夹角为 $\\frac{\\pi}{2}$ 时称两向量垂直，记作 $\\vec{a}\\perp\\vec{b}$。",
+    "latex": "\\langle\\vec{a},\\vec{b}\\rangle\\in[0,\\pi]",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "夹角",
+      "垂直"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0013",
+    "node_type": "KnowledgePoint",
+    "name": "向量的数量积",
+    "aliases": [
+      "数量积",
+      "内积",
+      "点积",
+      "scalar product",
+      "dot product"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $\\vec{a}$、$\\vec{b}$ 是两个非零向量，把 $|\\vec{a}||\\vec{b}|\\cos\\theta$ 叫做 $\\vec{a}$ 与 $\\vec{b}$ 的数量积（也叫内积、点积），记作 $\\vec{a}\\cdot\\vec{b}$；它是数量而非向量，等于一个向量的模乘另一向量在其方向上的数量投影。规定零向量与任意向量的数量积为 0。",
+    "latex": "\\vec{a}\\cdot\\vec{b}=|\\vec{a}||\\vec{b}|\\cos\\theta",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "数量积",
+      "内积",
+      "夹角"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "物理中的功 $W=\\vec{f}\\cdot\\vec{s}$ 是数量积的原型。"
+  },
+  {
+    "id": "KP-VEC-0014",
+    "node_type": "KnowledgePoint",
+    "name": "数量积的运算律",
+    "aliases": [
+      "交换律",
+      "分配律",
+      "数量积运算律"
+    ],
+    "kp_type": "rule",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "数量积满足交换律，对数乘可自由结合，对加法满足分配律（分配律可用投影证明），据此可把数的乘法公式迁移到向量，如平方公式与平方差公式（见公式）。注意三个向量的数量积没有结合律，消去律也不成立。",
+    "latex": "(\\vec{a}+\\vec{b})^2=\\vec{a}^2+2\\vec{a}\\cdot\\vec{b}+\\vec{b}^2",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "数量积",
+      "运算律",
+      "分配律"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "例4用运算律证明了平方公式与平方差公式 $(\\vec{a}+\\vec{b})\\cdot(\\vec{a}-\\vec{b})=\\vec{a}^2-\\vec{b}^2$。"
+  },
+  {
+    "id": "KP-VEC-0015",
+    "node_type": "KnowledgePoint",
+    "name": "数量积的性质",
+    "aliases": [
+      "垂直判定",
+      "数量积性质"
+    ],
+    "kp_type": "property",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由数量积的定义可得：两向量垂直当且仅当数量积为零；总有 $|\\vec{a}\\cdot\\vec{b}|\\leqslant|\\vec{a}||\\vec{b}|$，当且仅当两向量平行时取等号；两向量平行且同向时数量积为模之积，反向时为负值。",
+    "latex": "\\vec{a}\\cdot\\vec{b}=0\\Leftrightarrow\\vec{a}\\perp\\vec{b}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "数量积性质",
+      "垂直判定"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0016",
+    "node_type": "KnowledgePoint",
+    "name": "用数量积求向量的夹角",
+    "aliases": [
+      "夹角公式",
+      "夹角余弦"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "若 $\\vec{a}$、$\\vec{b}$ 均为非零向量，由数量积的定义可反解出夹角的余弦（见公式），再由余弦值与夹角范围 $[0,\\pi]$ 确定夹角。它是计算向量夹角的基本公式，也为用坐标计算数量积作准备。",
+    "latex": "\\cos\\theta=\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "夹角公式",
+      "数量积"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0017",
+    "node_type": "KnowledgePoint",
+    "name": "用数量积求向量的模",
+    "aliases": [
+      "求模",
+      "模的平方",
+      "求向量长度"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求向量的模常先把它平方化为数量积：$|\\vec{a}|=\\sqrt{\\vec{a}\\cdot\\vec{a}}$。如求 $|3\\vec{a}-2\\vec{b}|$，先展开其平方再用数量积求值，最后开方，即“模平方—展开—开方”的通法。",
+    "latex": "|3\\vec{a}-2\\vec{b}|^2=9|\\vec{a}|^2-12\\vec{a}\\cdot\\vec{b}+4|\\vec{b}|^2",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "求模",
+      "数量积应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "方法由例5归纳，与后续坐标法求模相互配合。"
+  },
+  {
+    "id": "KP-VEC-0018",
+    "node_type": "KnowledgePoint",
+    "name": "平面向量基本定理",
+    "aliases": [
+      "向量基本定理",
+      "基",
+      "basis"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "如果 $\\vec{e_1}$、$\\vec{e_2}$ 是同一平面上两个不平行的向量，那么该平面上任意向量 $\\vec{a}$ 都可唯一地表示为 $\\vec{a}=\\lambda\\vec{e_1}+\\mu\\vec{e_2}$。使平面上任意向量都能唯一表示为它的线性组合的一组向量称为平面向量的一个基；任意两个不平行的向量都组成一个基。",
+    "latex": "\\vec{a}=\\lambda\\vec{e_1}+\\mu\\vec{e_2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "基本定理",
+      "基",
+      "线性组合"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "存在性证明用构建平行四边形代替投影；唯一性由两向量不平行推出。"
+  },
+  {
+    "id": "KP-VEC-0019",
+    "node_type": "KnowledgePoint",
+    "name": "向量的分解与正交分解",
+    "aliases": [
+      "向量分解",
+      "正交分解",
+      "decomposition"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "把向量写成两个不平行向量 $\\vec{e_1}$ 与 $\\vec{e_2}$ 的线性组合的过程称为向量关于 $\\vec{e_1}$、$\\vec{e_2}$ 的分解；当这两个向量互相垂直时，该分解称为向量的正交分解。力的正交分解（如把重力分解为沿斜面的下滑力与垂直斜面的正压力）是它的常见应用。",
+    "latex": null,
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "向量分解",
+      "正交分解"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0020",
+    "node_type": "KnowledgePoint",
+    "name": "平面向量的坐标表示",
+    "aliases": [
+      "坐标表示",
+      "位置向量",
+      "coordinates"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在平面直角坐标系中把向量的起点平移到原点 $O$，若终点为 $A(x,y)$，就记 $\\vec{a}=(x,y)$，其含义是 $\\vec{a}=x\\vec{i}+y\\vec{j}$（$\\vec{i}$、$\\vec{j}$ 为 $x$、$y$ 轴正方向的单位向量），称为向量的坐标表示；$\\vec{OA}$ 叫位置向量。",
+    "latex": "\\vec{a}=(x,y)=x\\vec{i}+y\\vec{j}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "坐标表示",
+      "位置向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0021",
+    "node_type": "KnowledgePoint",
+    "name": "向量线性运算的坐标表示",
+    "aliases": [
+      "坐标运算",
+      "加减法坐标",
+      "数乘坐标"
+    ],
+    "kp_type": "rule",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $\\vec{a}=(x_1,y_1)$、$\\vec{b}=(x_2,y_2)$，则向量和差与数乘只需对坐标逐项运算（见公式）；若 $P(x_1,y_1)$、$Q(x_2,y_2)$，则 $PQ=(x_2-x_1,\\ y_2-y_1)$，即向量的坐标等于终点坐标减去起点坐标。",
+    "latex": "(x_1,y_1)\\pm(x_2,y_2)=(x_1\\pm x_2,\\ y_1\\pm y_2)",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "坐标运算",
+      "线性运算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "模的坐标公式 $|\\vec{a}|=\\sqrt{x_1^2+y_1^2}$ 与单位向量的坐标由模的定义及数乘坐标公式得到。"
+  },
+  {
+    "id": "KP-VEC-0022",
+    "node_type": "KnowledgePoint",
+    "name": "向量数量积的坐标表示",
+    "aliases": [
+      "数量积坐标公式"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $\\vec{a}=(x_1,y_1)$、$\\vec{b}=(x_2,y_2)$，则 $\\vec{a}\\cdot\\vec{b}=x_1x_2+y_1y_2$，即两个向量的数量积等于它们对应坐标乘积之和。",
+    "latex": "\\vec{a}\\cdot\\vec{b}=x_1x_2+y_1y_2",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "数量积",
+      "坐标公式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "推导把向量写成 $\\vec{i}$、$\\vec{j}$ 的线性组合展开，利用 $\\vec{i}^2=\\vec{j}^2=1$ 与 $\\vec{i}\\cdot\\vec{j}=0$ 化简。"
+  },
+  {
+    "id": "KP-VEC-0023",
+    "node_type": "KnowledgePoint",
+    "name": "向量平行、垂直与夹角的坐标判定",
+    "aliases": [
+      "垂直条件",
+      "平行条件",
+      "坐标判定"
+    ],
+    "kp_type": "property",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设非零向量 $\\vec{a}=(x_1,y_1)$、$\\vec{b}=(x_2,y_2)$，则两向量垂直的充要条件是 $x_1x_2+y_1y_2=0$，平行的充要条件是 $x_1y_2=x_2y_1$；两向量夹角的余弦也可由坐标算出。",
+    "latex": "x_1x_2+y_1y_2=0,\\quad x_1y_2=x_2y_1",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "垂直判定",
+      "平行判定",
+      "坐标公式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "夹角的坐标公式 $\\cos\\theta=\\frac{x_1x_2+y_1y_2}{\\sqrt{x_1^2+y_1^2}\\sqrt{x_2^2+y_2^2}}$ 由夹角公式代入坐标得到。"
+  },
+  {
+    "id": "KP-VEC-0024",
+    "node_type": "KnowledgePoint",
+    "name": "柯西-施瓦茨不等式",
+    "aliases": [
+      "柯西不等式",
+      "Cauchy-Schwarz"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "对任意实数 $x_1$、$x_2$、$y_1$、$y_2$，恒有（见公式），等号当且仅当 $x_1y_2=x_2y_1$ 时成立。教材称它为柯西-施瓦兹不等式，证明方法是把向量夹角公式两边平方，再由余弦的平方不超过 1 得到。",
+    "latex": "(x_1x_2+y_1y_2)^2\\leqslant(x_1^2+y_1^2)(x_2^2+y_2^2)",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "柯西不等式",
+      "向量证明"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例8给出向量证明；等号条件与两向量共线一致。"
+  },
+  {
+    "id": "KP-VEC-0025",
+    "node_type": "KnowledgePoint",
+    "name": "线段的定比分点公式与中点公式",
+    "aliases": [
+      "定比分点",
+      "中点公式"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "若点 $P$ 在直线 $P_1P_2$ 上，且 $\\overrightarrow{P_1P}=\\lambda\\overrightarrow{PP_2}$（$\\lambda\\neq-1$），把这一向量关系化为坐标方程可解得点 $P$ 的坐标，所得公式称为线段的定比分点公式；$\\lambda=1$ 时 $P$ 为线段中点，相应公式称为线段中点公式。",
+    "latex": "x=\\frac{x_1+\\lambda x_2}{1+\\lambda},\\quad y=\\frac{y_1+\\lambda y_2}{1+\\lambda}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "定比分点",
+      "中点公式",
+      "向量应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0026",
+    "node_type": "KnowledgePoint",
+    "name": "三角形的重心坐标公式",
+    "aliases": [
+      "重心",
+      "重心坐标"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "若 $\\triangle ABC$ 的顶点坐标为 $A(x_1,y_1)$、$B(x_2,y_2)$、$C(x_3,y_3)$，则重心 $G$ 的坐标为三顶点对应坐标的算术平均（见公式）。推导时设 $D$ 为 $AB$ 中点，由 $CG=2GD$ 用定比分点公式（$\\lambda=2$）整理即得。",
+    "latex": "x=\\frac{x_1+x_2+x_3}{3},\\quad y=\\frac{y_1+y_2+y_3}{3}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "重心",
+      "坐标公式",
+      "定比分点"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0027",
+    "node_type": "KnowledgePoint",
+    "name": "用向量证明平面几何命题",
+    "aliases": [
+      "向量法",
+      "几何问题向量化"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "用向量方法解决几何问题，一般先把几何要素表示为向量，把几何关系（平行、垂直、相等、共线）转化为向量的线性运算或数量积关系，再由向量运算得出结论。如证对角线互相平分的四边形是平行四边形，只需证 $\\overrightarrow{AB}=\\overrightarrow{DC}$；证三点共线只需证两向量有倍数关系。",
+    "latex": null,
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "向量法",
+      "几何证明"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例3与练习8.4(1)第2题等体现该通法。"
+  },
+  {
+    "id": "KP-VEC-0028",
+    "node_type": "KnowledgePoint",
+    "name": "三角形面积的向量公式",
+    "aliases": [
+      "面积公式",
+      "三角形面积"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "在 $\\triangle ABC$ 中，设 $CA=\\vec{a}$、$CB=\\vec{b}$，则三角形面积可由两向量的模与数量积算出（见公式）；若 $\\vec{a}=(x_1,y_1)$、$\\vec{b}=(x_2,y_2)$，则 $S=\\frac{1}{2}|x_1y_2-x_2y_1|$。",
+    "latex": "S=\\frac{1}{2}|x_1y_2-x_2y_1|",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "三角形面积",
+      "数量积应用",
+      "坐标公式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "无坐标形式 $S=\\frac{1}{2}\\sqrt{|\\vec{a}|^2|\\vec{b}|^2-(\\vec{a}\\cdot\\vec{b})^2}$ 见例4(1)。"
+  },
+  {
+    "id": "KP-VEC-0029",
+    "node_type": "KnowledgePoint",
+    "name": "用向量求最值",
+    "aliases": [
+      "向量最值",
+      "动点最值"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 5,
+    "importance": "apply",
+    "statement": "求直线上动点与定点距离的最小值，可把动点写成 $CD=\\lambda\\vec{a}$，使 $|\\vec{b}+\\lambda\\vec{a}|$ 最小：当两向量垂直（数量积为零）时取到，解得的 $\\lambda$ 见公式；也可把该模看作 $\\lambda$ 的函数求最值。",
+    "latex": "\\lambda=-\\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}|^2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "最值",
+      "数量积应用",
+      "函数思想"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "由例5（小狗沿直线跑动离人最近）归纳；教材提示可把该模看作 $\\lambda$ 的函数求最值。"
+  },
+  {
+    "id": "KP-VEC-0030",
+    "node_type": "KnowledgePoint",
+    "name": "用向量证明两角差的余弦公式",
+    "aliases": [
+      "两角差余弦公式",
+      "cos(α-β)"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "在单位圆上取 $OA=(\\cos\\alpha,\\sin\\alpha)$、$OB=(\\cos\\beta,\\sin\\beta)$，用数量积的定义与坐标表示两种方式计算 $OA\\cdot OB$，比较所得两式即得两角差的余弦公式。",
+    "latex": "\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "向量证明",
+      "两角差余弦"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "该公式的系统学习在三角函数模块，此处体现向量作为工具的应用（教材例6）。"
+  },
+  {
+    "id": "KP-VEC-0031",
+    "node_type": "KnowledgePoint",
+    "name": "向量在物理中的应用",
+    "aliases": [
+      "力的合成与分解",
+      "功",
+      "物理应用"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-BX2-08-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "向量源于物理：力的合成用向量加法（平行四边形法则），力的分解用向量分解，力做的功是力向量与位移向量的数量积 $W=\\vec{f}\\cdot\\vec{s}=|\\vec{f}||\\vec{s}|\\cos\\theta$。解物理问题时先建立坐标系，把力、位移等表示为向量，再用向量运算求解。",
+    "latex": "W=\\vec{f}\\cdot\\vec{s}=|\\vec{f}||\\vec{s}|\\cos\\theta",
+    "source": {
+      "book": "BX2",
+      "chapter": 8,
+      "section": "8.4",
+      "page": null
+    },
+    "tags": [
+      "物理应用",
+      "力的合成",
+      "功"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例4（力的合成）、例7（悬挂物体的拉力）体现向量与物理的联系。"
+  },
+  {
+    "id": "KP-VEC-0032",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量及其表示",
+    "aliases": [
+      "空间向量"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "可以用空间任何有向线段表示的向量叫空间向量；向量的模、单位向量、零向量、平行向量、相等向量、负向量等概念与平面向量完全相同。空间向量问题常归结到平面上讨论：只涉及一个或两个向量的运算、概念与性质，可直接沿用平面向量的有关结论。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.1",
+      "page": null
+    },
+    "tags": [
+      "空间向量",
+      "概念推广"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "空间向量是平面向量去掉“同一平面”限制后的推广。"
+  },
+  {
+    "id": "KP-VEC-0033",
+    "node_type": "KnowledgePoint",
+    "name": "共面向量",
+    "aliases": [
+      "共面",
+      "向量共面",
+      "平行于平面"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "如果一组向量可以平移到同一个平面上，就称这组向量是共面的。任意两个向量一定共面，但空间中三个向量不一定共面（如平行六面体中从同一顶点出发的三条棱对应的向量）；一组共面向量的问题都可以当作平面向量来处理。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.1",
+      "page": null
+    },
+    "tags": [
+      "共面向量",
+      "空间向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0034",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量的线性运算",
+    "aliases": [
+      "空间向量加法",
+      "空间向量数乘",
+      "首尾规则"
+    ],
+    "kp_type": "rule",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "空间向量的加法、减法与数乘的定义、法则和运算律与平面向量完全一致：加法仍用平行四边形法则或三角形法则，空间向量加法结合律可归结为两步平面加法来证明；首尾规则在空间中依然成立，若干首尾相接向量的和以第一个起点为起点、最后一个终点为终点。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.1",
+      "page": null
+    },
+    "tags": [
+      "线性运算",
+      "运算律",
+      "首尾规则"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材把空间向量运算归结为平面向量的结论，未逐条重述。"
+  },
+  {
+    "id": "KP-VEC-0035",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量平行的充要条件",
+    "aliases": [
+      "共线向量",
+      "空间共线"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "空间中的向量 $\\vec{b}$ 与非零向量 $\\vec{a}$ 平行的充要条件是：存在实数 $\\lambda$，使 $\\vec{b}=\\lambda\\vec{a}$；平行向量也称为共线向量。该结论与平面向量情形相同，是证明空间中三点共线等问题的主要依据。",
+    "latex": "\\vec{b}=\\lambda\\vec{a}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.1",
+      "page": null
+    },
+    "tags": [
+      "共线向量",
+      "充要条件",
+      "空间向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "例4用它证明 $M$、$N$、$D_1$ 三点共线。"
+  },
+  {
+    "id": "KP-VEC-0036",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量的数量积",
+    "aliases": [
+      "空间数量积",
+      "空间向量夹角"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "空间向量的数量积与夹角都可以归结到平面上实现，定义与运算律和平面向量完全相同：$\\vec{a}\\cdot\\vec{b}=|\\vec{a}||\\vec{b}|\\cos\\theta$；特别地，空间中两向量垂直的充要条件是它们的数量积为零。计算时常用线性组合展开，并利用相互垂直向量的数量积为零化简。",
+    "latex": "\\vec{a}\\cdot\\vec{b}=|\\vec{a}||\\vec{b}|\\cos\\theta",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.1",
+      "page": null
+    },
+    "tags": [
+      "数量积",
+      "空间向量",
+      "垂直判定"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "空间数量积由平面数量积推广得到（去掉共面限制）。"
+  },
+  {
+    "id": "KP-VEC-0037",
+    "node_type": "KnowledgePoint",
+    "name": "向量共面的充要条件",
+    "aliases": [
+      "共面充要条件",
+      "共面定理"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "如果 $\\vec{e_1}$、$\\vec{e_2}$ 是两个不平行的向量，那么空间向量 $\\vec{a}$ 与它们共面的充要条件是：存在唯一的一对实数 $\\lambda$、$\\mu$，使线性组合式成立（见公式）。它是平面向量基本定理在空间中的表述，是判定向量共面的主要工具。",
+    "latex": "\\vec{a}=\\lambda\\vec{e_1}+\\mu\\vec{e_2}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.2",
+      "page": null
+    },
+    "tags": [
+      "共面条件",
+      "充要条件"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0038",
+    "node_type": "KnowledgePoint",
+    "name": "空间四点共面的充要条件",
+    "aliases": [
+      "四点共面",
+      "点共面条件"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "点 $P$ 在平面 $ABC$ 内（即四点共面）的充要条件是：存在实数 $\\lambda$、$\\mu$，使 $AP$ 可表示为 $AB$ 与 $AC$ 的线性组合（见公式）。它由向量共面的充要条件直接推得，是判断四点共面的常用方法。",
+    "latex": "\\overrightarrow{OP}=\\lambda\\overrightarrow{OA}+\\mu\\overrightarrow{OB}+\\nu\\overrightarrow{OC}\\ (\\lambda+\\mu+\\nu=1)",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.2",
+      "page": null
+    },
+    "tags": [
+      "四点共面",
+      "充要条件",
+      "向量表示"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "教材以探究形式提出该问题；完整表述与证明见习题 3.2 B 组第 1 题（类比平面命题）与复习题 B 组第 2 题。"
+  },
+  {
+    "id": "KP-VEC-0039",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量基本定理",
+    "aliases": [
+      "空间基本定理",
+      "基",
+      "basis"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "如果 $\\vec{e_1}$、$\\vec{e_2}$、$\\vec{e_3}$ 是不共面的向量，那么对空间中任意向量 $\\vec{a}$，存在唯一的一组实数 $\\lambda$、$\\mu$、$\\nu$，使线性组合式成立（见公式）。即空间任意三个不共面的向量都组成一个基，它是平面向量基本定理的推广。",
+    "latex": "\\vec{a}=\\lambda\\vec{e_1}+\\mu\\vec{e_2}+\\nu\\vec{e_3}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.2",
+      "page": null
+    },
+    "tags": [
+      "基本定理",
+      "基",
+      "存在唯一性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "存在性通过对两个方向两次使用共面条件证明；唯一性由不共面导出矛盾。"
+  },
+  {
+    "id": "KP-VEC-0040",
+    "node_type": "KnowledgePoint",
+    "name": "用向量法证明直线与平面垂直的判定定理",
+    "aliases": [
+      "线面垂直判定",
+      "判定定理的向量证明"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "如果一条直线垂直于平面上的两条相交直线，那么它垂直于这个平面。证明：设相交两直线的方向向量 $\\vec{a}$、$\\vec{b}$ 不平行，平面内任一直线的方向向量由共面条件写成二者的线性组合；由它与 $\\vec{a}$、$\\vec{b}$ 的数量积均为零，可得与组合向量的数量积也为零。",
+    "latex": "\\vec{m}=\\lambda\\vec{a}+\\mu\\vec{b}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.2",
+      "page": null
+    },
+    "tags": [
+      "线面垂直",
+      "向量证明",
+      "共面条件"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "本例即立体几何中直线与平面垂直的判定定理；与立体几何判定定理的衔接待 GEO 模块完成后补充。"
+  },
+  {
+    "id": "KP-VEC-0041",
+    "node_type": "KnowledgePoint",
+    "name": "空间直角坐标系",
+    "aliases": [
+      "右手系",
+      "坐标平面",
+      "卦限",
+      "octant"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "从空间一点 $O$ 出发作三条两两互相垂直的坐标轴，建立空间直角坐标系 $O\\text{-}xyz$（采用右手制），$O$ 为原点；通过每两个坐标轴的平面叫坐标平面，它们把空间分成八个卦限。过点 $P$ 作与坐标平面平行的平面，与三条轴的交点坐标给出点 $P$ 的坐标 $(x,y,z)$。",
+    "latex": "O\\text{-}xyz",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.3",
+      "page": null
+    },
+    "tags": [
+      "空间直角坐标系",
+      "右手系",
+      "卦限"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0042",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量的坐标表示",
+    "aliases": [
+      "空间坐标表示",
+      "空间位置向量"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $\\vec{i}$、$\\vec{j}$、$\\vec{k}$ 分别是 $x$、$y$、$z$ 轴正方向上的单位向量，把向量平移到以原点为起点后，以终点坐标 $(x,y,z)$ 记 $\\vec{p}=(x,y,z)$，其含义见公式；向量的模等于坐标平方和的算术平方根。",
+    "latex": "\\vec{p}=(x,y,z)=x\\vec{i}+y\\vec{j}+z\\vec{k}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.3",
+      "page": null
+    },
+    "tags": [
+      "坐标表示",
+      "空间向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "线性运算的坐标公式与平面情形完全类似；模 $|\\vec{p}|=\\sqrt{x^2+y^2+z^2}$。"
+  },
+  {
+    "id": "KP-VEC-0043",
+    "node_type": "KnowledgePoint",
+    "name": "空间两点间的距离公式",
+    "aliases": [
+      "两点距离",
+      "空间距离公式"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设空间两点 $P_1(x_1,y_1,z_1)$、$P_2(x_2,y_2,z_2)$，则 $\\overrightarrow{P_1P_2}=(x_2-x_1,\\ y_2-y_1,\\ z_2-z_1)$，两点间的距离等于该向量的模，由此得到两点间距离公式。它是向量坐标公式与模的坐标公式的直接推论，空间中求线段长常用此公式。",
+    "latex": "|P_1P_2|=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.3",
+      "page": null
+    },
+    "tags": [
+      "距离公式",
+      "坐标表示"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0044",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量数量积与夹角的坐标表示",
+    "aliases": [
+      "数量积坐标",
+      "空间夹角公式"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $\\vec{a}=(x_1,y_1,z_1)$、$\\vec{b}=(x_2,y_2,z_2)$，则 $\\vec{a}\\cdot\\vec{b}=x_1x_2+y_1y_2+z_1z_2$；两非零向量夹角的余弦可用坐标表示（见公式），推导利用 $\\vec{i}$、$\\vec{j}$、$\\vec{k}$ 两两垂直且模均为 1。",
+    "latex": "\\cos\\langle\\vec{a},\\vec{b}\\rangle=\\frac{x_1x_2+y_1y_2+z_1z_2}{\\sqrt{x_1^2+y_1^2+z_1^2}\\sqrt{x_2^2+y_2^2+z_2^2}}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.3",
+      "page": null
+    },
+    "tags": [
+      "数量积",
+      "夹角公式",
+      "坐标表示"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0045",
+    "node_type": "KnowledgePoint",
+    "name": "空间向量平行与垂直的坐标条件",
+    "aliases": [
+      "空间垂直判定",
+      "空间平行判定"
+    ],
+    "kp_type": "property",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设非零向量 $\\vec{a}=(x_1,y_1,z_1)$、$\\vec{b}=(x_2,y_2,z_2)$，则垂直的充要条件是对应坐标乘积之和为零；平行的充要条件是三个坐标对应成比例（见公式）。它们是平面向量坐标条件的推广。",
+    "latex": "x_1x_2+y_1y_2+z_1z_2=0",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.3",
+      "page": null
+    },
+    "tags": [
+      "垂直判定",
+      "平行判定",
+      "坐标条件"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0046",
+    "node_type": "KnowledgePoint",
+    "name": "直线的方向向量与平面的法向量",
+    "aliases": [
+      "方向向量",
+      "法向量"
+    ],
+    "kp_type": "concept",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "与直线平行的任何非零向量叫做该直线的方向向量；垂直于平面的任何非零向量叫做该平面的法向量。用向量方法解决直线、平面的问题时，先把几何对象表示为方向向量与法向量，再通过向量的平行、垂直等运算求解；建立适当的空间直角坐标系常是有效的辅助手段。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "方向向量",
+      "法向量",
+      "向量法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "方向向量与法向量是立体几何问题向量化的桥梁；与立体几何判定定理的衔接待 GEO 模块完成后补充。"
+  },
+  {
+    "id": "KP-VEC-0047",
+    "node_type": "KnowledgePoint",
+    "name": "空间直线、平面位置关系的向量判定",
+    "aliases": [
+      "线线平行判定",
+      "线面平行判定",
+      "面面平行判定"
+    ],
+    "kp_type": "property",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "两条直线平行的充要条件是方向向量平行，垂直的充要条件是方向向量垂直；直线与平面垂直的充要条件是方向向量为平面的法向量，平面外直线与平面平行的充要条件是方向向量垂直于法向量；两个平面垂直的充要条件是法向量垂直，平行的充要条件是法向量平行。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "位置关系",
+      "判定",
+      "法向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "结论把立体几何的平行、垂直判定化为向量运算；与立体几何判定定理的衔接待 GEO 模块完成后补充。"
+  },
+  {
+    "id": "KP-VEC-0048",
+    "node_type": "KnowledgePoint",
+    "name": "三垂线定理（向量证明）",
+    "aliases": [
+      "三垂线定理",
+      "斜线投影"
+    ],
+    "kp_type": "theorem",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "平面上的一条直线与这个平面的一条斜线垂直的充要条件是：它与这条斜线在平面上的投影垂直。证明：设 $PA$ 的投影为 $OA$，则 $PA=PO+OA$（向量式），两边与直线方向向量作数量积可知两垂直关系等价。",
+    "latex": "l\\perp PA\\Leftrightarrow l\\perp OA",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "三垂线定理",
+      "向量证明",
+      "投影"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "教材 3.4 例1 用向量重新证明该定理；与立体几何判定定理的衔接待 GEO 模块完成后补充。"
+  },
+  {
+    "id": "KP-VEC-0049",
+    "node_type": "KnowledgePoint",
+    "name": "求平面的法向量",
+    "aliases": [
+      "法向量的求法",
+      "待定系数求法向量"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "求平面 $\\alpha$ 的一个法向量 $\\vec{n}=(u,v,w)$ 的方法：取平面内两个不共线的向量 $\\vec{a}$、$\\vec{b}$，解方程组 $\\vec{n}\\cdot\\vec{a}=0$、$\\vec{n}\\cdot\\vec{b}=0$；由于法向量不唯一，可先给其中一个坐标取定值（如取 $w=1$），再解出其余坐标，即得一个法向量。",
+    "latex": "\\vec{n}\\cdot\\vec{a}=0,\\quad \\vec{n}\\cdot\\vec{b}=0",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "法向量",
+      "方程组",
+      "待定系数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例3、例4、例6、例7 的解题步骤归纳。"
+  },
+  {
+    "id": "KP-VEC-0050",
+    "node_type": "KnowledgePoint",
+    "name": "点到平面的距离公式",
+    "aliases": [
+      "点面距",
+      "距离公式"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "设 $\\vec{n}$ 是平面 $\\alpha$ 的一个法向量，$B$ 是 $\\alpha$ 上一点，则 $\\alpha$ 外一点 $A$ 到这个平面的距离等于 $AB$ 在法向量方向上投影的模（见公式），即数量积的绝对值除以法向量的模。",
+    "latex": "d=\\frac{|\\vec{n}\\cdot\\overrightarrow{AB}|}{|\\vec{n}|}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "距离公式",
+      "点面距",
+      "法向量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "与立体几何距离问题的衔接待 GEO 模块完成后补充。"
+  },
+  {
+    "id": "KP-VEC-0051",
+    "node_type": "KnowledgePoint",
+    "name": "用向量求空间距离",
+    "aliases": [
+      "线面距",
+      "面面距",
+      "距离化归"
+    ],
+    "kp_type": "method",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "求直线到平面的距离（线面平行时），只需在直线上取一点，化归为点到平面的距离；求两个平行平面间的距离，只需在其中一个平面上取一点，化归为该点到另一平面的距离。空间距离问题的一般思路是化归为点到平面的距离，再用公式 $d=\\frac{|\\vec{n}\\cdot\\overrightarrow{AB}|}{|\\vec{n}|}$ 计算。",
+    "latex": null,
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "空间距离",
+      "化归",
+      "点面距"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-VEC-0052",
+    "node_type": "KnowledgePoint",
+    "name": "用向量求空间角（线面角与二面角）",
+    "aliases": [
+      "线面角",
+      "二面角",
+      "空间角"
+    ],
+    "kp_type": "formula",
+    "module": "VEC",
+    "section_id": "SEC-XB1-03-04",
+    "sub_section_id": null,
+    "difficulty": 5,
+    "importance": "master",
+    "statement": "设直线方向向量 $\\vec{r}$、平面法向量 $\\vec{n}$，则直线与平面所成角的正弦等于两向量数量积绝对值与模之积的比（见公式）；两平面所成锐二面角的余弦等于两法向量数量积绝对值与模之积的比。",
+    "latex": "\\sin\\theta=\\frac{|\\vec{r}\\cdot\\vec{n}|}{|\\vec{r}||\\vec{n}|}",
+    "source": {
+      "book": "XB1",
+      "chapter": 3,
+      "section": "3.4",
+      "page": null
+    },
+    "tags": [
+      "线面角",
+      "二面角",
+      "法向量"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "直线与直线所成角公式为 $\\cos\\theta=\\frac{|\\vec{r_1}\\cdot\\vec{r_2}|}{|\\vec{r_1}||\\vec{r_2}|}$（例5）；与立体几何相关内容的衔接待 GEO 模块完成后补充。"
+  }
+]

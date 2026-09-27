@@ -1,0 +1,2987 @@
+{
+  "meta": {
+    "generated_by": "scripts/build_taxonomy.py",
+    "source": "docs/01-主题框架V1.0.md",
+    "source_sha256": "73f66c3c16a96ec2dc53c5e808f3499cff671c5d11fb4659512089c861b8a3fa",
+    "counts": {
+      "modules": 12,
+      "chapters": 21,
+      "sections": 78,
+      "subsections": 179
+    }
+  },
+  "exclusions": [
+    {
+      "kind": "book",
+      "ref": "BX4",
+      "reason": "数学建模整册排除"
+    },
+    {
+      "kind": "book",
+      "ref": "XB3",
+      "reason": "数学建模整册排除"
+    },
+    {
+      "kind": "section",
+      "ref": "BX3-13-06",
+      "name": "统计活动",
+      "reason": "活动型节（建模/实践活动），不纳入知识图谱"
+    },
+    {
+      "kind": "section",
+      "ref": "XB1-04-05",
+      "name": "用迭代序列求2的近似值",
+      "reason": "活动型节（建模/实践活动），不纳入知识图谱"
+    }
+  ],
+  "modules": [
+    {
+      "id": "MOD-SET",
+      "node_type": "Module",
+      "name": "集合与逻辑",
+      "name_en": "Sets and Logic",
+      "order": 1
+    },
+    {
+      "id": "MOD-INEQ",
+      "node_type": "Module",
+      "name": "不等式",
+      "name_en": "Equations and Inequalities",
+      "order": 2
+    },
+    {
+      "id": "MOD-FUNC",
+      "node_type": "Module",
+      "name": "函数",
+      "name_en": "Functions",
+      "order": 3
+    },
+    {
+      "id": "MOD-TRIG",
+      "node_type": "Module",
+      "name": "三角函数",
+      "name_en": "Trigonometric Functions",
+      "order": 4
+    },
+    {
+      "id": "MOD-VEC",
+      "node_type": "Module",
+      "name": "向量",
+      "name_en": "Vectors",
+      "order": 5
+    },
+    {
+      "id": "MOD-CPLX",
+      "node_type": "Module",
+      "name": "复数",
+      "name_en": "Complex Numbers",
+      "order": 6
+    },
+    {
+      "id": "MOD-GEO",
+      "node_type": "Module",
+      "name": "立体几何",
+      "name_en": "Solid Geometry",
+      "order": 7
+    },
+    {
+      "id": "MOD-PROB",
+      "node_type": "Module",
+      "name": "概率统计",
+      "name_en": "Probability and Statistics",
+      "order": 8
+    },
+    {
+      "id": "MOD-ANAG",
+      "node_type": "Module",
+      "name": "解析几何",
+      "name_en": "Analytic Geometry",
+      "order": 9
+    },
+    {
+      "id": "MOD-SEQ",
+      "node_type": "Module",
+      "name": "数列",
+      "name_en": "Sequences",
+      "order": 10
+    },
+    {
+      "id": "MOD-DERIV",
+      "node_type": "Module",
+      "name": "导数",
+      "name_en": "Derivatives",
+      "order": 11
+    },
+    {
+      "id": "MOD-COMB",
+      "node_type": "Module",
+      "name": "计数原理",
+      "name_en": "Counting Principles",
+      "order": 12
+    }
+  ],
+  "chapters": [
+    {
+      "id": "CH-BX1-01",
+      "node_type": "Chapter",
+      "name": "集合与逻辑",
+      "module": "SET",
+      "book": "BX1",
+      "chapter_no": 1,
+      "included": true,
+      "order": 1
+    },
+    {
+      "id": "CH-BX1-02",
+      "node_type": "Chapter",
+      "name": "等式与不等式",
+      "module": "INEQ",
+      "book": "BX1",
+      "chapter_no": 2,
+      "included": true,
+      "order": 2
+    },
+    {
+      "id": "CH-BX1-03",
+      "node_type": "Chapter",
+      "name": "幂、指数与对数",
+      "module": "FUNC",
+      "book": "BX1",
+      "chapter_no": 3,
+      "included": true,
+      "order": 3
+    },
+    {
+      "id": "CH-BX1-04",
+      "node_type": "Chapter",
+      "name": "幂函数、指数函数与对数函数",
+      "module": "FUNC",
+      "book": "BX1",
+      "chapter_no": 4,
+      "included": true,
+      "order": 4
+    },
+    {
+      "id": "CH-BX1-05",
+      "node_type": "Chapter",
+      "name": "函数的概念、性质及应用",
+      "module": "FUNC",
+      "book": "BX1",
+      "chapter_no": 5,
+      "included": true,
+      "order": 5
+    },
+    {
+      "id": "CH-BX2-06",
+      "node_type": "Chapter",
+      "name": "三角",
+      "module": "TRIG",
+      "book": "BX2",
+      "chapter_no": 6,
+      "included": true,
+      "order": 6
+    },
+    {
+      "id": "CH-BX2-07",
+      "node_type": "Chapter",
+      "name": "三角函数",
+      "module": "TRIG",
+      "book": "BX2",
+      "chapter_no": 7,
+      "included": true,
+      "order": 7
+    },
+    {
+      "id": "CH-BX2-08",
+      "node_type": "Chapter",
+      "name": "平面向量",
+      "module": "VEC",
+      "book": "BX2",
+      "chapter_no": 8,
+      "included": true,
+      "order": 8
+    },
+    {
+      "id": "CH-XB1-03",
+      "node_type": "Chapter",
+      "name": "空间向量及其应用",
+      "module": "VEC",
+      "book": "XB1",
+      "chapter_no": 3,
+      "included": true,
+      "order": 16
+    },
+    {
+      "id": "CH-BX2-09",
+      "node_type": "Chapter",
+      "name": "复数",
+      "module": "CPLX",
+      "book": "BX2",
+      "chapter_no": 9,
+      "included": true,
+      "order": 9
+    },
+    {
+      "id": "CH-BX3-10",
+      "node_type": "Chapter",
+      "name": "空间直线与平面",
+      "module": "GEO",
+      "book": "BX3",
+      "chapter_no": 10,
+      "included": true,
+      "order": 10
+    },
+    {
+      "id": "CH-BX3-11",
+      "node_type": "Chapter",
+      "name": "简单几何体",
+      "module": "GEO",
+      "book": "BX3",
+      "chapter_no": 11,
+      "included": true,
+      "order": 11
+    },
+    {
+      "id": "CH-BX3-12",
+      "node_type": "Chapter",
+      "name": "概率初步",
+      "module": "PROB",
+      "book": "BX3",
+      "chapter_no": 12,
+      "included": true,
+      "order": 12
+    },
+    {
+      "id": "CH-BX3-13",
+      "node_type": "Chapter",
+      "name": "统计",
+      "module": "PROB",
+      "book": "BX3",
+      "chapter_no": 13,
+      "included": true,
+      "order": 13
+    },
+    {
+      "id": "CH-XB2-07",
+      "node_type": "Chapter",
+      "name": "概率初步（续）",
+      "module": "PROB",
+      "book": "XB2",
+      "chapter_no": 7,
+      "included": true,
+      "order": 20
+    },
+    {
+      "id": "CH-XB2-08",
+      "node_type": "Chapter",
+      "name": "成对数据的统计分析",
+      "module": "PROB",
+      "book": "XB2",
+      "chapter_no": 8,
+      "included": true,
+      "order": 21
+    },
+    {
+      "id": "CH-XB1-01",
+      "node_type": "Chapter",
+      "name": "平面直角坐标系中的直线",
+      "module": "ANAG",
+      "book": "XB1",
+      "chapter_no": 1,
+      "included": true,
+      "order": 14
+    },
+    {
+      "id": "CH-XB1-02",
+      "node_type": "Chapter",
+      "name": "圆锥曲线",
+      "module": "ANAG",
+      "book": "XB1",
+      "chapter_no": 2,
+      "included": true,
+      "order": 15
+    },
+    {
+      "id": "CH-XB1-04",
+      "node_type": "Chapter",
+      "name": "数列",
+      "module": "SEQ",
+      "book": "XB1",
+      "chapter_no": 4,
+      "included": true,
+      "order": 17
+    },
+    {
+      "id": "CH-XB2-05",
+      "node_type": "Chapter",
+      "name": "导数及其应用",
+      "module": "DERIV",
+      "book": "XB2",
+      "chapter_no": 5,
+      "included": true,
+      "order": 18
+    },
+    {
+      "id": "CH-XB2-06",
+      "node_type": "Chapter",
+      "name": "计数原理",
+      "module": "COMB",
+      "book": "XB2",
+      "chapter_no": 6,
+      "included": true,
+      "order": 19
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC-BX1-01-01",
+      "node_type": "Section",
+      "name": "集合初步",
+      "module": "SET",
+      "chapter_id": "CH-BX1-01",
+      "section_no": "1.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-01-02",
+      "node_type": "Section",
+      "name": "常用逻辑用语",
+      "module": "SET",
+      "chapter_id": "CH-BX1-01",
+      "section_no": "1.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-02-01",
+      "node_type": "Section",
+      "name": "等式与不等式的性质",
+      "module": "INEQ",
+      "chapter_id": "CH-BX1-02",
+      "section_no": "2.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-02-02",
+      "node_type": "Section",
+      "name": "不等式的求解",
+      "module": "INEQ",
+      "chapter_id": "CH-BX1-02",
+      "section_no": "2.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-02-03",
+      "node_type": "Section",
+      "name": "基本不等式及其应用",
+      "module": "INEQ",
+      "chapter_id": "CH-BX1-02",
+      "section_no": "2.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-03-01",
+      "node_type": "Section",
+      "name": "幂与指数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-03",
+      "section_no": "3.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-03-02",
+      "node_type": "Section",
+      "name": "对数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-03",
+      "section_no": "3.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-04-01",
+      "node_type": "Section",
+      "name": "幂函数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-04",
+      "section_no": "4.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-04-02",
+      "node_type": "Section",
+      "name": "指数函数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-04",
+      "section_no": "4.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-04-03",
+      "node_type": "Section",
+      "name": "对数函数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-04",
+      "section_no": "4.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-05-01",
+      "node_type": "Section",
+      "name": "函数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-05",
+      "section_no": "5.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-05-02",
+      "node_type": "Section",
+      "name": "函数的基本性质",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-05",
+      "section_no": "5.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-05-03",
+      "node_type": "Section",
+      "name": "函数的应用",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-05",
+      "section_no": "5.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX1-05-04",
+      "node_type": "Section",
+      "name": "反函数",
+      "module": "FUNC",
+      "chapter_id": "CH-BX1-05",
+      "section_no": "5.4",
+      "order": 4,
+      "elective": true,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-06-01",
+      "node_type": "Section",
+      "name": "正弦、余弦、正切、余切",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-06",
+      "section_no": "6.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-06-02",
+      "node_type": "Section",
+      "name": "常用三角公式",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-06",
+      "section_no": "6.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-06-03",
+      "node_type": "Section",
+      "name": "解三角形",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-06",
+      "section_no": "6.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-07-01",
+      "node_type": "Section",
+      "name": "正弦函数的图像与性质",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-07",
+      "section_no": "7.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-07-02",
+      "node_type": "Section",
+      "name": "余弦函数的图像与性质",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-07",
+      "section_no": "7.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-07-03",
+      "node_type": "Section",
+      "name": "函数 y=Asin(ωx+φ) 的图像",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-07",
+      "section_no": "7.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-07-04",
+      "node_type": "Section",
+      "name": "正切函数的图像与性质",
+      "module": "TRIG",
+      "chapter_id": "CH-BX2-07",
+      "section_no": "7.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-08-01",
+      "node_type": "Section",
+      "name": "向量的概念和线性运算",
+      "module": "VEC",
+      "chapter_id": "CH-BX2-08",
+      "section_no": "8.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-08-02",
+      "node_type": "Section",
+      "name": "向量的数量积",
+      "module": "VEC",
+      "chapter_id": "CH-BX2-08",
+      "section_no": "8.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-08-03",
+      "node_type": "Section",
+      "name": "向量的坐标表示",
+      "module": "VEC",
+      "chapter_id": "CH-BX2-08",
+      "section_no": "8.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-08-04",
+      "node_type": "Section",
+      "name": "向量的应用",
+      "module": "VEC",
+      "chapter_id": "CH-BX2-08",
+      "section_no": "8.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-03-01",
+      "node_type": "Section",
+      "name": "空间向量及其运算",
+      "module": "VEC",
+      "chapter_id": "CH-XB1-03",
+      "section_no": "3.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-03-02",
+      "node_type": "Section",
+      "name": "空间向量基本定理",
+      "module": "VEC",
+      "chapter_id": "CH-XB1-03",
+      "section_no": "3.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-03-03",
+      "node_type": "Section",
+      "name": "空间向量的坐标表示",
+      "module": "VEC",
+      "chapter_id": "CH-XB1-03",
+      "section_no": "3.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-03-04",
+      "node_type": "Section",
+      "name": "空间向量在立体几何中的应用",
+      "module": "VEC",
+      "chapter_id": "CH-XB1-03",
+      "section_no": "3.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-09-01",
+      "node_type": "Section",
+      "name": "复数及其四则运算",
+      "module": "CPLX",
+      "chapter_id": "CH-BX2-09",
+      "section_no": "9.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-09-02",
+      "node_type": "Section",
+      "name": "复数的几何意义",
+      "module": "CPLX",
+      "chapter_id": "CH-BX2-09",
+      "section_no": "9.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-09-03",
+      "node_type": "Section",
+      "name": "实系数一元二次方程",
+      "module": "CPLX",
+      "chapter_id": "CH-BX2-09",
+      "section_no": "9.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX2-09-04",
+      "node_type": "Section",
+      "name": "复数的三角形式",
+      "module": "CPLX",
+      "chapter_id": "CH-BX2-09",
+      "section_no": "9.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-10-01",
+      "node_type": "Section",
+      "name": "平面及其基本性质",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-10",
+      "section_no": "10.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-10-02",
+      "node_type": "Section",
+      "name": "直线与直线的位置关系",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-10",
+      "section_no": "10.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-10-03",
+      "node_type": "Section",
+      "name": "直线与平面的位置关系",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-10",
+      "section_no": "10.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-10-04",
+      "node_type": "Section",
+      "name": "平面与平面的位置关系",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-10",
+      "section_no": "10.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-10-05",
+      "node_type": "Section",
+      "name": "异面直线间的距离",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-10",
+      "section_no": "10.5",
+      "order": 5,
+      "elective": true,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-11-01",
+      "node_type": "Section",
+      "name": "柱体",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-11",
+      "section_no": "11.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-11-02",
+      "node_type": "Section",
+      "name": "锥体",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-11",
+      "section_no": "11.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-11-03",
+      "node_type": "Section",
+      "name": "多面体与旋转体",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-11",
+      "section_no": "11.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-11-04",
+      "node_type": "Section",
+      "name": "球",
+      "module": "GEO",
+      "chapter_id": "CH-BX3-11",
+      "section_no": "11.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-12-01",
+      "node_type": "Section",
+      "name": "随机现象与样本空间",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-12",
+      "section_no": "12.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-12-02",
+      "node_type": "Section",
+      "name": "古典概率",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-12",
+      "section_no": "12.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-12-03",
+      "node_type": "Section",
+      "name": "频率与概率",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-12",
+      "section_no": "12.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-12-04",
+      "node_type": "Section",
+      "name": "随机事件的独立性",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-12",
+      "section_no": "12.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-13-01",
+      "node_type": "Section",
+      "name": "总体与样本",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-13",
+      "section_no": "13.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-13-02",
+      "node_type": "Section",
+      "name": "数据的获取",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-13",
+      "section_no": "13.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-13-03",
+      "node_type": "Section",
+      "name": "抽样方法",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-13",
+      "section_no": "13.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-13-04",
+      "node_type": "Section",
+      "name": "统计图表",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-13",
+      "section_no": "13.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-BX3-13-05",
+      "node_type": "Section",
+      "name": "统计估计",
+      "module": "PROB",
+      "chapter_id": "CH-BX3-13",
+      "section_no": "13.5",
+      "order": 5,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-07-01",
+      "node_type": "Section",
+      "name": "条件概率与相关公式",
+      "module": "PROB",
+      "chapter_id": "CH-XB2-07",
+      "section_no": "7.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-07-02",
+      "node_type": "Section",
+      "name": "随机变量的分布与特征",
+      "module": "PROB",
+      "chapter_id": "CH-XB2-07",
+      "section_no": "7.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-07-03",
+      "node_type": "Section",
+      "name": "常用分布",
+      "module": "PROB",
+      "chapter_id": "CH-XB2-07",
+      "section_no": "7.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-08-01",
+      "node_type": "Section",
+      "name": "成对数据的相关分析",
+      "module": "PROB",
+      "chapter_id": "CH-XB2-08",
+      "section_no": "8.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-08-02",
+      "node_type": "Section",
+      "name": "一元线性回归分析",
+      "module": "PROB",
+      "chapter_id": "CH-XB2-08",
+      "section_no": "8.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-08-03",
+      "node_type": "Section",
+      "name": "2×2 列联表",
+      "module": "PROB",
+      "chapter_id": "CH-XB2-08",
+      "section_no": "8.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-01-01",
+      "node_type": "Section",
+      "name": "直线的倾斜角与斜率",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-01",
+      "section_no": "1.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-01-02",
+      "node_type": "Section",
+      "name": "直线的方程",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-01",
+      "section_no": "1.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-01-03",
+      "node_type": "Section",
+      "name": "两条直线的位置关系",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-01",
+      "section_no": "1.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-01-04",
+      "node_type": "Section",
+      "name": "点到直线的距离",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-01",
+      "section_no": "1.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-02-01",
+      "node_type": "Section",
+      "name": "圆",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-02",
+      "section_no": "2.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-02-02",
+      "node_type": "Section",
+      "name": "椭圆",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-02",
+      "section_no": "2.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-02-03",
+      "node_type": "Section",
+      "name": "双曲线",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-02",
+      "section_no": "2.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-02-04",
+      "node_type": "Section",
+      "name": "抛物线",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-02",
+      "section_no": "2.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-02-05",
+      "node_type": "Section",
+      "name": "曲线与方程",
+      "module": "ANAG",
+      "chapter_id": "CH-XB1-02",
+      "section_no": "2.5",
+      "order": 5,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-04-01",
+      "node_type": "Section",
+      "name": "等差数列",
+      "module": "SEQ",
+      "chapter_id": "CH-XB1-04",
+      "section_no": "4.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-04-02",
+      "node_type": "Section",
+      "name": "等比数列",
+      "module": "SEQ",
+      "chapter_id": "CH-XB1-04",
+      "section_no": "4.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-04-03",
+      "node_type": "Section",
+      "name": "数列",
+      "module": "SEQ",
+      "chapter_id": "CH-XB1-04",
+      "section_no": "4.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB1-04-04",
+      "node_type": "Section",
+      "name": "数学归纳法",
+      "module": "SEQ",
+      "chapter_id": "CH-XB1-04",
+      "section_no": "4.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-05-01",
+      "node_type": "Section",
+      "name": "导数的概念及意义",
+      "module": "DERIV",
+      "chapter_id": "CH-XB2-05",
+      "section_no": "5.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-05-02",
+      "node_type": "Section",
+      "name": "导数的运算",
+      "module": "DERIV",
+      "chapter_id": "CH-XB2-05",
+      "section_no": "5.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-05-03",
+      "node_type": "Section",
+      "name": "导数的应用",
+      "module": "DERIV",
+      "chapter_id": "CH-XB2-05",
+      "section_no": "5.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-06-01",
+      "node_type": "Section",
+      "name": "乘法原理与加法原理",
+      "module": "COMB",
+      "chapter_id": "CH-XB2-06",
+      "section_no": "6.1",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-06-02",
+      "node_type": "Section",
+      "name": "排列",
+      "module": "COMB",
+      "chapter_id": "CH-XB2-06",
+      "section_no": "6.2",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-06-03",
+      "node_type": "Section",
+      "name": "组合",
+      "module": "COMB",
+      "chapter_id": "CH-XB2-06",
+      "section_no": "6.3",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-06-04",
+      "node_type": "Section",
+      "name": "计数原理在古典概率中的应用",
+      "module": "COMB",
+      "chapter_id": "CH-XB2-06",
+      "section_no": "6.4",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SEC-XB2-06-05",
+      "node_type": "Section",
+      "name": "二项式定理",
+      "module": "COMB",
+      "chapter_id": "CH-XB2-06",
+      "section_no": "6.5",
+      "order": 5,
+      "elective": false,
+      "included": true
+    }
+  ],
+  "subsections": [
+    {
+      "id": "SUB-BX1-01-01-01",
+      "node_type": "SubSection",
+      "name": "集合",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-01-01-02",
+      "node_type": "SubSection",
+      "name": "集合的表示方法",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-01-01-03",
+      "node_type": "SubSection",
+      "name": "集合之间的关系",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-01-01-04",
+      "node_type": "SubSection",
+      "name": "集合的运算",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-01",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-01-02-01",
+      "node_type": "SubSection",
+      "name": "命题",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-01-02-02",
+      "node_type": "SubSection",
+      "name": "充分条件与必要条件",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-01-02-03",
+      "node_type": "SubSection",
+      "name": "反证法",
+      "module": "SET",
+      "section_id": "SEC-BX1-01-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-01-01",
+      "node_type": "SubSection",
+      "name": "等式的性质与方程的解集",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-01-02",
+      "node_type": "SubSection",
+      "name": "一元二次方程的解集及根与系数的关系",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-01-03",
+      "node_type": "SubSection",
+      "name": "不等式的性质",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-02-01",
+      "node_type": "SubSection",
+      "name": "一元一次不等式及不等式组的求解",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-02-02",
+      "node_type": "SubSection",
+      "name": "一元二次不等式的求解",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-02-03",
+      "node_type": "SubSection",
+      "name": "分式不等式的求解",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-02-04",
+      "node_type": "SubSection",
+      "name": "含绝对值不等式的求解",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-02",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-03-01",
+      "node_type": "SubSection",
+      "name": "平均值不等式及其应用",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-02-03-02",
+      "node_type": "SubSection",
+      "name": "三角不等式",
+      "module": "INEQ",
+      "section_id": "SEC-BX1-02-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-03-01-01",
+      "node_type": "SubSection",
+      "name": "指数幂的拓展",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-03-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-03-02-01",
+      "node_type": "SubSection",
+      "name": "对数的定义",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-03-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-03-02-02",
+      "node_type": "SubSection",
+      "name": "对数的运算性质",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-03-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-03-02-03",
+      "node_type": "SubSection",
+      "name": "对数的换底",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-03-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-04-01-01",
+      "node_type": "SubSection",
+      "name": "幂函数的定义与图像",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-04-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-04-01-02",
+      "node_type": "SubSection",
+      "name": "幂函数的性质",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-04-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-04-02-01",
+      "node_type": "SubSection",
+      "name": "指数函数的定义与图像",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-04-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-04-02-02",
+      "node_type": "SubSection",
+      "name": "指数函数的性质",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-04-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-04-03-01",
+      "node_type": "SubSection",
+      "name": "对数函数的定义与图像",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-04-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-04-03-02",
+      "node_type": "SubSection",
+      "name": "对数函数的性质",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-04-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-01-01",
+      "node_type": "SubSection",
+      "name": "函数",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-01-02",
+      "node_type": "SubSection",
+      "name": "函数的表示方法",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-02-01",
+      "node_type": "SubSection",
+      "name": "函数的奇偶性",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-02-02",
+      "node_type": "SubSection",
+      "name": "函数的单调性",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-02-03",
+      "node_type": "SubSection",
+      "name": "函数的最值",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-03-01",
+      "node_type": "SubSection",
+      "name": "函数关系的建立",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-03-02",
+      "node_type": "SubSection",
+      "name": "用函数观点求解方程与不等式",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-03-03",
+      "node_type": "SubSection",
+      "name": "用二分法求函数的零点",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-03",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-04-01",
+      "node_type": "SubSection",
+      "name": "反函数的概念",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-04",
+      "order": 1,
+      "elective": true,
+      "included": true
+    },
+    {
+      "id": "SUB-BX1-05-04-02",
+      "node_type": "SubSection",
+      "name": "反函数的图像",
+      "module": "FUNC",
+      "section_id": "SEC-BX1-05-04",
+      "order": 2,
+      "elective": true,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-01-01",
+      "node_type": "SubSection",
+      "name": "锐角的正弦、余弦、正切、余切",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-01-02",
+      "node_type": "SubSection",
+      "name": "任意角及其度量",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-01-03",
+      "node_type": "SubSection",
+      "name": "任意角的正弦、余弦、正切、余切",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-01-04",
+      "node_type": "SubSection",
+      "name": "诱导公式",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-01",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-01-05",
+      "node_type": "SubSection",
+      "name": "已知正弦、余弦或正切值求角",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-01",
+      "order": 5,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-02-01",
+      "node_type": "SubSection",
+      "name": "两角和与差的正弦、余弦、正切公式",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-02-02",
+      "node_type": "SubSection",
+      "name": "二倍角公式",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-02-03",
+      "node_type": "SubSection",
+      "name": "三角变换的应用",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-03-01",
+      "node_type": "SubSection",
+      "name": "正弦定理",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-06-03-02",
+      "node_type": "SubSection",
+      "name": "余弦定理",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-06-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-07-01-01",
+      "node_type": "SubSection",
+      "name": "正弦函数的图像",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-07-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-07-01-02",
+      "node_type": "SubSection",
+      "name": "正弦函数的性质",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-07-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-07-02-01",
+      "node_type": "SubSection",
+      "name": "余弦函数的图像",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-07-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-07-02-02",
+      "node_type": "SubSection",
+      "name": "余弦函数的性质",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-07-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-07-04-01",
+      "node_type": "SubSection",
+      "name": "正切函数的图像",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-07-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-07-04-02",
+      "node_type": "SubSection",
+      "name": "正切函数的性质",
+      "module": "TRIG",
+      "section_id": "SEC-BX2-07-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-01-01",
+      "node_type": "SubSection",
+      "name": "向量的概念",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-01-02",
+      "node_type": "SubSection",
+      "name": "向量的加法和减法",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-01-03",
+      "node_type": "SubSection",
+      "name": "实数与向量的乘法",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-02-01",
+      "node_type": "SubSection",
+      "name": "向量的投影",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-02-02",
+      "node_type": "SubSection",
+      "name": "向量的数量积的定义与运算律",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-03-01",
+      "node_type": "SubSection",
+      "name": "向量基本定理",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-03-02",
+      "node_type": "SubSection",
+      "name": "向量的正交分解与坐标表示",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-03-03",
+      "node_type": "SubSection",
+      "name": "向量线性运算的坐标表示",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-03",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-08-03-04",
+      "node_type": "SubSection",
+      "name": "向量数量积与夹角的坐标表示",
+      "module": "VEC",
+      "section_id": "SEC-BX2-08-03",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-02-01",
+      "node_type": "SubSection",
+      "name": "向量共面的充要条件",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-02-02",
+      "node_type": "SubSection",
+      "name": "空间向量基本定理",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-03-01",
+      "node_type": "SubSection",
+      "name": "空间直角坐标系",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-03-02",
+      "node_type": "SubSection",
+      "name": "空间向量的坐标表示",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-04-01",
+      "node_type": "SubSection",
+      "name": "判断空间直线、平面的位置关系",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-04-02",
+      "node_type": "SubSection",
+      "name": "求距离",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-03-04-03",
+      "node_type": "SubSection",
+      "name": "求角的大小",
+      "module": "VEC",
+      "section_id": "SEC-XB1-03-04",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-01-01",
+      "node_type": "SubSection",
+      "name": "复数的引入与复数的四则运算",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-01-02",
+      "node_type": "SubSection",
+      "name": "复数的实部、虚部与共轭",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-02-01",
+      "node_type": "SubSection",
+      "name": "复平面与复数的坐标表示",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-02-02",
+      "node_type": "SubSection",
+      "name": "复数的向量表示",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-02-03",
+      "node_type": "SubSection",
+      "name": "复数加法的平行四边形法则",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-02-04",
+      "node_type": "SubSection",
+      "name": "复数的模",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-02",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-03-01",
+      "node_type": "SubSection",
+      "name": "实数的平方根",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-03-02",
+      "node_type": "SubSection",
+      "name": "实系数一元二次方程",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-04-01",
+      "node_type": "SubSection",
+      "name": "复数的三角形式",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-04-02",
+      "node_type": "SubSection",
+      "name": "三角形式下复数的乘除运算",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX2-09-04-03",
+      "node_type": "SubSection",
+      "name": "三角形式下复数的乘方与开方",
+      "module": "CPLX",
+      "section_id": "SEC-BX2-09-04",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-01-01",
+      "node_type": "SubSection",
+      "name": "空间的点、直线与平面",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-01-02",
+      "node_type": "SubSection",
+      "name": "相交平面",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-01-03",
+      "node_type": "SubSection",
+      "name": "空间图形的平面直观图的画法",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-02-01",
+      "node_type": "SubSection",
+      "name": "空间的平行直线",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-02-02",
+      "node_type": "SubSection",
+      "name": "异面直线",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-02-03",
+      "node_type": "SubSection",
+      "name": "两条异面直线所成的角",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-03-01",
+      "node_type": "SubSection",
+      "name": "直线与平面平行",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-03-02",
+      "node_type": "SubSection",
+      "name": "直线与平面垂直",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-03-03",
+      "node_type": "SubSection",
+      "name": "直线与平面所成的角",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-03",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-03-04",
+      "node_type": "SubSection",
+      "name": "三垂线定理",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-03",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-04-01",
+      "node_type": "SubSection",
+      "name": "平面与平面平行",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-10-04-02",
+      "node_type": "SubSection",
+      "name": "二面角",
+      "module": "GEO",
+      "section_id": "SEC-BX3-10-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-01-01",
+      "node_type": "SubSection",
+      "name": "棱柱与圆柱",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-01-02",
+      "node_type": "SubSection",
+      "name": "柱体的体积",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-01-03",
+      "node_type": "SubSection",
+      "name": "柱体的表面积",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-02-01",
+      "node_type": "SubSection",
+      "name": "棱锥与圆锥",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-02-02",
+      "node_type": "SubSection",
+      "name": "锥体的体积",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-02-03",
+      "node_type": "SubSection",
+      "name": "锥体的表面积",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-03-01",
+      "node_type": "SubSection",
+      "name": "多面体",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-03-02",
+      "node_type": "SubSection",
+      "name": "旋转体",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-04-01",
+      "node_type": "SubSection",
+      "name": "球",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-04-02",
+      "node_type": "SubSection",
+      "name": "球的体积",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-11-04-03",
+      "node_type": "SubSection",
+      "name": "球的表面积",
+      "module": "GEO",
+      "section_id": "SEC-BX3-11-04",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-01-01",
+      "node_type": "SubSection",
+      "name": "随机现象",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-01-02",
+      "node_type": "SubSection",
+      "name": "样本空间与事件",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-02-01",
+      "node_type": "SubSection",
+      "name": "等可能性与概率",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-02-02",
+      "node_type": "SubSection",
+      "name": "等可能性（续）",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-02-03",
+      "node_type": "SubSection",
+      "name": "事件关系和运算",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-02-04",
+      "node_type": "SubSection",
+      "name": "可加性",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-02",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-04-01",
+      "node_type": "SubSection",
+      "name": "独立随机事件",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-12-04-02",
+      "node_type": "SubSection",
+      "name": "事件的独立性",
+      "module": "PROB",
+      "section_id": "SEC-BX3-12-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-03-01",
+      "node_type": "SubSection",
+      "name": "简单随机抽样",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-03-02",
+      "node_type": "SubSection",
+      "name": "分层随机抽样",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-04-01",
+      "node_type": "SubSection",
+      "name": "频率分布表和频率分布直方图",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-04-02",
+      "node_type": "SubSection",
+      "name": "茎叶图",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-04-03",
+      "node_type": "SubSection",
+      "name": "散点图",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-04",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-05-01",
+      "node_type": "SubSection",
+      "name": "估计总体的分布",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-05",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-05-02",
+      "node_type": "SubSection",
+      "name": "估计总体的数字特征",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-05",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-BX3-13-05-03",
+      "node_type": "SubSection",
+      "name": "估计百分位数",
+      "module": "PROB",
+      "section_id": "SEC-BX3-13-05",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-01-01",
+      "node_type": "SubSection",
+      "name": "条件概率",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-01-02",
+      "node_type": "SubSection",
+      "name": "全概率公式",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-02-01",
+      "node_type": "SubSection",
+      "name": "随机变量与分布",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-02-02",
+      "node_type": "SubSection",
+      "name": "期望",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-02-03",
+      "node_type": "SubSection",
+      "name": "方差",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-03-01",
+      "node_type": "SubSection",
+      "name": "二项分布",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-03-02",
+      "node_type": "SubSection",
+      "name": "超几何分布",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-07-03-03",
+      "node_type": "SubSection",
+      "name": "正态分布",
+      "module": "PROB",
+      "section_id": "SEC-XB2-07-03",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-08-01-01",
+      "node_type": "SubSection",
+      "name": "成对数据间的关系",
+      "module": "PROB",
+      "section_id": "SEC-XB2-08-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-08-01-02",
+      "node_type": "SubSection",
+      "name": "相关系数",
+      "module": "PROB",
+      "section_id": "SEC-XB2-08-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-08-02-01",
+      "node_type": "SubSection",
+      "name": "一元线性回归分析的基本思想",
+      "module": "PROB",
+      "section_id": "SEC-XB2-08-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-08-02-02",
+      "node_type": "SubSection",
+      "name": "一元线性回归分析的应用举例",
+      "module": "PROB",
+      "section_id": "SEC-XB2-08-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-08-03-01",
+      "node_type": "SubSection",
+      "name": "2×2 列联表独立性检验",
+      "module": "PROB",
+      "section_id": "SEC-XB2-08-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-08-03-02",
+      "node_type": "SubSection",
+      "name": "独立性检验的具体应用",
+      "module": "PROB",
+      "section_id": "SEC-XB2-08-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-01-02-01",
+      "node_type": "SubSection",
+      "name": "几种特殊形式的直线方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-01-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-01-02-02",
+      "node_type": "SubSection",
+      "name": "直线的一般式方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-01-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-01-03-01",
+      "node_type": "SubSection",
+      "name": "两条直线的相交、平行与重合",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-01-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-01-03-02",
+      "node_type": "SubSection",
+      "name": "两条直线垂直的判定与夹角的求法",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-01-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-01-01",
+      "node_type": "SubSection",
+      "name": "曲线方程的概念",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-01-02",
+      "node_type": "SubSection",
+      "name": "圆的标准方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-01-03",
+      "node_type": "SubSection",
+      "name": "圆的一般方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-01",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-01-04",
+      "node_type": "SubSection",
+      "name": "直线与圆的位置关系",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-01",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-01-05",
+      "node_type": "SubSection",
+      "name": "圆与圆的位置关系",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-01",
+      "order": 5,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-02-01",
+      "node_type": "SubSection",
+      "name": "椭圆的标准方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-02-02",
+      "node_type": "SubSection",
+      "name": "椭圆的性质",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-03-01",
+      "node_type": "SubSection",
+      "name": "双曲线的标准方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-03-02",
+      "node_type": "SubSection",
+      "name": "双曲线的性质",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-04-01",
+      "node_type": "SubSection",
+      "name": "抛物线的标准方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-04-02",
+      "node_type": "SubSection",
+      "name": "抛物线的性质",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-05-01",
+      "node_type": "SubSection",
+      "name": "求轨迹的方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-05",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-05-02",
+      "node_type": "SubSection",
+      "name": "简单的参数方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-05",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-05-03",
+      "node_type": "SubSection",
+      "name": "极坐标系与极坐标方程",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-05",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-02-05-04",
+      "node_type": "SubSection",
+      "name": "极坐标与直角坐标的互化",
+      "module": "ANAG",
+      "section_id": "SEC-XB1-02-05",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-01-01",
+      "node_type": "SubSection",
+      "name": "等差数列及其通项公式",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-01-02",
+      "node_type": "SubSection",
+      "name": "等差数列的前 n 项和",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-02-01",
+      "node_type": "SubSection",
+      "name": "等比数列及其通项公式",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-02-02",
+      "node_type": "SubSection",
+      "name": "等比数列的前 n 项和",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-03-01",
+      "node_type": "SubSection",
+      "name": "数列的概念与性质",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-03-02",
+      "node_type": "SubSection",
+      "name": "利用递推公式表示数列",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-04-01",
+      "node_type": "SubSection",
+      "name": "数学归纳法",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-04",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB1-04-04-02",
+      "node_type": "SubSection",
+      "name": "数学归纳法的应用",
+      "module": "SEQ",
+      "section_id": "SEC-XB1-04-04",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-01-01",
+      "node_type": "SubSection",
+      "name": "导数的概念",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-01-02",
+      "node_type": "SubSection",
+      "name": "导数的几何意义",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-02-01",
+      "node_type": "SubSection",
+      "name": "基本初等函数的导数",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-02-02",
+      "node_type": "SubSection",
+      "name": "导数的四则运算",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-02-03",
+      "node_type": "SubSection",
+      "name": "简单复合函数的导数",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-03-01",
+      "node_type": "SubSection",
+      "name": "利用导数研究函数的单调性",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-03-02",
+      "node_type": "SubSection",
+      "name": "利用导数研究函数的极值",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-03-03",
+      "node_type": "SubSection",
+      "name": "利用导数研究函数的最值",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-03",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-03-04",
+      "node_type": "SubSection",
+      "name": "利用导数研究二次函数",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-03",
+      "order": 4,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-05-03-05",
+      "node_type": "SubSection",
+      "name": "利用导数解决实际问题",
+      "module": "DERIV",
+      "section_id": "SEC-XB2-05-03",
+      "order": 5,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-01-01",
+      "node_type": "SubSection",
+      "name": "乘法原理",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-01",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-01-02",
+      "node_type": "SubSection",
+      "name": "加法原理",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-01",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-02-01",
+      "node_type": "SubSection",
+      "name": "排列的定义",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-02",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-02-02",
+      "node_type": "SubSection",
+      "name": "排列数的计算",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-02",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-02-03",
+      "node_type": "SubSection",
+      "name": "排列数的性质",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-02",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-03-01",
+      "node_type": "SubSection",
+      "name": "组合的定义",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-03",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-03-02",
+      "node_type": "SubSection",
+      "name": "组合数的计算",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-03",
+      "order": 2,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-03-03",
+      "node_type": "SubSection",
+      "name": "组合数的性质",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-03",
+      "order": 3,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-05-01",
+      "node_type": "SubSection",
+      "name": "杨辉三角和二项式定理",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-05",
+      "order": 1,
+      "elective": false,
+      "included": true
+    },
+    {
+      "id": "SUB-XB2-06-05-02",
+      "node_type": "SubSection",
+      "name": "二项式定理的应用",
+      "module": "COMB",
+      "section_id": "SEC-XB2-06-05",
+      "order": 2,
+      "elective": false,
+      "included": true
+    }
+  ]
+}

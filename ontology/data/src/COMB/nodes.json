@@ -1,0 +1,996 @@
+[
+  {
+    "id": "KP-COMB-0001",
+    "node_type": "KnowledgePoint",
+    "name": "乘法原理（分步计数原理）",
+    "aliases": [
+      "分步计数原理",
+      "乘法原理",
+      "multiplication principle"
+    ],
+    "kp_type": "rule",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "做一件事需要依次完成 n 个步骤：完成第一步有 $a_1$ 种不同的方法，完成第二步有 $a_2$ 种不同的方法……完成第 n 步有 $a_n$ 种方法，那么完成这件事共有 $a_1a_2\\cdots a_n$ 种不同的方法。分步时各步缺一不可，只有依次完成全部步骤才算完成这件事。",
+    "latex": "a_1a_2\\cdots a_n",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "乘法原理",
+      "分步计数",
+      "计数原理"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0002",
+    "node_type": "KnowledgePoint",
+    "name": "加法原理（分类计数原理）",
+    "aliases": [
+      "分类计数原理",
+      "加法原理",
+      "addition principle"
+    ],
+    "kp_type": "rule",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "做一件事有 n 类办法：第一类办法有 $a_1$ 种不同的方法，第二类办法有 $a_2$ 种方法……第 n 类办法有 $a_n$ 种方法，那么完成这件事共有 $a_1+a_2+\\cdots+a_n$ 种不同的方法。每一类办法中的每一种方法都可以单独完成这件事，这是它与乘法原理的区别。",
+    "latex": "a_1+a_2+\\cdots+a_n",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "加法原理",
+      "分类计数",
+      "计数原理"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0003",
+    "node_type": "KnowledgePoint",
+    "name": "计数中分类与分步的区分",
+    "aliases": [
+      "分类与分步",
+      "两个计数原理的区别"
+    ],
+    "kp_type": "property",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "区分两个计数原理的关键是看能否单独完成这件事：只需选择某一类办法中的一种方法即可完成的，用加法原理把各类方法数相加；必须依次完成若干步骤的，用乘法原理把各步方法数相乘。实际问题常需先分类，再在每一类中分步计算，两个原理往往配合使用。解题时要结合具体情境判断用哪个原理，并注意分类不重不漏、分步完整有序。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "计数原理",
+      "分类与分步",
+      "原理辨析"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材旁注：每一类办法中的每一种方法都可以单独完成这件事情，这是加法原理与乘法原理的区别。"
+  },
+  {
+    "id": "KP-COMB-0004",
+    "node_type": "KnowledgePoint",
+    "name": "先分类后分步的综合计数",
+    "aliases": [
+      "综合计数问题",
+      "分类分步综合运用"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "复杂的计数问题可先按某一标准分类，使每一类都能用乘法原理分步计算，再把各类的结果相加；分类要做到不重不漏，分步要按完成这件事情的先后顺序进行。如从甲地到丁地的路径问题按途经乙地或丙地分类；用数字组数时按首位数字的奇偶分类，同一类内再分步确定各位数字。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "综合应用",
+      "分类讨论",
+      "计数方法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 5（路径问题）与例 6（无重复数字的奇数）归纳。"
+  },
+  {
+    "id": "KP-COMB-0005",
+    "node_type": "KnowledgePoint",
+    "name": "正约数的计数方法",
+    "aliases": [
+      "正约数个数",
+      "约数计数"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求正整数 N 的正约数个数：先把 N 分解素因数，再由每个素因数的指数确定它在约数中的指数（可取 0 到该指数），最后用乘法原理相乘。如 $540=2^2\\times3^3\\times5$ 的正约数共有 $3\\times4\\times2=24$ 个。",
+    "latex": "540=2^2\\times3^3\\times5",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "正约数",
+      "素因数分解",
+      "乘法原理应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "习题 6.1 B 组第 4 题推广：$n=p_1^{\\alpha}p_2^{\\beta}p_3^{\\gamma}$ 的正约数个数为 $(\\alpha+1)(\\beta+1)(\\gamma+1)$。"
+  },
+  {
+    "id": "KP-COMB-0006",
+    "node_type": "KnowledgePoint",
+    "name": "排列的定义",
+    "aliases": [
+      "排列",
+      "permutation"
+    ],
+    "kp_type": "concept",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "从 n 个互不相同的元素中取出 $m$（$m\\leqslant n$）个不同元素，按照一定的顺序排成一列，叫做从 n 个元素中取出 m 个元素的一个排列。两个排列相同，要求元素完全相同且排列顺序也完全相同；元素或顺序不同则是不同的排列，排列关心取出的顺序，这与组合不同。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列",
+      "有序排列",
+      "概念定义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0007",
+    "node_type": "KnowledgePoint",
+    "name": "排列数",
+    "aliases": [
+      "排列数",
+      "permutation number"
+    ],
+    "kp_type": "concept",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "从 n 个互不相同的元素中取出 $m$（$m\\leqslant n$）个不同元素的所有排列的个数，叫做从 n 个元素中取出 m 个元素的排列数，用符号 $\\mathrm{P}_n^m$ 表示（有些资料中也用 A 表示）。如从 3 个不同元素中任取 2 个元素，排列数为 $\\mathrm{P}_3^2=6$。",
+    "latex": "\\mathrm{P}_n^m",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列数",
+      "记号",
+      "排列"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0008",
+    "node_type": "KnowledgePoint",
+    "name": "排列数公式",
+    "aliases": [
+      "排列数计算公式"
+    ],
+    "kp_type": "formula",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "排列数公式：$\\mathrm{P}_n^m=n(n-1)(n-2)\\cdots(n-m+1)$（m、n 为正整数，$m\\leqslant n$）。推导：把 m 个位置依次填上元素，第 1 个位置有 n 种填法，第 2 个位置有 n-1 种填法……第 m 个位置有 $n-m+1$ 种，由乘法原理相乘即得。",
+    "latex": "\\mathrm{P}_n^m=n(n-1)(n-2)\\cdots(n-m+1)",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列数公式",
+      "乘法原理",
+      "公式推导"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0009",
+    "node_type": "KnowledgePoint",
+    "name": "全排列与阶乘",
+    "aliases": [
+      "全排列",
+      "阶乘",
+      "factorial"
+    ],
+    "kp_type": "concept",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "把 n 个不同元素全部进行排列，叫做这 n 个元素的全排列，其排列数 $\\mathrm{P}_n^n=n(n-1)(n-2)\\cdots\\times3\\times2\\times1$。乘积 $n(n-1)(n-2)\\cdots\\times3\\times2\\times1$ 记作 $n!$，读作 n 的阶乘，即 $\\mathrm{P}_n^n=n!$。",
+    "latex": "\\mathrm{P}_n^n=n!",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "全排列",
+      "阶乘",
+      "记号"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0010",
+    "node_type": "KnowledgePoint",
+    "name": "排列数公式的阶乘形式",
+    "aliases": [
+      "阶乘形式",
+      "排列数与阶乘的关系"
+    ],
+    "kp_type": "formula",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "排列数公式可写成阶乘形式 $\\mathrm{P}_n^m=\\frac{n!}{(n-m)!}$。为使上式在 $m=n$ 时也成立，规定 $0!=1$；为使它在 $m=0$ 时也成立，规定 $\\mathrm{P}_n^0=1$。该形式便于进行式子的化简与恒等变形。",
+    "latex": "\\mathrm{P}_n^m=\\frac{n!}{(n-m)!}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列数公式",
+      "阶乘",
+      "规定"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "规定 $0!=1$、$\\mathrm{P}_n^0=1$ 是为使公式在 $m=n$、$m=0$ 时也成立。"
+  },
+  {
+    "id": "KP-COMB-0011",
+    "node_type": "KnowledgePoint",
+    "name": "排列数的性质",
+    "aliases": [
+      "排列数性质",
+      "递推关系"
+    ],
+    "kp_type": "property",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "排列数的两个性质（m、n 为正整数，$m\\leqslant n$）：(1) $\\mathrm{P}_n^m=n\\mathrm{P}_{n-1}^{m-1}$；(2) $\\mathrm{P}_n^m+m\\mathrm{P}_n^{m-1}=\\mathrm{P}_{n+1}^m$。两者均可由排列数公式的阶乘形式化简证明，常用于排列数式的恒等变形。",
+    "latex": "\\mathrm{P}_n^m=n\\mathrm{P}_{n-1}^{m-1}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列数性质",
+      "恒等变形"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 8 给出并证明。"
+  },
+  {
+    "id": "KP-COMB-0012",
+    "node_type": "KnowledgePoint",
+    "name": "排列中的特殊位置与排除法",
+    "aliases": [
+      "特殊位置法",
+      "排除法",
+      "特殊元素优先"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "有附加条件的排列问题常有两种思路：一是优先安排特殊位置或特殊元素，如数字 0 不能在首位时先排首位；二是先求无限制时的排列总数，再减去不符合条件的排列数（排除法），如 $\\mathrm{P}_6^3-\\mathrm{P}_5^2$。限制较多时可按某元素的位置分类讨论。",
+    "latex": "\\mathrm{P}_6^3-\\mathrm{P}_5^2",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列应用",
+      "特殊位置",
+      "排除法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 4、例 6 归纳。"
+  },
+  {
+    "id": "KP-COMB-0013",
+    "node_type": "KnowledgePoint",
+    "name": "捆绑法与插空法",
+    "aliases": [
+      "捆绑法",
+      "插空法",
+      "相邻与不相邻"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "解决排列中的相邻与不相邻问题：要求某些元素必须相邻时用捆绑法，把它们看成一个大元素与其他元素一起排列，再乘上这些元素内部的排列数；要求某些元素不相邻时用插空法，先排其余元素，再把不相邻的元素插入留下的空位中。如甲、乙不相邻用插空法，若干本书要排在一起用捆绑法。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "排列应用",
+      "捆绑法",
+      "插空法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "由例 5 归纳：甲、乙不相邻用插空法；同类书要排在一起用捆绑法。"
+  },
+  {
+    "id": "KP-COMB-0014",
+    "node_type": "KnowledgePoint",
+    "name": "组合的定义",
+    "aliases": [
+      "组合",
+      "combination"
+    ],
+    "kp_type": "concept",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "从 n 个互不相同的元素中取出 $m$（$m\\leqslant n$）个不同元素作为一组，叫做从 n 个元素中取出 m 个元素的一个组合。组合问题只关注选出哪些元素，不关注它们的排列顺序：两个组合只要元素完全相同就是相同的组合；只有元素不完全相同时才是不相同的组合。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "组合",
+      "无序选取",
+      "概念定义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0015",
+    "node_type": "KnowledgePoint",
+    "name": "排列与组合的区分",
+    "aliases": [
+      "排列组合辨析",
+      "有序与无序"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "判断一个计数问题是排列还是组合，关键看是否与顺序有关：有顺序要求的（如排队、担任不同职务、取点作坐标）是排列问题；与顺序无关、只问选取哪几个元素的（如选代表、单循环赛对阵、取球）是组合问题。元素相同、顺序不同的排列是不同的排列，但它们对应同一个组合。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "排列与组合",
+      "问题辨析"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 1、例 2 归纳。"
+  },
+  {
+    "id": "KP-COMB-0016",
+    "node_type": "KnowledgePoint",
+    "name": "组合数",
+    "aliases": [
+      "组合数",
+      "combination number"
+    ],
+    "kp_type": "concept",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "从 n 个互不相同的元素中取出 $m$（$m\\leqslant n$）个不同元素的所有组合的个数，叫做从 n 个元素中取出 m 个元素的组合数，用符号 $\\mathrm{C}_n^m$ 表示，也常记作 $\\binom{n}{m}$。如从 3 名学生中任选 2 名，选法数为 $\\mathrm{C}_3^2=3$。",
+    "latex": "\\mathrm{C}_n^m=\\binom{n}{m}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "组合数",
+      "记号",
+      "组合"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0017",
+    "node_type": "KnowledgePoint",
+    "name": "组合数公式",
+    "aliases": [
+      "组合数计算公式"
+    ],
+    "kp_type": "formula",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "从 n 个不同的元素中任取 m 个的排列可分成两步：先取组合有 $\\mathrm{C}_n^m$ 种；再将组合内 m 个元素全排列，有 $\\mathrm{P}_m^m$ 种。由乘法原理得 $\\mathrm{C}_n^m=\\frac{\\mathrm{P}_n^m}{\\mathrm{P}_m^m}=\\frac{n(n-1)\\cdots(n-m+1)}{m!}$。",
+    "latex": "\\mathrm{C}_n^m=\\frac{\\mathrm{P}_n^m}{\\mathrm{P}_m^m}=\\frac{n(n-1)\\cdots(n-m+1)}{m!}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "组合数公式",
+      "排列数公式",
+      "公式推导"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "推导依据 $\\mathrm{P}_n^m=\\mathrm{C}_n^m\\mathrm{P}_m^m$。"
+  },
+  {
+    "id": "KP-COMB-0018",
+    "node_type": "KnowledgePoint",
+    "name": "组合数公式的阶乘形式",
+    "aliases": [
+      "组合数阶乘式"
+    ],
+    "kp_type": "formula",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "把 $\\mathrm{P}_n^m=\\frac{n!}{(n-m)!}$、$\\mathrm{P}_m^m=m!$ 代入组合数公式，得 $\\mathrm{C}_n^m=\\frac{n!}{m!\\,(n-m)!}$；并规定 $\\mathrm{C}_n^0=1$，使该公式对 $m=0$ 也成立。",
+    "latex": "\\mathrm{C}_n^m=\\frac{n!}{m!\\,(n-m)!}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "组合数公式",
+      "阶乘",
+      "规定"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0019",
+    "node_type": "KnowledgePoint",
+    "name": "组合数的两个基本性质",
+    "aliases": [
+      "组合数性质",
+      "对称性",
+      "递推性"
+    ],
+    "kp_type": "property",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "组合数的两个基本性质（n 为正整数，$m\\leqslant n$）：(1) 对称性：$\\mathrm{C}_n^m=\\mathrm{C}_n^{n-m}$，当 $m>\\frac{n}{2}$ 时化为较小的组合数计算；(2) 递推性：$\\mathrm{C}_{n+1}^m=\\mathrm{C}_n^m+\\mathrm{C}_n^{m-1}$。",
+    "latex": "\\mathrm{C}_n^m=\\mathrm{C}_n^{n-m},\\quad \\mathrm{C}_{n+1}^m=\\mathrm{C}_n^m+\\mathrm{C}_n^{m-1}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "组合数性质",
+      "对称性",
+      "递推性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "m 为自然数，n 为正整数且 $m\\leqslant n$；两式均可由组合数公式或组合的意义证明，由例 8 给出；递推性在 6.5 节证明二项式定理时用到。"
+  },
+  {
+    "id": "KP-COMB-0020",
+    "node_type": "KnowledgePoint",
+    "name": "利用组合数性质化简与求值",
+    "aliases": [
+      "组合数化简",
+      "组合数方程"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "利用组合数公式与两条性质可以化简组合数式、解含组合数的方程：如 $\\mathrm{C}_{100}^{97}=\\mathrm{C}_{100}^3$；反复使用递推性质可合并结构相同的和式，如 $\\mathrm{C}_3^0+\\mathrm{C}_4^1+\\mathrm{C}_5^2+\\cdots+\\mathrm{C}_{n+3}^n$ 可逐步化简。",
+    "latex": "\\mathrm{C}_{100}^{97}=\\mathrm{C}_{100}^3",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "组合数性质应用",
+      "化简求值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 7、例 9 与练习 6.3(3) 归纳；练习第 2 题结论为 $\\mathrm{C}_3^0+\\mathrm{C}_4^1+\\mathrm{C}_5^2+\\cdots+\\mathrm{C}_{n+3}^n=\\mathrm{C}_{n+4}^n$。"
+  },
+  {
+    "id": "KP-COMB-0021",
+    "node_type": "KnowledgePoint",
+    "name": "古典概率问题中的排列组合计数",
+    "aliases": [
+      "概率中的计数",
+      "等可能样本点计数"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "古典概率模型要求各个样本点等可能出现。当样本点总数较大、枚举不便时，用排列组合计数：先分类或分步统计样本点总数 n，再统计事件 A 所含样本点数 k，由 $P(A)=\\frac{k}{n}$ 求概率，如 $P(A)=\\frac{\\mathrm{C}_6^2}{\\mathrm{C}_{20}^2}=\\frac{3}{38}$。",
+    "latex": "P(A)=\\frac{k}{n}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.4",
+      "page": null
+    },
+    "tags": [
+      "古典概率",
+      "排列组合计数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "古典概率模型与概率公式详见 PROB 模块（待补跨模块边）。"
+  },
+  {
+    "id": "KP-COMB-0022",
+    "node_type": "KnowledgePoint",
+    "name": "“至少”型问题的反向计数",
+    "aliases": [
+      "对立事件计数",
+      "补集思想",
+      "反向计数"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "当事件中含有“至少”“至多”等字样而直接计数较繁时，可转而计数它的对立情形：先求对立事件的概率，再由 $P(B)=1-P(\\overline{B})$ 求解。如 4 件产品中至少 1 件二等品，先算全是一等品的概率 $\\frac{\\mathrm{C}_{90}^4}{\\mathrm{C}_{100}^4}$。",
+    "latex": "P(B)=1-P(\\overline{B})",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.4",
+      "page": null
+    },
+    "tags": [
+      "反向计数",
+      "对立事件",
+      "概率计算"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "对立事件与概率的减法公式详见 PROB 模块（待补跨模块边）。"
+  },
+  {
+    "id": "KP-COMB-0023",
+    "node_type": "KnowledgePoint",
+    "name": "有重复情形下的分步计数",
+    "aliases": [
+      "可重复计数",
+      "样本点总数"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "若每一步的选取允许重复、彼此独立，则样本点的计数直接由乘法原理相乘。如 10 名学生的出生月份，每人有 12 种可能，样本点共 $12^{10}$ 个；“没有任何两名学生同月出生”的情形有 $\\mathrm{P}_{12}^{10}$ 个，可由此求概率。",
+    "latex": "12^{10},\\quad \\mathrm{P}_{12}^{10}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.4",
+      "page": null
+    },
+    "tags": [
+      "乘法原理应用",
+      "可重复",
+      "样本点"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "与排列的“无重复”不同，这里每个月可被多名学生选中；相关概率内容详见 PROB 模块（待补跨模块边）。"
+  },
+  {
+    "id": "KP-COMB-0024",
+    "node_type": "KnowledgePoint",
+    "name": "杨辉三角",
+    "aliases": [
+      "贾宪三角",
+      "帕斯卡三角形",
+      "Pascal triangle"
+    ],
+    "kp_type": "concept",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "know",
+    "statement": "把 $(a+b)^n$（n=1,2,3,…）展开式的系数按次数排成的数阵称为杨辉三角（西方称帕斯卡三角形）。特点：每行首末两数都是 1；除首末外每个数等于它“肩上”两数之和；n 为偶数时最大系数在中间一项，n 为奇数时在中间两项。它也是研究组合数性质的重要工具。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "杨辉三角",
+      "二项式系数",
+      "数学史"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "我国数学家杨辉 1261 年所著《详解九章算法》中记载此图，亦称贾宪三角；数阵的规律用组合数表示即得组合数的性质与二项式系数的最值。"
+  },
+  {
+    "id": "KP-COMB-0025",
+    "node_type": "KnowledgePoint",
+    "name": "二项式定理",
+    "aliases": [
+      "binomial theorem",
+      "二项展开式"
+    ],
+    "kp_type": "theorem",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "定理：对任意 a、b 和正整数 n，$(a+b)^n=\\mathrm{C}_n^0a^n+\\mathrm{C}_n^1a^{n-1}b+\\cdots+\\mathrm{C}_n^ra^{n-r}b^r+\\cdots+\\mathrm{C}_n^nb^n$。右边的式子称为二项展开式，共有 n+1 项，各项中 a 与 b 的指数之和都等于 n。",
+    "latex": "(a+b)^n=\\mathrm{C}_n^0a^n+\\mathrm{C}_n^1a^{n-1}b+\\cdots+\\mathrm{C}_n^nb^n",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "二项式定理",
+      "二项展开式",
+      "组合数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材用数学归纳法证明，另附用组合的定义与多项式乘法规则的证明；讨论时约定 $a^0=b^0=1$。"
+  },
+  {
+    "id": "KP-COMB-0026",
+    "node_type": "KnowledgePoint",
+    "name": "二项展开式的通项",
+    "aliases": [
+      "通项",
+      "二项展开式的第 r+1 项"
+    ],
+    "kp_type": "formula",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "$(a+b)^n$ 的二项展开式中第 r+1 项为 $T_{r+1}=\\mathrm{C}_n^ra^{n-r}b^r$（r=0,1,2,…,n），称为二项展开式的通项。由通项可以求展开式中满足特定条件的项，如含 x 的某次幂的项、常数项等。",
+    "latex": "T_{r+1}=\\mathrm{C}_n^ra^{n-r}b^r",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "二项展开式",
+      "通项",
+      "指定项"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-COMB-0027",
+    "node_type": "KnowledgePoint",
+    "name": "利用通项求指定项",
+    "aliases": [
+      "求特定项",
+      "指定项求法"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "求展开式中的指定项：先写出通项 $T_{r+1}=\\mathrm{C}_n^ra^{n-r}b^r$，把底数中的数字系数一并代入，再令指数运算的结果等于所需值解出 r，代回求该项或系数。如 $(3-2x)^6$ 中令 r=3，可得 $x^3$ 的系数为 -4320。",
+    "latex": "T_{r+1}=\\mathrm{C}_n^ra^{n-r}b^r",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "通项应用",
+      "指定项",
+      "二项展开式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 2 与练习 6.5(1) 归纳。"
+  },
+  {
+    "id": "KP-COMB-0028",
+    "node_type": "KnowledgePoint",
+    "name": "二项式定理用于整除问题",
+    "aliases": [
+      "整除问题",
+      "余数问题"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "证明整除问题的一种方法：把底数拆成与除数有关的数与 1 的和，用二项式定理展开后使各项都含有该因数。如证明 $15^n-1$ 是 7 的倍数：由 $(14+1)^n$ 展开，$15^n-1$ 的每一项都含因数 14，故能被 7 整除；用同样的方法还可求一个数除以某数的余数。",
+    "latex": "15^n-1",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "二项式定理应用",
+      "整除",
+      "证明方法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 3 与习题 6.5 B 组第 7 题（求 $55^{55}$ 被 8 除的余数）归纳。"
+  },
+  {
+    "id": "KP-COMB-0029",
+    "node_type": "KnowledgePoint",
+    "name": "组合数恒等式（赋值法）",
+    "aliases": [
+      "赋值法",
+      "二项式系数和",
+      "组合数性质"
+    ],
+    "kp_type": "formula",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在二项式定理中令 $a=b=1$，得 $\\mathrm{C}_n^0+\\mathrm{C}_n^1+\\cdots+\\mathrm{C}_n^n=2^n$；令 $a=1$、$b=-1$，得 $\\mathrm{C}_n^0-\\mathrm{C}_n^1+\\cdots+(-1)^n\\mathrm{C}_n^n=0$。",
+    "latex": "\\mathrm{C}_n^0+\\mathrm{C}_n^1+\\cdots+\\mathrm{C}_n^n=2^n",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "组合数恒等式",
+      "赋值法",
+      "二项式定理应用"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材正文由特殊值代入直接得到这两个结论；两式联立还可得奇数项与偶数项系数和均为 $2^{n-1}$。"
+  },
+  {
+    "id": "KP-COMB-0030",
+    "node_type": "KnowledgePoint",
+    "name": "求二项展开式的系数和",
+    "aliases": [
+      "系数和",
+      "赋值法求系数"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求展开式各项系数之和常用赋值法：在展开式中令字母取 1，所得的数就是全部系数之和；再令字母取 -1，两式联立可求奇数项与偶数项的系数和。如 $(3+2y)^{100}$ 中令 y=1，得系数和为 $5^{100}$；其依据是恒等式对任意值都成立。",
+    "latex": "a_0+a_1+\\cdots+a_{100}=5^{100}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "系数和",
+      "赋值法",
+      "二项式定理应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 4：已知 $(1+2x)^{100}=a_0+a_1(x-1)+\\cdots+a_{100}(x-1)^{100}$，经换元化为 $(3+2y)^{100}$ 后赋值，求得 $a_1+a_3+\\cdots+a_{99}=\\frac{5^{100}-1}{2}$。"
+  },
+  {
+    "id": "KP-COMB-0031",
+    "node_type": "KnowledgePoint",
+    "name": "二项式系数的最大值",
+    "aliases": [
+      "最大二项式系数",
+      "中间项"
+    ],
+    "kp_type": "property",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "二项式系数 $\\mathrm{C}_n^r$（r=0,1,…,n）中，n 为偶数时最大的系数是中间一项 $\\mathrm{C}_n^{n/2}$；n 为奇数时最大的系数是中间两项 $\\mathrm{C}_n^{(n-1)/2}$ 与 $\\mathrm{C}_n^{(n+1)/2}$，由相邻两项之比 $\\frac{n-r}{r+1}$ 的取值讨论得到。",
+    "latex": "\\frac{\\mathrm{C}_n^{r+1}}{\\mathrm{C}_n^r}=\\frac{n-r}{r+1}",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "二项式系数",
+      "最值",
+      "单调性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 5 证明；与杨辉三角中“中间系数最大”的规律一致。"
+  },
+  {
+    "id": "KP-COMB-0032",
+    "node_type": "KnowledgePoint",
+    "name": "求系数最大的项",
+    "aliases": [
+      "最大项",
+      "系数比较法"
+    ],
+    "kp_type": "method",
+    "module": "COMB",
+    "section_id": "SEC-XB2-06-05",
+    "sub_section_id": null,
+    "difficulty": 5,
+    "importance": "apply",
+    "statement": "求展开式中系数最大的项：先写出二项展开式的通项，设第 r+1 项的系数为 $c_{r+1}$，通过比较相邻两项的系数（作商或作差）判断系数的增减，先解出使系数递增的 r 的范围，再确定最大项所在的项；若系数有正有负，应先取绝对值转化为正数后讨论。",
+    "latex": "\\frac{c_{r+1}}{c_r}>1",
+    "source": {
+      "book": "XB2",
+      "chapter": 6,
+      "section": "6.5",
+      "page": null
+    },
+    "tags": [
+      "系数最大项",
+      "比值法",
+      "二项展开式"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "由例 6 归纳：$(1+3x)^{15}$ 中由 $\\frac{c_{r+2}}{c_{r+1}}-1=\\frac{44-4r}{r+1}$ 讨论，得系数最大的是第 12、13 项。"
+  }
+]

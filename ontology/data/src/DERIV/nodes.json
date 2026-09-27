@@ -1,0 +1,810 @@
+[
+  {
+    "id": "KP-DERIV-0001",
+    "node_type": "KnowledgePoint",
+    "name": "平均变化率",
+    "aliases": [
+      "函数的平均变化率",
+      "平均速度",
+      "average rate of change"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "函数 $y=f(x)$ 在以 $x_0$ 和 $x_0+h$ 为端点的区间上的平均变化率为 $\\frac{f(x_0+h)-f(x_0)}{h}$（$h\\neq 0$），它反映函数在该区间上的平均变化情况；变速运动中距离函数的平均变化率就是平均速度。",
+    "latex": "\\frac{f(x_0+h)-f(x_0)}{h}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "平均变化率",
+      "平均速度"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0002",
+    "node_type": "KnowledgePoint",
+    "name": "瞬时变化率与瞬时速度",
+    "aliases": [
+      "瞬时速度",
+      "瞬时变化率"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "物体在某一时刻的瞬时速度，是指它在临近该时刻的时间段内的平均速度，当时间段长度越来越小时所趋近的稳定值；而函数在 $x_0$ 处的瞬时变化率则是 $\\frac{f(x_0+h)-f(x_0)}{h}$ 在 $h$ 趋近于 0 时趋近的稳定值。",
+    "latex": "\\lim_{h\\to 0}\\frac{f(x_0+h)-f(x_0)}{h}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "瞬时变化率",
+      "瞬时速度",
+      "极限思想"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0003",
+    "node_type": "KnowledgePoint",
+    "name": "导数的定义",
+    "aliases": [
+      "导数",
+      "derivative",
+      "f'(x0)"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "如果 $\\frac{f(x_0+h)-f(x_0)}{h}$ 在 $h$ 趋近于 0 时趋近于一个稳定值（即有极限），就把这个极限值称为函数 $y=f(x)$ 在 $x=x_0$ 处的导数，记作 $f'(x_0)$；物体在 $t_0$ 时刻的瞬时速度就是距离函数在该时刻的导数。",
+    "latex": "f'(x_0)=\\lim_{h\\to 0}\\frac{f(x_0+h)-f(x_0)}{h}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "导数概念",
+      "极限",
+      "瞬时速度"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0004",
+    "node_type": "KnowledgePoint",
+    "name": "用定义法求导数",
+    "aliases": [
+      "定义法求导",
+      "三步法",
+      "求导数的方法"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "用定义求函数在某点处导数的步骤：①求增量 $f(x_0+h)-f(x_0)$；②作比 $\\frac{f(x_0+h)-f(x_0)}{h}$ 并化简，常用技巧是通分、约分、分子有理化；③令 $h$ 趋近于 0，求比值的稳定值即得导数。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "求导方法",
+      "定义法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例1、例2、例4、例5归纳的求导通法。"
+  },
+  {
+    "id": "KP-DERIV-0005",
+    "node_type": "KnowledgePoint",
+    "name": "割线与切线",
+    "aliases": [
+      "割线",
+      "切线",
+      "secant line",
+      "tangent line"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "连接曲线上任意两点的直线称为该曲线的一条割线；当曲线上的点 $Q$ 沿曲线越来越靠近定点 $P$ 时，若割线 $PQ$ 趋近于一条确定的直线，就把这条直线称为曲线在点 $P$ 处的切线。对圆而言，该定义与平面几何中圆的切线定义一致。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "割线",
+      "切线",
+      "曲线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0006",
+    "node_type": "KnowledgePoint",
+    "name": "导数的几何意义与切线方程",
+    "aliases": [
+      "导数的几何意义",
+      "切线斜率",
+      "切线方程"
+    ],
+    "kp_type": "property",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "函数 $y=f(x)$ 在 $x=x_0$ 处的导数 $f'(x_0)$ 就是曲线 $y=f(x)$ 在点 $P(x_0,f(x_0))$ 处切线的斜率；因此曲线在点 $P$ 处的切线方程为 $y-f(x_0)=f'(x_0)(x-x_0)$。",
+    "latex": "y-f(x_0)=f'(x_0)(x-x_0)",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "几何意义",
+      "切线",
+      "斜率"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0007",
+    "node_type": "KnowledgePoint",
+    "name": "驻点",
+    "aliases": [
+      "stationary point",
+      "导数为零的点"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "导数为零的点称为函数的驻点（stationary point），曲线在其驻点处的切线是一条水平直线；求驻点即解方程 $f'(x)=0$。例如 $x=0$ 是函数 $y=x^3$ 的驻点。求驻点常是划分单调区间、寻找极值点的第一步。",
+    "latex": "f'(x)=0",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.1",
+      "page": null
+    },
+    "tags": [
+      "驻点",
+      "导数零点"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材在例5（$y=x^3$ 在原点处导数为零）后引入驻点概念。"
+  },
+  {
+    "id": "KP-DERIV-0008",
+    "node_type": "KnowledgePoint",
+    "name": "导函数",
+    "aliases": [
+      "derived function",
+      "求导",
+      "导函数的定义"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在导数存在的前提下，对不同的 $x$ 总有一个确定的导数值 $f'(x)$ 与之对应，因此 $y'=f'(x)$ 也是关于 $x$ 的函数，称为函数 $y=f(x)$ 的导函数（也简称导数）；求导数的过程常简称为求导，有了导函数，求某点处导数只需代入求值。",
+    "latex": "f'(x)=\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "导函数",
+      "求导"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0009",
+    "node_type": "KnowledgePoint",
+    "name": "常数函数与幂函数的导数公式",
+    "aliases": [
+      "(C)'=0",
+      "幂函数求导公式"
+    ],
+    "kp_type": "formula",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "基本求导公式：$(C)'=0$（$C$ 为常数），$(x^{\\alpha})'=\\alpha x^{\\alpha-1}$（$\\alpha$ 为常数）；例如 $(x^2)'=2x$、$(x^{-1})'=-x^{-2}$、$(\\sqrt{x})'=\\frac{1}{2\\sqrt{x}}$。",
+    "latex": "(x^{\\alpha})'=\\alpha x^{\\alpha-1}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "求导公式",
+      "常数函数",
+      "幂函数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "公式(1)(2)，教材由例1—例3用导数定义推导；完整推导可参阅高等数学教材。"
+  },
+  {
+    "id": "KP-DERIV-0010",
+    "node_type": "KnowledgePoint",
+    "name": "指数函数与对数函数的导数公式（以 e 为底）",
+    "aliases": [
+      "(e^x)'=e^x",
+      "(ln x)'=1/x",
+      "自然指数与自然对数的导数"
+    ],
+    "kp_type": "formula",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "基本求导公式：$(\\mathrm{e}^x)'=\\mathrm{e}^x$，$(\\ln x)'=\\frac{1}{x}$。即指数函数 $y=\\mathrm{e}^x$ 的导数等于它本身；利用这两个公式可证明函数 $y=\\ln x$ 与 $y=\\mathrm{e}^x$ 都没有驻点。",
+    "latex": "(\\mathrm{e}^x)'=\\mathrm{e}^x,\\quad (\\ln x)'=\\frac{1}{x}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "求导公式",
+      "指数函数",
+      "对数函数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0011",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数与余弦函数的导数公式",
+    "aliases": [
+      "(sin x)'=cos x",
+      "(cos x)'=-sin x",
+      "三角函数求导公式"
+    ],
+    "kp_type": "formula",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "$(\\sin x)'=\\cos x$，$(\\cos x)'=-\\sin x$。据此，正弦函数 $y=\\sin x$ 的驻点满足 $\\cos x=0$，解得 $x=k\\pi+\\frac{\\pi}{2}\\ (k\\in\\mathbf{Z})$，即正弦函数的全部驻点。",
+    "latex": "(\\sin x)'=\\cos x,\\quad (\\cos x)'=-\\sin x",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "求导公式",
+      "三角函数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "例5中利用 $(\\sin x)'=\\cos x$ 求正弦函数的驻点。"
+  },
+  {
+    "id": "KP-DERIV-0012",
+    "node_type": "KnowledgePoint",
+    "name": "导数的四则运算法则",
+    "aliases": [
+      "求导的四则运算法则",
+      "和差积商求导"
+    ],
+    "kp_type": "rule",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "设 $f(x)$、$g(x)$ 可导，则 $(f\\pm g)'=f'\\pm g'$，$(fg)'=f'g+fg'$，$\\left(\\frac{f}{g}\\right)'=\\frac{f'g-fg'}{g^2}$（$g\\neq 0$）；特别地，$(Cf)'=Cf'$（$C$ 为常数）。",
+    "latex": "(fg)'=f'g+fg'",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "求导法则",
+      "四则运算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材用导数定义推导了积的求导公式(8)，其余公式可由学生自行完成。"
+  },
+  {
+    "id": "KP-DERIV-0013",
+    "node_type": "KnowledgePoint",
+    "name": "简单复合函数的求导法则",
+    "aliases": [
+      "复合函数求导",
+      "中间变量",
+      "y=f(ax+b) 的导数"
+    ],
+    "kp_type": "rule",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "由 $y=f(u)$ 与 $u=ax+b\\ (a\\neq 0)$ 复合而成的函数 $y=f(ax+b)$，其求导法则为 $(f(ax+b))'=af'(u)$，其中 $u=ax+b$。求导时先引入中间变量，把函数看作两个简单函数的复合。",
+    "latex": "(f(ax+b))'=af'(u),\\quad u=ax+b",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "复合函数",
+      "求导法则"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材只讨论 $y=f(ax+b)$ 型复合函数，不涉及一般复合函数的求导。"
+  },
+  {
+    "id": "KP-DERIV-0014",
+    "node_type": "KnowledgePoint",
+    "name": "一般指数函数与对数函数的导数公式",
+    "aliases": [
+      "(a^x)'=a^x ln a",
+      "(log_a x)' 的导数公式"
+    ],
+    "kp_type": "formula",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "设 $a>0$ 且 $a\\neq 1$，则 $(a^x)'=a^x\\ln a$，$(\\log_a x)'=\\frac{1}{x\\ln a}$。前者把 $a^x$ 化为 $\\mathrm{e}^{x\\ln a}$ 后用复合函数求导法则证明，后者用换底公式 $\\log_a x=\\frac{\\ln x}{\\ln a}$ 证明。",
+    "latex": "(a^x)'=a^x\\ln a,\\quad (\\log_a x)'=\\frac{1}{x\\ln a}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.2",
+      "page": null
+    },
+    "tags": [
+      "求导公式",
+      "指数函数",
+      "对数函数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "例8、例10分别给出两个公式的证明。"
+  },
+  {
+    "id": "KP-DERIV-0015",
+    "node_type": "KnowledgePoint",
+    "name": "导数与函数的单调性",
+    "aliases": [
+      "用导数判断单调性",
+      "单调性定理"
+    ],
+    "kp_type": "theorem",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "在区间 $I$ 上，若 $f'(x)>0$，则函数 $y=f(x)$ 在该区间严格增；若 $f'(x)<0$，则严格减。注意 $f'(x)>0$ 并不是函数严格增的必要条件，如 $y=x^3$ 在 $\\mathbf{R}$ 上严格增，但 $f'(0)=0$。",
+    "latex": "f'(x)>0\\Rightarrow y=f(x)\\ \\text{严格增}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "单调性",
+      "导数应用",
+      "定理"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材注明 $f'(x)>0$ 不是函数严格增的必要条件（例3处说明）。"
+  },
+  {
+    "id": "KP-DERIV-0016",
+    "node_type": "KnowledgePoint",
+    "name": "求函数的单调区间",
+    "aliases": [
+      "单调区间的求法",
+      "驻点划分区间"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "求函数单调区间的步骤：①求导数 $f'(x)$；②解方程 $f'(x)=0$，求出全部驻点；③用驻点划分区间并判断各区间内 $f'(x)$ 的符号，写出单调增区间与单调减区间。注意函数没有定义的点也可能成为分界点。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "单调区间",
+      "求导法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "驻点两侧导数符号不变时（如 $y=x^3$ 的 $x=0$）不是分界点；无定义点（如 $y=x^{-2}$ 的 $x=0$）可能成为分界点。"
+  },
+  {
+    "id": "KP-DERIV-0017",
+    "node_type": "KnowledgePoint",
+    "name": "导数值与函数图像变化的快慢",
+    "aliases": [
+      "变化快慢",
+      "陡峭程度",
+      "切线倾斜程度"
+    ],
+    "kp_type": "property",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "导数的绝对值越大，函数图像在该点附近相对于 $x$ 轴的倾斜程度越大，函数值变化越快、图像越“陡峭”：$f'(x_0)>0$ 时导数值越大递增越快；$f'(x_0)<0$ 时导数值越小递减越快。反之，导数越接近 0，图像在该点附近越平缓。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "导数意义",
+      "变化速度"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0018",
+    "node_type": "KnowledgePoint",
+    "name": "函数的极大值与极小值",
+    "aliases": [
+      "极值",
+      "极大值",
+      "极小值",
+      "极值点"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "若存在含有 $x_1$ 的开区间，使该区间内其他自变量对应的函数值都不大于 $f(x_1)$，就说函数在 $x=x_1$ 处取得极大值 $f(x_1)$，$x_1$ 称为极大值点；类似地定义极小值与极小值点。极大值与极小值统称极值，极值点即极值对应的自变量。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "极值",
+      "局部性质"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0019",
+    "node_type": "KnowledgePoint",
+    "name": "极值的判定定理",
+    "aliases": [
+      "极值判定",
+      "左正右负",
+      "驻点判定极值"
+    ],
+    "kp_type": "theorem",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "设 $x_0$ 是函数 $y=f(x)$ 的驻点：若在 $x_0$ 左侧附近 $f'(x)>0$、右侧附近 $f'(x)<0$，则 $f(x)$ 在 $x_0$ 处取得极大值；若左侧附近导数为负、右侧附近导数为正，则取得极小值。驻点不一定是极值点，如 $y=x^3$ 的 $x=0$。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "极值",
+      "判定定理",
+      "驻点"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "在导数存在的前提下，极值点一定是驻点，反之不成立。"
+  },
+  {
+    "id": "KP-DERIV-0020",
+    "node_type": "KnowledgePoint",
+    "name": "列表法求函数的单调区间与极值",
+    "aliases": [
+      "列表法",
+      "求极值的步骤"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "求函数单调区间与极值的步骤：①求导并解方程 $f'(x)=0$ 得驻点；②把驻点及其划分的区间列表，标出各区间内 $f'(x)$ 的符号与 $f(x)$ 的增减情况；③由驻点两侧导数符号的变化判断极值点并求出极值。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "单调区间",
+      "极值",
+      "列表法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0021",
+    "node_type": "KnowledgePoint",
+    "name": "极值与最值的区别与联系",
+    "aliases": [
+      "极值与最值",
+      "局部与整体"
+    ],
+    "kp_type": "property",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "极值反映函数在某点附近的局部特征，最值反映函数在定义域上的整体情况：有时极值与最值一致（如 $y=\\sin x$），有时不一致；极值与最值都可能不存在（如 $y=x^3$）。闭区间上的连续函数一定有最大值与最小值。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "极值",
+      "最值",
+      "概念辨析"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由教材 5.3 第3小节的比较及练习5.3(3) 的相关判断归纳。"
+  },
+  {
+    "id": "KP-DERIV-0022",
+    "node_type": "KnowledgePoint",
+    "name": "利用导数求闭区间上函数的最值",
+    "aliases": [
+      "求函数的最值",
+      "端点比较法"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "在导数存在的前提下，求闭区间 $[a,b]$ 上函数最值的方法：先求函数在开区间 $(a,b)$ 内的驻点，再比较驻点处与区间端点处的函数值，其中最大的就是最大值，最小的就是最小值。只需比较这些点处的函数值，不必逐一判断驻点是否为极值点。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "最值",
+      "闭区间",
+      "求导法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-DERIV-0023",
+    "node_type": "KnowledgePoint",
+    "name": "利用导数研究二次函数",
+    "aliases": [
+      "二次函数再认识",
+      "顶点与极值"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "对二次函数 $f(x)=ax^2+bx+c\\ (a>0)$，由 $f'(x)=2ax+b=0$ 得唯一驻点 $x_0=-\\frac{b}{2a}$：在 $x_0$ 左侧函数严格减、右侧严格增，故 $f(x_0)=\\frac{4ac-b^2}{4a}$ 为极小值，也是最小值。",
+    "latex": "x_0=-\\frac{b}{2a},\\quad f(x_0)=\\frac{4ac-b^2}{4a}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "二次函数",
+      "导数应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材只讨论 $a>0$ 的情形，$a<0$ 可类似得到相应结果。"
+  },
+  {
+    "id": "KP-DERIV-0024",
+    "node_type": "KnowledgePoint",
+    "name": "用导数方法解一元二次不等式",
+    "aliases": [
+      "二次不等式的导数解法",
+      "结合零点与最小值"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "结合二次函数的零点、单调性与最小值可解一元二次不等式：对 $a>0$，当 $\\Delta>0$ 时 $ax^2+bx+c\\geqslant 0$ 的解集是两根外侧的并集；当 $\\Delta\\leqslant 0$ 时函数的最小值非负，故解集为 $\\mathbf{R}$。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "一元二次不等式",
+      "解集"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "用导数工具重新得到必修课程第2章中二次不等式的结论。"
+  },
+  {
+    "id": "KP-DERIV-0025",
+    "node_type": "KnowledgePoint",
+    "name": "利用导数解决实际优化问题",
+    "aliases": [
+      "优化问题",
+      "最大利润",
+      "最小费用"
+    ],
+    "kp_type": "method",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 5,
+    "importance": "apply",
+    "statement": "解答实际优化问题的步骤：①把实际问题中要求最大（小）值的量表示为关于某个变量的函数，并确定定义域；②求导并解 $f'(x)=0$ 得驻点；③由实际意义或导数符号判断该驻点即最大（小）值点；④作答，注意舍去不在定义域内的驻点。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "实际应用",
+      "优化问题",
+      "建模"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "例11（纸盒容积）、例13（抗弯强度）、例14（航速费用）均可纳入该方法框架。"
+  },
+  {
+    "id": "KP-DERIV-0026",
+    "node_type": "KnowledgePoint",
+    "name": "边际成本与平均成本",
+    "aliases": [
+      "边际成本",
+      "平均成本"
+    ],
+    "kp_type": "concept",
+    "module": "DERIV",
+    "section_id": "SEC-XB2-05-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "经济学中，成本函数 $C(q)$ 的导数 $C'(q)$ 称为边际成本，它表示产量为 $q$ 时增加单位产量需付出的成本增加量；平均成本 $\\overline{C}(q)=\\frac{C(q)}{q}$ 取最小值时的产量，可由 $\\overline{C}'(q)=0$ 结合单调性求得。",
+    "latex": "\\overline{C}(q)=\\frac{C(q)}{q}",
+    "source": {
+      "book": "XB2",
+      "chapter": 5,
+      "section": "5.3",
+      "page": null
+    },
+    "tags": [
+      "经济应用",
+      "成本函数"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "例12引入，边际成本为经济学概念，教材强调其实际意义的解释。"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "id": "KP-SET-0001",
+    "node_type": "KnowledgePoint",
+    "name": "集合与元素",
+    "aliases": [
+      "集合",
+      "元素",
+      "属于",
+      "不属于",
+      "set",
+      "element"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "把一些确定的对象的全体叫做集合（简称集），集合通常用大写字母 $A,B,C,\\cdots$ 表示；集合所含的各个对象叫做该集合的元素，元素通常用小写字母 $a,b,c,\\cdots$ 表示。若 $a$ 是集合 $A$ 的元素，就记作 $a\\in A$，读作“a 属于 A”；若 $a$ 不是集合 $A$ 的元素，记作 $a\\notin A$。",
+    "latex": "a\\in A,\\quad a\\notin A",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "集合概念",
+      "元素",
+      "属于关系"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0002",
+    "node_type": "KnowledgePoint",
+    "name": "集合元素的三个特征",
+    "aliases": [
+      "确定性",
+      "互异性",
+      "无序性",
+      "元素三性"
+    ],
+    "kp_type": "property",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "集合中的元素具有确定性、互异性与无序性。确定性：给定一个集合，一个对象在不在这个集合中是确定的，标准不明确的对象不能组成集合（如“班里高个子的同学”）；互异性：同一集合中的元素互不相同，一个元素不能重复出现；无序性：讨论集合时不考虑元素的顺序，如 $\\{1,2\\}=\\{2,1\\}$。",
+    "latex": "\\{1,2\\}=\\{2,1\\}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "元素特征",
+      "集合性质"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "无序性在列举法一节中给出（{1,2}={2,1}），此处归并为元素三特征。"
+  },
+  {
+    "id": "KP-SET-0003",
+    "node_type": "KnowledgePoint",
+    "name": "集合相等",
+    "aliases": [
+      "相等的集合",
+      "A=B"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "如果两个集合 $A$ 与 $B$ 的组成元素完全相同，就称这两个集合相等，记作 $A=B$。",
+    "latex": "A=B",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "集合相等",
+      "元素完全相同"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0004",
+    "node_type": "KnowledgePoint",
+    "name": "有限集与无限集",
+    "aliases": [
+      "有限集",
+      "无限集"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "元素个数有限的集合称为有限集；元素个数无限的集合称为无限集。例如 600 的正约数组成的集合是有限集；一条长度为 1 的线段上的所有点组成的集合是无限集。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "有限集",
+      "无限集"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0005",
+    "node_type": "KnowledgePoint",
+    "name": "常用数集及其包含关系",
+    "aliases": [
+      "数集",
+      "自然数集",
+      "整数集",
+      "有理数集",
+      "实数集"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "master",
+    "statement": "常用数集及其符号：自然数集 $\\mathbf{N}$、整数集 $\\mathbf{Z}$、有理数集 $\\mathbf{Q}$、实数集 $\\mathbf{R}$，它们之间满足包含关系 $\\mathbf{N}\\subset\\mathbf{Z}\\subset\\mathbf{Q}\\subset\\mathbf{R}$。",
+    "latex": "\\mathbf{N}\\subset\\mathbf{Z}\\subset\\mathbf{Q}\\subset\\mathbf{R}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "数集符号",
+      "包含关系"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "包含链在“子集”小节处给出，归并入本知识点。"
+  },
+  {
+    "id": "KP-SET-0006",
+    "node_type": "KnowledgePoint",
+    "name": "空集",
+    "aliases": [
+      "empty set"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "不含有任何元素的集合称为空集，记作 $\\varnothing$。例如方程 $x^2+1=0$ 的实数解组成的集合是空集；两条平行直线的公共点组成的集合是空集。",
+    "latex": "\\varnothing",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "空集",
+      "特殊集合"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0007",
+    "node_type": "KnowledgePoint",
+    "name": "列举法",
+    "aliases": [
+      "列举法表示集合"
+    ],
+    "kp_type": "method",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "把集合中的元素不重复地一一列举出来并写在大括号内，这种表示集合的方法叫做列举法。如方程 $x^2-3x+2=0$ 的所有解组成的集合表示为 $\\{1,2\\}$。能用列举法表示的集合一般是有限集，但对有规律的无限集也可用列举法，如正偶数集 $\\{2,4,6,\\cdots,2n,\\cdots\\}$。",
+    "latex": "\\{1,2\\},\\quad \\{2,4,6,\\cdots,2n,\\cdots\\}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "集合表示",
+      "列举法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0008",
+    "node_type": "KnowledgePoint",
+    "name": "描述法",
+    "aliases": [
+      "描述法表示集合",
+      "特征性质法"
+    ],
+    "kp_type": "method",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "在大括号内先写出集合中元素的一个记号，再画一条竖线，并在竖线右边写上集合中所有元素具有的共同特征（集合中的元素都具有这个特征，不在集合中的元素不具有这个特征），这种表示集合的方法叫做描述法，记作 $A=\\{x\\mid x\\ \\text{满足性质}\\ p\\}$。如函数 $y=x$ 图像上的点集表示为 $\\{(x,y)\\mid y=x\\}$。",
+    "latex": "A=\\{x\\mid x\\ \\text{满足性质}\\ p\\}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "集合表示",
+      "描述法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0009",
+    "node_type": "KnowledgePoint",
+    "name": "区间及其记法",
+    "aliases": [
+      "区间",
+      "闭区间",
+      "开区间",
+      "半开半闭区间",
+      "无穷区间"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "当 $a,b\\in\\mathbf{R}$ 且 $a<b$ 时，$a\\leqslant x\\leqslant b$、$a<x<b$ 等解集分别记作 $[a,b]$（闭区间）、$(a,b)$（开区间）、$[a,b)$、$(a,b]$（半开半闭区间）；$x\\geqslant a$ 型解集记作 $[a,+\\infty)$ 等无穷区间；$a,b$ 称为端点。",
+    "latex": "[a,b],\\ (a,b),\\ [a,b),\\ (a,b],\\ (-\\infty,+\\infty)",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "区间",
+      "实数集表示"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0010",
+    "node_type": "KnowledgePoint",
+    "name": "子集",
+    "aliases": [
+      "包含关系",
+      "包含于",
+      "Venn图",
+      "文氏图"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "对于两个集合 $A$ 与 $B$，如果集合 $A$ 的每个元素都是集合 $B$ 的元素，那么集合 $A$ 叫做集合 $B$ 的子集，记作 $A\\subseteq B$（或 $B\\supseteq A$），读作“A 包含于 B”。规定：对任何集合 $A$，$\\varnothing\\subseteq A$。集合及集合间的关系常用文氏图直观表示。",
+    "latex": "A\\subseteq B",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "子集",
+      "包含关系"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0011",
+    "node_type": "KnowledgePoint",
+    "name": "包含关系的性质",
+    "aliases": [
+      "自反性",
+      "传递性",
+      "互含相等"
+    ],
+    "kp_type": "property",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "集合的包含关系满足：(1) 自反性：$A\\subseteq A$；(2) 若 $A\\subseteq B$ 且 $B\\subseteq A$，则 $A=B$——两个集合相等的充要条件是它们互为子集；(3) 传递性：若 $A\\subseteq B$ 且 $B\\subseteq C$，则 $A\\subseteq C$。",
+    "latex": "A\\subseteq B\\ \\text{且}\\ B\\subseteq A\\ \\Rightarrow\\ A=B",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "包含关系",
+      "集合相等判定",
+      "传递性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0012",
+    "node_type": "KnowledgePoint",
+    "name": "真子集",
+    "aliases": [
+      "真包含",
+      "真包含于"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "对于两个集合 $A$ 与 $B$，如果 $A\\subseteq B$，且 $B$ 中至少有一个元素不属于 $A$（即 $A\\neq B$），那么称集合 $A$ 是集合 $B$ 的真子集，记作 $A\\subset B$，读作“A 真包含于 B”。",
+    "latex": "A\\subset B",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "真子集",
+      "集合关系"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0013",
+    "node_type": "KnowledgePoint",
+    "name": "求集合的所有子集",
+    "aliases": [
+      "子集个数",
+      "子集计数",
+      "分类列举"
+    ],
+    "kp_type": "method",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "写出一个集合的所有子集，可按子集的元素个数分类逐一列举。如集合 $\\{a,b,c\\}$ 的所有子集：不含元素的 1 个（$\\varnothing$）、含 1 个元素的 3 个、含 2 个元素的 3 个、含 3 个元素的 1 个，共 8 个，其中除 $\\{a,b,c\\}$ 本身外的 7 个都是真子集。一般地，含 $n$ 个元素的集合共有 $2^n$ 个子集、$2^n-1$ 个真子集。",
+    "latex": "2^n,\\quad 2^n-1",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "子集计数",
+      "分类讨论"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "一般结论（$2^n$）由例 8 归纳，教材正文未显式给出公式。"
+  },
+  {
+    "id": "KP-SET-0014",
+    "node_type": "KnowledgePoint",
+    "name": "交集",
+    "aliases": [
+      "交",
+      "intersection"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "由既属于集合 $A$ 又属于集合 $B$ 的所有元素组成的集合，叫做集合 $A$ 与 $B$ 的交集，记作 $A\\cap B$（读作“A 交 B”），即 $A\\cap B=\\{x\\mid x\\in A\\ \\text{且}\\ x\\in B\\}$。当 $A\\subseteq B$ 时 $A\\cap B=A$；当 $A$ 与 $B$ 没有公共元素时 $A\\cap B=\\varnothing$。",
+    "latex": "A\\cap B=\\{x\\mid x\\in A\\ \\text{且}\\ x\\in B\\}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "交集",
+      "集合运算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0015",
+    "node_type": "KnowledgePoint",
+    "name": "并集",
+    "aliases": [
+      "并",
+      "union"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "由所有属于集合 $A$ 或属于集合 $B$ 的元素组成的集合，叫做集合 $A$ 与 $B$ 的并集，记作 $A\\cup B$（读作“A 并 B”），即 $A\\cup B=\\{x\\mid x\\in A\\ \\text{或}\\ x\\in B\\}$。当 $A\\subseteq B$ 时 $A\\cup B=B$。",
+    "latex": "A\\cup B=\\{x\\mid x\\in A\\ \\text{或}\\ x\\in B\\}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "并集",
+      "集合运算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0016",
+    "node_type": "KnowledgePoint",
+    "name": "全集与补集",
+    "aliases": [
+      "全集",
+      "补集",
+      "余集",
+      "U",
+      "A补"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "所研究的对象所在的确定集合称为全集，常用符号 $U$ 表示。设 $U$ 为全集，$A$ 是 $U$ 的子集，由 $U$ 中所有不属于 $A$ 的元素组成的集合称为 $A$ 在 $U$ 中的补集，记作 $\\overline{A}$（或 $\\complement_U A$），即 $\\overline{A}=\\{x\\mid x\\in U\\ \\text{且}\\ x\\notin A\\}$。",
+    "latex": "\\overline{A}=\\{x\\mid x\\in U\\ \\text{且}\\ x\\notin A\\}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "全集",
+      "补集"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0017",
+    "node_type": "KnowledgePoint",
+    "name": "补集的性质",
+    "aliases": [
+      "补集基本性质"
+    ],
+    "kp_type": "property",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "对全集 $U$ 的任一子集 $A$：(1) $A\\cup\\overline{A}=U$；(2) $A\\cap\\overline{A}=\\varnothing$；(3) $\\overline{\\overline{A}}=A$（$A$ 的补集的补集是 $A$ 本身）。",
+    "latex": "A\\cup\\overline{A}=U,\\quad A\\cap\\overline{A}=\\varnothing,\\quad \\overline{\\overline{A}}=A",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "补集性质",
+      "集合运算"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "三条结论由练习 1.1(4) 第 1 题引导得出，教材正文未单列。"
+  },
+  {
+    "id": "KP-SET-0018",
+    "node_type": "KnowledgePoint",
+    "name": "集合的运算律",
+    "aliases": [
+      "交换律",
+      "结合律",
+      "分配律"
+    ],
+    "kp_type": "property",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "集合运算满足交换律 $A\\cap B=B\\cap A$、$A\\cup B=B\\cup A$；结合律 $(A\\cap B)\\cap C=A\\cap(B\\cap C)$、$(A\\cup B)\\cup C=A\\cup(B\\cup C)$；分配律 $A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)$、$A\\cup(B\\cap C)=(A\\cup B)\\cap(A\\cup C)$。",
+    "latex": "A\\cap(B\\cup C)=(A\\cap B)\\cup(A\\cap C)",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "集合运算律",
+      "恒等变形"
+    ],
+    "status": "draft",
+    "confidence": 0.8,
+    "notes": "由练习 1.1(4) 第 3 题归纳，教材未逐条列出。"
+  },
+  {
+    "id": "KP-SET-0019",
+    "node_type": "KnowledgePoint",
+    "name": "补集与交并的关系（德摩根律）",
+    "aliases": [
+      "德摩根律",
+      "De Morgan"
+    ],
+    "kp_type": "property",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "对全集 $U$ 的任意子集 $A$、$B$：$\\overline{A\\cup B}=\\overline{A}\\cap\\overline{B}$；$\\overline{A\\cap B}=\\overline{A}\\cup\\overline{B}$。",
+    "latex": "\\overline{A\\cup B}=\\overline{A}\\cap\\overline{B},\\quad \\overline{A\\cap B}=\\overline{A}\\cup\\overline{B}",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.1",
+      "page": null
+    },
+    "tags": [
+      "德摩根律",
+      "补集运算"
+    ],
+    "status": "draft",
+    "confidence": 0.8,
+    "notes": "由例 12 归纳（两组结果分别相等）；教材未命名，此处采用通行名称“德摩根律”。"
+  },
+  {
+    "id": "KP-SET-0020",
+    "node_type": "KnowledgePoint",
+    "name": "命题",
+    "aliases": [
+      "真命题",
+      "假命题",
+      "proposition"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "用自然语言、符号或式子表达，且可以判断其真假的语句叫做命题，命题通常用陈述句表述。含义判断为真的命题叫做真命题，判断为假的叫做假命题。疑问句（如“你是高一学生吗？”）、含可变对象无法判定真假的语句（如 $x>3$）都不是命题。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "命题",
+      "真假判断"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0021",
+    "node_type": "KnowledgePoint",
+    "name": "“若α，则β”形式的命题",
+    "aliases": [
+      "若α则β",
+      "条件",
+      "结论",
+      "如果那么"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "形如“若 $\\alpha$，则 $\\beta$”（或“如果 $\\alpha$，那么 $\\beta$”）的命题中，陈述句 $\\alpha$ 称为条件，$\\beta$ 称为结论。“若 $\\alpha$，则 $\\beta$”是真命题是指所有满足条件 $\\alpha$ 的对象都满足结论 $\\beta$；是假命题是指存在满足条件 $\\alpha$ 而不满足结论 $\\beta$ 的对象。",
+    "latex": "\\text{若}\\ \\alpha,\\ \\text{则}\\ \\beta",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "命题结构",
+      "条件与结论"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0022",
+    "node_type": "KnowledgePoint",
+    "name": "举反例",
+    "aliases": [
+      "反例",
+      "反例法"
+    ],
+    "kp_type": "method",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "apply",
+    "statement": "要确定“若 $\\alpha$，则 $\\beta$”是假命题，只需举一个满足条件 $\\alpha$ 但不满足结论 $\\beta$ 的例子，这种方法在数学上称为举反例。如判断“凡素数都是奇数”为假，只需举出 2 是素数但不是奇数。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "举反例",
+      "假命题"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0023",
+    "node_type": "KnowledgePoint",
+    "name": "推出关系",
+    "aliases": [
+      "推出",
+      "蕴含",
+      "⇒"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "如果命题“若 $\\alpha$，则 $\\beta$”是真命题，就称 $\\alpha$ 推出 $\\beta$，记作 $\\alpha\\Rightarrow\\beta$。推出关系满足传递性：若 $\\alpha\\Rightarrow\\beta$ 且 $\\beta\\Rightarrow\\gamma$，则 $\\alpha\\Rightarrow\\gamma$，它是逻辑推理的基础。",
+    "latex": "\\alpha\\Rightarrow\\beta,\\quad \\alpha\\Rightarrow\\beta\\ \\text{且}\\ \\beta\\Rightarrow\\gamma\\ \\Rightarrow\\ \\alpha\\Rightarrow\\gamma",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "推出关系",
+      "传递性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0024",
+    "node_type": "KnowledgePoint",
+    "name": "充分条件与必要条件",
+    "aliases": [
+      "充分条件",
+      "必要条件",
+      "sufficient",
+      "necessary"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对于两个陈述句 $\\alpha$ 与 $\\beta$，如果 $\\alpha\\Rightarrow\\beta$，就称 $\\alpha$ 是 $\\beta$ 的充分条件，同时称 $\\beta$ 是 $\\alpha$ 的必要条件。“充分”说明 $\\alpha$ 成立时 $\\beta$ 一定成立；“必要”说明 $\\beta$ 不成立时 $\\alpha$ 一定不成立。",
+    "latex": "\\alpha\\Rightarrow\\beta",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "充分条件",
+      "必要条件"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0025",
+    "node_type": "KnowledgePoint",
+    "name": "充要条件",
+    "aliases": [
+      "充分必要条件",
+      "等价",
+      "当且仅当"
+    ],
+    "kp_type": "concept",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对陈述句 $\\alpha$、$\\beta$，若 $\\alpha\\Rightarrow\\beta$ 且 $\\beta\\Rightarrow\\alpha$，就称 $\\alpha$ 是 $\\beta$ 的充分必要条件，简称充要条件，记作 $\\alpha\\Leftrightarrow\\beta$，读作“$\\alpha$ 与 $\\beta$ 等价”，也说“$\\alpha$ 当且仅当 $\\beta$”。",
+    "latex": "\\alpha\\Leftrightarrow\\beta",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "充要条件",
+      "等价"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0026",
+    "node_type": "KnowledgePoint",
+    "name": "判断条件关系的方法",
+    "aliases": [
+      "充分非必要",
+      "必要非充分",
+      "条件判断"
+    ],
+    "kp_type": "method",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "判断 $\\alpha$ 是 $\\beta$ 的什么条件，需分别判断命题“若 $\\alpha$ 则 $\\beta$”与“若 $\\beta$ 则 $\\alpha$”的真假：都真为充要条件；仅前者真为充分非必要条件；仅后者真为必要非充分条件；都假为既非充分又非必要条件。证明充要条件需分别证明充分性与必要性两步。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "条件判断",
+      "充要条件证明"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "另可借助集合包含关系判断，见“命题与集合的对应”。"
+  },
+  {
+    "id": "KP-SET-0027",
+    "node_type": "KnowledgePoint",
+    "name": "命题与集合的对应",
+    "aliases": [
+      "集合语言描述命题",
+      "子集与推出"
+    ],
+    "kp_type": "property",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "把满足 $\\alpha$ 的 $x$ 的集合记为 $M$，满足 $\\beta$ 的记为 $N$，则“若 $\\alpha$ 则 $\\beta$”为真等价于 $M\\subseteq N$，即 $\\alpha\\Rightarrow\\beta$ 等价于 $M\\subseteq N$；同理，$\\alpha\\Leftrightarrow\\beta$ 等价于 $M=N$。",
+    "latex": "\\alpha\\Rightarrow\\beta\\ \\Leftrightarrow\\ M\\subseteq N",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "集合语言",
+      "命题",
+      "充分必要条件"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材正文以集合语言描述了“若α则β”为真的含义；后一条由集合相等与充要条件推得。复习题 A9 即据此设计。"
+  },
+  {
+    "id": "KP-SET-0028",
+    "node_type": "KnowledgePoint",
+    "name": "反证法",
+    "aliases": [
+      "归谬法",
+      "反证",
+      "假设法"
+    ],
+    "kp_type": "method",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "证明命题时，先假设结论 $\\beta$ 不成立，然后经过正确的逻辑推理得出矛盾，从而说明“$\\beta$ 为假”不可能发生，即结论 $\\beta$ 正确，这样的证明方法叫反证法。应用反证法的第一步是假设命题的结论不成立（否定结论），这一步十分关键。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "反证法",
+      "证明方法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-SET-0029",
+    "node_type": "KnowledgePoint",
+    "name": "常用否定形式",
+    "aliases": [
+      "命题的否定",
+      "否定",
+      "表1-2"
+    ],
+    "kp_type": "rule",
+    "module": "SET",
+    "section_id": "SEC-BX1-01-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "常用陈述句的否定形式：$x>1$ 的否定是 $x\\leqslant 1$；“$x>1$ 或 $y>1$”的否定是“$x\\leqslant 1$ 且 $y\\leqslant 1$”；“所有的 $a\\in A$ 满足性质 $p$”的否定是“至少存在一个 $a\\in A$ 不满足性质 $p$”；“至少有两个”的否定是“最多有一个”。",
+    "latex": "x>1\\ \\to\\ x\\leqslant 1",
+    "source": {
+      "book": "BX1",
+      "chapter": 1,
+      "section": "1.2",
+      "page": null
+    },
+    "tags": [
+      "否定形式",
+      "反证法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "整理自教材表 1-2“一些常用的否定形式”。"
+  }
+]

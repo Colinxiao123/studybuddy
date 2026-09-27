@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "KP-TRIG-0001",
+    "node_type": "KnowledgePoint",
+    "name": "锐角的正弦、余弦、正切、余切",
+    "aliases": [
+      "锐角三角函数",
+      "锐角三角比",
+      "正弦余弦正切余切"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "在直角三角形中，锐角 A 的对边、邻边与斜边分别记作 a、b、c，则 $\\sin A=\\frac{a}{c}$、$\\cos A=\\frac{b}{c}$、$\\tan A=\\frac{a}{b}$、$\\cot A=\\frac{b}{a}$；这些比值只与角 A 的大小有关，与三角形的大小无关。",
+    "latex": "\\sin A=\\frac{a}{c},\\quad \\cos A=\\frac{b}{c},\\quad \\tan A=\\frac{a}{b},\\quad \\cot A=\\frac{b}{a}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "锐角三角函数",
+      "直角三角形",
+      "边角关系"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "锐角情形已知的同角关系（$\\sin^{2}A+\\cos^{2}A=1$ 等、互余两角的关系式）在任意角情形将推广为同角三角公式与诱导公式。"
+  },
+  {
+    "id": "KP-TRIG-0002",
+    "node_type": "KnowledgePoint",
+    "name": "特殊角的三角函数值",
+    "aliases": [
+      "30°45°60°的三角函数值",
+      "特殊角函数值表",
+      "表6-1"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "特殊角的三角函数值是常用结果：$\\sin 30^\\circ=\\frac{1}{2}$，$\\sin 45^\\circ=\\frac{\\sqrt{2}}{2}$，$\\sin 60^\\circ=\\frac{\\sqrt{3}}{2}$；相应的余弦值互换即得，正切值依次为 $\\frac{\\sqrt{3}}{3}$、1、$\\sqrt{3}$，余切值互为倒数。",
+    "latex": "\\sin 30^\\circ=\\frac{1}{2},\\quad \\sin 45^\\circ=\\frac{\\sqrt{2}}{2},\\quad \\sin 60^\\circ=\\frac{\\sqrt{3}}{2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "特殊角",
+      "三角函数值",
+      "常用数据"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0003",
+    "node_type": "KnowledgePoint",
+    "name": "任意角与象限角",
+    "aliases": [
+      "任意角",
+      "正角",
+      "负角",
+      "零角",
+      "象限角"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "射线绕端点按逆时针方向旋转形成的角为正角，按顺时针方向旋转形成的角为负角，没有旋转时为零角，从而把角的概念推广到任意角，其中也包括大于 $360^\\circ$ 的角。将角的顶点与原点重合、始边与 x 轴正半轴重合，终边在第几象限就称该角为第几象限的角；终边在坐标轴上时不属于任何象限。",
+    "latex": null,
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "角的概念推广",
+      "正角负角",
+      "象限角"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0004",
+    "node_type": "KnowledgePoint",
+    "name": "终边相同的角",
+    "aliases": [
+      "与α终边重合的角",
+      "终边相同角的集合"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "与角 α 的终边重合的角（包括 α 本身）组成的集合可表示为 $\\{\\beta\\mid\\beta=k\\cdot 360^\\circ+\\alpha,\\ k\\in\\mathbf{Z}\\}$，用弧度制表示为 $\\{\\beta\\mid\\beta=2k\\pi+\\alpha,\\ k\\in\\mathbf{Z}\\}$；这些角的大小相差 $360^\\circ$（即 $2\\pi$）的整数倍。",
+    "latex": "\\{\\beta\\mid\\beta=k\\cdot 360^\\circ+\\alpha,\\ k\\in\\mathbf{Z}\\}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "终边相同的角",
+      "角集合",
+      "360°整数倍"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0005",
+    "node_type": "KnowledgePoint",
+    "name": "弧度制",
+    "aliases": [
+      "弧度",
+      "radian",
+      "角度与弧度换算"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "把弧长等于半径的弧所对的圆心角叫做 1 弧度的角，用“弧度”作单位度量角的单位制称为弧度制；圆心角 α 的弧度数满足 $|\\alpha|=\\frac{l}{r}$。周角为 $2\\pi$ 弧度，即 $180^\\circ=\\pi$ 弧度，故 $1^\\circ=\\frac{\\pi}{180}$ 弧度；弧度制下角与实数一一对应。",
+    "latex": "1^\\circ=\\frac{\\pi}{180}\\ \\text{弧度},\\quad 180^\\circ=\\pi",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "弧度制",
+      "角的度量",
+      "角度弧度换算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材在换算中同时给出 $1\\ \\text{弧度}=\\frac{180^\\circ}{\\pi}$，并提醒角度制为 60 进位制。"
+  },
+  {
+    "id": "KP-TRIG-0006",
+    "node_type": "KnowledgePoint",
+    "name": "扇形的弧长与面积公式",
+    "aliases": [
+      "扇形弧长公式",
+      "扇形面积公式",
+      "l=αr"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "在半径为 r、圆心角为 α（弧度）的扇形中，弧长 $l=\\alpha r$，面积 $S=\\frac{1}{2}\\alpha r^{2}$；用角度制时相应公式为 $l=\\frac{n\\pi r}{180}$、$S=\\frac{n\\pi r^{2}}{360}$，可见引入弧度制后公式更简洁。",
+    "latex": "l=\\alpha r,\\quad S=\\frac{1}{2}\\alpha r^{2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "扇形",
+      "弧长",
+      "面积"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0007",
+    "node_type": "KnowledgePoint",
+    "name": "任意角三角函数的定义",
+    "aliases": [
+      "三角函数定义",
+      "终边坐标定义",
+      "sin=y/r"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在角 α 的终边上任取异于原点的一点 $P(x,y)$，令 $r=\\sqrt{x^{2}+y^{2}}$，规定 $\\sin\\alpha=\\frac{y}{r}$、$\\cos\\alpha=\\frac{x}{r}$、$\\tan\\alpha=\\frac{y}{x}(x\\neq 0)$、$\\cot\\alpha=\\frac{x}{y}(y\\neq 0)$；比值与点 P 的选取无关。",
+    "latex": "\\sin\\alpha=\\frac{y}{r},\\quad \\cos\\alpha=\\frac{x}{r},\\quad \\tan\\alpha=\\frac{y}{x},\\quad \\cot\\alpha=\\frac{x}{y}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "任意角三角函数",
+      "坐标定义",
+      "取值范围"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "取终边上到原点距离为 1 的点（单位圆上的点）时，$x=\\cos\\alpha$、$y=\\sin\\alpha$，故单位圆上的点可写为 $(\\cos\\alpha,\\sin\\alpha)$；终边在 y 轴上时 tan α 无意义，在 x 轴上时 cot α 无意义。"
+  },
+  {
+    "id": "KP-TRIG-0008",
+    "node_type": "KnowledgePoint",
+    "name": "三角函数值的符号规律",
+    "aliases": [
+      "各象限的符号",
+      "三角函数符号",
+      "一全正二正弦"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "各象限内三角函数值的符号：第一象限全为正；第二象限只有正弦为正；第三象限只有正切、余切为正；第四象限只有余弦为正。判断时可先确定角所属象限，再由终边上点的横、纵坐标与 r 的符号得出结果；记忆口诀为“一全正、二正弦、三正切、四余弦”。",
+    "latex": "x>0,y>0\\Rightarrow \\sin\\alpha>0,\\ \\cos\\alpha>0,\\ \\tan\\alpha>0",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "符号规律",
+      "象限",
+      "判断"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材以表 6-3 列出四种三角函数的符号表。"
+  },
+  {
+    "id": "KP-TRIG-0009",
+    "node_type": "KnowledgePoint",
+    "name": "同角三角公式",
+    "aliases": [
+      "同角三角函数关系",
+      "平方关系",
+      "商数关系",
+      "倒数关系"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "同角三角公式包括平方关系、商数关系与倒数关系：$\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$；$\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}$，$\\cot\\alpha=\\frac{\\cos\\alpha}{\\sin\\alpha}$；$\\tan\\alpha\\cdot\\cot\\alpha=1$。它们是化简、证明三角恒等式的基础。",
+    "latex": "\\sin^{2}\\alpha+\\cos^{2}\\alpha=1,\\quad \\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha},\\quad \\tan\\alpha\\cot\\alpha=1",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "同角公式",
+      "恒等变换",
+      "化简证明"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "由平方关系可得 $1+\\tan^{2}\\alpha=\\frac{1}{\\cos^{2}\\alpha}$、$1+\\cot^{2}\\alpha=\\frac{1}{\\sin^{2}\\alpha}$（例 14 的结论）。"
+  },
+  {
+    "id": "KP-TRIG-0010",
+    "node_type": "KnowledgePoint",
+    "name": "已知一个三角函数值求其余各值",
+    "aliases": [
+      "知一求二",
+      "给值求值",
+      "分类讨论求值"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "已知角 α 的一个三角函数值求其余值：先用平方关系求正弦或余弦的绝对值，再由 α 所在象限（或由已知值的符号）确定正负号；若象限不确定则需分类讨论。例如由 $\\sin\\alpha=\\frac{3}{5}$ 及 α 在第二象限可得 $\\cos\\alpha=-\\frac{4}{5}$。",
+    "latex": "\\sin^{2}\\alpha+\\cos^{2}\\alpha=1",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "同角公式应用",
+      "分类讨论",
+      "求值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0011",
+    "node_type": "KnowledgePoint",
+    "name": "诱导公式（2kπ+α、-α、π±α）",
+    "aliases": [
+      "诱导公式一",
+      "π+α与π−α",
+      "负角的诱导公式",
+      "终边对称"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由角的终边关于 x 轴、y 轴、原点的对称关系，可得到 $2k\\pi+\\alpha$（$k\\in\\mathbf{Z}$）、$-\\alpha$、$\\pi\\pm\\alpha$ 的诱导公式（见 latex）；利用它们可把任意角的三角函数值逐步转化为 $[0,\\frac{\\pi}{2})$ 内角的相应值。",
+    "latex": "\\sin(-\\alpha)=-\\sin\\alpha,\\ \\cos(-\\alpha)=\\cos\\alpha,\\ \\sin(\\pi+\\alpha)=-\\sin\\alpha,\\ \\cos(\\pi-\\alpha)=-\\cos\\alpha",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "诱导公式",
+      "对称",
+      "化简求值"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0012",
+    "node_type": "KnowledgePoint",
+    "name": "诱导公式（π/2±α、3π/2±α）与记忆口诀",
+    "aliases": [
+      "奇变偶不变",
+      "符号看象限",
+      "互余角的诱导公式"
+    ],
+    "kp_type": "rule",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由角 $\\frac{\\pi}{2}-\\alpha$ 的终边与角 α 的终边关于直线 $y=x$ 对称，可得 $\\sin(\\frac{\\pi}{2}-\\alpha)=\\cos\\alpha$ 等公式；用 $-\\alpha$ 代换又得 $\\frac{\\pi}{2}+\\alpha$ 的公式。关于 $\\frac{k\\pi}{2}\\pm\\alpha$ 的公式可概括为口诀“奇变偶不变，符号看象限”。",
+    "latex": "\\sin\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\cos\\alpha,\\quad \\cos\\left(\\frac{\\pi}{2}+\\alpha\\right)=-\\sin\\alpha",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "诱导公式",
+      "奇变偶不变",
+      "记忆口诀"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "符号的确定：把 α 视为锐角，由等式左边角所在象限的三角函数值符号决定右边符号。"
+  },
+  {
+    "id": "KP-TRIG-0013",
+    "node_type": "KnowledgePoint",
+    "name": "已知三角函数值求角",
+    "aliases": [
+      "三角方程的通解",
+      "sin x=sin α 的解集",
+      "求角"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "若 $\\sin x=\\sin\\alpha$，则 $x=k\\pi+(-1)^{k}\\alpha\\ (k\\in\\mathbf{Z})$；若 $\\cos x=\\cos\\alpha$，则 $x=2k\\pi\\pm\\alpha$；若 $\\tan x=\\tan\\alpha$，则 $x=k\\pi+\\alpha$。解题时可先在指定区间内找出满足条件的角，再写出通解或按区间筛选。",
+    "latex": "x=k\\pi+(-1)^{k}\\alpha,\\quad x=2k\\pi\\pm\\alpha,\\quad x=k\\pi+\\alpha",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.1",
+      "page": null
+    },
+    "tags": [
+      "三角方程",
+      "求角",
+      "通解"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0014",
+    "node_type": "KnowledgePoint",
+    "name": "两角差的余弦公式",
+    "aliases": [
+      "差角余弦公式",
+      "cos(α−β)",
+      "单位圆推导"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对任意角 α、β，有 $\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta$。推导思路：把角 α、β 的终边绕原点旋转 $-\\beta$，由单位圆上两点间的距离相等，用两点间距离公式化简即得，它对任意角都成立。",
+    "latex": "\\cos(\\alpha-\\beta)=\\cos\\alpha\\cos\\beta+\\sin\\alpha\\sin\\beta",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "差角公式",
+      "单位圆",
+      "推导"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0015",
+    "node_type": "KnowledgePoint",
+    "name": "两角和与差的余弦公式",
+    "aliases": [
+      "和角余弦公式",
+      "cos(α±β)"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "在两角差的余弦公式中用 $-\\beta$ 代换 β，即得两角和与差的余弦公式 $\\cos(\\alpha\\pm\\beta)=\\cos\\alpha\\cos\\beta\\mp\\sin\\alpha\\sin\\beta$；它与差角公式结构相同而符号相反，是后面和角正弦、正切公式的推导基础。",
+    "latex": "\\cos(\\alpha\\pm\\beta)=\\cos\\alpha\\cos\\beta\\mp\\sin\\alpha\\sin\\beta",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "和角公式",
+      "差角公式",
+      "余弦"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0016",
+    "node_type": "KnowledgePoint",
+    "name": "两角和与差的正弦公式",
+    "aliases": [
+      "和角正弦公式",
+      "sin(α±β)",
+      "诱导公式推导"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "利用 $\\sin(\\alpha+\\beta)=\\cos[\\frac{\\pi}{2}-(\\alpha+\\beta)]$ 与两角差的余弦公式，可推得 $\\sin(\\alpha\\pm\\beta)=\\sin\\alpha\\cos\\beta\\pm\\cos\\alpha\\sin\\beta$；再用 $-\\beta$ 代换得差角公式。",
+    "latex": "\\sin(\\alpha\\pm\\beta)=\\sin\\alpha\\cos\\beta\\pm\\cos\\alpha\\sin\\beta",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "和角公式",
+      "差角公式",
+      "正弦"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0017",
+    "node_type": "KnowledgePoint",
+    "name": "两角和与差的正切公式",
+    "aliases": [
+      "和角正切公式",
+      "tan(α±β)"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由 $\\tan=\\frac{\\sin}{\\cos}$ 及和角的正弦、余弦公式相除，可得 $\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}$；只要 tan α、tan β 及 $\\tan(\\alpha+\\beta)$ 都有意义，公式即成立。",
+    "latex": "\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "和角公式",
+      "差角公式",
+      "正切"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0018",
+    "node_type": "KnowledgePoint",
+    "name": "二倍角公式",
+    "aliases": [
+      "倍角公式",
+      "二倍角",
+      "sin 2α"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在两角和公式中令 $\\beta=\\alpha$，得二倍角公式：$\\sin 2\\alpha=2\\sin\\alpha\\cos\\alpha$，$\\cos 2\\alpha=2\\cos^{2}\\alpha-1=1-2\\sin^{2}\\alpha$，$\\tan 2\\alpha=\\frac{2\\tan\\alpha}{1-\\tan^{2}\\alpha}$。",
+    "latex": "\\sin 2\\alpha=2\\sin\\alpha\\cos\\alpha,\\quad \\cos 2\\alpha=2\\cos^{2}\\alpha-1=1-2\\sin^{2}\\alpha",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "二倍角",
+      "倍角公式",
+      "恒等变形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0019",
+    "node_type": "KnowledgePoint",
+    "name": "三倍角公式",
+    "aliases": [
+      "三倍角余弦公式",
+      "cos 3θ",
+      "sin 3θ"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "由二倍角公式与和角公式可推得三倍角的余弦公式 $\\cos 3\\theta=4\\cos^{3}\\theta-3\\cos\\theta$，同理可得三倍角的正弦公式 $\\sin 3\\theta=3\\sin\\theta-4\\sin^{3}\\theta$；它们可用于求非特殊角的三角函数值。",
+    "latex": "\\cos 3\\theta=4\\cos^{3}\\theta-3\\cos\\theta",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "三倍角",
+      "推导",
+      "求值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 12 推导 $\\cos 3\\theta$，并指出历史上三倍角公式曾为求解一元三次方程提供思路；正弦的三倍角公式由学生模仿推导。"
+  },
+  {
+    "id": "KP-TRIG-0020",
+    "node_type": "KnowledgePoint",
+    "name": "半角公式",
+    "aliases": [
+      "半角的正弦余弦",
+      "半角正切公式",
+      "降幂公式"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "把二倍角公式变形得 $\\sin^{2}\\frac{\\alpha}{2}=\\frac{1-\\cos\\alpha}{2}$、$\\cos^{2}\\frac{\\alpha}{2}=\\frac{1+\\cos\\alpha}{2}$，开方即得半角公式，符号由 $\\frac{\\alpha}{2}$ 所在象限确定。",
+    "latex": "\\tan\\frac{\\alpha}{2}=\\frac{\\sin\\alpha}{1+\\cos\\alpha}=\\frac{1-\\cos\\alpha}{\\sin\\alpha}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "半角公式",
+      "降幂",
+      "符号判断"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0021",
+    "node_type": "KnowledgePoint",
+    "name": "积化和差与和差化积公式",
+    "aliases": [
+      "积化和差",
+      "和差化积",
+      "sin αcos β",
+      "sin α+sin β"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "把两角和与差的正弦、余弦公式相加或相减，可得积化和差公式（如 $\\sin\\alpha\\cos\\beta=\\frac{1}{2}[\\sin(\\alpha+\\beta)+\\sin(\\alpha-\\beta)]$）；换元 $\\alpha=\\frac{x+y}{2}$、$\\beta=\\frac{x-y}{2}$ 又得和差化积公式，两组公式相互等价。",
+    "latex": "\\sin\\alpha\\cos\\beta=\\frac{1}{2}[\\sin(\\alpha+\\beta)+\\sin(\\alpha-\\beta)],\\quad \\sin x+\\sin y=2\\sin\\frac{x+y}{2}\\cos\\frac{x-y}{2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "积化和差",
+      "和差化积",
+      "恒等变换"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "两组公式在教材中分列（例 16、例 17），此处合并为一组相互等价的公式；和差化积可用于声学中拍音的合成（课后阅读）。"
+  },
+  {
+    "id": "KP-TRIG-0022",
+    "node_type": "KnowledgePoint",
+    "name": "辅助角公式",
+    "aliases": [
+      "化一公式",
+      "合一变形",
+      "a sin α+b cos α"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "当 $ab\\neq 0$ 时，$a\\sin\\alpha+b\\cos\\alpha=\\sqrt{a^{2}+b^{2}}\\sin(\\alpha+\\varphi)$，其中 $\\cos\\varphi=\\frac{a}{\\sqrt{a^{2}+b^{2}}}$、$\\sin\\varphi=\\frac{b}{\\sqrt{a^{2}+b^{2}}}$；它是两角和的正弦公式的逆用。",
+    "latex": "a\\sin\\alpha+b\\cos\\alpha=\\sqrt{a^{2}+b^{2}}\\sin(\\alpha+\\varphi)",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "辅助角",
+      "化简",
+      "求最值"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材例 10 由 $(\\frac{a}{\\sqrt{a^2+b^2}},\\frac{b}{\\sqrt{a^2+b^2}})$ 是单位圆上的点说明 φ 的存在唯一性。"
+  },
+  {
+    "id": "KP-TRIG-0023",
+    "node_type": "KnowledgePoint",
+    "name": "三角形中的正切恒等式",
+    "aliases": [
+      "tanA+tanB+tanC",
+      "三角形内角的正切关系"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "在非直角三角形 ABC 中，$A+B+C=\\pi$。由 $\\tan A+\\tan B=\\tan(A+B)(1-\\tan A\\tan B)=-\\tan C(1-\\tan A\\tan B)$ 可推得 $\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C$。",
+    "latex": "\\tan A+\\tan B+\\tan C=\\tan A\\tan B\\tan C",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "三角形",
+      "正切",
+      "恒等式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 8 的结论；也可由 $\\tan(A+B)=-\\tan C$ 变形为 $\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}=-\\tan C$ 推出。"
+  },
+  {
+    "id": "KP-TRIG-0024",
+    "node_type": "KnowledgePoint",
+    "name": "和差角公式的应用（拆角与给值求值）",
+    "aliases": [
+      "拆分角",
+      "给值求角",
+      "公式正用逆用"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "运用和差角公式求值的关键是把待求角表示为已知角的和或差（如 $75^\\circ=45^\\circ+30^\\circ$、$\\beta=(\\alpha+\\beta)-\\alpha$、$\\alpha=(\\alpha-\\beta)+\\beta$），再代入公式计算；求出函数值后还要根据角的范围确定角的大小，并注意三角函数值的符号。",
+    "latex": "\\cos\\beta=\\cos[(\\alpha+\\beta)-\\alpha]",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.2",
+      "page": null
+    },
+    "tags": [
+      "拆角",
+      "给值求值",
+      "公式应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0025",
+    "node_type": "KnowledgePoint",
+    "name": "解三角形",
+    "aliases": [
+      "斜三角形",
+      "解三角形问题",
+      "边角元素"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "不是直角三角形的三角形统称为斜三角形。在三角形的三个角与三条边六个元素中，已知三个元素（至少有一个是边）求其余元素的问题称为解三角形；已知两角与一边、两边与夹角、三边等不同情形要用不同的定理处理，常用的工具是正弦定理与余弦定理。",
+    "latex": null,
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "解三角形",
+      "斜三角形",
+      "基本问题"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材以“林场观测火情”的实际问题引入，并约定角 A、B、C 所对的边分别记作 a、b、c。"
+  },
+  {
+    "id": "KP-TRIG-0026",
+    "node_type": "KnowledgePoint",
+    "name": "三角形的面积公式（两边夹角）",
+    "aliases": [
+      "面积公式",
+      "S=1/2ab sinC"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "三角形的面积等于任意两边与它们夹角的正弦值的乘积的一半：$S_{\\triangle ABC}=\\frac{1}{2}ab\\sin C=\\frac{1}{2}ac\\sin B=\\frac{1}{2}bc\\sin A$。已知两边及其夹角、或已知面积反求边角时常用该公式。",
+    "latex": "S_{\\triangle ABC}=\\frac{1}{2}ab\\sin C=\\frac{1}{2}ac\\sin B=\\frac{1}{2}bc\\sin A",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "面积公式",
+      "两边夹角",
+      "正弦"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "由 $S=\\frac{1}{2}AB\\cdot h$ 及 $h=b\\sin A$（任意角正弦的定义）推得。"
+  },
+  {
+    "id": "KP-TRIG-0027",
+    "node_type": "KnowledgePoint",
+    "name": "正弦定理",
+    "aliases": [
+      "law of sines",
+      "a/sinA=b/sinB",
+      "边角关系"
+    ],
+    "kp_type": "theorem",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在 $\\triangle ABC$ 中，若角 A、B、C 所对的边分别为 a、b、c，则 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}$。它是“大角对大边”这一几何性质的定量刻画，适用于已知两角与一边、或已知两边与其中一边的对角两类求解问题。",
+    "latex": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "正弦定理",
+      "边角关系",
+      "解三角形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材将面积公式 $S=\\frac{1}{2}ab\\sin C$ 三式同除以 $\\frac{1}{2}abc$ 即得正弦定理。"
+  },
+  {
+    "id": "KP-TRIG-0028",
+    "node_type": "KnowledgePoint",
+    "name": "正弦定理的推论（外接圆直径）",
+    "aliases": [
+      "a=2R sinA",
+      "外接圆半径",
+      "abc/4R"
+    ],
+    "kp_type": "theorem",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $\\triangle ABC$ 的外接圆半径为 R，则 $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2R$，即 $a=2R\\sin A$ 等；由此还可得面积变式 $S=\\frac{abc}{4R}$ 与 $S=2R^{2}\\sin A\\sin B\\sin C$。",
+    "latex": "\\frac{a}{\\sin A}=2R,\\quad S=\\frac{abc}{4R}=2R^{2}\\sin A\\sin B\\sin C",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "外接圆",
+      "正弦定理推论",
+      "面积变式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材例 2、例 3 分别给出 $a=2R\\sin A$ 与两个面积变式；$a=2R\\sin A$ 是边角互化的常用工具。"
+  },
+  {
+    "id": "KP-TRIG-0029",
+    "node_type": "KnowledgePoint",
+    "name": "余弦定理",
+    "aliases": [
+      "law of cosines",
+      "a²=b²+c²−2bc cosA",
+      "勾股定理的推广"
+    ],
+    "kp_type": "theorem",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在 $\\triangle ABC$ 中，$a^{2}=b^{2}+c^{2}-2bc\\cos A$（对 b、c 有同理的式子），变形为 $\\cos A=\\frac{b^{2}+c^{2}-a^{2}}{2bc}$ 等，用于已知三边求角。当 A 为直角时余弦定理即勾股定理，故勾股定理是余弦定理的特例。",
+    "latex": "a^{2}=b^{2}+c^{2}-2bc\\cos A,\\quad \\cos A=\\frac{b^{2}+c^{2}-a^{2}}{2bc}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "余弦定理",
+      "勾股定理",
+      "解三角形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材由两点间距离公式与三角函数的坐标定义推导，并指出正弦定理与余弦定理都是求解三角形的基本工具。"
+  },
+  {
+    "id": "KP-TRIG-0030",
+    "node_type": "KnowledgePoint",
+    "name": "已知两边及其中一边对角解三角形的讨论",
+    "aliases": [
+      "多解问题",
+      "解的个数讨论",
+      "两边一对角"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "已知两边及其中一边的对角（如 a、b、A）解三角形时结果可能不唯一：用正弦定理求角 B 可能得到互补的两个值，需结合 $A+B<\\pi$ 检验取舍；也可用余弦定理化为一元二次方程，由方程解的个数判断；其他已知情形都有唯一解，画图辅助判断解的个数也很有效。",
+    "latex": "b\\sin A<a<b\\ \\text{时可能有两解}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "多解讨论",
+      "分类讨论",
+      "正弦定理应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 5 用两种方法求解同一问题（a=2，b=2√3，A=30°），并提示与三角形全等条件之间的联系。"
+  },
+  {
+    "id": "KP-TRIG-0031",
+    "node_type": "KnowledgePoint",
+    "name": "利用正、余弦定理判断三角形的形状",
+    "aliases": [
+      "判断形状",
+      "边角互化",
+      "等腰等边三角形判断"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "判断三角形形状时，可把条件中的边化为角（用 $a=2R\\sin A$）或把角化为边（用余弦定理），向边长关系或角的关系化简，得出等腰、等边、直角等结论；化简中要注意运用内角和 $A+B+C=\\pi$ 以及因式分解等变形手段。",
+    "latex": "a=2R\\sin A,\\quad \\cos A=\\frac{b^{2}+c^{2}-a^{2}}{2bc}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "边角互化",
+      "判断形状",
+      "恒等变形"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0032",
+    "node_type": "KnowledgePoint",
+    "name": "反正弦、反余弦与反正切记号",
+    "aliases": [
+      "arcsin",
+      "arccos",
+      "arctan",
+      "反三角函数记号"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "用 $\\arcsin a$ 表示满足 $\\sin x=a\\ (0\\leqslant a\\leqslant 1)$、$x\\in[0,\\frac{\\pi}{2}]$ 的角，类似地用 $\\arccos a$、$\\arctan a$ 表示相应的锐角；借助这些记号可简洁表示非特殊角，计算器上记为 $\\sin^{-1}$ 等。",
+    "latex": "\\arcsin\\frac{1}{2}=\\frac{\\pi}{6},\\quad \\arccos\\frac{\\sqrt{2}}{2}=\\frac{\\pi}{4},\\quad \\arctan\\sqrt{3}=\\frac{\\pi}{3}",
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "反三角记号",
+      "表示角",
+      "计算器"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材在例 8 之后引入记号；复习题进一步将其推广为反三角函数（$y=\\arcsin x$ 等，选学内容）。"
+  },
+  {
+    "id": "KP-TRIG-0033",
+    "node_type": "KnowledgePoint",
+    "name": "解三角形的实际应用",
+    "aliases": [
+      "测量问题",
+      "仰角俯角",
+      "方向角"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-06-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "解三角形的实际问题（测量距离、高度、方向等）通常按“作示意图—把已知条件转化为三角形的边与角—选用正弦定理或余弦定理求解—按精确度要求作答”的步骤处理；注意仰角、俯角、南偏西等角度的含义，有时需要解多个三角形；近似计算时要注意题目对精确度的要求。",
+    "latex": null,
+    "source": {
+      "book": "BX2",
+      "chapter": 6,
+      "section": "6.3",
+      "page": null
+    },
+    "tags": [
+      "实际应用",
+      "测量",
+      "数学建模"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 10（估算金茂大厦高度）、例 11（两船距离）及练习 6.3(4) 均为测量问题；解三角形还可用于证明平面几何命题（如练习 6.3(3) 第 2 题）。"
+  },
+  {
+    "id": "KP-TRIG-0034",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数的定义",
+    "aliases": [
+      "正弦函数",
+      "y=sin x",
+      "sine function"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "对任意给定的实数 x，都有唯一确定的正弦值 $\\sin x$ 与之对应，按这个对应关系建立的函数叫做正弦函数，记作 $y=\\sin x$，其定义域是实数集 $\\mathbf{R}$；正弦函数是最基本的周期函数之一，是研究周期现象的重要工具。",
+    "latex": "y=\\sin x,\\quad x\\in\\mathbf{R}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "正弦函数",
+      "定义域",
+      "函数概念"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0035",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数的图像与五点法",
+    "aliases": [
+      "正弦曲线",
+      "五点作图法",
+      "单位圆作图"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "借助单位圆与描点法可作出 $y=\\sin x$ 在 $[0,2\\pi]$ 上的图像，再由周期性向左、右平移得到整个图像（正弦曲线）。描出 $(0,0)$、$(\\frac{\\pi}{2},1)$、$(\\pi,0)$、$(\\frac{3\\pi}{2},-1)$、$(2\\pi,0)$ 五个关键点并连成光滑曲线的方法叫做“五点（作图）法”。",
+    "latex": "(0,0),\\ \\left(\\frac{\\pi}{2},1\\right),\\ (\\pi,0),\\ \\left(\\frac{3\\pi}{2},-1\\right),\\ (2\\pi,0)",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "正弦曲线",
+      "五点法",
+      "图像变换"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0036",
+    "node_type": "KnowledgePoint",
+    "name": "周期函数与最小正周期",
+    "aliases": [
+      "周期性",
+      "周期",
+      "最小正周期"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对于函数 $y=f(x)$，如果存在非零常数 T，使得定义域 D 中任意 x 都满足 $x+T\\in D$ 且 $f(x+T)=f(x)$，就称它为周期函数，T 叫做它的一个周期；所有周期中最小的正数叫做最小正周期。因 $\\sin(x+2k\\pi)=\\sin x$，正弦函数的最小正周期为 $2\\pi$。",
+    "latex": "f(x+T)=f(x),\\quad 2k\\pi\\ (k\\neq 0)\\ \\text{是}\\ \\sin x\\ \\text{的周期}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "周期函数",
+      "最小正周期",
+      "周期性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材以反证思想说明 $2\\pi$ 是不可更小的正周期，并强调“对定义域中一切 x 都成立”才是周期。"
+  },
+  {
+    "id": "KP-TRIG-0037",
+    "node_type": "KnowledgePoint",
+    "name": "函数 y=A sin(ωx+φ) 的最小正周期",
+    "aliases": [
+      "最小正周期公式",
+      "T=2π/ω"
+    ],
+    "kp_type": "formula",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "一般地，函数 $y=A\\sin(\\omega x+\\varphi)$（A、ω、φ 为常数，$A\\neq 0$，$\\omega>0$）的最小正周期为 $T=\\frac{2\\pi}{\\omega}$。ω 为负数时先用诱导公式化为正数（如 $\\sin(-t)=-\\sin t$）再套用公式。",
+    "latex": "T=\\frac{2\\pi}{\\omega}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "最小正周期",
+      "正弦型函数",
+      "公式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0038",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数的值域与最值",
+    "aliases": [
+      "值域",
+      "最大值最小值",
+      "[-1,1]"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "正弦函数 $y=\\sin x\\ (x\\in\\mathbf{R})$ 的值域是 $[-1,1]$：当且仅当 $x=2k\\pi+\\frac{\\pi}{2}\\ (k\\in\\mathbf{Z})$ 时取得最大值 1；当且仅当 $x=2k\\pi+\\frac{3\\pi}{2}$ 时取得最小值 $-1$。",
+    "latex": "y\\in[-1,1],\\quad y_{\\max}=1,\\quad y_{\\min}=-1",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "值域",
+      "最值",
+      "单位圆"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "由单位圆上交点纵坐标的绝对值不超过 1 得出。"
+  },
+  {
+    "id": "KP-TRIG-0039",
+    "node_type": "KnowledgePoint",
+    "name": "求三角函数的最值（换元、辅助角与配方）",
+    "aliases": [
+      "三角函数最值",
+      "换元法",
+      "配方法"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求三角函数式最值的常用方法：①化为 $y=A\\sin(\\omega x+\\varphi)+B$ 后由值域求解；②含 $\\sin x\\pm\\cos x$ 与 $\\sin x\\cos x$ 的式子用换元化为二次函数；③含平方项时用降幂与辅助角公式化简；④对 $\\sin^{2}x+b\\sin x+c$ 型直接配方，但要注意 $-1\\leqslant\\sin x\\leqslant 1$ 的限制。",
+    "latex": "y=\\sin^{2}x-\\sin x\\quad (t=\\sin x\\in[-1,1])",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "最值方法",
+      "换元",
+      "辅助角"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 5 的四类问题提炼；换元后必须注明新变量的取值范围。"
+  },
+  {
+    "id": "KP-TRIG-0040",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数的奇偶性",
+    "aliases": [
+      "奇函数",
+      "关于原点对称"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "对任意 $x\\in\\mathbf{R}$ 都有 $\\sin(-x)=-\\sin x$，因此正弦函数是奇函数，其图像关于坐标原点中心对称。判断形如 $\\sin|x|$、$\\sin(x+\\frac{\\pi}{2})$ 的函数的奇偶性时，可先用诱导公式化简再按定义验证。",
+    "latex": "\\sin(-x)=-\\sin x",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "奇偶性",
+      "奇函数",
+      "对称性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0041",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数的单调性",
+    "aliases": [
+      "正弦单调区间",
+      "严格增区间",
+      "严格减区间"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "正弦函数 $y=\\sin x$ 在 $[2k\\pi-\\frac{\\pi}{2},2k\\pi+\\frac{\\pi}{2}]\\ (k\\in\\mathbf{Z})$ 上是严格增函数，在 $[2k\\pi+\\frac{\\pi}{2},2k\\pi+\\frac{3\\pi}{2}]$ 上是严格减函数；由于最小正周期为 $2\\pi$，只需在一个长度为 $2\\pi$ 的区间上研究其单调性。",
+    "latex": "\\left[2k\\pi-\\frac{\\pi}{2},\\ 2k\\pi+\\frac{\\pi}{2}\\right]\\ \\text{上严格增}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "单调性",
+      "单调区间",
+      "周期性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0042",
+    "node_type": "KnowledgePoint",
+    "name": "正弦函数性质的应用（比较大小、单调区间与三角不等式）",
+    "aliases": [
+      "比较大小",
+      "求单调区间",
+      "解三角不等式"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "利用正弦函数的单调性与图像可解决：①比较大小——先用诱导公式把角化到同一单调区间再比较；②求 $y=A\\sin(\\omega x+\\varphi)$ 的单调区间——令 $u=\\omega x+\\varphi$ 代入 $y=\\sin u$ 的单调区间解不等式；③解简单三角不等式——如借助图像与周期性写出 $\\sin x\\geqslant\\frac{1}{2}$ 的解集。",
+    "latex": "\\sin x\\geqslant\\frac{1}{2}\\Rightarrow x\\in\\left[2k\\pi+\\frac{\\pi}{6},\\ 2k\\pi+\\frac{5\\pi}{6}\\right]",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "单调性应用",
+      "比较大小",
+      "三角不等式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 8、例 9 及习题 7.1 的 B 组题（求 $y=\\sqrt{2\\sin x-1}$ 的定义域）提炼；解三角不等式时先求一个周期内的解集再推广。"
+  },
+  {
+    "id": "KP-TRIG-0043",
+    "node_type": "KnowledgePoint",
+    "name": "三角函数模型的应用",
+    "aliases": [
+      "三角函数模型",
+      "周期现象",
+      "实际最值问题"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "现实中的周期现象（如简谐运动、转动的指针）可用 $y=A\\sin(\\omega t+\\varphi)$ 描述；解决实际最值问题的一般步骤是：设角为自变量、写出三角函数表达式、化为便于判断最值的形式、并结合自变量的实际范围作答；建模中要注意自变量（如时间 t）的实际取值范围。",
+    "latex": "y=A\\sin(\\omega t+\\varphi)",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "数学建模",
+      "周期现象",
+      "最值应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 6（半圆内接矩形面积最大）与课后阅读“圆周运动与简谐运动”均属此类；简谐运动的位移表达式为 $y=A\\sin(\\omega t+\\varphi)$。"
+  },
+  {
+    "id": "KP-TRIG-0044",
+    "node_type": "KnowledgePoint",
+    "name": "余弦函数的定义与图像",
+    "aliases": [
+      "余弦函数",
+      "y=cos x",
+      "余弦曲线"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "对任意实数 x 都有唯一确定的 $\\cos x$ 与之对应，按此对应关系建立的函数叫做余弦函数 $y=\\cos x$，定义域为 $\\mathbf{R}$。由 $\\cos x=\\sin(x+\\frac{\\pi}{2})$ 可知，把正弦曲线向左平移 $\\frac{\\pi}{2}$ 即得余弦曲线，它们在 $[0,2\\pi]$ 上的五个关键点互为对应。",
+    "latex": "\\cos x=\\sin\\left(x+\\frac{\\pi}{2}\\right)",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "余弦函数",
+      "余弦曲线",
+      "图像平移"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0045",
+    "node_type": "KnowledgePoint",
+    "name": "余弦函数的性质（周期性、值域与最值、奇偶性）",
+    "aliases": [
+      "余弦函数性质",
+      "偶函数",
+      "余弦最值"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由 $\\cos x=\\sin(x+\\frac{\\pi}{2})$ 及正弦函数的性质可得：余弦函数是周期函数，最小正周期为 $2\\pi$；值域为 $[-1,1]$，当且仅当 $x=2k\\pi$ 时取最大值 1，当且仅当 $x=2k\\pi+\\pi$ 时取最小值 $-1$；它是偶函数，图像关于 y 轴对称。",
+    "latex": "\\cos(-x)=\\cos x,\\quad y\\in[-1,1]",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "余弦函数性质",
+      "偶函数",
+      "值域"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0046",
+    "node_type": "KnowledgePoint",
+    "name": "余弦函数的单调性",
+    "aliases": [
+      "余弦单调区间",
+      "增区间",
+      "减区间"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "余弦函数 $y=\\cos x$ 在 $[2k\\pi-\\pi,2k\\pi]\\ (k\\in\\mathbf{Z})$ 上是严格增函数，在 $[2k\\pi,2k\\pi+\\pi]$ 上是严格减函数；这一结论可由余弦曲线直接观察，也可由正弦函数的单调性推出。",
+    "latex": "[2k\\pi-\\pi,\\ 2k\\pi]\\ \\text{上严格增}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "余弦函数性质",
+      "单调性",
+      "单调区间"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0047",
+    "node_type": "KnowledgePoint",
+    "name": "求余弦型函数的最值",
+    "aliases": [
+      "余弦最值",
+      "换元求最值",
+      "限定区间求最值"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求余弦型函数的最值：可换元为二次函数（如 $y=\\cos^{2}x-4\\cos x+1$ 令 $t=\\cos x\\in[-1,1]$ 配方）；若限定自变量区间，先求出内层角的取值范围，再利用余弦函数的单调性比较端点值确定最值；换元后要注明新变量的取值范围。",
+    "latex": "t=\\cos x\\in[-1,1]",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "最值方法",
+      "换元",
+      "单调性应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 1 的两类问题提炼。"
+  },
+  {
+    "id": "KP-TRIG-0048",
+    "node_type": "KnowledgePoint",
+    "name": "求余弦型函数的周期与单调区间",
+    "aliases": [
+      "余弦型函数",
+      "余弦周期",
+      "余弦单调区间"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求 $y=A\\cos(\\omega x+\\varphi)$ 的最小正周期可直接用 $T=\\frac{2\\pi}{\\omega}$（$\\omega>0$）或先化为正弦型函数；求单调区间时把 $\\omega x+\\varphi$ 代入余弦函数的相应单调区间解不等式，并注意区分增区间与减区间。",
+    "latex": "T=\\frac{2\\pi}{\\omega}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "周期",
+      "单调区间",
+      "化归"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 2 提炼（先化为 $2\\sin(2x+\\frac{\\pi}{6})$ 再处理）。"
+  },
+  {
+    "id": "KP-TRIG-0049",
+    "node_type": "KnowledgePoint",
+    "name": "函数 y=A sin(ωx+φ) 的物理意义",
+    "aliases": [
+      "振幅",
+      "频率",
+      "相位",
+      "初始相位",
+      "简谐运动"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "在 $y=A\\sin(\\omega x+\\varphi)$（$A>0$，$\\omega>0$）中：A 是振幅，表示振动离开平衡位置的最大距离；振动周期 $T=\\frac{2\\pi}{\\omega}$；频率 $f=\\frac{1}{T}=\\frac{\\omega}{2\\pi}$，ω 称为圆频率；$\\omega x+\\varphi$ 称为相位，$x=0$ 时的相位 φ 称为初始相位。",
+    "latex": "T=\\frac{2\\pi}{\\omega},\\quad f=\\frac{\\omega}{2\\pi}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "简谐运动",
+      "振幅频率",
+      "相位"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材以钟表分针针尖的纵坐标、弹簧振子等实例引入。"
+  },
+  {
+    "id": "KP-TRIG-0050",
+    "node_type": "KnowledgePoint",
+    "name": "振幅 A 对图像的影响",
+    "aliases": [
+      "振幅变换",
+      "纵向伸缩"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "在 $y=A\\sin(\\omega x+\\varphi)$（$A>0$）中，函数定义域为 $\\mathbf{R}$，值域为 $[-A,A]$；A 越大图像的振幅越大，即 A 对图像起纵向伸缩的作用，A 的变化只影响振幅与值域，不改变周期与零点位置。",
+    "latex": "y\\in[-A,A]",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "振幅",
+      "图像变换",
+      "值域"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0051",
+    "node_type": "KnowledgePoint",
+    "name": "圆频率 ω 对图像的影响",
+    "aliases": [
+      "周期变换",
+      "横向伸缩"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在 $y=A\\sin(\\omega x+\\varphi)$（$\\omega>0$）中，ω 决定函数的周期：ω 增大时周期 $T=\\frac{2\\pi}{\\omega}$ 减小，图像上相邻两个零点的距离变小，即图像被横向压缩；ω 的变化不改变振幅与最值。",
+    "latex": "T=\\frac{2\\pi}{\\omega}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "周期变换",
+      "横向伸缩",
+      "圆频率"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0052",
+    "node_type": "KnowledgePoint",
+    "name": "初相 φ 对图像的影响",
+    "aliases": [
+      "相位变换",
+      "左右平移"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "φ 决定图像的左右位置：由 $y=A\\sin\\omega x$ 的图像向左（$\\varphi>0$）或向右（$\\varphi<0$）平移 $\\left|\\frac{\\varphi}{\\omega}\\right|$ 个单位，即得 $y=A\\sin(\\omega x+\\varphi)$ 的图像。",
+    "latex": "y=A\\sin\\omega x\\ \\longrightarrow\\ y=A\\sin(\\omega x+\\varphi)",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "相位变换",
+      "左右平移",
+      "五点法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "先平移后伸缩与先伸缩后平移的平移量不同，后者需平移 $\\left|\\frac{\\varphi}{\\omega}\\right|$。"
+  },
+  {
+    "id": "KP-TRIG-0053",
+    "node_type": "KnowledgePoint",
+    "name": "用五点法作 y=A sin(ωx+φ) 的图像",
+    "aliases": [
+      "正弦型函数作图",
+      "五点法作图"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "作 $y=A\\sin(\\omega x+\\varphi)$ 的大致图像：先求最小正周期 $T=\\frac{2\\pi}{\\omega}$，令相位取 $0,\\frac{\\pi}{2},\\pi,\\frac{3\\pi}{2},2\\pi$ 求出对应的 x 与 y，列表、描点、连成光滑曲线，得到一个周期内的图像后再向左、右平移。",
+    "latex": "\\omega x+\\varphi=0,\\ \\frac{\\pi}{2},\\ \\pi,\\ \\frac{3\\pi}{2},\\ 2\\pi",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "五点法",
+      "作图",
+      "正弦型函数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0054",
+    "node_type": "KnowledgePoint",
+    "name": "由图像求 y=A sin(ωx+φ) 的表达式",
+    "aliases": [
+      "求解析式",
+      "读图求参数",
+      "由图像确定参数"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "由图像求解析式：由最大值、最小值确定 A；由相邻最高点与最低点（或相邻零点）的横坐标差确定周期，再由 $T=\\frac{2\\pi}{\\omega}$ 求 ω；最后把图像上的一个已知点（常取最高点）的坐标代入求 φ，并结合 φ 的取值范围取舍。",
+    "latex": "T=\\frac{2\\pi}{\\omega}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "求解析式",
+      "图像信息",
+      "参数确定"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例 3 由交流电图像求周期、频率与最大值，并特别讨论初相 φ 的确定（不能仅由 sin φ=0 取 φ=π）。"
+  },
+  {
+    "id": "KP-TRIG-0055",
+    "node_type": "KnowledgePoint",
+    "name": "正切函数的定义与图像",
+    "aliases": [
+      "正切函数",
+      "y=tan x",
+      "正切曲线"
+    ],
+    "kp_type": "concept",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "当 $x\\neq k\\pi+\\frac{\\pi}{2}\\ (k\\in\\mathbf{Z})$ 时正切值 $\\tan x$ 唯一确定，由此建立的函数叫做正切函数 $y=\\tan x$；图像由被直线 $x=k\\pi+\\frac{\\pi}{2}$ 隔开的无穷多支曲线组成，可先作 $(-\\frac{\\pi}{2},\\frac{\\pi}{2})$ 上的一段再平移得到整个图像。",
+    "latex": "\\{x\\mid x\\in\\mathbf{R},\\ x\\neq k\\pi+\\frac{\\pi}{2},\\ k\\in\\mathbf{Z}\\}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.4",
+      "page": null
+    },
+    "tags": [
+      "正切函数",
+      "分段曲线",
+      "图像作法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "正切值可看作角的终边所在直线与直线 $x=1$ 交点的纵坐标，作图方法与正弦函数类似。"
+  },
+  {
+    "id": "KP-TRIG-0056",
+    "node_type": "KnowledgePoint",
+    "name": "正切函数的性质（周期性、值域、奇偶性）",
+    "aliases": [
+      "正切函数性质",
+      "正切周期",
+      "正切值域"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由 $\\tan(x+\\pi)=\\tan x$ 知正切函数是周期函数，最小正周期为 $\\pi$；其值域是实数集 $\\mathbf{R}$，既没有最大值也没有最小值；由 $\\tan(-x)=-\\tan x$ 知它是奇函数，图像关于坐标原点对称。",
+    "latex": "\\tan(x+\\pi)=\\tan x,\\quad \\tan(-x)=-\\tan x",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.4",
+      "page": null
+    },
+    "tags": [
+      "正切函数性质",
+      "周期性",
+      "奇函数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0057",
+    "node_type": "KnowledgePoint",
+    "name": "正切函数的单调性",
+    "aliases": [
+      "正切单调区间",
+      "严格增"
+    ],
+    "kp_type": "property",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "正切函数 $y=\\tan x$ 在每个区间 $(k\\pi-\\frac{\\pi}{2},k\\pi+\\frac{\\pi}{2})\\ (k\\in\\mathbf{Z})$ 上都是严格增函数；证明时由 $\\tan x_{2}-\\tan x_{1}=\\frac{\\sin(x_{2}-x_{1})}{\\cos x_{1}\\cos x_{2}}>0$ 入手，再借助周期性推广到定义域。",
+    "latex": "\\tan x_{2}-\\tan x_{1}=\\frac{\\sin(x_{2}-x_{1})}{\\cos x_{1}\\cos x_{2}}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.4",
+      "page": null
+    },
+    "tags": [
+      "正切函数性质",
+      "单调性",
+      "证明"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-TRIG-0058",
+    "node_type": "KnowledgePoint",
+    "name": "正切型函数的定义域、单调区间与最小正周期",
+    "aliases": [
+      "正切型函数",
+      "求定义域",
+      "正切周期公式"
+    ],
+    "kp_type": "method",
+    "module": "TRIG",
+    "section_id": "SEC-BX2-07-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求 $y=\\tan(\\omega x+\\varphi)$ 的定义域：由 $\\omega x+\\varphi\\neq k\\pi+\\frac{\\pi}{2}$ 解出 x；求单调区间：由 $k\\pi-\\frac{\\pi}{2}<\\omega x+\\varphi<k\\pi+\\frac{\\pi}{2}$ 解出 x；最小正周期 $T=\\frac{\\pi}{\\omega}$（$\\omega>0$）。",
+    "latex": "T=\\frac{\\pi}{\\omega}",
+    "source": {
+      "book": "BX2",
+      "chapter": 7,
+      "section": "7.4",
+      "page": null
+    },
+    "tags": [
+      "正切型函数",
+      "定义域",
+      "最小正周期"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "由例 1、例 2 提炼；单调区间是开区间。"
+  }
+]

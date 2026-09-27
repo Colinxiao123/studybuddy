@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyBuddy · 知识图谱版</title>
+<link rel="stylesheet" href="/static/vendor/katex.inline.css">
+<link rel="stylesheet" href="/static/style.css?v=20260927">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="主导航">
+    <div class="side-brand">
+      <div class="logo">∑</div>
+      <div class="brand-text">
+        <h1>StudyBuddy</h1>
+        <p class="sub">知识图谱版</p>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <button class="tab active" data-tab="upload">① 录入错题</button>
+      <button class="tab" data-tab="book">② 错题本</button>
+      <button class="tab" data-tab="heat">③ 知识点热度</button>
+      <button class="tab" data-tab="graph">④ 图谱查询</button>
+      <button class="tab" data-tab="view">⑤ 图谱视图</button>
+    </nav>
+
+    <div class="side-foot">
+      <button id="chatOpenBtn" class="btn btn-sm btn-block chat-open-btn" title="打开 AI 对话（Ctrl+I）">💬 AI 对话</button>
+      <div id="envPill" class="pill pill-muted" title="识别模型配置状态">检查中…</div>
+      <button id="settingsBtn" class="btn btn-sm btn-block" title="设置识别模型（API 地址与密钥）">⚙ 设置</button>
+    </div>
+  </aside>
+
+  <div class="app-body">
+    <header class="topbar">
+      <div class="crumb" id="pageTitle">录入错题</div>
+      <div class="topbar-right">
+        <label class="who" title="学生标识：用于区分不同学生的错题库">
+          <span class="who-avatar" id="avatarBadge">D</span>
+          <input id="studentId" value="default" spellcheck="false">
+        </label>
+      </div>
+    </header>
+
+<main>
+  <!-- ================= 录入错题 ================= -->
+  <section id="tab-upload" class="panel active">
+    <div class="grid-2">
+      <div class="card">
+        <h2>上传错题</h2>
+        <div id="dropzone" class="dropzone">
+          <div class="dz-icon">📷</div>
+          <p><strong>点击选择</strong> 或把图片拖到这里</p>
+          <p class="hint">支持 JPG / PNG / PDF，可多选（如：题目 + 你的解答）</p>
+          <input type="file" id="fileInput" accept="image/*,.pdf" multiple hidden>
+        </div>
+        <ul id="fileList" class="file-list"></ul>
+
+        <details class="mt">
+          <summary>识别不准？手动补充（可选）</summary>
+          <label class="field mt">
+            <span>题干文字（留空则以图片识别为准）</span>
+            <textarea id="stemText" rows="3" placeholder="例如：已知函数 $f(x)=2^x-2^{-x}$，判断其奇偶性。"></textarea>
+          </label>
+          <label class="field">
+            <span>补充说明给 AI（可选）</span>
+            <input id="hint" placeholder="例如：这道题老师讲的是用定义法">
+          </label>
+        </details>
+
+        <div class="row">
+          <label class="field flex1">
+            <span>错因（可先不填，AI 会判断）</span>
+            <select id="errorType">
+              <option value="unknown">未归类</option>
+              <option value="concept">概念不清</option>
+              <option value="method">方法不会</option>
+              <option value="calc">计算失误</option>
+              <option value="read">审题失误</option>
+            </select>
+          </label>
+          <label class="field flex1">
+            <span>我的作答（可选）</span>
+            <input id="studentAnswer" placeholder="留空则从图片里识别">
+          </label>
+        </div>
+
+        <label class="check mt">
+          <input type="checkbox" id="autoAnalyze" checked>
+          <span>同时生成 AI 解答与错因分析</span>
+        </label>
+
+        <button id="ingestBtn" class="btn btn-primary btn-block mt">识别并入库</button>
+        <div id="progressBox" class="progress-box" hidden>
+          <div class="progress-track"><i id="progressBar"></i></div>
+          <p id="progressMsg" class="hint"></p>
+        </div>
+        <p id="uploadMsg" class="msg"></p>
+      </div>
+
+      <div class="card" id="resultCard">
+        <h2>识别结果</h2>
+        <div id="resultEmpty" class="empty">
+          <p>上传错题后，这里会显示：</p>
+          <ul class="plain">
+            <li>原题干（公式已排版）与原始图片</li>
+            <li>匹配到的知识点及其置信度</li>
+            <li>AI 给出的答案、分步分析与错因归类</li>
+            <li>前置链根因候选（更基础的薄弱点）</li>
+          </ul>
+        </div>
+        <div id="resultBody" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 错题本 ================= -->
+  <section id="tab-book" class="panel">
+    <div class="toolbar">
+      <input id="bookSearch" class="flex1" placeholder="按知识点搜索错题（如：奇偶性）">
+      <button id="bookRefresh" class="btn">刷新</button>
+    </div>
+    <div class="book-layout">
+      <aside class="book-side">
+        <div class="side-block">
+          <h4>错因</h4>
+          <label class="chk"><input type="checkbox" class="errType" value="concept">
+            概念不清 <span class="cnt" data-cnt="concept"></span></label>
+          <label class="chk"><input type="checkbox" class="errType" value="method">
+            方法不会 <span class="cnt" data-cnt="method"></span></label>
+          <label class="chk"><input type="checkbox" class="errType" value="calc">
+            计算失误 <span class="cnt" data-cnt="calc"></span></label>
+          <label class="chk"><input type="checkbox" class="errType" value="read">
+            审题失误 <span class="cnt" data-cnt="read"></span></label>
+          <label class="chk"><input type="checkbox" class="errType" value="unknown">
+            未归类 <span class="cnt" data-cnt="unknown"></span></label>
+        </div>
+        <div class="side-block">
+          <h4>录入日期</h4>
+          <div class="quick-dates">
+            <button type="button" class="chip" data-range="all">全部</button>
+            <button type="button" class="chip" data-range="7">近 7 天</button>
+            <button type="button" class="chip" data-range="30">近 30 天</button>
+            <button type="button" class="chip" data-range="month">本月</button>
+          </div>
+          <label class="mini-label">从 <input type="date" id="bookFrom"></label>
+          <label class="mini-label">到 <input type="date" id="bookTo"></label>
+        </div>
+        <div class="side-block">
+          <h4>排序</h4>
+          <select id="bookSort">
+            <option value="newest">最新录入优先</option>
+            <option value="oldest">最早录入优先</option>
+            <option value="last_wrong">最近出错优先</option>
+            <option value="most_wrong">错得最多优先</option>
+          </select>
+        </div>
+        <button id="bookResetFilters" class="btn btn-sm btn-block">重置筛选</button>
+      </aside>
+      <div class="book-main">
+        <div id="bookStats" class="stat-row"></div>
+        <div id="bookList" class="stack"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 知识点热度 ================= -->
+  <section id="tab-heat" class="panel">
+    <div class="toolbar">
+      <select id="heatModule"><option value="">全部模块</option></select>
+      <label class="check"><input type="checkbox" id="heatOnlyWrong"><span>只看有错题的</span></label>
+      <button id="heatRefresh" class="btn">刷新</button>
+    </div>
+    <div class="legend" id="heatLegend"></div>
+    <div id="moduleSummary" class="stack"></div>
+    <div class="card">
+      <h2>知识点热度明细</h2>
+      <div class="table-wrap"><table id="heatTable">
+        <thead><tr>
+          <th>知识点</th><th>模块</th><th>节</th><th>类型</th><th>难度</th>
+          <th title="有多少后续知识点依赖它">被依赖</th><th>错题数</th><th>热度</th><th>建议</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table></div>
+    </div>
+    <div class="card">
+      <h2>复习优先级</h2>
+      <p class="hint">综合「错题数 + 课标要求 + 图中心性」排序，不只是错得多。</p>
+      <div id="reviewPlan" class="stack"></div>
+    </div>
+  </section>
+
+  <!-- ================= 图谱查询 ================= -->
+  <section id="tab-graph" class="panel">
+    <div class="toolbar">
+      <input id="graphSearch" class="flex1" placeholder="搜索知识点（支持别名，如：数量积、等比数列求和）">
+      <button id="graphBtn" class="btn btn-primary">搜索</button>
+    </div>
+    <div class="grid-2">
+      <div class="card"><h2>结果</h2><div id="graphResults" class="stack"></div></div>
+      <div class="card"><h2>知识点详情</h2><div id="graphDetail" class="empty"><p>点击左侧结果查看详情、前置依赖与学习路径。</p></div></div>
+    </div>
+  </section>
+
+  <!-- ================= 图谱视图 ================= -->
+  <section id="tab-view" class="panel">
+    <div class="toolbar">
+      <select id="viewScope"><option value="">全部（544 个知识点，较慢）</option></select>
+      <select id="viewColor">
+        <option value="heat">按错题热度着色</option>
+        <option value="type">按知识点类型着色</option>
+      </select>
+      <label class="check"><input type="checkbox" id="viewLabels" checked><span>显示名称</span></label>
+      <button id="viewRefresh" class="btn">重新布局</button>
+    </div>
+    <div class="legend" id="viewLegend"></div>
+    <div class="graph-layout">
+      <div id="graphCanvas" class="graph-canvas"><div class="empty">加载中…</div></div>
+      <aside id="graphSide" class="graph-side">
+        <p class="empty">点击图中节点查看知识点详情与相关错题。<br><br>
+          节点<strong>颜色</strong>表示你的错题热度，<strong>大小</strong>表示它被多少后续知识点依赖 ——
+          又大又红的就是「既基础又薄弱」，最该优先补。</p>
+      </aside>
+    </div>
+  </section>
+</main>
+  </div><!-- /app-body -->
+</div><!-- /app-shell -->
+
+<!-- ================= AI 对话 · 可折叠侧边栏（仿 VS Code Copilot）================= -->
+<aside id="chatSidebar" class="chat-sidebar" aria-label="AI 对话侧边栏" inert>
+  <div class="chat-panel-head">
+    <div class="chat-panel-title">💬 AI 学习助手</div>
+    <div class="chat-panel-actions">
+      <button id="chatClear" class="btn btn-sm btn-ghost" title="清空当前对话">清空</button>
+      <button id="chatCollapse" class="btn btn-sm btn-ghost" title="收起侧边栏（Ctrl+I）" aria-label="收起侧边栏">✕</button>
+    </div>
+  </div>
+
+  <div id="chatLog" class="chat-log">
+    <div class="chat-hint card">
+      <h2>问 AI</h2>
+      <p class="hint">可以只问概念，也可以点任意错题卡片上的「问 AI」把它带过来。
+        回答先用<strong>图谱知识点与教材原文</strong>作答，再由另一个老师<strong>复核一遍</strong>：
+        超纲、算错、漏答都会被挑出来改正。它只讲高中范围内的内容，若题目的正规做法超纲，
+        会明确说明「这题超出高中范围」。</p>
+    </div>
+  </div>
+
+  <div id="chatAttach" class="chat-attach" hidden></div>
+
+  <div class="chat-tools">
+    <div class="chat-refs">
+      <h4>本次引用的知识点</h4>
+      <div id="chatKps" class="hint">还没提问。</div>
+    </div>
+    <div id="chatPicker" class="chat-picker" hidden>
+      <input id="chatPickSearch" placeholder="搜题干 / 题号 / 知识点">
+      <div id="chatPickList" class="chat-pick-list"></div>
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <button type="button" class="btn" id="chatPickBtn" title="带一道错题来问">📎</button>
+    <textarea id="chatText" rows="2" placeholder="输入你的问题，回车发送（Shift+Enter 换行）"></textarea>
+    <button id="chatSend" class="btn btn-primary">发送</button>
+  </div>
+  <p class="hint" id="chatMsg"></p>
+</aside>
+
+<div id="toast" class="toast" hidden></div>
+
+<!-- ================= 识别模型设置 ================= -->
+<div id="settingsModal" class="modal" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <h2>识别模型设置</h2>
+      <button id="settingsClose" class="btn btn-sm btn-ghost" title="关闭">✕</button>
+    </div>
+    <div class="modal-body">
+      <p class="hint">
+        填好地址、密钥、模型名即可接入真实识图模型；保存后<strong>立即生效</strong>，不用重启程序。
+        还没有密钥时，把「服务商」选成 mock，可以先用离线样例模式熟悉流程。
+      </p>
+
+      <label class="field">
+        <span>服务商</span>
+        <select id="setProvider">
+          <option value="deepseek">DeepSeek</option>
+          <option value="openai">其它 OpenAI 兼容服务（通义 / 智谱 / 本地 Ollama…）</option>
+          <option value="mock">mock——离线样例模式，不联网</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>API 地址</span>
+        <input id="setBase" spellcheck="false" placeholder="https://api.deepseek.com/v1">
+      </label>
+
+      <label class="field">
+        <span>API Key <em id="setKeyState" class="hint"></em></span>
+        <input id="setKey" type="password" spellcheck="false" autocomplete="off"
+               placeholder="留空表示不修改；填 __clear__ 则清除">
+      </label>
+
+      <div class="grid-2-tight">
+        <label class="field">
+          <span>识图模型</span>
+          <input id="setModel" spellcheck="false" autocomplete="off" placeholder="deepseek-flash">
+        </label>
+        <label class="field">
+          <span>文本模型（抽知识点 / 写解析）</span>
+          <input id="setTextModel" spellcheck="false" autocomplete="off" placeholder="deepseek-chat">
+        </label>
+      </div>
+      <div class="row-inline">
+        <button id="settingsFetchModels" class="btn btn-sm">⬇ 拉取模型列表</button>
+        <span class="hint" id="setModelsHint">从服务商读取可用模型名，省得手输</span>
+      </div>
+      <div id="setModelPop" class="pop-list" hidden></div>
+      <div id="setTextModelPop" class="pop-list" hidden></div>
+
+      <details class="mt">
+        <summary>高级选项</summary>
+        <div class="grid-3-tight mt">
+          <label class="field"><span>输出上限 token</span>
+            <input id="setMaxTokens" inputmode="numeric" placeholder="8192"></label>
+          <label class="field"><span>PDF 页数上限</span>
+            <input id="setMaxPages" inputmode="numeric" placeholder="50"></label>
+          <label class="field"><span>识别并发数</span>
+            <input id="setConcurrency" inputmode="numeric" placeholder="4"></label>
+        </div>
+        <p class="hint">推理型模型（deepseek-flash / reasoner 等）会先花 token 思考，
+          输出上限给小了会出现「返回成功但内容是空的」，建议 8192 以上。</p>
+      </details>
+
+      <div id="setResult" class="set-result" hidden></div>
+      <p class="hint" id="setEnvPath"></p>
+    </div>
+    <div class="modal-foot">
+      <button id="settingsTest" class="btn btn-sm">测试连接</button>
+      <span class="spacer"></span>
+      <button id="settingsCancel" class="btn btn-sm">取消</button>
+      <button id="settingsSave" class="btn btn-sm btn-primary">保存</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/vendor/katex.min.js"></script>
+<script src="/static/vendor/auto-render.min.js"></script>
+<script src="/static/vendor/echarts.min.js"></script>
+<script src="/static/app.js?v=20260927"></script>
+</body>
+</html>

@@ -1,0 +1,2427 @@
+[
+  {
+    "id": "KP-PROB-0001",
+    "node_type": "KnowledgePoint",
+    "name": "随机现象与随机试验",
+    "aliases": [
+      "随机现象",
+      "随机试验",
+      "随机性"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "无法预知确切结果的现象称为随机现象（具有随机性）；可以随意独立重复的随机现象（如抛硬币、掷骰子、抽签）称为随机试验。概率是描述随机现象中某事件发生可能性大小的度量，概率论源于 1654 年费马与帕斯卡关于分奖金问题的通信讨论；随机现象可以分为可随意重复的与不可随意重复的两类。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.1",
+      "page": null
+    },
+    "tags": [
+      "随机现象",
+      "随机试验",
+      "概率的意义"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0002",
+    "node_type": "KnowledgePoint",
+    "name": "样本空间与样本点",
+    "aliases": [
+      "样本空间",
+      "样本点",
+      "基本事件"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "随机现象依某个角度观察其所有可能出现的结果组成的集合称为样本空间，记作 $\\Omega$，其中的元素称为基本事件（样本点）。同一个随机现象因观察角度不同可有不同的样本空间；样本空间可以是有限集，也可以是无限集；样本空间的选取依观察问题的角度而定。",
+    "latex": "\\Omega",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.1",
+      "page": null
+    },
+    "tags": [
+      "样本空间",
+      "基本事件",
+      "观察角度"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0003",
+    "node_type": "KnowledgePoint",
+    "name": "事件与样本空间的子集",
+    "aliases": [
+      "事件",
+      "随机事件"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "事件（随机事件）是样本空间的一个子集，即满足事件所述条件的所有基本事件的集合。如果其中的某个基本事件发生，就说该事件发生。基本事件是样本空间中的元素，而事件是样本空间的子集，两者不同；事件常用与相应子集相同的字母表示；样本空间确定之后，事件与子集就对应起来。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.1",
+      "page": null
+    },
+    "tags": [
+      "事件",
+      "样本空间的子集",
+      "事件的发生"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0004",
+    "node_type": "KnowledgePoint",
+    "name": "必然事件与不可能事件",
+    "aliases": [
+      "必然事件",
+      "不可能事件",
+      "确定事件"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "必然事件是必然发生的事件，它对应的子集就是样本空间 $\\Omega$；不可能事件是必然不发生的事件，对应的子集是空集 $\\varnothing$。两者统称为确定事件，其余的事件称为不确定事件。例如抛出石块必落地是确定事件，而“明天会下雨”是不确定事件。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.1",
+      "page": null
+    },
+    "tags": [
+      "必然事件",
+      "不可能事件",
+      "确定事件"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0005",
+    "node_type": "KnowledgePoint",
+    "name": "古典概率模型与等可能性",
+    "aliases": [
+      "古典概型",
+      "等可能性",
+      "古典概率模型"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "一个随机试验若满足：(1) 包含有限个可能出现的结果（基本事件）；(2) 这些结果的出现是等可能的，则称为古典概率模型。等可能性在许多场合是直观自然的（如假设硬币质地均匀、抛掷过程充分随机）；此时每个基本事件发生的概率是基本事件总数的倒数。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "古典概型",
+      "等可能性",
+      "有限样本空间"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0006",
+    "node_type": "KnowledgePoint",
+    "name": "古典概率的计算公式",
+    "aliases": [
+      "古典概率",
+      "概率公式"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "在古典概率模型中，事件 $A$ 发生的概率等于 $A$ 中基本事件个数与样本空间中基本事件个数之比，即 $P(A)=\\frac{|A|}{|\\Omega|}$，其中 $|A|$ 表示集合 $A$ 中元素的个数；它说明概率是事件中元素个数与样本空间中元素个数的比值。",
+    "latex": "P(A)=\\frac{|A|}{|\\Omega|}",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "古典概率",
+      "概率计算",
+      "比值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0007",
+    "node_type": "KnowledgePoint",
+    "name": "概率的基本性质",
+    "aliases": [
+      "概率性质",
+      "概率的范围"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "由概率的定义直接可得：必然事件的概率是 1、不可能事件的概率是 0，即 $P(\\Omega)=1$、$P(\\varnothing)=0$；并且对任何事件 $A$，有 $0\\leqslant P(A)\\leqslant 1$；这两条性质可用来检验计算出的概率是否合理。",
+    "latex": "P(\\Omega)=1,\\ P(\\varnothing)=0,\\ 0\\leqslant P(A)\\leqslant 1",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "概率性质",
+      "概率范围"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0008",
+    "node_type": "KnowledgePoint",
+    "name": "构造等可能样本空间的方法",
+    "aliases": [
+      "等可能样本空间的构造",
+      "分步分解"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "复杂的随机试验可依次分解为若干等可能的步骤：若第一步有 $m$ 个等可能结果，对第一步的每个结果第二步都有 $n$ 个等可能结果，则该试验共有 $mn$ 个等可能结果；一次取两个与依次不放回取两个的随机性相同；对多步的等可能随机试验可以类似地构造等可能样本空间。",
+    "latex": "|\\Omega|=mn",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "等可能样本空间",
+      "分步构造",
+      "不放回抽取"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0009",
+    "node_type": "KnowledgePoint",
+    "name": "事件的关系：包含与互斥",
+    "aliases": [
+      "包含关系",
+      "互斥",
+      "互不相容"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "若事件 $A$ 的基本事件都在事件 $B$ 中，则 $A$ 发生必然 $B$ 发生，称 $B$ 包含 $A$（$A\\subset B$）；若 $A\\cap B=\\varnothing$，即两事件没有共同的基本事件，则它们不可能同时发生，称 $A$ 与 $B$ 互斥。",
+    "latex": "A\\subset B;\\ A\\cap B=\\varnothing",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "事件包含",
+      "互斥事件"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0010",
+    "node_type": "KnowledgePoint",
+    "name": "事件的并、交运算与对立事件",
+    "aliases": [
+      "事件运算",
+      "对立事件",
+      "并事件",
+      "交事件"
+    ],
+    "kp_type": "rule",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "“两个事件至少有一个发生”对应 $A\\cup B$；“两个事件同时发生”对应 $A\\cap B$。事件 $A$ 的对立事件“非 $A$”是 $A$ 不发生的否定，对应 $A$ 在 $\\Omega$ 中的补集，满足 $A\\cap\\overline{A}=\\varnothing$ 且 $A\\cup\\overline{A}=\\Omega$。",
+    "latex": "A\\cap\\overline{A}=\\varnothing,\\ A\\cup\\overline{A}=\\Omega",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "事件运算",
+      "对立事件",
+      "补集"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0011",
+    "node_type": "KnowledgePoint",
+    "name": "事件运算的德摩根律",
+    "aliases": [
+      "德摩根律",
+      "对偶律"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "事件运算满足德摩根律：“同时发生”的否定是“至少有一个不发生”，即 $\\overline{A\\cap B}=\\overline{A}\\cup\\overline{B}$；“至少有一个发生”的否定是“都不发生”，即 $\\overline{A\\cup B}=\\overline{A}\\cap\\overline{B}$。",
+    "latex": "\\overline{A\\cap B}=\\overline{A}\\cup\\overline{B},\\ \\overline{A\\cup B}=\\overline{A}\\cap\\overline{B}",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.2",
+      "page": null
+    },
+    "tags": [
+      "德摩根律",
+      "事件否定",
+      "集合运算"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0012",
+    "node_type": "KnowledgePoint",
+    "name": "伯努利试验",
+    "aliases": [
+      "成功与失败"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "只有两种可能结果、且规定其中一个为“成功”（概率 $p$）、另一个为“失败”（概率 $1-p$，其中 $0<p<1$）的随机试验称为伯努利试验。抛硬币出现正面、掷骰子出现 6 点都可看作伯努利试验中的成功；伯努利试验可以独立地重复，这是大数定律成立的前提。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.3",
+      "page": null
+    },
+    "tags": [
+      "伯努利试验",
+      "成功",
+      "独立重复"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0013",
+    "node_type": "KnowledgePoint",
+    "name": "频率及其稳定性",
+    "aliases": [
+      "频率",
+      "频率的稳定性"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "独立地重复一个伯努利试验 $n$ 次，其中成功的次数记作 $S_n$，则 $\\frac{S_n}{n}$ 称为成功的频率。频率依赖于试验次数 $n$，它不是一个确定的数，而是一个随机的数，但在试验次数足够多时会稳定地趋向概率；“独立地重复”有严格的数学定义，这里可以按字面来理解。",
+    "latex": "\\frac{S_n}{n}",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.3",
+      "page": null
+    },
+    "tags": [
+      "频率",
+      "频率稳定性",
+      "随机性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0014",
+    "node_type": "KnowledgePoint",
+    "name": "伯努利大数定律",
+    "aliases": [
+      "大数定律",
+      "law of large numbers"
+    ],
+    "kp_type": "theorem",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "伯努利大数定律：独立地重复一个伯努利试验 $n$ 次，当 $n$ 很大时，频率 $\\frac{S_n}{n}$ 逼近概率。它的成立以“可以独立地重复”为前提；不能独立重复的随机现象（如天气）所谈的概率是主观概率，无法检验；它由瑞士数学家雅各布·伯努利在 1713 年出版的著作中首次证明。",
+    "latex": "\\frac{S_n}{n}\\to p",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.3",
+      "page": null
+    },
+    "tags": [
+      "大数定律",
+      "频率逼近概率",
+      "独立重复"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0015",
+    "node_type": "KnowledgePoint",
+    "name": "用频率估计概率（经验概率）",
+    "aliases": [
+      "经验概率",
+      "用频率估计概率"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "apply",
+    "statement": "由于频率在大量试验中稳定于常数（概率），实际中可把频率作为概率的估计值，称为经验概率，用 $\\hat{P}$ 表示。例如用 500 个病人中胆固醇降低的频率 0.614 作为其概率的估计；统计英文字母出现的频率以破译密码也是它的应用。",
+    "latex": "\\hat{P}(A)=\\frac{\\text{发生次数}}{\\text{试验次数}}",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.3",
+      "page": null
+    },
+    "tags": [
+      "经验概率",
+      "频率估计",
+      "实际应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材课后阅读给出蒙特卡洛算法（随机化算法）：用投掷飞镖落入区域的频率估计不规则区域的面积，是频率稳定性的应用；并指出不能独立重复的现象只能谈主观概率。"
+  },
+  {
+    "id": "KP-PROB-0016",
+    "node_type": "KnowledgePoint",
+    "name": "事件的独立性",
+    "aliases": [
+      "独立性",
+      "独立事件",
+      "independent"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "若事件 $A$ 是否发生不影响事件 $B$ 发生的可能性，则称 $A$ 与 $B$ 相互独立。独立性的严格定义是：两个事件同时发生的概率等于它们各自发生概率的乘积，即 $P(A\\cap B)=P(A)P(B)$；例如抛掷甲、乙两枚硬币，“甲正面朝上”与“乙正面朝上”相互独立。",
+    "latex": "P(A\\cap B)=P(A)P(B)",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.4",
+      "page": null
+    },
+    "tags": [
+      "事件独立性",
+      "独立事件",
+      "乘积关系"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0017",
+    "node_type": "KnowledgePoint",
+    "name": "判定事件的独立性",
+    "aliases": [
+      "独立性的判断"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "当两个事件的独立性不能由随机试验的独立性直接判断时，就用等式 $P(A\\cap B)=P(A)P(B)$ 是否成立来检验。例如可验证抽扑克牌时“牌面是 10”与“花色是红桃”独立，而掷骰子“结果是偶数”与“结果是奇数”不独立；独立性是概率计算中非常直观的重要概念。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.4",
+      "page": null
+    },
+    "tags": [
+      "独立性判断",
+      "等式检验"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0018",
+    "node_type": "KnowledgePoint",
+    "name": "独立事件的性质（对立事件仍独立）",
+    "aliases": [
+      "独立事件的性质"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若 $A$ 与 $B$ 独立，则 $A$ 与 $\\overline{B}$ 也独立，即 $A$ 是否发生与 $B$ 是否发生彼此独立。证明要点：由 $A=(A\\cap B)\\cup(A\\cap\\overline{B})$ 与概率的可加性得 $P(A\\cap\\overline{B})=P(A)(1-P(B))$。",
+    "latex": "P(A\\cap\\overline{B})=P(A)P(\\overline{B})",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.4",
+      "page": null
+    },
+    "tags": [
+      "独立性性质",
+      "对立事件",
+      "可加性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0019",
+    "node_type": "KnowledgePoint",
+    "name": "互斥事件概率的可加性与对立事件概率公式",
+    "aliases": [
+      "可加性",
+      "对立事件概率"
+    ],
+    "kp_type": "rule",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "概率性质：如果事件 $A$、$B$ 不同时发生（即互斥），那么 $P(A\\cup B)=P(A)+P(B)$（可加性）；对任何事件 $A$，其对立事件的概率满足 $P(\\overline{A})=1-P(A)$；这两个性质在计算事件的概率时经常使用。",
+    "latex": "P(A\\cup B)=P(A)+P(B),\\ P(\\overline{A})=1-P(A)",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.4",
+      "page": null
+    },
+    "tags": [
+      "可加性",
+      "对立事件概率",
+      "概率性质"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0020",
+    "node_type": "KnowledgePoint",
+    "name": "“至少”型问题：独立事件的和与积",
+    "aliases": [
+      "至少有一个发生",
+      "至多问题"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-12-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "求“至少有一个发生”的概率常用对立事件法：$P(A\\cup B)=1-P(\\overline{A\\cap B})$，当 $A$、$B$ 独立时化为 $1-P(\\overline{A})P(\\overline{B})$。例如两人罚球“至少一人命中”的概率为 $1-0.3\\times0.4=0.88$。",
+    "latex": "P(A\\cup B)=1-P(\\overline{A})P(\\overline{B})",
+    "source": {
+      "book": "BX3",
+      "chapter": 12,
+      "section": "12.4",
+      "page": null
+    },
+    "tags": [
+      "至少型问题",
+      "对立事件法",
+      "独立事件"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0021",
+    "node_type": "KnowledgePoint",
+    "name": "总体、个体与总体容量",
+    "aliases": [
+      "总体",
+      "个体",
+      "population",
+      "总体容量"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "在统计问题中，把研究对象的全体叫做总体，总体中的每一个对象叫做个体，总体中所含个体的数量称为总体的容量，容量可以有限也可以无限。例如考查某班全体学生的身高，则全体学生的身高是总体，每名学生的身高是个体；统计学的具体研究对象多种多样，但都具有不确定性。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.1",
+      "page": null
+    },
+    "tags": [
+      "总体",
+      "个体",
+      "总体容量"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0022",
+    "node_type": "KnowledgePoint",
+    "name": "样本与样本量",
+    "aliases": [
+      "样本",
+      "样本量",
+      "sample"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "从总体中抽取的一部分个体叫做这个总体的一个样本，样本所含个体的数量称为样本量（样本容量）。例如小明分别记录了 50 次乘坐公交车与 50 次乘坐地铁所花的时间，这两组数据分别是两个总体的样本，其中“乘车时间”总体的容量是无限的；样本量越大，样本通常越能代表总体。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.1",
+      "page": null
+    },
+    "tags": [
+      "样本",
+      "样本量",
+      "抽样"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0023",
+    "node_type": "KnowledgePoint",
+    "name": "统计量与用样本推断总体",
+    "aliases": [
+      "统计量",
+      "statistic"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "用来描述样本特征的概括性数字度量称为统计量，如达标率、优秀率、平均数等。统计活动的基本思想是用样本的统计量去推断总体的数字特征，例如用样本中学生的肺活量达标率估计全国学生的达标情况，因此样本的代表性与获取方式十分重要；统计推断不像确定性推理那样能给出必然的结论。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.1",
+      "page": null
+    },
+    "tags": [
+      "统计量",
+      "统计推断",
+      "代表性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0024",
+    "node_type": "KnowledgePoint",
+    "name": "观测数据与实验数据",
+    "aliases": [
+      "观测数据",
+      "实验数据"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "按收集数据的不同方法，数据可分为观测数据与实验数据。观测数据是通过调查或观测、在没有对有关事物进行人为控制的条件下收集到的数据（如人口普查数据）；实验数据是在实验中控制实验对象而收集到的数据（如疫苗有效性实验数据）；本章所说的数据主要涉及观测数据，它主要通过普查或抽样调查获得。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.2",
+      "page": null
+    },
+    "tags": [
+      "观测数据",
+      "实验数据",
+      "数据分类"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0025",
+    "node_type": "KnowledgePoint",
+    "name": "普查",
+    "aliases": [
+      "全面调查",
+      "census"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "一个国家或地区为详细调查某项重要的国情、国力，专门组织大规模的全面调查，即对总体的每个个体分别进行调查，称为普查。我国每 10 年进行一次人口普查，此外还有经济普查、农业普查等；普查要耗费大量人力、物力与财力，但可以全面掌握总体的情况。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.2",
+      "page": null
+    },
+    "tags": [
+      "普查",
+      "全面调查",
+      "人口普查"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0026",
+    "node_type": "KnowledgePoint",
+    "name": "抽样与抽样调查",
+    "aliases": [
+      "抽样",
+      "抽样调查",
+      "sampling"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "从总体中按照一定的方法抽取样本进行研究，然后通过分析样本数据对总体作出相应的估计，这一过程称为抽样，通过抽样进行调查研究的方法叫做抽样调查。有些调查过程具有破坏性（如测试灯管使用寿命、汽车车身抗撞性），这时必须用抽样调查；抽样能在不进行全面调查的情况下对总体作出估计。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.2",
+      "page": null
+    },
+    "tags": [
+      "抽样",
+      "抽样调查",
+      "破坏性调查"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "采用文献、统计报表、年鉴等已有统计数据前，须考虑数据的含义、获取方法与可靠性。"
+  },
+  {
+    "id": "KP-PROB-0027",
+    "node_type": "KnowledgePoint",
+    "name": "样本的代表性",
+    "aliases": [
+      "代表性",
+      "样本代表性"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "样本的代表性是指选取的样本能客观地反映总体的情况，没有人为的主观偏向；例如从远离工厂排污口的位置取水检测，其结果未必能反映这段河道的污染情况。科学的抽样方法必须使样本具有代表性，否则由样本推断总体就会产生偏差；样本是否具有代表性取决于抽样的方法是否科学。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.3",
+      "page": null
+    },
+    "tags": [
+      "样本代表性",
+      "无偏性",
+      "抽样设计"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0028",
+    "node_type": "KnowledgePoint",
+    "name": "简单随机抽样",
+    "aliases": [
+      "simple random sampling"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "在抽样过程中通过逐个抽取的方法抽取样本，且总体的每一个个体都有同样的可能性被选入样本，这种抽样方法叫做简单随机抽样。其特点：总体个数 $N$ 是有限的；是不放回抽样；每个个体被选入样本的可能性相同；抽签法、随机数法都属简单随机抽样。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.3",
+      "page": null
+    },
+    "tags": [
+      "简单随机抽样",
+      "等可能性",
+      "不放回"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0029",
+    "node_type": "KnowledgePoint",
+    "name": "抽签法",
+    "aliases": [
+      "号签"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-03",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "先将总体中的个体一一编号，把号码写在形状、大小完全相同的号签上，混合均匀后抽取所需数量的号签，与号签编号对应的个体组成样本。抽签法简单易行，适用于总体容量不大的情形；当总体容量很大时制作号签费时且不易混合均匀，可改用随机数法；操作时要注意号签必须形状大小完全相同并充分混合。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.3",
+      "page": null
+    },
+    "tags": [
+      "抽签法",
+      "号签",
+      "简单随机抽样"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0030",
+    "node_type": "KnowledgePoint",
+    "name": "随机数法",
+    "aliases": [
+      "随机数表法",
+      "随机数表"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "apply",
+    "statement": "先把总体中的个体逐个编号，再按事先确定的规则直接从随机数表（或其他工具产生的随机数）中取一定量的随机数，其对应的个体组成样本。随机数表满足每个位置的数字等可能、不同位置数字的取值相互独立；计算机产生的是伪随机数；抽取时要去掉超出编号范围或重复出现的随机数。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.3",
+      "page": null
+    },
+    "tags": [
+      "随机数法",
+      "随机数表",
+      "伪随机数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0031",
+    "node_type": "KnowledgePoint",
+    "name": "分层随机抽样",
+    "aliases": [
+      "分层抽样",
+      "stratified sampling"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "当总体由差异明显的几个部分组成时，先把总体分成若干个部分，然后从不同的部分中独立、随机地抽取样本，这种抽样方法称为分层随机抽样。按 $\\frac{n_i}{N_i}=\\frac{n}{N}$ 的比例分配各层的样本量，每个个体被抽到的概率均为 $\\frac{n}{N}$。",
+    "latex": "\\frac{n_i}{N_i}=\\frac{n}{N}",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.3",
+      "page": null
+    },
+    "tags": [
+      "分层抽样",
+      "比例分配",
+      "层"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "分层抽样利用辅助信息分层（层间差异大、层内差异小），能提高样本的代表性与抽样效率；具体采用何种抽样方法要视情况而定。"
+  },
+  {
+    "id": "KP-PROB-0032",
+    "node_type": "KnowledgePoint",
+    "name": "极差",
+    "aliases": [
+      "全距",
+      "range"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "一组数据的最大值与最小值的差称为极差（又称全距），它表示这组数据的波动范围大小。例如某组数据最大值为 184、最小值为 152，极差为 $184-152=32$；绘制频率分布表时先由极差确定分组范围；它计算简单，但只由两个极端数据决定，对极端数据很敏感。",
+    "latex": "R=x_{\\max}-x_{\\min}",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "极差",
+      "全距",
+      "波动范围"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0033",
+    "node_type": "KnowledgePoint",
+    "name": "频率分布表与频率分布直方图",
+    "aliases": [
+      "频率分布表",
+      "频率分布直方图",
+      "频数"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "绘制步骤：求极差；确定组距与组数（数据在 120 个以内时通常分为 5~12 组）；统计每组的频数与频率（频率=频数÷样本容量）；列出频率分布表。频率分布直方图以组距为底、以频率与组距之比为高作矩形；分组时若组数太少，数据会集中在少数组里；组数太多，多数组内数据很少甚至没有。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "频率分布表",
+      "频率分布直方图",
+      "分组"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0034",
+    "node_type": "KnowledgePoint",
+    "name": "频率分布直方图中矩形面积表示频率",
+    "aliases": [
+      "直方图的面积"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在频率分布直方图中，小矩形的底为组距、高为频率与组距之比，因此每个小矩形的面积等于相应小组的频率，各小矩形面积的总和为 1。例如某组的频率为 0.21，则对应矩形的面积就是 0.21，即约有 21% 的数据落在此组内；直方图比频率分布表更能直观形象地反映数据分布规律。",
+    "latex": "S_i=\\frac{f_i}{n}",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "频率分布直方图",
+      "矩形面积",
+      "频率"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0035",
+    "node_type": "KnowledgePoint",
+    "name": "频率分布折线图",
+    "aliases": [
+      "频率折线图"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "在频率分布直方图两侧各加一个频率为 0 的区间，从左至右依次连接各矩形上底边的中点，直至右侧所加区间的中点，再去掉矩形的边，就得到频率分布折线图。所加的两个组频率都是零，不影响统计结果；样本容量足够大且组距足够小时，折线图将趋于一条光滑的曲线。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "频率分布折线图",
+      "组中值",
+      "光滑曲线"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0036",
+    "node_type": "KnowledgePoint",
+    "name": "茎叶图",
+    "aliases": [
+      "stem-and-leaf plot"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "apply",
+    "statement": "把数据分为“茎”（如两位数的十位数字）与“叶”（个位数字），茎由小到大排成一列并在其一侧画竖线，把叶写在所属茎的旁边，即得茎叶图。注意“叶”只能是一位数；茎叶图保留全部数据信息，适于数据不多的情形，也可用于两组同类数据的比较分析。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "茎叶图",
+      "数据分布",
+      "两组比较"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0037",
+    "node_type": "KnowledgePoint",
+    "name": "散点图",
+    "aliases": [
+      "scatter diagram"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "为对两组数据之间的关系形成大致的了解，把这两组数据所对应的点描在平面直角坐标系内，这些点组成的统计图称为散点图。散点图一般用于刻画成对数据（如以身高为横坐标、体重为纵坐标作图），可看出两个量之间是否存在某种关系，但不能说明因果关系。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "散点图",
+      "成对数据",
+      "相关关系"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0038",
+    "node_type": "KnowledgePoint",
+    "name": "常用统计图的选择",
+    "aliases": [
+      "统计图的选择"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "选择统计图：条形图与频率分布直方图适于数据量较大时直观反映数据分布的大致情况；扇形图用于呈现每部分所占的比例；折线图用于呈现数据随时间变化的趋势；茎叶图保留全部信息但不适合大数据量；散点图用于刻画成对数据；此外，条形图、扇形图与折线图是初中阶段已经学过的统计图。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.4",
+      "page": null
+    },
+    "tags": [
+      "统计图选择",
+      "数据可视化"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0039",
+    "node_type": "KnowledgePoint",
+    "name": "用样本的频率分布估计总体分布",
+    "aliases": [
+      "总体分布",
+      "总体分布密度曲线",
+      "用样本估计分布"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "总体中不同范围或类型的个体所占的比例称为总体的分布。若样本数据是随机抽取的，由大数定律，样本量不断增大时样本中每组的频率稳定于相应概率，因此可用样本的频率分布估计总体的分布；组距很小时的频率折线图趋于总体分布密度曲线；样本容量越接近总体容量，频率折线图与总体分布密度曲线越贴近。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "总体分布",
+      "频率分布估计",
+      "密度曲线"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0040",
+    "node_type": "KnowledgePoint",
+    "name": "求和符号 Σ",
+    "aliases": [
+      "求和符号",
+      "Sigma",
+      "Σ"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "记号 $\\sum_{i=1}^{n}x_i$ 表示连加和 $x_1+x_2+\\cdots+x_n$，其中 $\\sum$（读作 Sigma）称为求和符号，其下方 $i=1$、上方 $n$ 表示求和的起止。若 $c$ 是常数，则 $\\sum cx_i=c\\sum x_i$。",
+    "latex": "\\sum_{i=1}^{n}x_i=x_1+x_2+\\cdots+x_n",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "求和符号",
+      "连加",
+      "记号"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0041",
+    "node_type": "KnowledgePoint",
+    "name": "样本平均数",
+    "aliases": [
+      "加权平均",
+      "样本均值"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "样本数据 $x_1,\\cdots,x_n$ 的平均数为 $\\overline{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i$；若不同数据 $x_1,\\cdots,x_k$ 的频数分别为 $f_1,\\cdots,f_k$，则可用加权形式 $\\overline{x}=\\frac{1}{n}\\sum x_if_i$ 计算。",
+    "latex": "\\overline{x}=\\frac{1}{n}\\sum_{i=1}^{n}x_i",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "样本平均数",
+      "加权平均",
+      "频数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0042",
+    "node_type": "KnowledgePoint",
+    "name": "用样本估计集中趋势：平均数、中位数与众数",
+    "aliases": [
+      "集中趋势",
+      "中位数",
+      "众数"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "平均数、中位数、众数都是刻画一组数据集中趋势的数字特征，可分别用来估计总体的平均水平、中等水平与出现次数最多的水平。例如可用样本估计全体员工的平均年薪、中等年薪与赚取人数最多的那种年薪；估计是否合理取决于样本的容量与代表性；选择哪个统计量进行估计，要结合数据的特点。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "集中趋势",
+      "平均数",
+      "中位数",
+      "众数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0043",
+    "node_type": "KnowledgePoint",
+    "name": "方差与标准差",
+    "aliases": [
+      "方差",
+      "标准差",
+      "离散程度"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "样本方差 $s^2=\\frac{1}{n}\\sum_{i=1}^{n}(x_i-\\overline{x})^2$ 衡量数据围绕平均数波动的大小，其算术平方根称为（样本）标准差，单位与数据一致；方差越大波动越大，区间 $[\\overline{x}-2s,\\overline{x}+2s]$ 包含大多数样本数据。",
+    "latex": "s^2=\\frac{1}{n}\\sum_{i=1}^{n}(x_i-\\overline{x})^2",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "方差",
+      "标准差",
+      "波动大小"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0044",
+    "node_type": "KnowledgePoint",
+    "name": "分层样本合并的平均数与方差",
+    "aliases": [
+      "合并样本",
+      "总方差"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "若已知两层的容量 $n_i$、平均数 $\\overline{x}_i$ 与方差 $s_i^2$，可求合并后全部数据的平均数与方差：总平均数为各层平均数的加权平均，总方差等于各层方差与层间偏差平方的加权和，计算不依赖原始数据；其中总方差的计算只依赖于两层的样本量之比。",
+    "latex": "s^2=\\frac{1}{n}\\sum_{i=1}^{2}\\left[n_is_i^2+n_i(\\overline{x}_i-\\overline{x})^2\\right]",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "合并平均数",
+      "合并方差",
+      "分层样本"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例3由男生、女生各自的平均数与方差求全体数据的总方差，推导中对总离差平方和分组展开配方；该公式是教材正文结论，未单独编号。"
+  },
+  {
+    "id": "KP-PROB-0045",
+    "node_type": "KnowledgePoint",
+    "name": "百分位数与四分位数",
+    "aliases": [
+      "百分位数",
+      "四分位数",
+      "percentile"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-BX3-13-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "第 $k$ 百分位数 $P_k$ 是把数据从小到大排列后，小于或等于它的数据占 $k\\%$、大于或等于它的数据占 $(100-k)\\%$ 的数。计算指数 $i=n\\cdot k\\%$：$i$ 为整数时取第 $i$ 与第 $i+1$ 项的平均数，否则向上取整定位；中位数即 $P_{50}$。",
+    "latex": "i=n\\cdot k\\%",
+    "source": {
+      "book": "BX3",
+      "chapter": 13,
+      "section": "13.5",
+      "page": null
+    },
+    "tags": [
+      "百分位数",
+      "四分位数",
+      "中位数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "中位数与 $P_{25}$、$P_{75}$ 将数据分为四部分，合称四分位数；教材通过“阶梯电价”等实例说明用样本的百分位数估计总体的百分位数（如以 $P_{75}$、$P_{95}$ 作电量临界值）。"
+  },
+  {
+    "id": "KP-PROB-0046",
+    "node_type": "KnowledgePoint",
+    "name": "条件概率",
+    "aliases": [
+      "P(B|A)"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在事件 $A$ 发生的条件下事件 $B$ 发生的概率称为条件概率，记作 $P(B|A)$。在古典概率模型中 $P(B|A)=\\frac{|A\\cap B|}{|A|}$；一般地 $P(B|A)=\\frac{P(A\\cap B)}{P(A)}$，后一公式适用于所有情况。",
+    "latex": "P(B|A)=\\frac{P(A\\cap B)}{P(A)}",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "条件概率",
+      "样本空间缩小",
+      "古典模型"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0047",
+    "node_type": "KnowledgePoint",
+    "name": "概率的乘法公式",
+    "aliases": [
+      "乘法公式"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "事件 $A$、$B$ 同时发生的概率等于 $A$ 发生的概率与在 $A$ 发生的条件下 $B$ 发生的概率的乘积，即 $P(A\\cap B)=P(A)P(B|A)$，这个公式称为概率的乘法公式；它可由条件概率公式两边同乘 $P(A)$ 得到。",
+    "latex": "P(A\\cap B)=P(A)P(B|A)",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "乘法公式",
+      "同时发生",
+      "条件概率"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0048",
+    "node_type": "KnowledgePoint",
+    "name": "独立性与条件概率的关系",
+    "aliases": [
+      "独立性的条件概率刻画"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "如果事件 $A$ 与 $B$ 独立，那么 $P(B|A)=P(B)$，即条件概率等于概率；反之，若条件概率等于概率，则两个事件独立。推导：把 $P(A\\cap B)=P(A)P(B)$ 代入条件概率公式 $P(B|A)=\\frac{P(A\\cap B)}{P(A)}$ 即得。",
+    "latex": "P(B|A)=P(B)",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "独立性",
+      "条件概率",
+      "等价刻画"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0049",
+    "node_type": "KnowledgePoint",
+    "name": "全概率公式",
+    "aliases": [
+      "加权平均公式"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "设样本空间分成两两互斥的事件 $\\Omega_1,\\Omega_2,\\cdots,\\Omega_n$ 且 $\\sum P(\\Omega_k)=1$，则事件 $A$ 发生的概率是条件概率的加权平均：$P(A)=\\sum_{k=1}^{n}P(A|\\Omega_k)P(\\Omega_k)$，称为全概率公式。",
+    "latex": "P(A)=\\sum_{k=1}^{n}P(A|\\Omega_k)P(\\Omega_k)",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "全概率公式",
+      "加权平均",
+      "互斥分解"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0050",
+    "node_type": "KnowledgePoint",
+    "name": "抽签与顺序无关",
+    "aliases": [
+      "抽签顺序",
+      "摸球概率相同"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "不放回地依次摸球（抽签）时，各人摸到白球（抽到好签）的概率都相同，与抽签顺序无关：如 3 白 2 黑时第二个人摸到白球的概率为 $\\frac{2}{4}\\times\\frac{3}{5}+\\frac{3}{4}\\times\\frac{2}{5}=\\frac{3}{5}$。可用全概率公式证明。",
+    "latex": "P(B)=P(B|A)P(A)+P(B|\\overline{A})P(\\overline{A})",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "抽签",
+      "顺序无关",
+      "全概率公式应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0051",
+    "node_type": "KnowledgePoint",
+    "name": "贝叶斯公式、先验概率与后验概率",
+    "aliases": [
+      "贝叶斯公式",
+      "先验概率",
+      "后验概率"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "由乘法公式与全概率公式可得贝叶斯公式 $P(\\Omega_i|A)=\\frac{P(A|\\Omega_i)P(\\Omega_i)}{P(A)}$。其中 $P(\\Omega_i)$ 称为先验概率，$P(\\Omega_i|A)$ 称为后验概率，即根据新信息 $A$ 对原概率的矫正。",
+    "latex": "P(\\Omega_i|A)=\\frac{P(A|\\Omega_i)P(\\Omega_i)}{P(A)}",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.1",
+      "page": null
+    },
+    "tags": [
+      "贝叶斯公式",
+      "先验概率",
+      "后验概率"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材指出贝叶斯公式体现“概率可根据新信息修正”的思想，是机器学习的理论基础之一。"
+  },
+  {
+    "id": "KP-PROB-0052",
+    "node_type": "KnowledgePoint",
+    "name": "随机变量",
+    "aliases": [
+      "random variable"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "以样本空间为定义域的函数 $X$ 称为一个随机变量，即对样本空间中任意给定的元素 $\\omega$，都有唯一的实数 $X(\\omega)$ 与之对应。它的名字中虽有“变量”，但实际上是一个函数；它的取值在随机现象发生前是随机的；随机变量的取值在试验前无法确定，但它取各值的概率是确定的。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "随机变量",
+      "样本空间的函数",
+      "随机性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0053",
+    "node_type": "KnowledgePoint",
+    "name": "随机变量的分布（分布列）",
+    "aliases": [
+      "分布",
+      "分布列",
+      "distribution"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "随机变量所有可能的取值以及相应的概率称为随机变量的分布，常用表格（上行为取值 $x_i$、下行为概率 $p_i$）表示，各概率非负且总和为 $p_1+p_2+\\cdots+p_n=1$。分布直观地表示总值为 1 的量如何分布在一些数上。",
+    "latex": "p_1+p_2+\\cdots+p_n=1",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "随机变量分布",
+      "分布列",
+      "概率总和"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0054",
+    "node_type": "KnowledgePoint",
+    "name": "等可能分布与伯努利分布",
+    "aliases": [
+      "均匀分布",
+      "伯努利分布"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "当随机变量取所有值的概率均相等时，称它服从等可能分布（均匀分布），如掷一颗骰子的点数；只取两个值的随机变量称为伯努利型，其分布称为伯努利分布，如抛一枚硬币正面朝上的枚数。二项分布正是把伯努利试验独立重复 $n$ 次所得成功次数的分布。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "等可能分布",
+      "伯努利分布",
+      "两种取值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0055",
+    "node_type": "KnowledgePoint",
+    "name": "数学期望",
+    "aliases": [
+      "期望",
+      "均值",
+      "E[X]"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "以概率为权重对随机变量的取值进行加权平均所得的值称为随机变量的期望（数学期望，简称均值）：若 $P(X=x_i)=p_i$，则 $E[X]=x_1p_1+x_2p_2+\\cdots+x_np_n$。期望是一个确定的数，重复试验中平均结果随试验次数增大而逼近期望。",
+    "latex": "E[X]=x_1p_1+x_2p_2+\\cdots+x_np_n",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "数学期望",
+      "加权平均",
+      "确定性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例5用选择性必修第6章的组合数与二项式定理求抛 $n$ 枚硬币正面枚数的期望 $n/2$；排列组合计数详见 COMB 模块（待补跨模块边）。"
+  },
+  {
+    "id": "KP-PROB-0056",
+    "node_type": "KnowledgePoint",
+    "name": "期望的线性性质",
+    "aliases": [
+      "期望的性质"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "期望满足线性性质：(1) 若 $X$ 是随机变量、$a$ 是实数，则 $E[aX]=aE[X]$；(2) 若 $X$、$Y$ 是随机变量，则 $E[X+Y]=E[X]+E[Y]$。常数随机变量是确定的，其期望等于它本身；利用它可以由各分量的期望直接求出和的期望。",
+    "latex": "E[aX]=aE[X],\\ E[X+Y]=E[X]+E[Y]",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "期望性质",
+      "线性性质",
+      "常数随机变量"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0057",
+    "node_type": "KnowledgePoint",
+    "name": "方差",
+    "aliases": [
+      "分散度",
+      "D[X]"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "随机变量 $X$ 与其期望的偏差的平方的期望 $D[X]=E[(X-E[X])^2]$ 称为 $X$ 的方差，它衡量随机变量取值的分散度：方差为 0 当且仅当 $X$ 是常数随机变量。统计中常用标准差 $\\sqrt{D[X]}$，其尺度与 $X$ 相同。",
+    "latex": "D[X]=E[(X-E[X])^2]",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "方差",
+      "分散度",
+      "标准差"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0058",
+    "node_type": "KnowledgePoint",
+    "name": "方差的计算公式与性质",
+    "aliases": [
+      "方差公式",
+      "方差性质"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "方差的计算公式 $D[X]=E[X^2]-(E[X])^2$；性质：(1) $D[aX]=a^2D[X]$；(2) 若 $X$、$Y$ 独立，则 $D[X+Y]=D[X]+D[Y]$。期望描述随机变量的中心位置，方差描述其分散程度，两者合称数字特征。",
+    "latex": "D[X]=E[X^2]-(E[X])^2",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.2",
+      "page": null
+    },
+    "tags": [
+      "方差公式",
+      "方差性质",
+      "数字特征"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0059",
+    "node_type": "KnowledgePoint",
+    "name": "二项分布",
+    "aliases": [
+      "binomial distribution",
+      "B(n,p)"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "独立地重复一个成功概率为 $p$ 的伯努利试验 $n$ 次，成功次数 $X$ 的分布 $P(X=k)=\\mathrm{C}_n^kp^k(1-p)^{n-k}$（$k=0,1,\\cdots,n$）称为二项分布，记作 $X\\sim B(n,p)$；各概率之和为 1，这正是二项式定理的体现。",
+    "latex": "P(X=k)=\\mathrm{C}_n^kp^k(1-p)^{n-k}",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "二项分布",
+      "独立重复",
+      "成功次数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "组合数 $\\mathrm{C}_n^k$ 的计数方法见选择性必修第6章；排列组合计数详见 COMB 模块（待补跨模块边）。"
+  },
+  {
+    "id": "KP-PROB-0060",
+    "node_type": "KnowledgePoint",
+    "name": "二项分布的期望与方差",
+    "aliases": [
+      "二项分布的期望"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "若 $X\\sim B(n,p)$，把成功次数分解为 $n$ 个相互独立的 0-1 变量之和，由期望的线性性质与方差的性质可得 $E[X]=np$，$D[X]=np(1-p)$。方差关于 $p$ 的图像在 $p=\\frac{1}{2}$ 时取最大值，即此时分散度最大。",
+    "latex": "E[X]=np,\\ D[X]=np(1-p)",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "二项分布",
+      "期望",
+      "方差"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0061",
+    "node_type": "KnowledgePoint",
+    "name": "超几何分布",
+    "aliases": [
+      "hypergeometric distribution"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "从装有 $a$ 个白球、$b$ 个黑球的袋子中随机且不放回地取 $n$ 个球，其中的白球数 $X$ 服从超几何分布：$P(X=k)=\\frac{\\mathrm{C}_a^k\\mathrm{C}_b^{n-k}}{\\mathrm{C}_{a+b}^n}$，其中 $k$ 的取值不能超过 $n$，也不能超过 $a$ 与 $b$。",
+    "latex": "P(X=k)=\\frac{\\mathrm{C}_a^k\\mathrm{C}_b^{n-k}}{\\mathrm{C}_{a+b}^n}",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "超几何分布",
+      "不放回抽取",
+      "白球数"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "排列组合计数详见 COMB 模块（待补跨模块边）。"
+  },
+  {
+    "id": "KP-PROB-0062",
+    "node_type": "KnowledgePoint",
+    "name": "超几何分布的期望",
+    "aliases": [
+      "超几何分布期望"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "超几何分布的期望 $E[X]=\\frac{na}{a+b}$，即取球个数乘白球所占的比例，与放回摸球情形（二项分布）的期望相同。计算时把 $X$ 分解为各次取球结果之和，利用抽签与顺序无关及期望的线性性质；这说明不放回摸球时白球个数的平均水平与放回时一致。",
+    "latex": "E[X]=\\frac{na}{a+b}",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "超几何分布",
+      "期望",
+      "线性性质"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0063",
+    "node_type": "KnowledgePoint",
+    "name": "二项分布与超几何分布的关系",
+    "aliases": [
+      "分布对比"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "二项分布与超几何分布的区别，实质上就是摸球模型中放回摸球与不放回摸球的区别：当 $a+b$ 远大于 $n$ 时，两种分布的差别不大。两者的期望相同，但它们的分布是不同的；例如从一大批产品中抽取少量样品时，可把不放回抽取近似看作有放回抽取。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "分布对比",
+      "放回与不放回",
+      "近似"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0064",
+    "node_type": "KnowledgePoint",
+    "name": "正态分布",
+    "aliases": [
+      "normal distribution",
+      "钟形曲线"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "由钟形曲线（正态密度函数）刻画的分布称为正态分布，记作 $X\\sim N(\\mu,\\sigma^2)$：$\\mu$ 是该分布的期望（均值），$\\sigma^2$ 是该分布的方差。测量过程中的误差通常假设服从正态分布；密度函数图像与 $x$ 轴所夹部分的面积等于 1。",
+    "latex": "\\varphi_{\\mu,\\sigma^2}(x)=\\frac{1}{\\sqrt{2\\pi}\\sigma}\\mathrm{e}^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "正态分布",
+      "密度函数",
+      "钟形曲线"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0065",
+    "node_type": "KnowledgePoint",
+    "name": "标准正态分布与分布函数 Φ(x)",
+    "aliases": [
+      "标准正态分布",
+      "N(0,1)"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "当 $\\mu=0$、$\\sigma^2=1$ 时的正态分布称为标准正态分布，记作 $N(0,1)$，其密度函数简记为 $y=\\varphi(x)$。记 $\\Phi(x)$ 为密度函数从 $-\\infty$ 到 $x$ 的累计面积（标准正态分布函数），满足 $\\Phi(-x)=1-\\Phi(x)$。",
+    "latex": "\\Phi(-x)=1-\\Phi(x)",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "标准正态分布",
+      "分布函数",
+      "累计面积"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0066",
+    "node_type": "KnowledgePoint",
+    "name": "正态分布的性质与 3σ 原则",
+    "aliases": [
+      "3σ原则",
+      "正态曲线的性质"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-XB2-07-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "正态密度曲线关于 $x=\\mu$ 对称、单峰，在 $x=\\mu$ 处最大：$\\sigma$ 越小曲线越“高瘦”，分布越集中。3σ 原则：$P(|X-\\mu|<\\sigma)\\approx68.3\\%$，$P(|X-\\mu|<2\\sigma)\\approx95.4\\%$，$P(|X-\\mu|<3\\sigma)\\approx99.7\\%$。",
+    "latex": "P(|X-\\mu|<3\\sigma)\\approx99.7\\%",
+    "source": {
+      "book": "XB2",
+      "chapter": 7,
+      "section": "7.3",
+      "page": null
+    },
+    "tags": [
+      "正态性质",
+      "3σ原则",
+      "对称性"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0067",
+    "node_type": "KnowledgePoint",
+    "name": "成对数据与相关分析",
+    "aliases": [
+      "成对数据",
+      "相关分析",
+      "correlation analysis"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "来自同一对象的两个变量（如每名学生的身高与体重）各自的一组数据称为成对数据，研究成对数据相关性的方法称为相关分析。散点图是观察两个变量之间相关性、发现数据变化规律的基本工具，通过它可大致了解数据的整体形态与偏离情况；相关分析中两个变量的地位是对等的。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "成对数据",
+      "相关分析",
+      "散点图"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0068",
+    "node_type": "KnowledgePoint",
+    "name": "线性相关关系",
+    "aliases": [
+      "线性相关",
+      "正相关",
+      "负相关"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若散点图中的点整体上都在一条直线的附近波动，就说两个变量之间具有线性相关关系，此时可用一条直线来拟合这两组数据。$x$ 增大时 $y$ 有增大趋势称为正相关，有减小趋势称为负相关；相关关系不是确定性的函数关系；观察散点图是判断两个变量是否线性相关的直观方法。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "线性相关",
+      "正相关",
+      "负相关"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0069",
+    "node_type": "KnowledgePoint",
+    "name": "线性相关系数",
+    "aliases": [
+      "相关系数",
+      "皮尔逊相关系数"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "线性相关系数（皮尔逊相关系数）$r$ 是度量变量 $x$ 与 $y$ 之间线性相关程度的统计量：分子为离差乘积之和 $\\sum(x_i-\\overline{x})(y_i-\\overline{y})$，分母为两组离差平方和乘积的算术平方根。",
+    "latex": "r=\\frac{\\sum_{i=1}^{n}(x_i-\\overline{x})(y_i-\\overline{y})}{\\sqrt{\\sum_{i=1}^{n}(x_i-\\overline{x})^2\\sum_{i=1}^{n}(y_i-\\overline{y})^2}}",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "相关系数",
+      "皮尔逊",
+      "线性相关程度"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0070",
+    "node_type": "KnowledgePoint",
+    "name": "相关系数的性质与相关程度的判断",
+    "aliases": [
+      "相关系数性质"
+    ],
+    "kp_type": "property",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "相关系数 $r$ 满足 $|r|\\leqslant1$：$|r|$ 越接近 1 线性相关程度越高，越接近 0 相关程度越低；$r>0$ 为正相关，$r<0$ 为负相关。$r$ 关于两个变量对称、与单位无关，并受数据量与少数异常值的影响。",
+    "latex": "|r|\\leqslant1",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.1",
+      "page": null
+    },
+    "tags": [
+      "相关系数性质",
+      "相关程度",
+      "异常值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0071",
+    "node_type": "KnowledgePoint",
+    "name": "一元线性回归模型与离差",
+    "aliases": [
+      "回归模型",
+      "离差",
+      "解释变量",
+      "反应变量"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "对具有线性相关关系的成对数据，用线性方程 $y=ax+b$ 来拟合：当 $x=x_i$ 时 $\\hat{y}_i=ax_i+b$ 是理想值，$y_i-\\hat{y}_i$ 称为在 $x_i$ 处的离差，它描述单对数据与线性方程的贴近程度。$x$ 称为解释变量，$y$ 称为反应变量。",
+    "latex": "\\hat{y}_i=ax_i+b",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "回归模型",
+      "离差",
+      "变量角色"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0072",
+    "node_type": "KnowledgePoint",
+    "name": "最小二乘法与拟合误差",
+    "aliases": [
+      "最小二乘法",
+      "拟合误差",
+      "least squares"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "用离差的平方和 $Q=\\sum_{i=1}^{n}(y_i-\\hat{y}_i)^2$ 刻画直线与数据点的拟合程度，$Q$ 称为拟合误差；使 $Q$ 取得最小值的线性方程即回归方程，这种求回归方程的方法称为最小二乘法，所得系数称为最小二乘估计。",
+    "latex": "Q=\\sum_{i=1}^{n}(y_i-\\hat{y}_i)^2",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "最小二乘法",
+      "拟合误差",
+      "离差平方和"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0073",
+    "node_type": "KnowledgePoint",
+    "name": "回归方程与回归系数公式",
+    "aliases": [
+      "回归方程",
+      "回归系数",
+      "样本点的中心"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "回归系数由最小二乘法给出：$\\hat{a}$ 等于离差乘积之和除以 $x$ 的离差平方和，$\\hat{b}=\\overline{y}-\\hat{a}\\overline{x}$；回归方程为 $y=\\hat{a}x+\\hat{b}$，回归直线必经过样本点的中心 $(\\overline{x},\\overline{y})$。",
+    "latex": "\\hat{a}=\\frac{\\sum_{i=1}^{n}(x_i-\\overline{x})(y_i-\\overline{y})}{\\sum_{i=1}^{n}(x_i-\\overline{x})^2}",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "回归系数",
+      "回归方程",
+      "样本中心"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0074",
+    "node_type": "KnowledgePoint",
+    "name": "建立一元线性回归模型的步骤与预测",
+    "aliases": [
+      "回归分析步骤",
+      "预测"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "一般步骤：(1) 明确自变量与因变量；(2) 绘制散点图观察是否呈线性关系；(3) 选用线性方程 $y=ax+b$；(4) 用最小二乘法估计参数得回归方程；(5) 计算离差检验模型（本书不作要求）；(6) 利用回归方程进行预测；回归分析常与相关分析配合使用。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.2",
+      "page": null
+    },
+    "tags": [
+      "回归分析步骤",
+      "模型建立",
+      "预测"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "相关分析测定相关性的强弱与方向，两变量地位对等；回归分析建立模型、具有因果分析与预测功能，自变量为解释变量、因变量为反应变量。相关分析一般要求两变量均服从正态分布，回归分析只要求反应变量服从正态分布；对呈指数增长的数据可先取对数化为线性回归。"
+  },
+  {
+    "id": "KP-PROB-0075",
+    "node_type": "KnowledgePoint",
+    "name": "分类变量与 2×2 列联表",
+    "aliases": [
+      "分类变量",
+      "列联表",
+      "四格表"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "变量的不同“值”表示个体所属不同类别的变量称为分类变量。两个分类变量各占两行两列，每个格子中的数据是同时满足所在行列类别的个体频数；这样形成的 2 行 2 列频数表称为 $2\\times2$ 列联表（四格表），这些频数称为观察值。",
+    "latex": null,
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "分类变量",
+      "列联表",
+      "观察值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0076",
+    "node_type": "KnowledgePoint",
+    "name": "独立性检验：原假设与预期值",
+    "aliases": [
+      "原假设",
+      "零假设",
+      "预期值",
+      "备择假设"
+    ],
+    "kp_type": "concept",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "检验两个分类变量是否有关，一般先假设它们没有关系（相互独立），这种假设称为原假设 $H_0$，与它相对立的假设称为备择假设 $H_1$。预期值是原假设成立时的预期结果，如“吸烟者中患病人数”应为吸烟人数与总体患病比例的乘积；当 $H_0$ 成立时，观察值与预期值应当比较接近。",
+    "latex": "H_0",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "原假设",
+      "预期值",
+      "独立性检验思想"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0077",
+    "node_type": "KnowledgePoint",
+    "name": "χ² 统计量及其计算公式",
+    "aliases": [
+      "卡方统计量",
+      "χ²公式"
+    ],
+    "kp_type": "formula",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "统计量 $\\chi^2=\\sum\\frac{(\\text{观察值}-\\text{预期值})^2}{\\text{预期值}}$ 描述观察值与预期值的总体偏差，其值越大原假设成立的可能性越小。对 $2\\times2$ 列联表，可由上式变形得 $\\chi^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$（$n=a+b+c+d$）。",
+    "latex": "\\chi^2=\\frac{n(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "卡方统计量",
+      "偏差",
+      "列联表公式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-PROB-0078",
+    "node_type": "KnowledgePoint",
+    "name": "独立性检验的步骤与判断",
+    "aliases": [
+      "独立性检验步骤",
+      "显著性水平",
+      "统计决断"
+    ],
+    "kp_type": "method",
+    "module": "PROB",
+    "section_id": "SEC-XB2-08-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "独立性检验的步骤：(1) 提出原假设 $H_0$（两变量无关）；(2) 确定显著性水平 $\\alpha=0.05$；(3) 计算 $\\chi^2$ 的值；(4) 统计决断：$\\chi^2\\geqslant3.841$ 时拒绝 $H_0$，否则不能拒绝 $H_0$，据此作结论。",
+    "latex": "P(\\chi^2\\geqslant3.841)\\approx0.05",
+    "source": {
+      "book": "XB2",
+      "chapter": 8,
+      "section": "8.3",
+      "page": null
+    },
+    "tags": [
+      "独立性检验步骤",
+      "显著性水平",
+      "统计决断"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材强调样本较小时结论仅作参考，要得到更可靠的结论需要增加样本量。"
+  }
+]

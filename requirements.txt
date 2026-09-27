@@ -1,0 +1,15 @@
+# 错题本运行依赖
+# 安装：python -m pip install -r requirements.txt
+# 或者直接 `python run.py --install`（会建 .venv 再装，不污染系统环境）
+#
+# 说明：三个平台（Windows / macOS / Linux）通用，pymupdf 与 pillow 都有官方轮子。
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+requests>=2.31
+pillow>=10.0
+pymupdf>=1.24
+
+# 下面这些只有离线构建脚本要用（scripts/、pipeline/），跑网页版不需要：
+#   jsonschema      —— 校验本体数据
+#   python-docx     —— 生成技术报告

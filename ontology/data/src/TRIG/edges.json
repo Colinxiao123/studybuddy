@@ -1,0 +1,655 @@
+[
+  {
+    "from": "KP-TRIG-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0002",
+    "strength": "required",
+    "reason": "特殊角的函数值需在锐角三角函数定义的基础上求解与记忆",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0004",
+    "strength": "required",
+    "reason": "终边相同的角建立在任意角与象限角概念之上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0007",
+    "strength": "recommended",
+    "reason": "定义任意角三角函数需先把角置于坐标系中考察终边",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0004",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0011",
+    "strength": "required",
+    "reason": "由终边重合可直接得到 2kπ+α 的诱导公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0008",
+    "strength": "required",
+    "reason": "函数值的符号由终边上点的坐标符号与 r 的正负决定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0009",
+    "strength": "required",
+    "reason": "同角三角公式由三角函数的坐标定义直接推出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0010",
+    "strength": "required",
+    "reason": "求其余各值要用平方关系与商数关系列式求解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0011",
+    "strength": "required",
+    "reason": "诱导公式的推导依赖三角函数的定义与终边的对称关系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0012",
+    "strength": "required",
+    "reason": "π/2±α 的公式在四组诱导公式与对称分析的基础上得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0013",
+    "strength": "required",
+    "reason": "求角时先要用诱导公式化为 sin x=sin α 等形式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0024",
+    "strength": "recommended",
+    "reason": "求 75°、15° 等角的值需结合特殊角的函数值拆角",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0006",
+    "rel": "DERIVED_FROM",
+    "to": "KP-TRIG-0005",
+    "method": "把角度制弧长、面积公式中的圆心角换成弧度数即得",
+    "note": ""
+  },
+  {
+    "from": "KP-TRIG-0009",
+    "rel": "DERIVED_FROM",
+    "to": "KP-TRIG-0007",
+    "method": "由 x²+y²=r² 与坐标定义两边同除 r² 推得",
+    "note": "sin²α+cos²α=1 的来源"
+  },
+  {
+    "from": "KP-TRIG-0014",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0016",
+    "strength": "required",
+    "reason": "和角的正弦公式由差角余弦公式与诱导公式推得",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0017",
+    "strength": "required",
+    "reason": "和差角正切公式由同角关系与正弦、余弦公式相除得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0015",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0018",
+    "strength": "required",
+    "reason": "二倍角余弦公式在余弦和角公式中令 β=α 得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0018",
+    "strength": "required",
+    "reason": "二倍角正弦公式由正弦和角公式得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0018",
+    "strength": "required",
+    "reason": "二倍角正切公式由正切和角公式得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0019",
+    "strength": "required",
+    "reason": "三倍角公式用二倍角公式与和角公式组合推得",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0020",
+    "strength": "required",
+    "reason": "半角公式由二倍角余弦公式变形并开方得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0021",
+    "strength": "required",
+    "reason": "把两角和与差的正弦公式相加、相减即得积化和差公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0022",
+    "strength": "required",
+    "reason": "辅助角公式是两角和的正弦公式的逆用",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0023",
+    "strength": "required",
+    "reason": "推证三角形中的正切恒等式要用和角正切公式与内角和",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0015",
+    "rel": "DERIVED_FROM",
+    "to": "KP-TRIG-0014",
+    "method": "用 −β 代换差角余弦公式中的 β",
+    "note": ""
+  },
+  {
+    "from": "KP-TRIG-0025",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0026",
+    "strength": "recommended",
+    "reason": "面积公式是解三角形的基本工具，先明确解三角形的问题背景",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0027",
+    "strength": "required",
+    "reason": "正弦定理由面积公式三式同除以 ½abc 得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0029",
+    "strength": "required",
+    "reason": "推导余弦定理要用三角函数的坐标定义与两点间距离公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0030",
+    "strength": "required",
+    "reason": "用正弦定理求角时可能出现互补的两解，需要检验取舍",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0029",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0030",
+    "strength": "recommended",
+    "reason": "用余弦定理化为一元二次方程可判断解的个数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0031",
+    "strength": "required",
+    "reason": "把边化为角判断形状要用正弦定理 a=2R sin A",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0029",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0031",
+    "strength": "recommended",
+    "reason": "把角化为边判断形状要用余弦定理",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0032",
+    "strength": "required",
+    "reason": "反三角记号用于简洁表示已知函数值所对应的角",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0033",
+    "strength": "required",
+    "reason": "测量问题中已知两角与一边时用正弦定理求解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0029",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0033",
+    "strength": "recommended",
+    "reason": "测量问题中已知两边与夹角或三边时用余弦定理求解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0026",
+    "rel": "DERIVED_FROM",
+    "to": "KP-TRIG-0007",
+    "method": "由 S=½AB·h 及 h=b sin A（正弦的定义）推得",
+    "note": ""
+  },
+  {
+    "from": "KP-TRIG-0028",
+    "rel": "DERIVED_FROM",
+    "to": "KP-TRIG-0027",
+    "method": "借助外接圆与直径所对圆周角推得 a=2R sin A",
+    "note": ""
+  },
+  {
+    "from": "KP-TRIG-0027",
+    "rel": "RELATED_TO",
+    "to": "KP-TRIG-0029",
+    "kind": "duality",
+    "note": "正弦定理与余弦定理从不同角度刻画边角关系，各适合不同已知条件"
+  },
+  {
+    "from": "KP-TRIG-0013",
+    "rel": "RELATED_TO",
+    "to": "KP-TRIG-0032",
+    "kind": "parallel",
+    "note": "通解表达式与反三角记号是表示同一组角的两种方式"
+  },
+  {
+    "from": "KP-TRIG-0034",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0035",
+    "strength": "required",
+    "reason": "作正弦函数图像以正弦函数的定义为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0034",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0036",
+    "strength": "required",
+    "reason": "正弦函数的周期性是周期函数概念的具体实例",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0038",
+    "strength": "recommended",
+    "reason": "由正弦曲线可直接读出值域与最大值、最小值",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0038",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0039",
+    "strength": "required",
+    "reason": "求三角函数最值要用值域与最值的结论",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0041",
+    "strength": "required",
+    "reason": "正弦函数的单调性由图像观察并加以论证",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0041",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0042",
+    "strength": "required",
+    "reason": "比较大小与求单调区间都是正弦函数单调性的直接应用",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0022",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0039",
+    "strength": "required",
+    "reason": "含 sin x 与 cos x 的式子先用辅助角公式化为一个正弦式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0039",
+    "strength": "required",
+    "reason": "含 sin²x 的式子先用二倍角公式降幂化简",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0039",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0043",
+    "strength": "recommended",
+    "reason": "实际最值问题常转化为求三角函数式的最值",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0037",
+    "rel": "DERIVED_FROM",
+    "to": "KP-TRIG-0036",
+    "method": "由周期函数定义推得：自变量放大 ω 倍，周期缩小为 2π/ω",
+    "note": ""
+  },
+  {
+    "from": "KP-TRIG-0034",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0044",
+    "strength": "required",
+    "reason": "把余弦写为 sin(x+π/2) 后方能借用正弦函数的结论",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0044",
+    "strength": "required",
+    "reason": "余弦曲线由正弦曲线向左平移 π/2 得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0044",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0045",
+    "strength": "required",
+    "reason": "三条性质由 cos x=sin(x+π/2) 与正弦函数的性质推出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0044",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0046",
+    "strength": "required",
+    "reason": "单调区间可由余弦曲线直接观察得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0039",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0047",
+    "strength": "required",
+    "reason": "求余弦型函数最值与求正弦型最值的方法一致（换元、配方）",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0037",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0048",
+    "strength": "required",
+    "reason": "求余弦型函数的周期用同一公式 T=2π/ω",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0046",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0048",
+    "strength": "required",
+    "reason": "求单调区间要代入余弦函数的单调区间解不等式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0044",
+    "rel": "RELATED_TO",
+    "to": "KP-TRIG-0035",
+    "kind": "analogy",
+    "note": "余弦曲线与正弦曲线形状相同，只相差一个左右平移"
+  },
+  {
+    "from": "KP-TRIG-0045",
+    "rel": "RELATED_TO",
+    "to": "KP-TRIG-0038",
+    "kind": "parallel",
+    "note": "正弦、余弦函数的值域与最值对照"
+  },
+  {
+    "from": "KP-TRIG-0034",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0049",
+    "strength": "required",
+    "reason": "用正弦函数刻画简谐运动，须先建立该类函数模型",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0050",
+    "strength": "required",
+    "reason": "讨论 A 对图像的影响需先明确振幅的物理意义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0037",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0051",
+    "strength": "required",
+    "reason": "ω 对图像的影响由最小正周期公式 T=2π/ω 说明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0052",
+    "strength": "required",
+    "reason": "初相 φ 的含义由相位的概念给出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0035",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0053",
+    "strength": "required",
+    "reason": "五点法作图以正弦函数图像的五点法为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0037",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0053",
+    "strength": "required",
+    "reason": "先求出周期才能确定作图的区间与关键点",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0053",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0054",
+    "strength": "required",
+    "reason": "由图像求解析式与用五点法作图是互逆的过程",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0049",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0054",
+    "strength": "required",
+    "reason": "求 A、ω、φ 需理解各参数的几何与物理意义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0055",
+    "strength": "required",
+    "reason": "正切函数由正切的坐标定义与定义域限制给出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0036",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0056",
+    "strength": "required",
+    "reason": "正切函数的周期性用周期函数定义加以说明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0055",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0056",
+    "strength": "required",
+    "reason": "值域与奇偶性由正切函数的定义与图像得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0056",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0057",
+    "strength": "required",
+    "reason": "单调性的讨论以正切函数的周期性与一个周期内的图像为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0055",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0058",
+    "strength": "required",
+    "reason": "求定义域要由正切函数的定义域限制列出不等式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0056",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0058",
+    "strength": "required",
+    "reason": "求最小正周期与单调区间要用正切函数的周期性与单调性",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0055",
+    "rel": "RELATED_TO",
+    "to": "KP-TRIG-0035",
+    "kind": "analogy",
+    "note": "正切函数与正弦函数都用单位圆、描点法作图，再平移得到整个图像"
+  },
+  {
+    "from": "KP-FUNC-0032",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0034",
+    "strength": "required",
+    "reason": "三角函数是函数的一类，需先掌握函数的一般概念",
+    "status": "draft"
+  },
+  {
+    "from": "KP-FUNC-0043",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0041",
+    "strength": "recommended",
+    "reason": "用单调性的概念与符号语言表述正弦函数的单调区间",
+    "status": "draft"
+  },
+  {
+    "from": "KP-FUNC-0040",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0040",
+    "strength": "required",
+    "reason": "奇函数的定义用于说明正弦函数是奇函数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-FUNC-0046",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0038",
+    "strength": "recommended",
+    "reason": "最大值、最小值的概念是表述正弦函数最值的基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-FUNC-0020",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0052",
+    "strength": "required",
+    "reason": "初相 φ 对图像的影响本质是函数图像的左右平移",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0041",
+    "strength": "recommended",
+    "reason": "定义域、值域与单调区间常用区间记号表示",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0014",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0042",
+    "strength": "recommended",
+    "reason": "解三角不等式是不等式解集问题，需先理解解不等式的基本思想",
+    "status": "draft"
+  },
+  {
+    "from": "KP-VEC-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0014",
+    "strength": "recommended",
+    "reason": "向量数量积提供两角差余弦公式的推导方法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0007",
+    "strength": "required",
+    "reason": "三角函数由锐角推广到任意角",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0024",
+    "strength": "required",
+    "reason": "拆角与给值求值需两角和差公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-TRIG-0005",
+    "strength": "required",
+    "reason": "角的度量从角度制扩展到弧度制",
+    "status": "draft"
+  }
+]

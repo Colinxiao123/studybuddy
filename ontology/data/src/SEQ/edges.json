@@ -1,0 +1,401 @@
+[
+  {
+    "from": "KP-SEQ-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0002",
+    "strength": "required",
+    "reason": "等差数列是特殊的数列，需先认识数列的项、首项等概念",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0003",
+    "strength": "required",
+    "reason": "等差中项由三数成等差数列的定义直接得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0004",
+    "strength": "required",
+    "reason": "通项公式由等差数列的定义累加推导得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0005",
+    "strength": "required",
+    "reason": "用定义法判断或证明等差数列必须以定义为依据",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0004",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0006",
+    "strength": "required",
+    "reason": "通项推广与下标和性质均可利用通项公式证明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0006",
+    "strength": "required",
+    "reason": "相邻三项的中项关系是等差中项的直接应用",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0007",
+    "strength": "required",
+    "reason": "前 n 项和是数列各项之和，以数列的概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0008",
+    "strength": "required",
+    "reason": "倒序相加法是求数列前 n 项和的专门方法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0008",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0009",
+    "strength": "required",
+    "reason": "等差数列前 n 项和公式由倒序相加法推导得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0004",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0009",
+    "strength": "required",
+    "reason": "求和公式的第二种形式由通项公式代入得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0007",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0010",
+    "strength": "required",
+    "reason": "已知 Sn 求通项需先掌握前 n 项和的记号与含义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0011",
+    "strength": "required",
+    "reason": "等比数列是特殊的数列，定义建立在数列概念之上",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0012",
+    "strength": "required",
+    "reason": "等比中项由三数成等比数列的定义得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0013",
+    "strength": "required",
+    "reason": "通项公式由等比数列的定义累乘推导得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0014",
+    "strength": "required",
+    "reason": "下标积等式等性质可由通项公式证明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0014",
+    "strength": "recommended",
+    "reason": "相邻三项的平方关系来自等比中项",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0015",
+    "strength": "required",
+    "reason": "判定等比数列以定义为主要依据",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0015",
+    "strength": "recommended",
+    "reason": "由 Sn 判定等比数列需先求 an，用到由和求项的方法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0016",
+    "strength": "required",
+    "reason": "错位相减法针对等比数列各项的求和结构",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0017",
+    "strength": "required",
+    "reason": "等比数列前 n 项和公式由错位相减法推导得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0011",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0017",
+    "strength": "required",
+    "reason": "前 n 项和公式以等比数列的定义与通项为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0018",
+    "strength": "recommended",
+    "reason": "由前 n 项和随 n 增大的趋势引出数列极限的概念",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0018",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0019",
+    "strength": "required",
+    "reason": "无穷等比数列各项的和用数列极限定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0019",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0020",
+    "strength": "required",
+    "reason": "化循环小数为分数利用无穷等比数列求和公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0022",
+    "strength": "required",
+    "reason": "有穷与无穷的分类针对数列的项数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0023",
+    "strength": "required",
+    "reason": "单调性是数列各项的变化趋势，以数列概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0023",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0025",
+    "strength": "required",
+    "reason": "判断单调性、求最值需先明确单调数列的含义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0024",
+    "strength": "required",
+    "reason": "列表法表示的是数列的项与序数的对应关系",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0026",
+    "strength": "required",
+    "reason": "递推公式是表示数列的一种方法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0027",
+    "strength": "required",
+    "reason": "累加法以递推公式为出发点求通项",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0028",
+    "strength": "required",
+    "reason": "构造等比数列由递推公式的结构特点出发",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0028",
+    "strength": "required",
+    "reason": "构造出的等比数列需用等比数列通项公式求解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0029",
+    "strength": "recommended",
+    "reason": "斐波那契数列由递推关系界定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0031",
+    "strength": "required",
+    "reason": "数学归纳法是归纳思想用于证明的严格化",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0031",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0032",
+    "strength": "required",
+    "reason": "证明恒等式是数学归纳法最基本的应用",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0030",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0033",
+    "strength": "recommended",
+    "reason": "先由归纳法发现一般规律，再设法证明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0031",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0033",
+    "strength": "required",
+    "reason": "归纳所得的猜想需用数学归纳法加以证明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0031",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0034",
+    "strength": "required",
+    "reason": "待定系数得到猜想后需用数学归纳法证明",
+    "status": "draft"
+  },
+  {
+    "from": "KP-FUNC-0032",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0021",
+    "strength": "recommended",
+    "reason": "数列是定义在正整数集上的函数，可借助函数概念理解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SET-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0021",
+    "strength": "recommended",
+    "reason": "数列与数集的比较需以集合元素的无序性、互异性为参照",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0013",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0025",
+    "strength": "recommended",
+    "reason": "比较相邻两项的大小即作差判断符号，与作差法一致",
+    "status": "draft"
+  },
+  {
+    "from": "KP-SEQ-0004",
+    "rel": "DERIVED_FROM",
+    "to": "KP-SEQ-0002",
+    "method": "由 a_n - a_{n-1} = d 累加 n-1 个等式推导",
+    "note": ""
+  },
+  {
+    "from": "KP-SEQ-0009",
+    "rel": "DERIVED_FROM",
+    "to": "KP-SEQ-0008",
+    "method": "由倒序相加法推导求和公式",
+    "note": ""
+  },
+  {
+    "from": "KP-SEQ-0013",
+    "rel": "DERIVED_FROM",
+    "to": "KP-SEQ-0011",
+    "method": "由 a_n / a_{n-1} = q 累乘 n-1 个等式推导",
+    "note": ""
+  },
+  {
+    "from": "KP-SEQ-0019",
+    "rel": "DERIVED_FROM",
+    "to": "KP-SEQ-0017",
+    "method": "对 0<|q|<1 时的前 n 项和公式取极限（q^n→0）",
+    "note": ""
+  },
+  {
+    "from": "KP-SEQ-0002",
+    "rel": "RELATED_TO",
+    "to": "KP-SEQ-0011",
+    "kind": "parallel",
+    "note": "等差与等比数列的定义对照（差与比）"
+  },
+  {
+    "from": "KP-SEQ-0004",
+    "rel": "RELATED_TO",
+    "to": "KP-SEQ-0013",
+    "kind": "analogy",
+    "note": "两类数列的通项公式对照（累加与累乘）"
+  },
+  {
+    "from": "KP-SEQ-0009",
+    "rel": "RELATED_TO",
+    "to": "KP-SEQ-0017",
+    "kind": "analogy",
+    "note": "两类数列的前 n 项和公式对照"
+  },
+  {
+    "from": "KP-SEQ-0003",
+    "rel": "RELATED_TO",
+    "to": "KP-SEQ-0012",
+    "kind": "analogy",
+    "note": "等差中项与等比中项对照"
+  },
+  {
+    "from": "KP-SEQ-0027",
+    "rel": "RELATED_TO",
+    "to": "KP-SEQ-0028",
+    "kind": "parallel",
+    "note": "由递推公式求通项的两种典型方法对照（累加与构造）"
+  },
+  {
+    "from": "KP-SET-0020",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-SEQ-0031",
+    "strength": "recommended",
+    "reason": "数学归纳法是证明与正整数有关命题的方法",
+    "status": "draft"
+  }
+]

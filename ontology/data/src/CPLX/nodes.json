@@ -1,0 +1,963 @@
+[
+  {
+    "id": "KP-CPLX-0001",
+    "node_type": "KnowledgePoint",
+    "name": "虚数单位与负数的平方根",
+    "aliases": [
+      "虚数单位",
+      "imaginary unit",
+      "i²=-1",
+      "负数开平方"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "为了解决负数的开平方问题，引入新数 $\\mathrm{i}$，称为虚数单位，规定 $\\mathrm{i}^2=-1$，即 $\\mathrm{i}$ 是 $-1$ 的一个平方根。对 $b\\in\\mathbf{R}$，$(b\\mathrm{i})^2=-b^2$，故 $b\\neq 0$ 时 $-b^2$ 的平方根为 $\\pm b\\mathrm{i}$，从而所有负数都可开平方。",
+    "latex": "\\mathrm{i}^2=-1,\\quad (b\\mathrm{i})^2=-b^2",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "虚数单位",
+      "负数开平方",
+      "数系扩充"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0002",
+    "node_type": "KnowledgePoint",
+    "name": "复数的代数形式",
+    "aliases": [
+      "复数",
+      "complex number",
+      "复数集 C",
+      "代数形式"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "形如 $a+b\\mathrm{i}\\ (a,b\\in\\mathbf{R})$ 的数叫做复数，其中 $a$、$b$ 分别与虚数单位 $\\mathrm{i}$ 相加、相乘；全体复数构成的集合用 $\\mathbf{C}$ 表示。复数的这种表示方式称为代数形式，复数也常用单个字母 $z$ 表示。",
+    "latex": "z=a+b\\mathrm{i}\\ (a,b\\in\\mathbf{R})",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "复数概念",
+      "代数形式",
+      "复数集"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0003",
+    "node_type": "KnowledgePoint",
+    "name": "复数相等的充要条件",
+    "aliases": [
+      "复数相等",
+      "复数相等的条件"
+    ],
+    "kp_type": "rule",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "规定：复数 $a+b\\mathrm{i}=0\\ (a,b\\in\\mathbf{R})$ 的充要条件是 $a=0$ 且 $b=0$；一般地，$a+b\\mathrm{i}=c+d\\mathrm{i}\\ (a,b,c,d\\in\\mathbf{R})$ 的充要条件是 $a=c$ 且 $b=d$。据此可由复数等式得到关于实数的方程组，进而求出参数的值。",
+    "latex": "a+b\\mathrm{i}=c+d\\mathrm{i}\\ \\Leftrightarrow\\ a=c,\\ b=d",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "复数相等",
+      "充要条件",
+      "求参数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0004",
+    "node_type": "KnowledgePoint",
+    "name": "复数的加法与减法",
+    "aliases": [
+      "复数加减法",
+      "加减运算"
+    ],
+    "kp_type": "rule",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "复数的加（减）法按多项式加（减）法进行，经去括号、合并同类项可得 $(a+b\\mathrm{i})\\pm(c+d\\mathrm{i})=(a\\pm c)+(b\\pm d)\\mathrm{i}$。实际计算时按多项式运算的步骤直接求解即可，不必硬记并套用公式。",
+    "latex": "(a+b\\mathrm{i})\\pm(c+d\\mathrm{i})=(a\\pm c)+(b\\pm d)\\mathrm{i}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "复数加法",
+      "复数减法",
+      "运算法则"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0005",
+    "node_type": "KnowledgePoint",
+    "name": "复数的乘法",
+    "aliases": [
+      "复数乘法",
+      "乘法公式"
+    ],
+    "kp_type": "formula",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "两个复数相乘，可按多项式相乘，再用 $\\mathrm{i}^2=-1$ 化简整理，得 $(a+b\\mathrm{i})(c+d\\mathrm{i})=(ac-bd)+(bc+ad)\\mathrm{i}$。复数加法与乘法满足交换律、结合律与乘法对加法的分配律。",
+    "latex": "(a+b\\mathrm{i})(c+d\\mathrm{i})=(ac-bd)+(bc+ad)\\mathrm{i}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "复数乘法",
+      "运算律",
+      "多项式运算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0006",
+    "node_type": "KnowledgePoint",
+    "name": "复数的除法与分母实数化",
+    "aliases": [
+      "复数除法",
+      "分母实数化",
+      "除法公式"
+    ],
+    "kp_type": "method",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "复数的除法是乘法的逆运算。把 $a+b\\mathrm{i}$ 除以非零复数 $c+d\\mathrm{i}$ 时，只需将分子与分母同乘 $c-d\\mathrm{i}$，把分母化为实数 $c^2+d^2$ 后再化简整理即得结果；这一方法可类比根式的分母有理化。",
+    "latex": "\\frac{a+b\\mathrm{i}}{c+d\\mathrm{i}}=\\frac{ac+bd}{c^2+d^2}+\\frac{bc-ad}{c^2+d^2}\\mathrm{i}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "复数除法",
+      "分母实数化",
+      "类比有理化"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材在推导除法公式时先给出同乘 c−di 的办法，共轭复数的概念随后正式定义。"
+  },
+  {
+    "id": "KP-CPLX-0007",
+    "node_type": "KnowledgePoint",
+    "name": "复数的乘方与整数次幂",
+    "aliases": [
+      "复数乘方",
+      "幂运算规则",
+      "负指数幂"
+    ],
+    "kp_type": "rule",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "对复数 $z$ 与正整数 $n$，$z^n$ 表示 $n$ 个 $z$ 相乘；当 $z\\neq 0$ 时规定 $z^{-n}=\\frac{1}{z^n}$，还约定 $z^0=1$。同底数幂的运算规则以及完全平方、平方差等常用乘法公式在复数范围内也都适用。",
+    "latex": "z^mz^n=z^{m+n},\\quad (z^m)^n=z^{mn}\\ (m,n\\in\\mathbf{Z})",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "乘方",
+      "幂运算",
+      "乘法公式推广"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0008",
+    "node_type": "KnowledgePoint",
+    "name": "虚数单位 i 的幂的周期性",
+    "aliases": [
+      "i 的幂",
+      "i 的整数次幂",
+      "周期规律"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对任意整数 $n$，$\\mathrm{i}$ 的幂具有周期性：$\\mathrm{i}^{4n}=1$，$\\mathrm{i}^{4n+1}=\\mathrm{i}$，$\\mathrm{i}^{4n+2}=-1$，$\\mathrm{i}^{4n+3}=-\\mathrm{i}$。规律由 $\\mathrm{i}^2=-1$ 递推得到，常用于化简含 $\\mathrm{i}$ 的高次幂。",
+    "latex": "\\mathrm{i}^{4n}=1,\\ \\mathrm{i}^{4n+1}=\\mathrm{i},\\ \\mathrm{i}^{4n+2}=-1,\\ \\mathrm{i}^{4n+3}=-\\mathrm{i},\\quad \\mathrm{i}^m+\\mathrm{i}^{m+1}+\\mathrm{i}^{m+2}+\\mathrm{i}^{m+3}=0",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "i 的幂",
+      "周期性",
+      "化简求值"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0009",
+    "node_type": "KnowledgePoint",
+    "name": "复数的实部、虚部与分类",
+    "aliases": [
+      "实部",
+      "虚部",
+      "虚数",
+      "纯虚数",
+      "复数的分类"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "复数 $z=a+b\\mathrm{i}\\ (a,b\\in\\mathbf{R})$ 中，$a$、$b$ 分别叫 $z$ 的实部与虚部，记作 $\\operatorname{Re}z=a$、$\\operatorname{Im}z=b$。$b=0$ 时 $z$ 为实数；$b\\neq 0$ 时 $z$ 为虚数；$a=0$、$b\\neq 0$ 时 $z$ 为纯虚数。",
+    "latex": "\\operatorname{Re}z=a,\\quad \\operatorname{Im}z=b,\\quad \\mathbf{R}\\subset\\mathbf{C}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "实部",
+      "虚部",
+      "复数分类",
+      "纯虚数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0010",
+    "node_type": "KnowledgePoint",
+    "name": "共轭复数",
+    "aliases": [
+      "共轭复数",
+      "conjugate",
+      "互为共轭"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "实部相同、虚部互为相反数的一对复数叫做共轭复数，也称这两个复数互为共轭；复数 $z=a+b\\mathrm{i}$ 的共轭复数记作 $\\bar z=a-b\\mathrm{i}$。一对共轭复数的积必为实数：$z\\bar z=a^2+b^2$，据此可把分母中的虚数化为实数。",
+    "latex": "\\bar z=a-b\\mathrm{i},\\quad z\\bar z=a^2+b^2",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "共轭复数",
+      "定义",
+      "积为实数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0011",
+    "node_type": "KnowledgePoint",
+    "name": "共轭复数的运算性质",
+    "aliases": [
+      "共轭的性质",
+      "取共轭与四则运算可交换"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "共轭复数的性质：(1) $\\bar{\\bar z}=z$，即一个复数的共轭复数的共轭是它自己；(2) 取共轭与四则运算可交换，即对和、差、积、商取共轭，等于先分别取共轭后再作相应运算（作商时除数非零）；(3) $\\bar z=z$ 是 $z$ 为实数的充要条件。",
+    "latex": "\\overline{z_1\\pm z_2}=\\bar z_1\\pm\\bar z_2,\\quad \\overline{z_1z_2}=\\bar z_1\\bar z_2,\\quad \\overline{\\left(\\frac{z_1}{z_2}\\right)}=\\frac{\\bar z_1}{\\bar z_2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.1",
+      "page": null
+    },
+    "tags": [
+      "共轭性质",
+      "运算交换",
+      "充要条件"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0012",
+    "node_type": "KnowledgePoint",
+    "name": "复平面与复数的坐标表示",
+    "aliases": [
+      "复平面",
+      "complex plane",
+      "实轴",
+      "虚轴",
+      "坐标表示"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "建立直角坐标系，以坐标为 $(a,b)$ 的点 $Z$ 表示复数 $z=a+b\\mathrm{i}$，这个用来表示复数的平面叫做复平面。复平面上的点与复数一一对应：$x$ 轴上的点对应实数，故称 $x$ 轴为实轴；$y$ 轴上除原点外的点对应纯虚数，故称 $y$ 轴为虚轴。",
+    "latex": "Z(a,b)\\ \\leftrightarrow\\ z=a+b\\mathrm{i}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "复平面",
+      "实轴",
+      "虚轴",
+      "一一对应"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0013",
+    "node_type": "KnowledgePoint",
+    "name": "共轭复数的几何意义",
+    "aliases": [
+      "共轭与对称",
+      "关于实轴对称"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "共轭复数 $z=a+b\\mathrm{i}$ 与 $\\bar z=a-b\\mathrm{i}$ 在复平面上对应的点 $Z(a,b)$ 与 $Z'(a,-b)$ 关于 $x$ 轴对称；反之，复平面上关于 $x$ 轴对称的两点所对应的复数互为共轭。特别地，$z$ 为实数时 $z=\\bar z$，对应点位于实轴上。",
+    "latex": "Z(a,b)\\ \\text{与}\\ Z'(a,-b)\\ \\text{关于}\\ x\\ \\text{轴对称}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "共轭复数",
+      "对称性",
+      "复平面"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材在复平面小节中给出该结论，此处由共轭定义与坐标表示归并整理。"
+  },
+  {
+    "id": "KP-CPLX-0014",
+    "node_type": "KnowledgePoint",
+    "name": "复数的向量表示",
+    "aliases": [
+      "向量表示",
+      "位置向量 OZ"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "复数 $z=a+b\\mathrm{i}$ 对应复平面上的点 $Z(a,b)$，而点 $Z$ 又对应向量 $\\overrightarrow{OZ}=(a,b)$，由此复数与平面向量一一对应。起点不在原点的向量 $\\overrightarrow{AB}$ 所表示的复数是 $z_B-z_A$，即终点对应的复数减去起点对应的复数。",
+    "latex": "\\overrightarrow{OZ}=(a,b),\\quad \\overrightarrow{AB}\\ \\leftrightarrow\\ z_B-z_A",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "向量表示",
+      "位置向量",
+      "一一对应"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0015",
+    "node_type": "KnowledgePoint",
+    "name": "复数加法的平行四边形法则",
+    "aliases": [
+      "平行四边形法则",
+      "复数加法的几何意义"
+    ],
+    "kp_type": "rule",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "两个复数的和所对应的向量，就是这两个复数所对应向量的和：以 $\\overrightarrow{OZ_1}$、$\\overrightarrow{OZ_2}$ 为邻边的平行四边形的对角线所表示的向量对应复数 $z_1+z_2$，这就是复数加法的平行四边形法则；两个复数的差对应两向量的差。",
+    "latex": "\\overrightarrow{OZ}=\\overrightarrow{OZ_1}+\\overrightarrow{OZ_2}\\ \\leftrightarrow\\ z=z_1+z_2",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "平行四边形法则",
+      "复数加法",
+      "几何意义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0016",
+    "node_type": "KnowledgePoint",
+    "name": "复数的模",
+    "aliases": [
+      "模",
+      "modulus",
+      "绝对值",
+      "复数模"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "复数 $z=a+b\\mathrm{i}$ 在复平面上所对应的点 $Z(a,b)$ 到原点的距离 $\\sqrt{a^2+b^2}$ 叫做 $z$ 的模，也叫做它的绝对值，记作 $|z|$。复数的模等于其对应向量 $\\overrightarrow{OZ}$ 的模，其几何意义是两点间的距离。",
+    "latex": "|z|=|a+b\\mathrm{i}|=\\sqrt{a^2+b^2}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "复数的模",
+      "距离",
+      "向量模"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0017",
+    "node_type": "KnowledgePoint",
+    "name": "复数模的运算性质",
+    "aliases": [
+      "模的性质",
+      "模的运算"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "复数的模具有性质：$|z|=|\\bar z|$，$z\\bar z=|z|^2$；$|z_1z_2|=|z_1||z_2|$；$\\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|}\\ (z_2\\neq 0)$。即积的模等于模的积、商的模等于模的商，利用这些性质可以简化模的计算。",
+    "latex": "|z_1z_2|=|z_1||z_2|,\\quad \\left|\\frac{z_1}{z_2}\\right|=\\frac{|z_1|}{|z_2|}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "模的性质",
+      "乘法性质",
+      "简化计算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0018",
+    "node_type": "KnowledgePoint",
+    "name": "复数模的三角不等式",
+    "aliases": [
+      "三角不等式",
+      "模的不等式"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "对任意复数 $z_1$、$z_2$ 有 $|z_1|+|z_2|\\geqslant|z_1+z_2|$。这不过是“三角形两边之和大于第三边”的另一种表达方式，即必修课程中的三角不等式，可由平行四边形 $OZ_2ZZ_1$ 中两边之和不小于对角线证明。",
+    "latex": "|z_1|+|z_2|\\geqslant|z_1+z_2|",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "三角不等式",
+      "模性质",
+      "几何证明"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材仅指出它即必修第2章的三角不等式；等号成立条件教材未展开，属补充（两向量同向或有一个为零时取等号）。"
+  },
+  {
+    "id": "KP-CPLX-0019",
+    "node_type": "KnowledgePoint",
+    "name": "复数差的模与两点间距离",
+    "aliases": [
+      "两点间距离",
+      "差的模",
+      "模的几何意义"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "复平面上两点 $Z_1(a,b)$、$Z_2(c,d)$ 间的距离可用对应复数差的模表示：$|z_1-z_2|=\\sqrt{(a-c)^2+(b-d)^2}=|Z_1Z_2|$，复平面上两点的距离问题由此可转化为复数的模的问题。",
+    "latex": "|z_1-z_2|=\\sqrt{(a-c)^2+(b-d)^2}=|Z_1Z_2|",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.2",
+      "page": null
+    },
+    "tags": [
+      "两点间距离",
+      "差的模",
+      "几何应用"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0020",
+    "node_type": "KnowledgePoint",
+    "name": "实数的平方根（复数范围）",
+    "aliases": [
+      "平方根",
+      "实数的平方根",
+      "负数的平方根"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在复数范围内讨论实数的平方根：非负实数 $c$ 的平方根仍是 $\\pm\\sqrt{c}$，没有其他平方根；负数 $c$ 没有实平方根，但在复数范围内有且只有两个共轭的纯虚平方根 $\\pm\\sqrt{-c}\\,\\mathrm{i}$。",
+    "latex": "c\\geqslant 0:\\ \\pm\\sqrt{c};\\quad c<0:\\ \\pm\\sqrt{-c}\\,\\mathrm{i}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.3",
+      "page": null
+    },
+    "tags": [
+      "平方根",
+      "负数开方",
+      "复数范围"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0021",
+    "node_type": "KnowledgePoint",
+    "name": "实系数一元二次方程的复数根",
+    "aliases": [
+      "复数根",
+      "虚根",
+      "求根公式",
+      "判别式推广"
+    ],
+    "kp_type": "theorem",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "对实系数一元二次方程 $ax^2+bx+c=0\\ (a\\neq 0)$，记判别式 $\\Delta=b^2-4ac$，在复数范围内：$\\Delta>0$ 时有两个不相等实根，$\\Delta=0$ 时有二重根 $-\\frac{b}{2a}$，$\\Delta<0$ 时有一对共轭虚根。",
+    "latex": "x=\\frac{-b\\pm\\sqrt{\\Delta}}{2a}\\ (\\Delta\\geqslant 0);\\quad x=\\frac{-b\\pm\\sqrt{-\\Delta}\\,\\mathrm{i}}{2a}\\ (\\Delta<0)",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.3",
+      "page": null
+    },
+    "tags": [
+      "实系数方程",
+      "虚根",
+      "判别式",
+      "共轭虚根"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0022",
+    "node_type": "KnowledgePoint",
+    "name": "实系数方程的共轭虚根成对",
+    "aliases": [
+      "虚根成对",
+      "共轭虚根"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "实系数一元二次方程的虚根成对出现且互为共轭：若 $x_0=m+n\\mathrm{i}\\ (n\\neq 0)$ 是实系数方程 $ax^2+bx+c=0$ 的一个根，则 $\\bar x_0=m-n\\mathrm{i}$ 必是它的另一个根。利用这一结论可由一个虚根直接写出另一个根。",
+    "latex": "x_0=m+n\\mathrm{i}\\ \\Rightarrow\\ \\bar x_0=m-n\\mathrm{i}\\ \\text{也是根}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.3",
+      "page": null
+    },
+    "tags": [
+      "共轭虚根",
+      "成对出现",
+      "由一根求另一根"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材在例3中以“有一个虚根 −2+3i，则另一根必为其共轭”的形式给出，此处单列为性质。"
+  },
+  {
+    "id": "KP-CPLX-0023",
+    "node_type": "KnowledgePoint",
+    "name": "复数范围的韦达定理",
+    "aliases": [
+      "根与系数的关系",
+      "韦达定理推广",
+      "虚根韦达定理"
+    ],
+    "kp_type": "theorem",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "实系数一元二次方程 $ax^2+bx+c=0\\ (a\\neq 0)$ 的根与系数的关系在虚根情形仍成立：若两根为 $x_1$、$x_2$（可以是共轭虚根），则 $x_1+x_2=-\\frac{b}{a}$，$x_1x_2=\\frac{c}{a}$，只要把根代入方程即可验证。",
+    "latex": "x_1+x_2=-\\frac{b}{a},\\quad x_1x_2=\\frac{c}{a}",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.3",
+      "page": null
+    },
+    "tags": [
+      "韦达定理",
+      "虚根",
+      "根与系数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0024",
+    "node_type": "KnowledgePoint",
+    "name": "复数范围的二次三项式因式分解",
+    "aliases": [
+      "因式分解",
+      "复数范围分解因式"
+    ],
+    "kp_type": "method",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "在复数范围内，实系数方程 $ax^2+bx+c=0$ 的两根 $x_1$、$x_2$ 给出二次三项式的因式分解 $ax^2+bx+c=a(x-x_1)(x-x_2)$；当 $\\Delta<0$ 时两根为共轭虚根。据此可把在实数范围内不能分解的多项式（如 $x^2+5y^2$）分解为一次因式的积。",
+    "latex": "ax^2+bx+c=a(x-x_1)(x-x_2)",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.3",
+      "page": null
+    },
+    "tags": [
+      "因式分解",
+      "复数范围",
+      "二次三项式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "习题中 a²+2ab+b²+c²=(a+b+ci)(a+b−ci) 等分解为本方法的运用，未单列知识点。"
+  },
+  {
+    "id": "KP-CPLX-0025",
+    "node_type": "KnowledgePoint",
+    "name": "复数的辐角与辐角主值",
+    "aliases": [
+      "辐角",
+      "argument",
+      "Arg z",
+      "辐角主值",
+      "arg z"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "以原点 $O$ 为顶点、$x$ 轴正半轴为始边、射线 $OZ$ 为终边的角 $\\theta$ 叫做复数 $z$ 的辐角，记作 $\\operatorname{Arg}z$；非零复数的辐角有无穷多个，任两个相差 $2\\pi$ 的整数倍。满足 $0\\leqslant\\theta<2\\pi$ 的辐角称为辐角主值，记作 $\\arg z$；规定复数 0 的辐角可取任意值。",
+    "latex": "\\operatorname{Arg}z=\\theta+2k\\pi\\ (k\\in\\mathbf{Z}),\\quad \\arg z\\in[0,2\\pi)",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.4",
+      "page": null
+    },
+    "tags": [
+      "辐角",
+      "辐角主值",
+      "任意角"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0026",
+    "node_type": "KnowledgePoint",
+    "name": "复数的三角形式",
+    "aliases": [
+      "三角形式",
+      "极坐标表示",
+      "r(cosθ+isinθ)"
+    ],
+    "kp_type": "concept",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设复数 $z=a+b\\mathrm{i}$ 的模为 $r$、辐角为 $\\theta$，由 $a=r\\cos\\theta$、$b=r\\sin\\theta$ 可得 $z=r(\\cos\\theta+\\mathrm{i}\\sin\\theta)$，这种表示形式叫做复数的三角形式。两个非零复数相等，当且仅当它们的模与辐角主值分别相等。",
+    "latex": "z=r(\\cos\\theta+\\mathrm{i}\\sin\\theta)",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.4",
+      "page": null
+    },
+    "tags": [
+      "三角形式",
+      "模与辐角",
+      "复数表示"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "“两个非零复数相等当且仅当模与辐角主值分别相等”为教材旁注，归并入本知识点。"
+  },
+  {
+    "id": "KP-CPLX-0027",
+    "node_type": "KnowledgePoint",
+    "name": "三角形式下复数的乘除公式",
+    "aliases": [
+      "棣莫弗公式",
+      "三角形式乘除",
+      "乘除运算公式"
+    ],
+    "kp_type": "theorem",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "设 $z_1=r(\\cos\\alpha+\\mathrm{i}\\sin\\alpha)$、$z_2=s(\\cos\\beta+\\mathrm{i}\\sin\\beta)$：相乘时积的模等于模的积、积的辐角等于辐角的和；相除时商的模等于模的商、商的辐角等于辐角的差（$z_2\\neq 0$）。乘积公式由两角和的正弦、余弦公式直接得出。",
+    "latex": "z_1z_2=rs[\\cos(\\alpha+\\beta)+\\mathrm{i}\\sin(\\alpha+\\beta)],\\quad \\frac{z_1}{z_2}=\\frac{r}{s}[\\cos(\\alpha-\\beta)+\\mathrm{i}\\sin(\\alpha-\\beta)]",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.4",
+      "page": null
+    },
+    "tags": [
+      "棣莫弗公式",
+      "三角形式",
+      "乘除运算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材称此乘除公式为棣莫弗公式；推导用到两角和的正弦、余弦公式（属三角模块，暂未入库）。"
+  },
+  {
+    "id": "KP-CPLX-0028",
+    "node_type": "KnowledgePoint",
+    "name": "复数乘法的几何意义",
+    "aliases": [
+      "伸缩与旋转",
+      "乘法几何意义",
+      "旋转变换"
+    ],
+    "kp_type": "property",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "在复平面上，把复数乘以非负实数 $s$，就是把对应向量伸缩为原来的 $s$ 倍、辐角不变；把复数乘以 $\\cos\\beta+\\mathrm{i}\\sin\\beta$（模为 1），就是把向量绕原点旋转角 $\\beta$。乘任意复数是先伸缩再旋转这两种变换的合成，例如乘 $\\mathrm{i}$ 即逆时针旋转 $\\frac{\\pi}{2}$。",
+    "latex": "z\\cdot s\\leftrightarrow\\ \\text{伸缩};\\quad z\\cdot(\\cos\\beta+\\mathrm{i}\\sin\\beta)\\leftrightarrow\\ \\text{旋转}\\ \\beta",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.4",
+      "page": null
+    },
+    "tags": [
+      "乘法几何意义",
+      "旋转",
+      "伸缩"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "与 9.2 例4（z 与 zi 对应向量垂直）呼应；“旋转”这一几何变换用复数乘法得到准确表达。"
+  },
+  {
+    "id": "KP-CPLX-0029",
+    "node_type": "KnowledgePoint",
+    "name": "三角形式下复数的乘方",
+    "aliases": [
+      "乘方公式",
+      "n 次幂"
+    ],
+    "kp_type": "formula",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对任何正整数 $n$，复数 $z=r(\\cos\\alpha+\\mathrm{i}\\sin\\alpha)$ 的 $n$ 次幂的模等于底数模的 $n$ 次幂，辐角等于底数辐角的 $n$ 倍。这是 $n$ 个相同复数连乘并结合乘法公式所得的结果，可用于化简高次幂的计算。",
+    "latex": "z^n=r^n(\\cos n\\alpha+\\mathrm{i}\\sin n\\alpha)",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.4",
+      "page": null
+    },
+    "tags": [
+      "乘方",
+      "三角形式",
+      "高次幂计算"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-CPLX-0030",
+    "node_type": "KnowledgePoint",
+    "name": "复数的 n 次方根",
+    "aliases": [
+      "开方",
+      "n 次方根",
+      "方根公式"
+    ],
+    "kp_type": "theorem",
+    "module": "CPLX",
+    "section_id": "SEC-BX2-09-04",
+    "sub_section_id": null,
+    "difficulty": 5,
+    "importance": "master",
+    "statement": "复数的开方是乘方的逆运算：方根的模是被开方数模的 $n$ 次方根，方根的辐角是被开方数辐角（写成 $\\alpha+2k\\pi$）的 $n$ 分之一。非零复数的 $n$ 次方根恰有 $n$ 个（对应 $k=0,1,\\cdots,n-1$），求方根时辐角不能只取主值。",
+    "latex": "\\sqrt[n]{r}\\left(\\cos\\frac{\\alpha+2k\\pi}{n}+\\mathrm{i}\\sin\\frac{\\alpha+2k\\pi}{n}\\right),\\ k=0,1,\\cdots,n-1",
+    "source": {
+      "book": "BX2",
+      "chapter": 9,
+      "section": "9.4",
+      "page": null
+    },
+    "tags": [
+      "开方",
+      "n 次方根",
+      "辐角多值性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材例6以 1 的三次方根为例给出 ω=−1/2+√3/2 i，属本公式的应用，未单列知识点。"
+  }
+]

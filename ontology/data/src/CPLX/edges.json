@@ -1,0 +1,375 @@
+[
+  {
+    "from": "KP-CPLX-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0002",
+    "strength": "required",
+    "reason": "复数的代数形式由虚数单位与实数共同构成",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0005",
+    "strength": "required",
+    "reason": "乘法化简要用到 i²=−1 这一规定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0008",
+    "strength": "required",
+    "reason": "i 的幂的规律由 i²=−1 逐步递推得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0003",
+    "strength": "required",
+    "reason": "复数相等是对两个代数形式逐项比较的结果",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0004",
+    "strength": "required",
+    "reason": "加减法法则是复数代数形式的基本运算",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0005",
+    "strength": "required",
+    "reason": "乘法法则是复数代数形式的基本运算",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0009",
+    "strength": "required",
+    "reason": "实部、虚部是代数形式中两个组成部分的规定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0010",
+    "strength": "required",
+    "reason": "共轭复数的定义由代数形式给出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0012",
+    "strength": "required",
+    "reason": "复平面以复数与有序实数对的对应为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0004",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0015",
+    "strength": "recommended",
+    "reason": "法则验证要用复数加法的代数结果",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0006",
+    "strength": "required",
+    "reason": "除法是乘法的逆运算，化简过程用到乘法公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0007",
+    "strength": "required",
+    "reason": "乘方是相同复数连乘，以乘法法则为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0011",
+    "strength": "recommended",
+    "reason": "乘法共轭性质的验证要用复数乘法展开",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0009",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0010",
+    "strength": "recommended",
+    "reason": "共轭要求实部相同、虚部相反，需先认识实部与虚部",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0011",
+    "strength": "required",
+    "reason": "共轭性质以共轭复数的定义为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0013",
+    "strength": "required",
+    "reason": "共轭复数的几何意义是共轭概念与复平面的结合",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0010",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0017",
+    "strength": "recommended",
+    "reason": "性质 |z|=|z̄| 与 z·z̄=|z|² 涉及共轭复数",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0013",
+    "strength": "required",
+    "reason": "共轭复数的几何意义要在复平面上考察对应点",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0014",
+    "strength": "required",
+    "reason": "复数与向量的对应借助复平面上的点建立",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0016",
+    "strength": "required",
+    "reason": "模定义为复平面上的点到原点的距离",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0012",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0025",
+    "strength": "required",
+    "reason": "辐角以复平面上的点与射线为基础定义",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0014",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0015",
+    "strength": "required",
+    "reason": "平行四边形法则用向量加法解释复数加法",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0014",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0028",
+    "strength": "required",
+    "reason": "伸缩与旋转用复平面上的向量描述",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0015",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0018",
+    "strength": "recommended",
+    "reason": "证明借助复数加法的平行四边形法则",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0017",
+    "strength": "required",
+    "reason": "模的性质以模的定义和计算公式为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0018",
+    "strength": "required",
+    "reason": "三角不等式是模的不等式，以模的概念为基础",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0019",
+    "strength": "required",
+    "reason": "差的模是模的又一种几何解释",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0026",
+    "strength": "required",
+    "reason": "三角形式中的 r 是复数的模",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0017",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0029",
+    "strength": "recommended",
+    "reason": "乘方的模是模的乘法性质的推广",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0001",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0020",
+    "strength": "required",
+    "reason": "负数平方根用 ±√(−c)·i 表示，依赖虚数单位",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0020",
+    "strength": "recommended",
+    "reason": "求平方根时用复数相等的条件列方程组",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0002",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0021",
+    "strength": "recommended",
+    "reason": "同一方程在不同数集中的解集不同，须在复数范围重新求解",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0003",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0021",
+    "strength": "required",
+    "reason": "判别式用于判定实根是否存在，是分情形求根的依据",
+    "status": "draft"
+  },
+  {
+    "from": "KP-INEQ-0005",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0023",
+    "strength": "required",
+    "reason": "复数范围的韦达定理是实数情形根与系数关系的推广",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0020",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0021",
+    "strength": "required",
+    "reason": "Δ<0 时的虚根由 −Δ 的平方根给出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0021",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0024",
+    "strength": "required",
+    "reason": "分解因式需要先求出方程的两个复根",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0022",
+    "rel": "DERIVED_FROM",
+    "to": "KP-CPLX-0021",
+    "method": "由判别式小于零时的求根公式直接得出两根互为共轭",
+    "note": "教材以例3呈现该结论并由韦达定理配合使用"
+  },
+  {
+    "from": "KP-CPLX-0022",
+    "rel": "RELATED_TO",
+    "to": "KP-CPLX-0023",
+    "kind": "parallel",
+    "note": "虚根成对与韦达定理常配合用于由一根求系数"
+  },
+  {
+    "from": "KP-CPLX-0025",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0026",
+    "strength": "required",
+    "reason": "三角形式由模与辐角共同确定",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0025",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0030",
+    "strength": "recommended",
+    "reason": "方根的多值性源于辐角相差 2π 的整数倍",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0026",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0027",
+    "strength": "required",
+    "reason": "乘除公式针对三角形式的复数推导",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0028",
+    "strength": "required",
+    "reason": "乘法的几何意义由乘除公式的辐角变化得出",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0027",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0029",
+    "strength": "required",
+    "reason": "乘方公式由乘法公式累乘得到",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0029",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0030",
+    "strength": "required",
+    "reason": "开方是乘方的逆运算，公式结构与之对应",
+    "status": "draft"
+  },
+  {
+    "from": "KP-CPLX-0027",
+    "rel": "RELATED_TO",
+    "to": "KP-CPLX-0005",
+    "kind": "parallel",
+    "note": "三角形式与代数形式下乘法运算公式的对照"
+  },
+  {
+    "from": "KP-TRIG-0015",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0027",
+    "strength": "recommended",
+    "reason": "复数三角形式乘除公式的推导用两角和与差的余弦公式",
+    "status": "draft"
+  },
+  {
+    "from": "KP-TRIG-0016",
+    "rel": "PREREQUISITE_OF",
+    "to": "KP-CPLX-0027",
+    "strength": "recommended",
+    "reason": "复数三角形式乘除公式的推导用两角和与差的正弦公式",
+    "status": "draft"
+  }
+]

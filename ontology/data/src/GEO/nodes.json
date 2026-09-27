@@ -1,0 +1,1863 @@
+[
+  {
+    "id": "KP-GEO-0001",
+    "node_type": "KnowledgePoint",
+    "name": "平面及其表示",
+    "aliases": [
+      "平面",
+      "plane",
+      "平面的画法"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "与点和直线一样，平面是从实际生活中抽象出来的基本图形：平面没有厚薄并且可以无限延展。平面通常用一个小写希腊字母表示（如平面 $\\alpha$），也可用大写字母表示（如平面 $M$、平面 $ABCD$）。习惯上用一个平行四边形表示平面，被遮挡的部分画成虚线。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "平面",
+      "平面的表示",
+      "基本图形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0002",
+    "node_type": "KnowledgePoint",
+    "name": "点、直线、平面位置关系的符号表示",
+    "aliases": [
+      "集合语言",
+      "符号表示",
+      "∈",
+      "⊂"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "把空间的直线和平面都看成由点组成的集合，可以借用集合语言表示点、直线与平面的位置关系：点 $A$ 在直线 $l$ 上记作 $A\\in l$；点 $A$ 在平面 $\\alpha$ 上记作 $A\\in\\alpha$；直线 $l$ 在平面 $\\alpha$ 上记作 $l\\subset\\alpha$。",
+    "latex": "A\\in l,\\quad A\\in\\alpha,\\quad l\\subset\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "符号语言",
+      "位置关系",
+      "集合观点"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "用集合语言描述空间图形，与集合模块的集合、元素概念相联系。"
+  },
+  {
+    "id": "KP-GEO-0003",
+    "node_type": "KnowledgePoint",
+    "name": "公理1（直线在平面上的判定）",
+    "aliases": [
+      "公理1",
+      "基本事实1",
+      "直线在平面上"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "公理1（基本事实）：如果一条直线上有两点在一个平面上，那么这条直线上所有的点都在这个平面上。这时说这条直线在这个平面上（平面经过该直线），记作 $l\\subset\\alpha$。由公理1还可知，不在平面上的直线与这个平面最多只有一个公共点。",
+    "latex": "A\\in\\alpha,\\ B\\in\\alpha\\ \\Rightarrow\\ AB\\subset\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "公理",
+      "基本事实",
+      "直线在平面上"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0004",
+    "node_type": "KnowledgePoint",
+    "name": "公理2（三点确定一个平面）",
+    "aliases": [
+      "公理2",
+      "基本事实2",
+      "不共线三点确定平面"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "公理2（基本事实）：不在同一直线上的三点确定一个平面，即经过这三个点有且只有一个平面。公理2可表述为：若 $A$、$B$、$C$ 三点不共线，则存在唯一的平面 $\\alpha$ 使三点都在 $\\alpha$ 上。它是构造平面、判断空间图形共面的依据。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "公理",
+      "基本事实",
+      "确定平面"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0005",
+    "node_type": "KnowledgePoint",
+    "name": "确定平面的三个推论",
+    "aliases": [
+      "推论1",
+      "推论2",
+      "推论3",
+      "确定平面的条件"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "由公理2可推出确定平面的三个推论：推论1，一条直线和这条直线外的一点确定一个平面；推论2，两条相交直线确定一个平面；推论3，两条平行直线确定一个平面。它们常用于构造平面或判断点、直线是否共面。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "推论",
+      "确定平面",
+      "共面"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "推论1的证明在教材正文给出；推论2、推论3的证明留作习题（习题10.1 A组第5题、习题10.2 A组第1题）。"
+  },
+  {
+    "id": "KP-GEO-0006",
+    "node_type": "KnowledgePoint",
+    "name": "公理3（平面的交线）",
+    "aliases": [
+      "公理3",
+      "基本事实3",
+      "两平面交线"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "公理3（基本事实）：如果两个不同的平面有一个公共点，那么它们有且只有一条过该点的公共直线。两个平面的公共直线称为它们的交线，交线上所有的点都是这两个平面的公共点；公理3是寻找两平面交线的依据。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "公理",
+      "基本事实",
+      "平面相交",
+      "交线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0007",
+    "node_type": "KnowledgePoint",
+    "name": "两个平面的位置关系",
+    "aliases": [
+      "面面位置关系",
+      "相交平面",
+      "平行平面"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "两个平面 $\\alpha$ 与 $\\beta$ 的位置关系只有两种：相交——有且只有一条公共直线 $l$，记作 $\\alpha\\cap\\beta=l$；平行——没有公共点，记作 $\\alpha\\parallel\\beta$ 或 $\\alpha\\cap\\beta=\\varnothing$。画两个平行平面时，应使相应平行四边形的对应边平行。",
+    "latex": "\\alpha\\cap\\beta=l,\\quad \\alpha\\parallel\\beta",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "面面关系",
+      "相交",
+      "平行"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0008",
+    "node_type": "KnowledgePoint",
+    "name": "斜二测画法（空间图形的直观图）",
+    "aliases": [
+      "斜二测画法",
+      "直观图",
+      "画法"
+    ],
+    "kp_type": "method",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "画空间图形的直观图通常采用斜二测画法。画水平放置的平面图形：$x$ 轴保持不变，$y$ 轴与 $x$ 轴成 $45^\\circ$，且 $y$ 方向上的长度减半。画立体图形的一般步骤：画底面、画侧棱（平行且相等）、成图，被遮挡的部分改为虚线。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.1",
+      "page": null
+    },
+    "tags": [
+      "直观图",
+      "斜二测",
+      "画法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例4、例5分别演示平面图形与长方体的画法步骤。"
+  },
+  {
+    "id": "KP-GEO-0009",
+    "node_type": "KnowledgePoint",
+    "name": "公理4（平行线的传递性）",
+    "aliases": [
+      "公理4",
+      "基本事实4",
+      "平行传递性"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "公理4（基本事实）：平行于同一条直线的两条直线互相平行，即若 $a\\parallel b$ 且 $a\\parallel c$，则 $b\\parallel c$。这表明直线的平行关系在空间中仍具有传递性，是证明空间两条直线平行的重要依据。",
+    "latex": "a\\parallel b,\\ a\\parallel c\\ \\Rightarrow\\ b\\parallel c",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "公理",
+      "基本事实",
+      "平行传递性"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0010",
+    "node_type": "KnowledgePoint",
+    "name": "等角定理",
+    "aliases": [
+      "等角定理",
+      "空间中角相等"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "等角定理：如果一个角的两边和另一个角的两边分别平行并且方向相同，那么这两个角相等。证明时分别在两组平行射线上截取相等的线段构造平行四边形，再由三角形全等推出两个角相等。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "等角定理",
+      "平行",
+      "角相等"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0011",
+    "node_type": "KnowledgePoint",
+    "name": "等角定理的推论",
+    "aliases": [
+      "等角定理推论",
+      "平行角相等或互补"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "等角定理的两个推论：推论1，如果一个角的两边和另一个角的两边分别平行，那么这两个角相等或者互补；推论2，如果两条相交直线和另两条相交直线分别平行，那么这两组直线所成的锐角（或直角）相等。推论2是异面直线所成角定义合理的基础。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "等角定理",
+      "推论",
+      "异面直线所成角"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0012",
+    "node_type": "KnowledgePoint",
+    "name": "异面直线",
+    "aliases": [
+      "异面直线",
+      "noncoplanar straight lines"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "不同在任何一个平面上的两条直线叫做异面直线（即不存在一个平面同时包含这两条直线）。如长方体中与棱 $AB$ 所在直线既不相交也不平行的棱 $CC_1$ 所在直线，就是异面直线；判断两条直线异面常用反证法。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "异面直线",
+      "不共面",
+      "定义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0013",
+    "node_type": "KnowledgePoint",
+    "name": "空间两条直线的位置关系",
+    "aliases": [
+      "两直线位置关系",
+      "相交平行异面"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "空间两条直线的位置关系有且只有三种：相交——共面且有唯一公共点；平行——共面且没有公共点；异面——不共面且没有公共点。判断异面直线可先排除共面的相交、平行两种情形，必要时用反证法。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "位置关系",
+      "分类",
+      "相交平行异面"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0014",
+    "node_type": "KnowledgePoint",
+    "name": "异面直线的判定定理",
+    "aliases": [
+      "异面直线判定定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "异面直线判定定理：过平面外一点与平面上一点的直线，和此平面上不经过该点的任何一条直线都是异面直线。即若直线 $a$ 在平面 $\\alpha$ 上，$A\\notin\\alpha$，直线 $AB$ 与 $\\alpha$ 交于点 $B$ 且 $B\\notin a$，则 $AB$ 与 $a$ 是异面直线。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "判定定理",
+      "异面直线",
+      "反证法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0015",
+    "node_type": "KnowledgePoint",
+    "name": "两条异面直线所成的角",
+    "aliases": [
+      "异面直线所成角",
+      "异面直线夹角"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "两条异面直线平移到相交位置时所得到的锐角或直角，称为这两条异面直线所成的角。在空间任取一点 $P$，过 $P$ 分别作两条异面直线的平行线，所成锐角（或直角）的大小是唯一确定的。异面直线所成角的范围是 $0^\\circ<\\theta\\leqslant 90^\\circ$。",
+    "latex": "\\theta\\in\\left(0,\\frac{\\pi}{2}\\right]",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "异面直线所成角",
+      "平移",
+      "角范围"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0016",
+    "node_type": "KnowledgePoint",
+    "name": "异面直线互相垂直",
+    "aliases": [
+      "异面垂直",
+      "a⊥b"
+    ],
+    "kp_type": "property",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "如果两条异面直线所成的角是直角，就说这两条异面直线互相垂直，记作 $a\\perp b$。由定义容易推出：若 $a\\perp b$ 且 $b\\parallel c$，则 $a\\perp c$。空间中互相垂直的两条直线可以相交，也可以异面。",
+    "latex": "a\\perp b,\\quad b\\parallel c\\ \\Rightarrow\\ a\\perp c",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "异面垂直",
+      "垂直传递",
+      "线线垂直"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0017",
+    "node_type": "KnowledgePoint",
+    "name": "求异面直线所成角的方法",
+    "aliases": [
+      "平移法",
+      "异面直线所成角求法"
+    ],
+    "kp_type": "method",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求两条异面直线所成角的一般方法：利用平行棱、中位线等把两条异面直线平移到相交位置，把所求角转化到某个三角形中，再通过解三角形（勾股定理、余弦定理等）求出这个角，最后核对是否为锐角或直角。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.2",
+      "page": null
+    },
+    "tags": [
+      "平移法",
+      "异面直线所成角",
+      "解题方法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0018",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面的位置关系",
+    "aliases": [
+      "线面位置关系",
+      "直线与平面的三种位置关系"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "一条直线和一个平面的位置关系有且只有三种：(1) 直线在平面上——有无数个公共点；(2) 直线与平面相交——只有一个公共点，记作 $l\\cap\\alpha=A$；(3) 直线与平面平行——没有公共点，记作 $l\\parallel\\alpha$。",
+    "latex": "l\\cap\\alpha=A,\\quad l\\parallel\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "位置关系",
+      "线面关系",
+      "分类"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材10.1节先给出相交与平行的定义，10.3节起首完整列出三种位置关系。"
+  },
+  {
+    "id": "KP-GEO-0019",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面平行的判定定理",
+    "aliases": [
+      "线面平行判定定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "直线与平面平行的判定定理：如果不在平面上的一条直线与这个平面上的一条直线平行，那么该直线与这个平面平行。即若 $a\\not\\subset\\alpha$，$b\\subset\\alpha$ 且 $a\\parallel b$，则 $a\\parallel\\alpha$。定理的证明采用反证法。",
+    "latex": "a\\not\\subset\\alpha,\\ b\\subset\\alpha,\\ a\\parallel b\\ \\Rightarrow\\ a\\parallel\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "判定定理",
+      "线面平行",
+      "反证法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0020",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面平行的性质定理",
+    "aliases": [
+      "线面平行性质定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "直线与平面平行的性质定理：如果一条直线与一个平面平行，过这条直线的一个平面与此平面相交，那么其交线必与该直线平行。即若 $a\\parallel\\alpha$，$a\\subset\\beta$，$\\alpha\\cap\\beta=b$，则 $a\\parallel b$。",
+    "latex": "a\\parallel\\alpha,\\ a\\subset\\beta,\\ \\alpha\\cap\\beta=b\\ \\Rightarrow\\ a\\parallel b",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "性质定理",
+      "线面平行",
+      "交线平行"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0021",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面垂直的定义",
+    "aliases": [
+      "线面垂直",
+      "直线与平面垂直"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "如果一条直线与平面上的任意一条直线都垂直，就说这条直线与这个平面互相垂直，记作 $l\\perp\\alpha$。这时直线 $l$ 叫做平面 $\\alpha$ 的垂线（法线），$l$ 与 $\\alpha$ 的交点叫做垂足。由定义可由线面垂直推出线线垂直。",
+    "latex": "l\\perp\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "线面垂直",
+      "垂线",
+      "垂足"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0022",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面垂直的判定定理",
+    "aliases": [
+      "线面垂直判定定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "直线与平面垂直的判定定理：如果一条直线与一个平面上的两条相交直线都垂直，那么此直线与该平面垂直。即若 $m$、$n$ 是平面 $\\alpha$ 上的两条相交直线，且 $l\\perp m$，$l\\perp n$，则 $l\\perp\\alpha$。",
+    "latex": "m,n\\subset\\alpha,\\ m\\cap n=P,\\ l\\perp m,\\ l\\perp n\\ \\Rightarrow\\ l\\perp\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "判定定理",
+      "线面垂直",
+      "相交直线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "教材通过三角形纸片翻折的实验引入，判定关键是平面内两条相交直线。"
+  },
+  {
+    "id": "KP-GEO-0023",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面垂直的性质定理",
+    "aliases": [
+      "线面垂直性质定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "直线与平面垂直的性质定理：垂直于同一个平面的两条直线互相平行。即若 $a\\perp\\alpha$，$b\\perp\\alpha$，则 $a\\parallel b$。定理用反证法证明，并与“同一平面内过一点有且只有一条直线与已知直线垂直”对照理解。",
+    "latex": "a\\perp\\alpha,\\ b\\perp\\alpha\\ \\Rightarrow\\ a\\parallel b",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "性质定理",
+      "线面垂直",
+      "反证法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0024",
+    "node_type": "KnowledgePoint",
+    "name": "线面垂直性质的两个推论",
+    "aliases": [
+      "过一点作垂面",
+      "唯一性推论"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "由线面垂直的定义和性质定理可得两个推论：推论1，过一点有且只有一个平面与给定的直线垂直；推论2，过一点有且只有一条直线与给定的平面垂直。推论2是定义点到平面距离的基础。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "存在唯一性",
+      "推论",
+      "线面垂直"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0025",
+    "node_type": "KnowledgePoint",
+    "name": "点到平面的距离与直线到平面的距离",
+    "aliases": [
+      "点面距离",
+      "线面距离"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "由线面垂直性质的推论2，过平面 $\\alpha$ 外一点 $M$ 有且只有一条直线与 $\\alpha$ 垂直，垂足为 $N$，则线段 $MN$ 的长叫做点 $M$ 到平面 $\\alpha$ 的距离。若直线 $l\\parallel\\alpha$，则 $l$ 上任意一点到 $\\alpha$ 的距离都相等，它叫做直线 $l$ 到平面 $\\alpha$ 的距离。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "点面距离",
+      "线面距离",
+      "垂线段"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "线面距离的合理性由线面平行、线面垂直的性质定理证明（习题10.3 A组第5题）。"
+  },
+  {
+    "id": "KP-GEO-0026",
+    "node_type": "KnowledgePoint",
+    "name": "直线与平面所成的角",
+    "aliases": [
+      "线面角",
+      "斜线",
+      "斜足",
+      "投影"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "与平面相交但不垂直的直线叫做平面的斜线，交点叫做斜足。过斜线上一点 $P$ 作平面的垂线，垂足为 $O$，直线 $AO$（$A$ 为斜足）叫做斜线在平面上的投影；斜线与它在平面上的投影所成的锐角，叫做这条直线和这个平面所成的角。规定垂直时成角为直角，平行或在平面内时成角为 $0^\\circ$。",
+    "latex": "0^\\circ\\leqslant\\theta\\leqslant 90^\\circ",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "线面角",
+      "斜线",
+      "投影"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0027",
+    "node_type": "KnowledgePoint",
+    "name": "斜线与平面所成角的最小性",
+    "aliases": [
+      "最小角",
+      "线面角最小"
+    ],
+    "kp_type": "property",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "斜线与平面所成的角，是这条斜线与该平面内任何一条直线所成角中最小的角：设斜线 $l$ 与平面 $\\alpha$ 所成的角为 $\\theta$，$\\alpha$ 内任意一条直线与 $l$ 所成的角为 $\\mu$，则 $\\theta\\leqslant\\mu$。",
+    "latex": "\\theta\\leqslant\\mu",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "线面角",
+      "最小角",
+      "大小比较"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材在例7之后给出该结论。"
+  },
+  {
+    "id": "KP-GEO-0028",
+    "node_type": "KnowledgePoint",
+    "name": "三垂线定理",
+    "aliases": [
+      "三垂线定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "三垂线定理：平面上的一条直线和这个平面的一条斜线垂直的充要条件是它和这条斜线在平面上的投影垂直。它是讨论空间直线垂直关系的常用工具，证明用到线面垂直的判定定理和定义。",
+    "latex": "a\\subset\\alpha,\\ a\\perp OA\\ \\Leftrightarrow\\ a\\perp PA",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.3",
+      "page": null
+    },
+    "tags": [
+      "三垂线定理",
+      "投影",
+      "充要条件"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0029",
+    "node_type": "KnowledgePoint",
+    "name": "两个平面平行的判定定理",
+    "aliases": [
+      "面面平行判定定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "两个平面平行的判定定理：如果一个平面上的两条相交直线与另一个平面平行，那么这两个平面平行。即若 $a$、$b$ 是平面 $\\alpha$ 上的两条相交直线，且 $a\\parallel\\beta$，$b\\parallel\\beta$，则 $\\alpha\\parallel\\beta$。",
+    "latex": "a,b\\subset\\alpha,\\ a\\cap b=P,\\ a\\parallel\\beta,\\ b\\parallel\\beta\\ \\Rightarrow\\ \\alpha\\parallel\\beta",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "判定定理",
+      "面面平行",
+      "相交直线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0030",
+    "node_type": "KnowledgePoint",
+    "name": "两个平面平行的性质定理",
+    "aliases": [
+      "面面平行性质定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "两个平面平行的性质定理：如果两个平行平面同时和第三个平面相交，那么它们的交线平行。即若 $\\alpha\\parallel\\beta$，$\\alpha\\cap\\gamma=a$，$\\beta\\cap\\gamma=b$，则 $a\\parallel b$。",
+    "latex": "\\alpha\\parallel\\beta,\\ \\alpha\\cap\\gamma=a,\\ \\beta\\cap\\gamma=b\\ \\Rightarrow\\ a\\parallel b",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "性质定理",
+      "面面平行",
+      "交线平行"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0031",
+    "node_type": "KnowledgePoint",
+    "name": "两个平行平面间的距离",
+    "aliases": [
+      "面面距离",
+      "平行平面距离"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若平面 $\\alpha\\parallel$ 平面 $\\beta$，则平面 $\\alpha$ 上任意一点到平面 $\\beta$ 的距离都相等，把这个距离定义为两个平行平面之间的距离。夹在两个平行平面间的平行线段相等。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "面面距离",
+      "平行平面",
+      "距离定义"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0032",
+    "node_type": "KnowledgePoint",
+    "name": "二面角",
+    "aliases": [
+      "二面角",
+      "dihedral angle",
+      "直二面角"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "从一条直线出发的两个半平面所组成的图形叫做二面角，这条直线叫做二面角的棱，这两个半平面叫做二面角的面；棱为 $l$、面为 $\\alpha$、$\\beta$ 的二面角记作 $\\alpha-l-\\beta$。二面角的大小等于直角时叫直二面角；两个平面相交成直二面角时，就说它们互相垂直。",
+    "latex": "\\alpha-l-\\beta",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "二面角",
+      "棱",
+      "直二面角"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0033",
+    "node_type": "KnowledgePoint",
+    "name": "二面角的平面角",
+    "aliases": [
+      "平面角",
+      "二面角的度量"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "在二面角 $\\alpha-l-\\beta$ 的棱 $l$ 上任取一点 $O$，过 $O$ 分别在两个半平面内作棱的垂线 $OA$、$OB$，射线 $OA$ 与 $OB$ 构成的角 $\\angle AOB$ 的大小与点 $O$ 的取法无关，称它为二面角的平面角。二面角的取值范围是 $[0^\\circ,180^\\circ]$，其大小由平面角来度量。",
+    "latex": "0^\\circ\\leqslant\\theta\\leqslant 180^\\circ",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "平面角",
+      "二面角",
+      "度量"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0034",
+    "node_type": "KnowledgePoint",
+    "name": "平面与平面垂直的判定定理",
+    "aliases": [
+      "面面垂直判定定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "平面与平面垂直的判定定理：如果一个平面经过另一个平面的一条垂线，那么这两个平面垂直。即若 $OA\\perp\\alpha$，$OA\\subset\\beta$，则 $\\beta\\perp\\alpha$。证明时作出二面角的平面角，说明它是直角，从而两平面垂直。",
+    "latex": "OA\\perp\\alpha,\\ OA\\subset\\beta\\ \\Rightarrow\\ \\beta\\perp\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "判定定理",
+      "面面垂直",
+      "垂线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0035",
+    "node_type": "KnowledgePoint",
+    "name": "平面与平面垂直的性质定理",
+    "aliases": [
+      "面面垂直性质定理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-04",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "平面与平面垂直的性质定理：如果两个平面垂直，那么其中一个平面上垂直于两平面交线的直线与另一个平面垂直。即若 $\\alpha\\perp\\beta$，$\\alpha\\cap\\beta=l$，$OA\\subset\\beta$ 且 $OA\\perp l$，则 $OA\\perp\\alpha$。性质定理是判定定理逆命题的推广。",
+    "latex": "\\alpha\\perp\\beta,\\ OA\\subset\\beta,\\ OA\\perp l\\ \\Rightarrow\\ OA\\perp\\alpha",
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.4",
+      "page": null
+    },
+    "tags": [
+      "性质定理",
+      "面面垂直",
+      "交线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0036",
+    "node_type": "KnowledgePoint",
+    "name": "异面直线公垂线的存在唯一性定理",
+    "aliases": [
+      "公垂线",
+      "公垂线段",
+      "存在唯一性"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-05",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "定理：对于任意给定的两条异面直线，存在唯一的一条直线与这两条直线都垂直并且相交。与两条异面直线都垂直且相交的直线称为它们的公垂线，两个垂足之间的线段称为公垂线段。存在性用构造法证明，唯一性用反证法证明。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.5",
+      "page": null
+    },
+    "tags": [
+      "公垂线",
+      "存在唯一性",
+      "异面直线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0037",
+    "node_type": "KnowledgePoint",
+    "name": "两条异面直线间的距离",
+    "aliases": [
+      "异面直线距离",
+      "异面直线间的距离"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-05",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "两条异面直线的公垂线段的长度叫做这两条异面直线的距离。两条异面直线的公垂线段，是连接这两条异面直线的所有线段中最短的线段，因此用它来刻画两条异面直线的相对位置（距离）是合理的。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.5",
+      "page": null
+    },
+    "tags": [
+      "异面直线距离",
+      "公垂线段",
+      "最短线段"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0038",
+    "node_type": "KnowledgePoint",
+    "name": "求异面直线间距离的方法",
+    "aliases": [
+      "转化法",
+      "线线距求法"
+    ],
+    "kp_type": "method",
+    "module": "GEO",
+    "section_id": "SEC-BX3-10-05",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求两条异面直线之间的距离，可先过其中一条直线作一个平面平行于另一条直线，把线线距离转化为线面（点面）距离；也可以构造分别过两条异面直线的两个平行平面，把线线距离转化为两个平行平面之间的距离。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 10,
+      "section": "10.5",
+      "page": null
+    },
+    "tags": [
+      "转化法",
+      "线面距离",
+      "面面距离"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0039",
+    "node_type": "KnowledgePoint",
+    "name": "多面体",
+    "aliases": [
+      "多面体",
+      "polyhedron",
+      "面棱顶点"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "由三角形或平面多边形围成的封闭几何体称为多面体。构成多面体表面的各三角形或平面多边形称为多面体的面，相邻面的公共边称为多面体的棱，棱与棱的交点称为多面体的顶点。棱柱、棱锥、棱台等都是多面体。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "多面体",
+      "面棱顶点"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0040",
+    "node_type": "KnowledgePoint",
+    "name": "棱柱",
+    "aliases": [
+      "棱柱",
+      "prism",
+      "直棱柱",
+      "正棱柱",
+      "斜棱柱"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "有一对互相平行的面且这两个面全等、不在两个面上的棱都相互平行的多面体叫做棱柱。两平行面称为底面，其余各面称为侧面，不在底面上的棱称为侧棱，两底面间的距离称为高。侧棱垂直于底面的棱柱叫直棱柱，底面是正多边形的直棱柱叫正棱柱，否则称为斜棱柱；棱柱按底面边数分为三棱柱、四棱柱等。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "棱柱",
+      "直棱柱",
+      "正棱柱"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0041",
+    "node_type": "KnowledgePoint",
+    "name": "圆柱",
+    "aliases": [
+      "圆柱",
+      "cylinder",
+      "母线",
+      "轴"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "将矩形绕其一条边所在直线旋转一周，所形成的几何体叫做圆柱。这条边所在直线叫做圆柱的轴，与轴平行的边旋转而成的曲面叫做侧面，该边叫做母线，垂直于轴的边旋转而成的圆面叫做底面，两底面间的距离（即轴的长）叫做圆柱的高。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "圆柱",
+      "旋转体",
+      "母线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "过轴的截面都是全等的矩形，平行于底面的截面都是与底面全等的圆（例2）。"
+  },
+  {
+    "id": "KP-GEO-0042",
+    "node_type": "KnowledgePoint",
+    "name": "祖暅原理",
+    "aliases": [
+      "祖暅原理",
+      "幂势既同则积不容异",
+      "卡瓦列里原理"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "祖暅原理：夹在两个平行平面间的两个几何体，如果被平行于这两个平面的任意平面截得的两个截面都有相等的面积，那么这两个几何体的体积必相等。它是推导柱体、锥体、球体积公式的基础。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "祖暅原理",
+      "截面面积",
+      "体积"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "国外称为卡瓦列里原理；“幂”即截面积，“势”即几何体的高。"
+  },
+  {
+    "id": "KP-GEO-0043",
+    "node_type": "KnowledgePoint",
+    "name": "柱体的体积公式",
+    "aliases": [
+      "柱体体积",
+      "棱柱体积",
+      "圆柱体积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "柱体的体积等于底面积与高的乘积：棱柱的体积 $V=S_{\\text{底}}h$；圆柱的体积 $V=\\pi r^2h$（$S_{\\text{底}}$ 为底面积，$h$ 为高，$r$ 为底面半径）。柱体体积公式由长方体体积公式与祖暅原理推出。",
+    "latex": "V_{\\text{柱}}=S_{\\text{底}}h,\\quad V_{\\text{圆柱}}=\\pi r^2h",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "体积公式",
+      "棱柱",
+      "圆柱"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0044",
+    "node_type": "KnowledgePoint",
+    "name": "柱体的表面积公式",
+    "aliases": [
+      "柱体表面积",
+      "直棱柱侧面积",
+      "圆柱表面积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "柱体的表面积等于两个底面的面积与侧面积之和。直棱柱的侧面积等于底面周长与高的乘积，其表面积 $S=ch+2S_{\\text{底}}$（$c$ 为底面周长）；圆柱的表面积 $S=2\\pi rh+2\\pi r^2$（$r$ 为底面半径，$h$ 为高）。",
+    "latex": "S_{\\text{直棱柱}}=ch+2S_{\\text{底}},\\quad S_{\\text{圆柱}}=2\\pi rh+2\\pi r^2",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "表面积公式",
+      "直棱柱",
+      "圆柱"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "直棱柱、圆柱的侧面积都可由侧面平面展开图得到。"
+  },
+  {
+    "id": "KP-GEO-0045",
+    "node_type": "KnowledgePoint",
+    "name": "几何体体积与表面积的最值问题",
+    "aliases": [
+      "体积最大",
+      "表面积最小",
+      "最值"
+    ],
+    "kp_type": "method",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-01",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "求几何体体积或表面积最值的方法：先根据条件把体积（或表面积）表示为变量的函数，或利用等量关系列出相关量的关系式，再用平均值不等式等工具求最值，并检验等号能否取到。如表面积相等的长方体中，正方体的体积最大。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.1",
+      "page": null
+    },
+    "tags": [
+      "最值问题",
+      "平均值不等式",
+      "体积与表面积"
+    ],
+    "status": "draft",
+    "confidence": 0.85,
+    "notes": "由练习11.1(3)第3题、习题11.4 B组第4题及11.4拓展与思考题归纳，教材正文未单列该方法。"
+  },
+  {
+    "id": "KP-GEO-0046",
+    "node_type": "KnowledgePoint",
+    "name": "棱锥",
+    "aliases": [
+      "棱锥",
+      "pyramid",
+      "正棱锥",
+      "四面体"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "有一个面是三角形或平面多边形、且不在这个面上的棱都有一个公共点的多面体叫做棱锥。多边形面称为底面，其余各面称为侧面，所有侧棱的公共点称为顶点，顶点到底面的距离叫做棱锥的高。底面是正多边形且顶点与底面中心的连线垂直于底面的棱锥叫正棱锥；三棱锥就是四面体。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "棱锥",
+      "正棱锥",
+      "四面体"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0047",
+    "node_type": "KnowledgePoint",
+    "name": "圆锥",
+    "aliases": [
+      "圆锥",
+      "cone",
+      "母线"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "将直角三角形绕其一条直角边所在直线旋转一周，所形成的几何体叫做圆锥。这条直角边所在直线叫做圆锥的轴，另一直角边旋转而成的圆面叫做底面，斜边旋转而成的曲面叫做侧面，斜边叫做母线，顶点到底面的距离叫做高。圆锥有无穷多条母线。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "圆锥",
+      "旋转体",
+      "母线"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0048",
+    "node_type": "KnowledgePoint",
+    "name": "台体（棱台与圆台）",
+    "aliases": [
+      "台体",
+      "棱台",
+      "圆台",
+      "frustum"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "用平行于锥体底面的平面截去含顶点的小锥体，剩下的几何体叫做台体：由棱锥截得的叫棱台（由正棱锥截得的叫正棱台），由圆锥截得的叫圆台。台体的问题可以转化为锥体的问题解决，柱体、锥体也可看作台体的极端情形。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "台体",
+      "棱台",
+      "圆台"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0049",
+    "node_type": "KnowledgePoint",
+    "name": "锥体的体积公式",
+    "aliases": [
+      "锥体体积",
+      "棱锥体积",
+      "圆锥体积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "锥体的体积等于底面积与高的乘积的三分之一：棱锥的体积 $V=\\frac{1}{3}S_{\\text{底}}h$（任一棱锥的体积等于与它同底等高的柱体体积的三分之一）；圆锥的体积 $V=\\frac{1}{3}\\pi r^2h$。圆锥体积公式由棱锥体积公式与祖暅原理得出。",
+    "latex": "V_{\\text{锥}}=\\frac{1}{3}S_{\\text{底}}h,\\quad V_{\\text{圆锥}}=\\frac{1}{3}\\pi r^2h",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "体积公式",
+      "棱锥",
+      "圆锥"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0050",
+    "node_type": "KnowledgePoint",
+    "name": "锥体的表面积公式",
+    "aliases": [
+      "锥体表面积",
+      "斜高",
+      "正棱锥侧面积",
+      "圆锥侧面积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "正棱锥的各个侧面是全等的等腰三角形，底边上的高叫做斜高（记作 $h'$），其侧面积等于底面周长与斜高乘积的一半，表面积 $S=\\frac{1}{2}ch'+S_{\\text{底}}$；圆锥的侧面展开图是扇形，侧面积 $S=\\pi rl$，表面积 $S=\\pi rl+\\pi r^2$（$l$ 为母线长）。",
+    "latex": "S_{\\text{正棱锥}}=\\frac{1}{2}ch'+S_{\\text{底}},\\quad S_{\\text{圆锥}}=\\pi rl+\\pi r^2",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "表面积公式",
+      "斜高",
+      "圆锥"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "圆锥侧面展开所得扇形的中心角 θ=2πr/l，常用它研究侧面上最短路径问题。"
+  },
+  {
+    "id": "KP-GEO-0051",
+    "node_type": "KnowledgePoint",
+    "name": "锥体平行于底面的截面性质",
+    "aliases": [
+      "相似比",
+      "面积比",
+      "截面性质"
+    ],
+    "kp_type": "property",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "用平行于锥体底面的平面截锥体，截得的小锥体与原锥体相似，两个底面面积之比等于对应高（或母线）的平方之比：$\\frac{S_1}{S_2}=\\left(\\frac{h_1}{h_2}\\right)^2$。这一性质常用于锥体、台体中的面积与体积计算。",
+    "latex": "\\frac{S_1}{S_2}=\\left(\\frac{h_1}{h_2}\\right)^2",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "截面",
+      "相似",
+      "面积比"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材以例2（圆锥）给出，练习中推广到棱锥。"
+  },
+  {
+    "id": "KP-GEO-0052",
+    "node_type": "KnowledgePoint",
+    "name": "台体的体积公式",
+    "aliases": [
+      "台体体积",
+      "棱台体积",
+      "圆台体积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "understand",
+    "statement": "若台体上、下底面的面积分别为 $S'$、$S$，高为 $h$，则台体的体积 $V=\\frac{1}{3}(S'+\\sqrt{S'S}+S)h$；圆台的体积 $V=\\frac{1}{3}\\pi(r_1^2+r_1r_2+r_2^2)h$（$r_1$、$r_2$ 为两底面半径）。公式可由两个锥体的体积相减导出。",
+    "latex": "V_{\\text{台}}=\\frac{1}{3}(S'+\\sqrt{S'S}+S)h",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.2",
+      "page": null
+    },
+    "tags": [
+      "体积公式",
+      "台体",
+      "圆台"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "教材例5给出台体体积公式的推导；圆台体积公式见练习11.2(2)第3题。"
+  },
+  {
+    "id": "KP-GEO-0053",
+    "node_type": "KnowledgePoint",
+    "name": "旋转体与旋转面",
+    "aliases": [
+      "旋转体",
+      "revolving solid",
+      "旋转面",
+      "轴"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-03",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "由一个平面封闭图形绕其所在平面上的一条定直线旋转一周所形成的空间封闭几何体称为旋转体，这条定直线叫做它的轴；一条平面曲线绕同一平面上的一条直线旋转一周所形成的空间图形称为旋转面。圆柱、圆锥、球都是旋转体。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.3",
+      "page": null
+    },
+    "tags": [
+      "旋转体",
+      "旋转面",
+      "轴"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0054",
+    "node_type": "KnowledgePoint",
+    "name": "正多面体",
+    "aliases": [
+      "正多面体",
+      "regular polyhedron",
+      "柏拉图立体"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "如果一个多面体的所有面都是全等的正三角形或正多边形，且每个顶点处聚集的棱的条数都相等，这样的多面体叫做正多面体。正多面体只有五种：正四面体、正六面体（正方体）、正八面体、正十二面体、正二十面体。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.3",
+      "page": null
+    },
+    "tags": [
+      "正多面体",
+      "五种",
+      "柏拉图立体"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0055",
+    "node_type": "KnowledgePoint",
+    "name": "多面体的欧拉定理",
+    "aliases": [
+      "欧拉定理",
+      "欧拉公式",
+      "V+F-E=2"
+    ],
+    "kp_type": "theorem",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "多面体的欧拉定理：简单多面体的顶点数 $V$、棱数 $E$ 与面数 $F$ 满足 $V+F-E=2$。如果往多面体（面如弹性橡胶）内充气能使它膨胀成一个球体，这样的多面体称为简单多面体；欧拉定理可用来验证正多面体只有五种。",
+    "latex": "V+F-E=2",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.3",
+      "page": null
+    },
+    "tags": [
+      "欧拉定理",
+      "顶点棱面数",
+      "简单多面体"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "欧拉定理及其推广是拓扑学中的重要结论。"
+  },
+  {
+    "id": "KP-GEO-0056",
+    "node_type": "KnowledgePoint",
+    "name": "球与球面",
+    "aliases": [
+      "球",
+      "球面",
+      "ball",
+      "sphere"
+    ],
+    "kp_type": "concept",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-04",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "将半圆面绕其直径所在直线旋转一周，所形成的几何体叫做球，记作球 $O$；半圆的圆弧旋转所形成的旋转面叫做球面。半圆的圆心叫做球心，半圆的半径、直径分别叫做球的半径、直径，球面上任意一点到球心的距离都等于半径。",
+    "latex": null,
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.4",
+      "page": null
+    },
+    "tags": [
+      "球",
+      "球面",
+      "球心"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "球具有丰富的对称性，所有过球心的直线都可作为球的旋转轴。"
+  },
+  {
+    "id": "KP-GEO-0057",
+    "node_type": "KnowledgePoint",
+    "name": "球的截面性质",
+    "aliases": [
+      "球截面",
+      "大圆",
+      "小圆"
+    ],
+    "kp_type": "property",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "用平面去截球，截面是一个圆。过球心的截面圆叫做球的大圆，不过球心的截面圆叫做小圆。若球的半径为 $R$，球心到截面的距离为 $d$，截面圆的半径为 $r$，则 $r^2=R^2-d^2$，即 $r=\\sqrt{R^2-d^2}$。",
+    "latex": "r=\\sqrt{R^2-d^2}",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.4",
+      "page": null
+    },
+    "tags": [
+      "球截面",
+      "大圆",
+      "小圆"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "地球的经纬线可用球的大圆、小圆进行数学解释。"
+  },
+  {
+    "id": "KP-GEO-0058",
+    "node_type": "KnowledgePoint",
+    "name": "球的体积公式",
+    "aliases": [
+      "球体积",
+      "球的体积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-04",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "球的体积 $V=\\frac{4}{3}\\pi R^3$（$R$ 为球的半径）。推导思路：用祖暅原理，把半球与“底面半径和高都为 $R$ 的圆柱挖去一个等底等高的圆锥”所得的几何体作对比，二者在等高处截面积相等，于是半球体积为 $\\pi R^3-\\frac{1}{3}\\pi R^3=\\frac{2}{3}\\pi R^3$。",
+    "latex": "V_{\\text{球}}=\\frac{4}{3}\\pi R^3",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.4",
+      "page": null
+    },
+    "tags": [
+      "体积公式",
+      "球",
+      "祖暅原理"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-GEO-0059",
+    "node_type": "KnowledgePoint",
+    "name": "球的表面积公式",
+    "aliases": [
+      "球面面积",
+      "球的表面积"
+    ],
+    "kp_type": "formula",
+    "module": "GEO",
+    "section_id": "SEC-BX3-11-04",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "球的表面积（球面面积）$S=4\\pi R^2$（$R$ 为球的半径）。球面不能像圆柱面、圆锥面那样展开为平面图形，教材通过把球面剖分成许多小区域，将其与球心构成小棱锥，由 $V\\approx\\frac{1}{3}RS$ 与球的体积公式导出该公式。",
+    "latex": "S_{\\text{球}}=4\\pi R^2",
+    "source": {
+      "book": "BX3",
+      "chapter": 11,
+      "section": "11.4",
+      "page": null
+    },
+    "tags": [
+      "表面积公式",
+      "球面",
+      "极限思想"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "推导体现“分割求和”的极限思想，严格证明需要微积分。"
+  }
+]

@@ -1,0 +1,861 @@
+[
+  {
+    "id": "KP-INEQ-0001",
+    "node_type": "KnowledgePoint",
+    "name": "等式的基本性质",
+    "aliases": [
+      "等式性质",
+      "传递性",
+      "加法性质",
+      "乘法性质"
+    ],
+    "kp_type": "property",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "等式具有以下性质：(1) 传递性：若 $a=b$ 且 $b=c$，则 $a=c$；(2) 加法性质：若 $a=b$，则 $a+c=b+c$；(3) 乘法性质：若 $a=b$，则 $ac=bc$。等式两边同减一个数或同除以一个非零数，等式仍成立；但由 $ac=bc$ 不能推出 $a=b$（$c=0$ 时）。",
+    "latex": "a=b\\ \\text{且}\\ b=c\\ \\Rightarrow\\ a=c",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "等式性质",
+      "等价变形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0002",
+    "node_type": "KnowledgePoint",
+    "name": "方程与方程的解集",
+    "aliases": [
+      "方程",
+      "方程的解",
+      "解集"
+    ],
+    "kp_type": "concept",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "含有未知数的等式称为方程；使方程左右两边相等的未知数的值称为方程的解；以方程的所有解为元素组成的集合称为方程的解集。方程的解与未知数的取值范围有关，同一方程在不同数集中的解集不一定相同（本章均在实数集中求解方程）。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "方程",
+      "解集概念"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0003",
+    "node_type": "KnowledgePoint",
+    "name": "一元二次方程的解集（判别式）",
+    "aliases": [
+      "判别式",
+      "重根",
+      "求根公式"
+    ],
+    "kp_type": "concept",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "一元二次方程 $ax^2+bx+c=0\\ (a\\neq 0)$ 的解集由判别式 $\\Delta=b^2-4ac$ 决定：$\\Delta>0$ 时解集含两个不同的实根；$\\Delta=0$ 时为重根 $x=-\\frac{b}{2a}$（重根只出现一次）；$\\Delta<0$ 时为 $\\varnothing$。",
+    "latex": "\\Delta=b^2-4ac",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "一元二次方程",
+      "判别式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0004",
+    "node_type": "KnowledgePoint",
+    "name": "恒等式与比较系数法",
+    "aliases": [
+      "恒等式",
+      "比较系数",
+      "待定系数法"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若等式 $a_1x^2+b_1x+c_1=a_2x^2+b_2x+c_2$ 对任意实数 $x$ 恒成立，则 $a_1=a_2$、$b_1=b_2$、$c_1=c_2$；反之也成立。据此可用“比较对应项系数”的方法求恒等式中的待定系数，处理时也可令 $x$ 取特殊值（如 $0,1,-1$）得到方程组。",
+    "latex": "a_1=a_2,\\ b_1=b_2,\\ c_1=c_2",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "恒等式",
+      "待定系数法"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0005",
+    "node_type": "KnowledgePoint",
+    "name": "韦达定理（根与系数的关系）",
+    "aliases": [
+      "根与系数关系",
+      "韦达定理",
+      "Vieta"
+    ],
+    "kp_type": "theorem",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "若一元二次方程 $ax^2+bx+c=0\\ (a\\neq 0)$ 的两个根为 $x_1$、$x_2$，则 $x_1+x_2=-\\frac{b}{a}$，$x_1x_2=\\frac{c}{a}$。",
+    "latex": "x_1+x_2=-\\frac{b}{a},\\quad x_1x_2=\\frac{c}{a}",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "韦达定理",
+      "根与系数"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "证明利用恒等式比较系数：$ax^2+bx+c=a(x-x_1)(x-x_2)$ 对应项系数相等。"
+  },
+  {
+    "id": "KP-INEQ-0006",
+    "node_type": "KnowledgePoint",
+    "name": "利用韦达定理求对称式的值",
+    "aliases": [
+      "对称式",
+      "韦达定理应用",
+      "求作方程"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "apply",
+    "statement": "利用根与系数的关系可求关于 $x_1$、$x_2$ 的对称式的值，如 $x_1^2x_2+x_2^2x_1=x_1x_2(x_1+x_2)$，$|x_1-x_2|=\\sqrt{(x_1+x_2)^2-4x_1x_2}$，$x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2$；也可求作以给定数为根的一元二次方程。变形配凑是关键。",
+    "latex": "x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "韦达定理应用",
+      "代数变形"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0007",
+    "node_type": "KnowledgePoint",
+    "name": "比较实数大小的原理（作差法基础）",
+    "aliases": [
+      "大小关系",
+      "作差法原理",
+      "b-a"
+    ],
+    "kp_type": "concept",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "对于两个实数 $a$、$b$：$b>a\\Leftrightarrow b-a>0$；$b=a\\Leftrightarrow b-a=0$；$b<a\\Leftrightarrow b-a<0$。这是研究一切不等式的基础。对任意两个给定实数 $a$、$b$，$a>b$、$a<b$、$a=b$ 三者中有且只有一种情况成立；$b>a$ 与 $a<b$ 等价。",
+    "latex": "b>a\\Leftrightarrow b-a>0",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "实数大小",
+      "作差法"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0008",
+    "node_type": "KnowledgePoint",
+    "name": "不等式的基本性质",
+    "aliases": [
+      "不等式性质",
+      "传递性",
+      "同向可加"
+    ],
+    "kp_type": "property",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "不等式的基本性质（$a,b,c$ 为实数）：(1) 传递性：若 $a>b$ 且 $b>c$，则 $a>c$；(2) 加法性质：若 $a>b$，则 $a+c>b+c$（移项法则：$a+b>c\\Leftrightarrow a>c-b$）；(3) 乘法性质：若 $a>b$ 且 $c>0$，则 $ac>bc$；若 $a>b$ 且 $c<0$，则 $ac<bc$（乘负数不等号反向）。",
+    "latex": "a>b,\\ c>0\\ \\Rightarrow\\ ac>bc",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "不等式性质",
+      "等价变形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0009",
+    "node_type": "KnowledgePoint",
+    "name": "同向可加性",
+    "aliases": [
+      "同向相加",
+      "异向相减"
+    ],
+    "kp_type": "property",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若 $a>b$ 且 $c>d$，则 $a+c>b+d$（同向可加性）；同理若 $a>b$ 且 $c>d$，则 $a-d>b-c$。",
+    "latex": "a>b,\\ c>d\\ \\Rightarrow\\ a+c>b+d",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "同向可加性",
+      "不等式性质"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0010",
+    "node_type": "KnowledgePoint",
+    "name": "正数不等式的倒数性质",
+    "aliases": [
+      "倒数性质",
+      "取倒数"
+    ],
+    "kp_type": "property",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若 $a>b>0$，则 $\\frac{1}{b}>\\frac{1}{a}>0$（在正数范围内，较大数的倒数反而较小）。据此结合同向同正可乘性可得：若 $a>b>0$ 且 $c>d>0$，则 $\\frac{a}{d}>\\frac{b}{c}$。",
+    "latex": "a>b>0\\ \\Rightarrow\\ \\frac{1}{b}>\\frac{1}{a}>0",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "倒数",
+      "不等式性质"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0011",
+    "node_type": "KnowledgePoint",
+    "name": "同向同正可乘性",
+    "aliases": [
+      "同向同正",
+      "可乘性",
+      "乘方性质"
+    ],
+    "kp_type": "property",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "若 $a>b>0$ 且 $c>d>0$，则 $ac>bd$；进一步，若 $a>b>0$，则 $a^n>b^n$（$n$ 为正整数）。",
+    "latex": "a>b>0,\\ c>d>0\\ \\Rightarrow\\ ac>bd",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "可乘性",
+      "乘方"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "若 $a^n>b^n$（$a,b>0$）也可推出 $a>b$，可用反证法证明。"
+  },
+  {
+    "id": "KP-INEQ-0012",
+    "node_type": "KnowledgePoint",
+    "name": "重要不等式 a²+b²≥2ab",
+    "aliases": [
+      "重要不等式",
+      "基本不等式",
+      "配方"
+    ],
+    "kp_type": "theorem",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "对任意实数 $a$、$b$，有 $a^2+b^2\\geqslant 2ab$，且等号当且仅当 $a=b$ 时成立。证明：$a^2+b^2-2ab=(a-b)^2\\geqslant 0$。",
+    "latex": "a^2+b^2\\geqslant 2ab",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "重要不等式",
+      "恒等变形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0013",
+    "node_type": "KnowledgePoint",
+    "name": "作差法比较大小",
+    "aliases": [
+      "作差比较",
+      "比较大小"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-01",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "apply",
+    "statement": "比较两个表达式 $A$、$B$ 的大小，只需判断差 $A-B$ 的符号：证 $A>B$ 只需证 $A-B>0$。如比较 $(a+1)^2$ 与 $a^2-a+1$ 的大小：作差得 $3a$，再按 $a>0$、$a=0$、$a<0$ 分类讨论。",
+    "latex": "A>B\\Leftrightarrow A-B>0",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.1",
+      "page": null
+    },
+    "tags": [
+      "作差法",
+      "比较大小"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0014",
+    "node_type": "KnowledgePoint",
+    "name": "不等式的解集与解不等式",
+    "aliases": [
+      "不等式解",
+      "解不等式",
+      "不等式组"
+    ],
+    "kp_type": "concept",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "能使不等式成立的未知数的值称为该不等式的解，解的全体组成的集合称为不等式的解集，求解集的过程称为解不等式。解不等式常通过等价变形化为较简单的不等式（组）；将几个不等式联立得到不等式组，解不等式组就是求各不等式解集的交集。",
+    "latex": null,
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "解集",
+      "等价变形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0015",
+    "node_type": "KnowledgePoint",
+    "name": "一元一次不等式（组）的求解",
+    "aliases": [
+      "一元一次不等式",
+      "含参不等式",
+      "数轴表示"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "understand",
+    "statement": "解一元一次不等式（组）需对含参数的情况分类讨论：如解 $ax<1$，按 $a>0$、$a=0$、$a<0$ 分别得解集 $\\left(-\\infty,\\frac{1}{a}\\right)$、$\\mathbf{R}$、$\\left(\\frac{1}{a},+\\infty\\right)$；不等式组的解集可在数轴上表示并求交集。",
+    "latex": "ax<1",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "一元一次不等式",
+      "分类讨论"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0016",
+    "node_type": "KnowledgePoint",
+    "name": "一元二次不等式的定义",
+    "aliases": [
+      "一元二次不等式",
+      "quadratic inequality"
+    ],
+    "kp_type": "concept",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "设 $a$、$b$、$c$ 为实数，且 $a\\neq 0$，形如 $ax^2+bx+c>0\\ (<0,\\ \\geqslant 0,\\ \\leqslant 0)$ 的不等式统称为一元二次不等式。",
+    "latex": "ax^2+bx+c>0\\ (a\\neq 0)",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "一元二次不等式",
+      "定义"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0017",
+    "node_type": "KnowledgePoint",
+    "name": "一元二次不等式的解法（Δ>0）",
+    "aliases": [
+      "二次不等式求解",
+      "两根法",
+      "解集"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $a>0$，相应方程的两根为 $x_1<x_2$：$ax^2+bx+c>0$ 的解集为 $(-\\infty,x_1)\\cup(x_2,+\\infty)$；$<0$ 为 $(x_1,x_2)$；$\\geqslant 0$ 为 $(-\\infty,x_1]\\cup[x_2,+\\infty)$；$\\leqslant 0$ 为 $[x_1,x_2]$。$a<0$ 时先在两边乘 $-1$ 化为正系数。",
+    "latex": "(-\\infty,x_1)\\cup(x_2,+\\infty)",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "二次不等式",
+      "解集"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "求解与相应一元二次方程的根、二次函数的图像密切相关。"
+  },
+  {
+    "id": "KP-INEQ-0018",
+    "node_type": "KnowledgePoint",
+    "name": "一元二次不等式的解法（Δ≤0）",
+    "aliases": [
+      "重根情形",
+      "无实根情形"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "设 $a>0$：$\\Delta=0$ 时（重根 $x_1$），$>0$、$\\geqslant 0$、$<0$、$\\leqslant 0$ 的解集依次为除 $x_1$ 外的实数、$\\mathbf{R}$、$\\varnothing$、$\\{x_1\\}$；$\\Delta<0$ 时依次为 $\\mathbf{R}$、$\\mathbf{R}$、$\\varnothing$、$\\varnothing$。",
+    "latex": "\\Delta=0,\\ \\Delta<0",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "二次不等式",
+      "判别式"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0019",
+    "node_type": "KnowledgePoint",
+    "name": "由解集反求系数",
+    "aliases": [
+      "逆向问题",
+      "解集与系数"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "若一元二次不等式 $x^2+bx+c<0$ 的解集为 $(m,n)$，则 $m$、$n$ 是相应方程 $x^2+bx+c=0$ 的两个根，由韦达定理得 $b=-(m+n)$、$c=mn$，由此反求系数，再解新的不等式。",
+    "latex": "b=-(m+n),\\quad c=mn",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "逆向问题",
+      "韦达定理应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0020",
+    "node_type": "KnowledgePoint",
+    "name": "一元二次不等式恒成立的条件",
+    "aliases": [
+      "恒成立",
+      "解集为R"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "一元二次不等式对一切实数 $x$ 恒成立的条件：$ax^2+bx+c>0$ 恒成立 $\\Leftrightarrow a>0$ 且 $\\Delta<0$；$ax^2+bx+c\\geqslant 0$ 恒成立 $\\Leftrightarrow a>0$ 且 $\\Delta\\leqslant 0$。解集为 $\\mathbf{R}$ 或 $\\varnothing$ 的含参问题常转化为判别式条件求解。",
+    "latex": "a>0,\\ \\Delta<0",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "恒成立",
+      "判别式"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0021",
+    "node_type": "KnowledgePoint",
+    "name": "分式不等式的求解",
+    "aliases": [
+      "分式不等式",
+      "转化整式"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "解分式不等式的思路是转化为整式不等式：$\\frac{f(x)}{g(x)}>0\\Leftrightarrow f(x)g(x)>0$；$\\geqslant 0\\Leftrightarrow$ 分子分母同号且分母 $\\neq 0$。一般先移项、通分（右边化为 0）再转化，如 $\\frac{x+3}{4-x}>0\\Leftrightarrow (x+3)(x-4)<0$。",
+    "latex": "\\frac{f(x)}{g(x)}>0\\Leftrightarrow f(x)g(x)>0",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "分式不等式",
+      "等价转化"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0022",
+    "node_type": "KnowledgePoint",
+    "name": "含绝对值不等式的基本类型",
+    "aliases": [
+      "绝对值不等式",
+      "|x|<a",
+      "|x|>a"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "当 $a>0$ 时：$|x|<a\\Leftrightarrow -a<x<a$，解集为 $(-a,a)$；$|x|>a\\Leftrightarrow x>a$ 或 $x<-a$，解集为 $(-\\infty,-a)\\cup(a,+\\infty)$。$|ax+b|<c$ 型可化为 $-c<ax+b<c$ 求解。$|x|$ 表示数轴上点 $x$ 到原点的距离。",
+    "latex": "|x|<a\\Leftrightarrow -a<x<a",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "绝对值不等式",
+      "解集"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0023",
+    "node_type": "KnowledgePoint",
+    "name": "含绝对值不等式的零点分段法",
+    "aliases": [
+      "零点分段",
+      "分类讨论",
+      "多重绝对值"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-02",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "master",
+    "statement": "解含两个及以上绝对值的不等式（如 $|x-3|+|x-5|<4$），先求各绝对值内表达式为零的根（零点），用零点把实数轴划分为若干区间，在每个区间内去掉绝对值符号分别求解，最后取各段解集的并集。",
+    "latex": "|x-3|+|x-5|<4",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.2",
+      "page": null
+    },
+    "tags": [
+      "零点分段法",
+      "分类讨论"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0024",
+    "node_type": "KnowledgePoint",
+    "name": "算术平均值与几何平均值",
+    "aliases": [
+      "算术平均",
+      "几何平均",
+      "平均"
+    ],
+    "kp_type": "concept",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-03",
+    "sub_section_id": null,
+    "difficulty": 1,
+    "importance": "understand",
+    "statement": "对于正数 $a$、$b$，$\\frac{a+b}{2}$ 称为 $a$、$b$ 的算术平均值，$\\sqrt{ab}$ 称为 $a$、$b$ 的几何平均值。当 $a$、$b$ 表示两次测量值时，算术平均值可理解为平均；当表示矩形两边时，几何平均值可理解为等面积正方形的边长。",
+    "latex": "\\frac{a+b}{2},\\quad \\sqrt{ab}",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.3",
+      "page": null
+    },
+    "tags": [
+      "算术平均",
+      "几何平均"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0025",
+    "node_type": "KnowledgePoint",
+    "name": "平均值不等式",
+    "aliases": [
+      "均值不等式",
+      "AM-GM",
+      "基本不等式"
+    ],
+    "kp_type": "theorem",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-03",
+    "sub_section_id": null,
+    "difficulty": 2,
+    "importance": "master",
+    "statement": "两个正数的算术平均值大于等于它们的几何平均值：对任意正数 $a$、$b$，$\\frac{a+b}{2}\\geqslant\\sqrt{ab}$，且等号当且仅当 $a=b$ 时成立。证明：$\\frac{a+b}{2}-\\sqrt{ab}=\\frac{(\\sqrt{a}-\\sqrt{b})^2}{2}\\geqslant 0$。",
+    "latex": "\\frac{a+b}{2}\\geqslant\\sqrt{ab}",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.3",
+      "page": null
+    },
+    "tags": [
+      "均值不等式",
+      "最值工具"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": "对非负实数 $a$、$b$（允许取 0）不等式也成立。"
+  },
+  {
+    "id": "KP-INEQ-0026",
+    "node_type": "KnowledgePoint",
+    "name": "平均值不等式的变形 ((a+b)/2)²≥ab",
+    "aliases": [
+      "均值不等式变形",
+      "和积关系"
+    ],
+    "kp_type": "theorem",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "understand",
+    "statement": "对任意实数 $a$、$b$，$\\left(\\frac{a+b}{2}\\right)^2\\geqslant ab$，且等号当且仅当 $a=b$ 时成立。由 $a^2+b^2\\geqslant 2ab$ 两边加 $2ab$ 得 $(a+b)^2\\geqslant 4ab$，据此变形即得。",
+    "latex": "\\left(\\frac{a+b}{2}\\right)^2\\geqslant ab",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.3",
+      "page": null
+    },
+    "tags": [
+      "均值不等式",
+      "变形"
+    ],
+    "status": "draft",
+    "confidence": 0.95,
+    "notes": null
+  },
+  {
+    "id": "KP-INEQ-0027",
+    "node_type": "KnowledgePoint",
+    "name": "平均值不等式的应用（最值问题）",
+    "aliases": [
+      "和定积最大",
+      "积定和最小",
+      "最值"
+    ],
+    "kp_type": "method",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-03",
+    "sub_section_id": null,
+    "difficulty": 4,
+    "importance": "apply",
+    "statement": "当 $x,y>0$ 时：若积 $xy$ 为定值，则和 $x+y$ 有最小值 $2\\sqrt{xy}$；若和 $x+y$ 为定值，则积 $xy$ 有最大值 $(\\frac{x+y}{2})^2$；等号当 $x=y$ 时成立。常用结论：$x>0$ 时 $x+\\frac{1}{x}\\geqslant 2$；$ab>0$ 时 $\\frac{b}{a}+\\frac{a}{b}\\geqslant 2$。",
+    "latex": "x+\\frac{1}{x}\\geqslant 2\\ (x>0)",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.3",
+      "page": null
+    },
+    "tags": [
+      "最值问题",
+      "均值不等式应用"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": "使用要求：各项为“正”，求积要求和为定值（或反之），并检验等号可取得。"
+  },
+  {
+    "id": "KP-INEQ-0028",
+    "node_type": "KnowledgePoint",
+    "name": "三角不等式",
+    "aliases": [
+      "绝对值三角不等式",
+      "|a+b|≤|a|+|b|"
+    ],
+    "kp_type": "theorem",
+    "module": "INEQ",
+    "section_id": "SEC-BX1-02-03",
+    "sub_section_id": null,
+    "difficulty": 3,
+    "importance": "master",
+    "statement": "对任意实数 $a$、$b$，$|a+b|\\leqslant |a|+|b|$，且等号当且仅当 $ab\\geqslant 0$ 时成立。它由 $ab\\leqslant|ab|$ 推得，与“三角形两边之和大于第三边”相似。推论：$|a|-|b|\\leqslant|a-b|$；也可用于证明 $|x-3|+|x-5|\\geqslant 2$ 型不等式。",
+    "latex": "|a+b|\\leqslant |a|+|b|",
+    "source": {
+      "book": "BX1",
+      "chapter": 2,
+      "section": "2.3",
+      "page": null
+    },
+    "tags": [
+      "三角不等式",
+      "绝对值"
+    ],
+    "status": "draft",
+    "confidence": 0.9,
+    "notes": null
+  }
+]
