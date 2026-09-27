@@ -41,6 +41,7 @@ async function main() {
   renderGraph();
   bindSearch();
   bindCopy();
+  bindLightbox();
 
   // 供调试 / 外部调用
   window.__demo = {
@@ -279,6 +280,21 @@ function bindSearch() {
   });
   document.addEventListener('click', e => {
     if (!e.target.closest('.search-wrap')) box.hidden = true;
+  });
+}
+
+/* ---------- 点击截图放大 ---------- */
+function bindLightbox() {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  const big = lb.querySelector('img');
+  document.querySelectorAll('.shot img').forEach(el => el.addEventListener('click', () => {
+    big.src = el.src;
+    lb.classList.add('open');
+  }));
+  lb.addEventListener('click', () => { lb.classList.remove('open'); big.src = ''; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { lb.classList.remove('open'); big.src = ''; }
   });
 }
 

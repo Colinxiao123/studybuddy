@@ -6,7 +6,7 @@
 <title>StudyBuddy · 会看知识图谱的错题本</title>
 <meta name="description" content="拍照上传高中数学错题，自动对齐 544 个知识点的高中数学知识图谱，找出真正该补的薄弱点，用教材原文讲解。">
 <link rel="stylesheet" href="vendor/katex.inline.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20260927">
 </head>
 <body>
 
@@ -116,6 +116,42 @@
   </div>
 </section>
 
+<!-- ================= 真实界面 ================= -->
+<section id="screens" class="section">
+  <h2>真实界面一览</h2>
+  <p class="section-sub">以下截图来自真实运行中的界面：从拍照录入错题，到知识点热度、图谱检索、知识网络可视化，以及 AI 双保险讲解与复核。点击图片可放大查看。</p>
+  <div class="shots">
+    <figure class="shot">
+      <img src="shots/01-upload.png" alt="录入错题界面" loading="lazy" width="2228" height="1224">
+      <figcaption><b>① 录入错题</b> — 拍照、拖入图片或 PDF，支持手动订正识别结果</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="shots/02-book.png" alt="错题本界面" loading="lazy" width="2199" height="1213">
+      <figcaption><b>② 错题本</b> — 按错因、日期筛选；每题附 AI 解答、错因分析与根因候选</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="shots/03-heat.png" alt="知识点热度界面" loading="lazy" width="2231" height="1216">
+      <figcaption><b>③ 知识点热度</b> — 错题铺满 544 个知识点，模块薄弱程度一眼看清</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="shots/04-query.png" alt="图谱查询界面" loading="lazy" width="2227" height="1219">
+      <figcaption><b>④ 图谱查询</b> — 搜索知识点，查看规范陈述、公式与前置 / 后续依赖</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="shots/05-graph.png" alt="图谱视图界面" loading="lazy" width="2216" height="1211">
+      <figcaption><b>⑤ 图谱视图</b> — 力导向整图：又大又红的节点＝既基础又薄弱，最该优先补</figcaption>
+    </figure>
+    <figure class="shot narrow">
+      <img src="shots/06-review.png" alt="AI 复核意见面板" loading="lazy" width="547" height="697">
+      <figcaption><b>⑥ AI 复核意见</b> — 对 ⑦ 中 AI 回答的复核：逐条指出上一版解答的逻辑跳跃并给出改法；修订后标注置信度</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="shots/07-chat.png" alt="AI 学习助手对话界面" loading="lazy" width="2240" height="1218">
+      <figcaption><b>⑦ AI 学习助手</b> — 点错题卡片的「问 AI」把它带进对话；解答先由图谱知识点与教材原文生成，并标注本次引用的知识点</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ================= 本地运行 ================= -->
 <section id="start" class="section">
   <h2>在自己的电脑上跑起来</h2>
@@ -152,6 +188,8 @@ python run.py              # 之后每次：起服务 + 打开浏览器</code></
   </div>
   <p class="copyright">本页面的图谱数据为项目内置快照 · 544 知识点 / 776 关系 · 托管于 GitHub Pages</p>
 </footer>
+
+<div id="lightbox" class="lightbox"><img alt="界面截图放大"></div>
 
 <script src="vendor/katex.min.js"></script>
 <script src="vendor/auto-render.min.js"></script>
